@@ -1,0 +1,3 @@
+./scripts/get_projects.sh --update 
+
+Nothing to do;  every slot already matches config.txt.

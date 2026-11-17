@@ -1,0 +1,4 @@
+PATH=/foss/designs/gf180mcu_ocd_chipalooza/verilog/dv/venv/bin:$PATH make -C verilog/dv clean
+rm -rf __pycache__ results.xml sim_build *.vcd
+make -C validate/lvs clean
+rm -f chipalooza_frame.struct.v chipalooza_frame.struct.v.bb chipalooza_frame.struct.v.top comp.out selftest_*.out

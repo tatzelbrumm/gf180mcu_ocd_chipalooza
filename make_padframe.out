@@ -1,0 +1,126 @@
+./scripts/run_gen_padframe.sh
+running:
+magic -dnull -noconsole -rcfile /foss/designs/pdk_overlay/gf180mcuD/libs.tech/magic/gf180mcuD.magicrc
+
+Magic 8.3 revision 685 - Compiled on Thu Oct 15 02:29:39 PM CEST 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology gf180mcuD ...
+10 Magic internal units = 1 Lambda
+Input style import: scaleFactor=10, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    obsactive mvobsactive filldiff fillpoly m1hole obsm1 fillm1 obsv1 m2hole obsm2 fillm2 obsv2 m3hole obsm3 fillm3 m4hole obsm4 fillm4 m5hole obsm5 fillm5 glass fillblock lvstext obscomment 
+Scaled tech values by 10 / 1 to match internal grid scaling
+Loading gf180mcuD Device Generator Menu ...
+Using technology "gf180mcuD", version 1.0.588-62-g1689ac3
+Adding path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+Warning: cell <gf180mcu_ocd_io__cor> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag/gf180mcu_ocd_io__cor.mag is not writeable
+Cell gf180mcu_ocd_io__cor read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+Cell POWER_RAIL_COR read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+POWER_RAIL_COR: 10000 rects
+POWER_RAIL_COR: 20000 rects
+POWER_RAIL_COR: 30000 rects
+POWER_RAIL_COR: 40000 rects
+POWER_RAIL_COR: 50000 rects
+POWER_RAIL_COR: 60000 rects
+POWER_RAIL_COR: 70000 rects
+POWER_RAIL_COR: 80000 rects
+POWER_RAIL_COR: 90000 rects
+POWER_RAIL_COR: 100000 rects
+POWER_RAIL_COR: 110000 rects
+POWER_RAIL_COR: 120000 rects
+POWER_RAIL_COR: 130000 rects
+POWER_RAIL_COR: 140000 rects
+POWER_RAIL_COR: 150000 rects
+POWER_RAIL_COR: 160000 rects
+POWER_RAIL_COR: 170000 rects
+POWER_RAIL_COR: 180000 rects
+POWER_RAIL_COR: 190000 rects
+POWER_RAIL_COR: 200000 rects
+POWER_RAIL_COR: 210000 rects
+POWER_RAIL_COR: 220000 rects
+POWER_RAIL_COR: 230000 rects
+POWER_RAIL_COR: 240000 rects
+POWER_RAIL_COR: 250000 rects
+POWER_RAIL_COR: 260000 rects
+POWER_RAIL_COR: 270000 rects
+POWER_RAIL_COR: 280000 rects
+POWER_RAIL_COR: 290000 rects
+POWER_RAIL_COR: 300000 rects
+POWER_RAIL_COR: 310000 rects
+POWER_RAIL_COR: 320000 rects
+POWER_RAIL_COR: 330000 rects
+POWER_RAIL_COR: 340000 rects
+POWER_RAIL_COR: 350000 rects
+POWER_RAIL_COR: 360000 rects
+POWER_RAIL_COR: 370000 rects
+POWER_RAIL_COR: 380000 rects
+POWER_RAIL_COR: 390000 rects
+POWER_RAIL_COR: 400000 rects
+POWER_RAIL_COR: 410000 rects
+POWER_RAIL_COR: 420000 rects
+POWER_RAIL_COR: 430000 rects
+POWER_RAIL_COR: 440000 rects
+POWER_RAIL_COR: 450000 rects
+Warning: cell <POWER_RAIL_COR_0> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag/POWER_RAIL_COR_0.mag is not writeable
+Cell POWER_RAIL_COR_0 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+POWER_RAIL_COR_0: 10000 rects
+POWER_RAIL_COR_0: 20000 rects
+POWER_RAIL_COR_0: 30000 rects
+POWER_RAIL_COR_0: 40000 rects
+POWER_RAIL_COR_0: 50000 rects
+POWER_RAIL_COR_0: 60000 rects
+POWER_RAIL_COR_0: 70000 rects
+POWER_RAIL_COR_0: 80000 rects
+POWER_RAIL_COR_0: 90000 rects
+POWER_RAIL_COR_0: 100000 rects
+POWER_RAIL_COR_0: 110000 rects
+POWER_RAIL_COR_0: 120000 rects
+POWER_RAIL_COR_0: 130000 rects
+POWER_RAIL_COR_0: 140000 rects
+POWER_RAIL_COR_0: 150000 rects
+POWER_RAIL_COR_0: 160000 rects
+POWER_RAIL_COR_0: 170000 rects
+POWER_RAIL_COR_0: 180000 rects
+POWER_RAIL_COR_0: 190000 rects
+POWER_RAIL_COR_0: 200000 rects
+POWER_RAIL_COR_0: 210000 rects
+POWER_RAIL_COR_0: 220000 rects
+POWER_RAIL_COR_0: 230000 rects
+POWER_RAIL_COR_0: 240000 rects
+POWER_RAIL_COR_0: 250000 rects
+POWER_RAIL_COR_0: 260000 rects
+POWER_RAIL_COR_0: 270000 rects
+POWER_RAIL_COR_0: 280000 rects
+POWER_RAIL_COR_0: 290000 rects
+POWER_RAIL_COR_0: 300000 rects
+POWER_RAIL_COR_0: 310000 rects
+POWER_RAIL_COR_0: 320000 rects
+POWER_RAIL_COR_0: 330000 rects
+POWER_RAIL_COR_0: 340000 rects
+POWER_RAIL_COR_0: 350000 rects
+POWER_RAIL_COR_0: 360000 rects
+POWER_RAIL_COR_0: 370000 rects
+POWER_RAIL_COR_0: 380000 rects
+POWER_RAIL_COR_0: 390000 rects
+POWER_RAIL_COR_0: 400000 rects
+POWER_RAIL_COR_0: 410000 rects
+POWER_RAIL_COR_0: 420000 rects
+POWER_RAIL_COR_0: 430000 rects
+POWER_RAIL_COR_0: 440000 rects
+POWER_RAIL_COR_0: 450000 rects
+Warning: cell <POWER_RAIL_COR_1> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag/POWER_RAIL_COR_1.mag is not writeable
+Cell POWER_RAIL_COR_1 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+POWER_RAIL_COR_1: 10000 rects
+POWER_RAIL_COR_1: 20000 rects
+Warning: cell <GF_NI_COR_BASE> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag/GF_NI_COR_BASE.mag is not writeable
+Cell GF_NI_COR_BASE read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+Processing timestamp mismatches.
+Timestamp mismatches found in these cells: GF_NI_COR_BASE.
+Done!
