@@ -113,28 +113,24 @@ module gf180mcu_padframe (
     output wire SDI_in,
     output wire SDI_zero,
     output wire SDI_one,
-    input  wire SDI_oe,
     input  wire SDI_pullup,
     input  wire SDI_pulldown,
 
     output wire CSB_in,
     output wire CSB_zero,
     output wire CSB_one,
-    input  wire CSB_oe,
     input  wire CSB_pullup,
     input  wire CSB_pulldown,
 
     output wire SCK_in,
     output wire SCK_zero,
     output wire SCK_one,
-    input  wire SCK_oe,
     input  wire SCK_pullup,
     input  wire SCK_pulldown,
 
     output wire clk_in,
     output wire clk_zero,
     output wire clk_one,
-    input  wire clk_oe,
     input  wire clk_pullup,
     input  wire clk_pulldown
 );
