@@ -60,6 +60,22 @@ help:
 check:					## report out-of-date derived views
 	@./scripts/check_staleness.py
 
+# Magic cells whose `use' lines record a child timestamp that differs from
+# the child file.  Magic then prints "Timestamp mismatches found in these
+# cells" while reading, and the first named `instance list abutment' after
+# it returns an empty string --- which is how `make padframe' died with
+# `can't use empty string as operand of "-"'.  See scripts/check_timestamps.py.
+#	make check-timestamps               list them (exit 1 if there are any)
+#	make check-timestamps TSV=out.tsv   also write the list as TSV
+#	make resave-stale                   re-save the harness's own stale cells
+#	                                    (needs magic;  DIRS="dir ..." to name others)
+.PHONY: check-timestamps resave-stale
+check-timestamps:			## list Magic cells with stale child timestamps
+	@./scripts/check_timestamps.py $(if $(TSV),--tsv $(TSV))
+
+resave-stale:				## re-save stale cells in magic/ (or DIRS=...)
+	./scripts/resave_stale_parents.sh $(DIRS)
+
 # ---------------------------------------------------------------------
 # Setup  (README 1-3)
 
