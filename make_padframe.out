@@ -376,16 +376,16 @@ Cell font_4D read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mc
 Scaled magic input cell font_4D geometry by factor of 2
 Cell font_4B read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_alpha_small/mag
 Scaled magic input cell font_4B geometry by factor of 2
-Cell alpha_1 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_alpha_large/mag
-Scaled magic input cell alpha_1 geometry by factor of 12
 Cell alpha_2 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_alpha_large/mag
 Scaled magic input cell alpha_2 geometry by factor of 12
 Cell alpha_0 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_alpha_large/mag
 Scaled magic input cell alpha_0 geometry by factor of 12
+Cell alpha_6 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_alpha_large/mag
+Scaled magic input cell alpha_6 geometry by factor of 12
 Cell alpha_9 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_alpha_large/mag
 Scaled magic input cell alpha_9 geometry by factor of 12
-Cell alpha_5 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_alpha_large/mag
-Scaled magic input cell alpha_5 geometry by factor of 12
+Cell alpha_8 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_alpha_large/mag
+Scaled magic input cell alpha_8 geometry by factor of 12
 Cell font_68 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_alpha_small/mag
 Scaled magic input cell font_68 geometry by factor of 2
 Cell font_54 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_alpha_small/mag

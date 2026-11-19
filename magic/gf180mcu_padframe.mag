@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1795059123
+timestamp 1795063851
 << checkpaint >>
 rect 47000 1002903 61840 1014973
 rect 62000 1004600 85010 1012000
@@ -752,10 +752,13 @@ rect 400 568900 12400 580900
 rect 763600 568900 775600 580900
 rect 400 534900 12400 546900
 rect 763600 534900 775600 546900
+rect 400 500900 12400 512900
 rect 70270 499672 70870 514128
 rect 705130 499672 705730 514128
 rect 763600 500900 775600 512900
 rect 400 466900 12400 478900
+rect 763600 466900 775600 478900
+rect 400 432900 12400 444900
 rect 763600 432900 775600 444900
 rect 400 398900 12400 410900
 rect 763600 398900 775600 410900
@@ -5525,20 +5528,20 @@ flabel metal5 763600 398900 775600 410900 0 FreeSans 32000 0 0 0 s3_an[1]
 port 23 nsew
 flabel metal5 763600 432900 775600 444900 0 FreeSans 32000 0 0 0 s4_an[0]
 port 24 nsew
-flabel metal5 763600 500900 775600 512900 0 FreeSans 32000 0 0 0 vss3v3
+flabel metal5 763600 466900 775600 478900 0 FreeSans 32000 0 0 0 s4_an[1]
 port 25 nsew
-flabel metal5 763600 534900 775600 546900 0 FreeSans 32000 0 0 0 s5_an[0]
+flabel metal5 763600 500900 775600 512900 0 FreeSans 32000 0 0 0 vss3v3
 port 26 nsew
-flabel metal5 763600 568900 775600 580900 0 FreeSans 32000 0 0 0 s5_an[1]
+flabel metal5 763600 534900 775600 546900 0 FreeSans 32000 0 0 0 s5_an[0]
 port 27 nsew
-flabel metal5 763600 568900 775600 580900 0 FreeSans 32000 0 0 0 s5_an[2]
+flabel metal5 763600 568900 775600 580900 0 FreeSans 32000 0 0 0 s5_an[1]
 port 28 nsew
 flabel metal5 763600 602900 775600 614900 0 FreeSans 32000 0 0 0 s6_an[0]
 port 29 nsew
 flabel metal5 763600 636900 775600 648900 0 FreeSans 32000 0 0 0 s6_an[1]
 port 30 nsew
 flabel metal5 763600 670900 775600 682900 0 FreeSans 32000 0 0 0 vss3v3
-port 25 nsew
+port 26 nsew
 flabel metal5 763600 704900 775600 716900 0 FreeSans 32000 0 0 0 s7_an[0]
 port 31 nsew
 flabel metal5 763600 738900 775600 750900 0 FreeSans 32000 0 0 0 s7_an[1]
@@ -5590,13 +5593,15 @@ port 46 nsew
 flabel metal5 400 840900 12400 852900 0 FreeSans 32000 0 0 0 s10_an[2]
 port 47 nsew
 flabel metal5 400 806900 12400 818900 0 FreeSans 32000 0 0 0 vss3v3
-port 25 nsew
+port 26 nsew
 flabel metal5 400 772900 12400 784900 0 FreeSans 32000 0 0 0 s11_an[0]
 port 48 nsew
 flabel metal5 400 738900 12400 750900 0 FreeSans 32000 0 0 0 s12_an[0]
 port 49 nsew
 flabel metal5 400 704900 12400 716900 0 FreeSans 32000 0 0 0 s12_an[1]
 port 50 nsew
+flabel metal5 400 670900 12400 682900 0 FreeSans 32000 0 0 0 vss5v0
+port 21 nsew
 flabel metal5 400 636900 12400 648900 0 FreeSans 32000 0 0 0 s13_an[0]
 port 51 nsew
 flabel metal5 400 602900 12400 614900 0 FreeSans 32000 0 0 0 s13_an[1]
@@ -5605,18 +5610,18 @@ flabel metal5 400 568900 12400 580900 0 FreeSans 32000 0 0 0 s14_an[0]
 port 53 nsew
 flabel metal5 400 534900 12400 546900 0 FreeSans 32000 0 0 0 s14_an[1]
 port 54 nsew
-flabel metal5 400 534900 12400 546900 0 FreeSans 32000 0 0 0 s14_an[2]
-port 55 nsew
-flabel metal5 400 670900 12400 682900 0 FreeSans 32000 0 0 0 vss5v0
+flabel metal5 400 500900 12400 512900 0 FreeSans 32000 0 0 0 vss5v0
 port 21 nsew
 flabel metal5 400 466900 12400 478900 0 FreeSans 32000 0 0 0 s15_an[0]
+port 55 nsew
+flabel metal5 400 432900 12400 444900 0 FreeSans 32000 0 0 0 s15_an[1]
 port 56 nsew
 flabel metal5 400 398900 12400 410900 0 FreeSans 32000 0 0 0 s16_an[0]
 port 57 nsew
 flabel metal5 400 364900 12400 376900 0 FreeSans 32000 0 0 0 s16_an[1]
 port 58 nsew
 flabel metal5 400 330900 12400 342900 0 FreeSans 32000 0 0 0 vss3v3
-port 25 nsew
+port 26 nsew
 flabel metal5 400 296900 12400 308900 0 FreeSans 32000 0 0 0 s17_an[0]
 port 59 nsew
 flabel metal5 400 262900 12400 274900 0 FreeSans 32000 0 0 0 s17_an[1]
@@ -5630,7 +5635,7 @@ port 16 nsew
 flabel metal5 400 126900 12400 138900 0 FreeSans 32000 0 0 0 vdd3v3
 port 16 nsew
 flabel metal5 400 92900 12400 104900 0 FreeSans 32000 0 0 0 vss3v3
-port 25 nsew
+port 26 nsew
 flabel metal2 111480 69952 111556 70752 0 FreeSans 480 90 0 0 SDO_out
 port 63 nsew
 flabel metal2 111772 69952 111848 70752 0 FreeSans 480 90 0 0 SDO_in
@@ -5886,11 +5891,11 @@ port 23 nsew
 flabel metal3 705200 434468 705600 443332 0 FreeSans 3200 90 0 0 s4_an[0]
 port 24 nsew
 flabel metal3 705200 468468 705600 477332 0 FreeSans 3200 90 0 0 s4_an[1]
-port 179 nsew
+port 25 nsew
 flabel metal3 705200 536468 705600 545332 0 FreeSans 3200 90 0 0 s5_an[0]
-port 26 nsew
-flabel metal3 705200 570468 705600 579332 0 FreeSans 3200 90 0 0 s5_an[1]
 port 27 nsew
+flabel metal3 705200 570468 705600 579332 0 FreeSans 3200 90 0 0 s5_an[1]
+port 28 nsew
 flabel metal3 705200 604468 705600 613332 0 FreeSans 3200 90 0 0 s6_an[0]
 port 29 nsew
 flabel metal3 705200 638468 705600 647332 0 FreeSans 3200 90 0 0 s6_an[1]
@@ -5928,9 +5933,9 @@ port 53 nsew
 flabel metal3 70200 536468 70600 545332 0 FreeSans 3200 90 0 0 s14_an[1]
 port 54 nsew
 flabel metal3 70200 468468 70600 477332 0 FreeSans 3200 90 0 0 s15_an[0]
-port 56 nsew
+port 55 nsew
 flabel metal3 70200 434468 70600 443332 0 FreeSans 3200 90 0 0 s15_an[1]
-port 180 nsew
+port 56 nsew
 flabel metal3 70200 400468 70600 409332 0 FreeSans 3200 90 0 0 s16_an[0]
 port 57 nsew
 flabel metal3 70200 366468 70600 375332 0 FreeSans 3200 90 0 0 s16_an[1]
@@ -5944,73 +5949,73 @@ port 61 nsew
 flabel metal3 70200 196468 70600 205332 0 FreeSans 3200 90 0 0 s18_an[1]
 port 62 nsew
 flabel metal2 113346 70000 113422 70800 0 FreeSans 480 90 0 0 SDO_zero
-port 181 nsew
+port 179 nsew
 flabel metal2 113158 70000 113234 70800 0 FreeSans 480 90 0 0 SDO_one
-port 182 nsew
+port 180 nsew
 flabel metal2 153746 70000 153822 70800 0 FreeSans 480 90 0 0 SDI_zero
-port 183 nsew
+port 181 nsew
 flabel metal2 153558 70000 153634 70800 0 FreeSans 480 90 0 0 SDI_one
-port 184 nsew
+port 182 nsew
 flabel metal2 194146 70000 194222 70800 0 FreeSans 480 90 0 0 CSB_zero
-port 185 nsew
+port 183 nsew
 flabel metal2 193958 70000 194034 70800 0 FreeSans 480 90 0 0 CSB_one
-port 186 nsew
+port 184 nsew
 flabel metal2 234546 70000 234622 70800 0 FreeSans 480 90 0 0 SCK_zero
-port 187 nsew
+port 185 nsew
 flabel metal2 234358 70000 234434 70800 0 FreeSans 480 90 0 0 SCK_one
-port 188 nsew
+port 186 nsew
 flabel metal2 274946 70000 275022 70800 0 FreeSans 480 90 0 0 clk_zero
-port 189 nsew
+port 187 nsew
 flabel metal2 274758 70000 274834 70800 0 FreeSans 480 90 0 0 clk_one
-port 190 nsew
+port 188 nsew
 flabel metal2 396146 70000 396222 70800 0 FreeSans 480 90 0 0 gpio_0_zero
-port 191 nsew
+port 189 nsew
 flabel metal2 395958 70000 396034 70800 0 FreeSans 480 90 0 0 gpio_0_one
-port 192 nsew
+port 190 nsew
 flabel metal2 436546 70000 436622 70800 0 FreeSans 480 90 0 0 gpio_1_zero
-port 193 nsew
+port 191 nsew
 flabel metal2 436358 70000 436434 70800 0 FreeSans 480 90 0 0 gpio_1_one
-port 194 nsew
+port 192 nsew
 flabel metal2 476946 70000 477022 70800 0 FreeSans 480 90 0 0 gpio_2_zero
-port 195 nsew
+port 193 nsew
 flabel metal2 476758 70000 476834 70800 0 FreeSans 480 90 0 0 gpio_2_one
-port 196 nsew
+port 194 nsew
 flabel metal2 517346 70000 517422 70800 0 FreeSans 480 90 0 0 gpio_3_zero
-port 197 nsew
+port 195 nsew
 flabel metal2 517158 70000 517234 70800 0 FreeSans 480 90 0 0 gpio_3_one
-port 198 nsew
+port 196 nsew
 flabel metal2 557746 70000 557822 70800 0 FreeSans 480 90 0 0 gpio_4_zero
-port 199 nsew
+port 197 nsew
 flabel metal2 557558 70000 557634 70800 0 FreeSans 480 90 0 0 gpio_4_one
-port 200 nsew
+port 198 nsew
 flabel metal2 598146 70000 598222 70800 0 FreeSans 480 90 0 0 gpio_5_zero
-port 201 nsew
+port 199 nsew
 flabel metal2 597958 70000 598034 70800 0 FreeSans 480 90 0 0 gpio_5_one
-port 202 nsew
+port 200 nsew
 flabel metal2 638546 70000 638622 70800 0 FreeSans 480 90 0 0 gpio_6_zero
-port 203 nsew
+port 201 nsew
 flabel metal2 638358 70000 638434 70800 0 FreeSans 480 90 0 0 gpio_6_one
-port 204 nsew
+port 202 nsew
 flabel metal2 678946 70000 679022 70800 0 FreeSans 480 90 0 0 gpio_7_zero
-port 205 nsew
+port 203 nsew
 flabel metal2 678758 70000 678834 70800 0 FreeSans 480 90 0 0 gpio_7_one
-port 206 nsew
+port 204 nsew
 flabel metal2 638978 943200 639054 944000 0 FreeSans 480 90 0 0 gpio_8_zero
-port 207 nsew
+port 205 nsew
 flabel metal2 639166 943200 639242 944000 0 FreeSans 480 90 0 0 gpio_8_one
-port 208 nsew
+port 206 nsew
 flabel metal2 598578 943200 598654 944000 0 FreeSans 480 90 0 0 gpio_9_zero
-port 209 nsew
+port 207 nsew
 flabel metal2 598766 943200 598842 944000 0 FreeSans 480 90 0 0 gpio_9_one
-port 210 nsew
+port 208 nsew
 flabel metal2 558178 943200 558254 944000 0 FreeSans 480 90 0 0 gpio_10_zero
-port 211 nsew
+port 209 nsew
 flabel metal2 558366 943200 558442 944000 0 FreeSans 480 90 0 0 gpio_10_one
-port 212 nsew
+port 210 nsew
 flabel metal2 517778 943200 517854 944000 0 FreeSans 480 90 0 0 gpio_11_zero
-port 213 nsew
+port 211 nsew
 flabel metal2 517966 943200 518042 944000 0 FreeSans 480 90 0 0 gpio_11_one
-port 214 nsew
+port 212 nsew
 flabel metal4 299872 70200 314328 70800 0 FreeSans 4800 0 0 0 vddd
 port 6 nsew
 flabel metal4 340272 70200 354728 70800 0 FreeSans 4800 0 0 0 vddd
@@ -6024,9 +6029,9 @@ port 16 nsew
 flabel metal5 705130 329672 705730 344128 0 FreeSans 4800 270 0 0 vss5v0
 port 21 nsew
 flabel metal5 705130 499672 705730 514128 0 FreeSans 4800 270 0 0 vss3v3
-port 25 nsew
+port 26 nsew
 flabel metal5 705130 669672 705730 684128 0 FreeSans 4800 270 0 0 vss3v3
-port 25 nsew
+port 26 nsew
 flabel metal5 705130 805672 705730 820128 0 FreeSans 4800 270 0 0 vss5v0
 port 21 nsew
 flabel metal4 663472 943200 677928 943800 0 FreeSans 4800 0 0 0 vdd3v3
@@ -6044,19 +6049,19 @@ port 15 nsew
 flabel metal4 97872 943200 112328 943800 0 FreeSans 4800 0 0 0 vdd5v0
 port 15 nsew
 flabel metal5 70270 805672 70870 820128 0 FreeSans 4800 270 0 0 vss3v3
-port 25 nsew
+port 26 nsew
 flabel metal5 70270 669672 70870 684128 0 FreeSans 4800 270 0 0 vss5v0
 port 21 nsew
 flabel metal5 70270 499672 70870 514128 0 FreeSans 4800 270 0 0 vss5v0
 port 21 nsew
 flabel metal5 70270 329672 70870 344128 0 FreeSans 4800 270 0 0 vss3v3
-port 25 nsew
+port 26 nsew
 flabel metal5 70270 159672 70870 174128 0 FreeSans 4800 270 0 0 vdd3v3
 port 16 nsew
 flabel metal5 70270 125672 70870 140128 0 FreeSans 4800 270 0 0 vdd3v3
 port 16 nsew
 flabel metal5 70270 91672 70870 106128 0 FreeSans 4800 270 0 0 vss3v3
-port 25 nsew
+port 26 nsew
 << properties >>
 string FIXED_BBOX 0 0 776000 1014000
 << end >>
