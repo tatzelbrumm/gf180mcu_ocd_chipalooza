@@ -1,0 +1,741 @@
+
+##### 0. settings
+SRC_PDK=/foss/pdks/gf180mcuD
+IO_REPO=/foss/designs/gf180mcu_ocd_io
+IO_STACK=5lm
+OV=/foss/designs/pdk_overlay
+DESIGNS=/foss/designs
+EXTRA_LIBS=gf180mcu_as_sc_mcu7t3v3
+2026-11-19T01:54:05Z
+
+##### 1. preconditions
+ok: PDK, tech file, pad GDS and magic exist
+magic: 8.3.685
+pad repo commit: ref: refs/heads/main 6e0e354a78793339a4a004a6d9c08990d0eee3e4
+
+##### 2. pad GDS files to import (name, size, md5)
+gf180mcu_ocd_io__asig_5p0_5lm.gds.gz  1709026  26c7ee8cc7341dc812848ddee054ed49
+gf180mcu_ocd_io__bi_24t_5lm.gds.gz  1566559  71900cce319c4af2667cd44495cda5cb
+gf180mcu_ocd_io__bi_a_5lm.gds.gz  1601771  07acaef27af69f75919dd311b1d8f87e
+gf180mcu_ocd_io__bi_t_5lm.gds.gz  1601756  e5f9901d4d8998042f03ed3747c35302
+gf180mcu_ocd_io__brk2_5lm.gds.gz  16528  d63d03f3adb42f9428ede9b85d076365
+gf180mcu_ocd_io__brk5_5lm.gds.gz  19227  8518bfeaa9734f5c7cb583da5c199e8e
+gf180mcu_ocd_io__cor_5lm.gds.gz  5427206  179cc85d5a5d401d5a0f1d1c52234939
+gf180mcu_ocd_io__dvdd_5lm.gds.gz  1849746  1b9c916c1258d13b19b12c83774bf5bd
+gf180mcu_ocd_io__dvss_5lm.gds.gz  1828171  1440e927779dec3e7f1656d2bc25b628
+gf180mcu_ocd_io__fill10_5lm.gds.gz  120965  bae9e6fc62f3a69c9e8e23da32068efb
+gf180mcu_ocd_io__fill1_5lm.gds.gz  20885  0bbb56f162291a2f161aaef49de298f4
+gf180mcu_ocd_io__fill5_5lm.gds.gz  99653  72ab42d6dc5e6159516198c6079f9820
+gf180mcu_ocd_io__fillnc_5lm.gds.gz  1435  27dd85e6791276e05d334c93a01165c1
+gf180mcu_ocd_io__in_c_5lm.gds.gz  1600722  a9710bbd3a776d2155d818a58f175a8b
+gf180mcu_ocd_io__in_s_5lm.gds.gz  1600737  e9b35826b2f46c2533adb90c991cbe8a
+gf180mcu_ocd_io__vdd_5lm.gds.gz  1677766  94272b46d3588124b73d69d0ef62b04d
+gf180mcu_ocd_io__vss_5lm.gds.gz  1698078  c6ae1242bb9579233b2184c25a787f89
+
+##### 3. build the overlay (links, plus pad views generated from GDS)
+$ mkdir -p /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io
+$ (cd /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag.new && magic -dnull -noconsole -rcfile /dev/null import.tcl < /dev/null)
+(magic exit status 0; log: /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/import.log)
+
+real	0m13.771s
+user	0m13.526s
+sys	0m0.230s
+generated 107 .mag files in /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+linked    gf180mcu_as_sc_mcu7t3v3 -> /foss/designs/gf180mcu_as_sc_mcu7t3v3/pdk/libs.ref/gf180mcu_as_sc_mcu7t3v3
+linked    gf180mcu_ocd_alpha_small/mag -> /foss/designs/gf180mcu_ocd_alpha/small/magic
+linked    gf180mcu_ocd_alpha_large/mag -> /foss/designs/gf180mcu_ocd_alpha/large/magic
+linked    gf180mcu_ocd_alpha_misc/mag -> /foss/designs/gf180mcu_ocd_alpha/misc/magic
+DUPLICATE name test.mag: kept /foss/designs/gf180mcu_ocd_ip_sram/cells/gf180mcu_ocd_ip_sram__sram256x8m8wm1/magic/test.mag, skipped /foss/designs/gf180mcu_ocd_ip_sram/cells/gf180mcu_ocd_ip_sram__sram512x8m8wm1/magic/test.mag
+DUPLICATE name test.mag: kept /foss/designs/gf180mcu_ocd_ip_sram/cells/gf180mcu_ocd_ip_sram__sram256x8m8wm1/magic/test.mag, skipped /foss/designs/gf180mcu_ocd_ip_sram/cells/gf180mcu_ocd_ip_sram__sram64x8m8wm1/magic/test.mag
+linked    gf180mcu_ocd_ip_sram/mag: 2979 .mag files from /foss/designs/gf180mcu_ocd_ip_sram/cells/*/magic (2 duplicate names skipped)
+done
+$ ls -la /foss/designs/pdk_overlay /foss/designs/pdk_overlay/gf180mcuD /foss/designs/pdk_overlay/gf180mcuD/libs.ref /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io
+/foss/designs/pdk_overlay:
+total 12
+drwxr-xr-x  3 1000 1000 4096 Nov 17 22:41 .
+drwxrwxr-x 62 1000 1000 4096 Nov 19 01:53 ..
+drwxr-xr-x  3 1000 1000 4096 Nov 19 02:54 gf180mcuD
+
+/foss/designs/pdk_overlay/gf180mcuD:
+total 12
+drwxr-xr-x 3 1000 1000 4096 Nov 19 02:54 .
+drwxr-xr-x 3 1000 1000 4096 Nov 17 22:41 ..
+lrwxrwxrwx 1 1000 1000   28 Nov 19 02:54 .config -> /foss/pdks/gf180mcuD/.config
+drwxr-xr-x 7 1000 1000 4096 Nov 19 02:54 libs.ref
+lrwxrwxrwx 1 1000 1000   30 Nov 19 02:54 libs.tech -> /foss/pdks/gf180mcuD/libs.tech
+lrwxrwxrwx 1 1000 1000   28 Nov 19 02:54 SOURCES -> /foss/pdks/gf180mcuD/SOURCES
+
+/foss/designs/pdk_overlay/gf180mcuD/libs.ref:
+total 32
+drwxr-xr-x 7 1000 1000 4096 Nov 19 02:54 .
+drwxr-xr-x 3 1000 1000 4096 Nov 19 02:54 ..
+lrwxrwxrwx 1 1000 1000   74 Nov 19 02:54 gf180mcu_as_sc_mcu7t3v3 -> /foss/designs/gf180mcu_as_sc_mcu7t3v3/pdk/libs.ref/gf180mcu_as_sc_mcu7t3v3
+lrwxrwxrwx 1 1000 1000   44 Nov 19 02:54 gf180mcu_fd_io -> /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io
+lrwxrwxrwx 1 1000 1000   49 Nov 19 02:54 gf180mcu_fd_ip_sram -> /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_ip_sram
+lrwxrwxrwx 1 1000 1000   44 Nov 19 02:54 gf180mcu_fd_pr -> /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_pr
+lrwxrwxrwx 1 1000 1000   53 Nov 19 02:54 gf180mcu_fd_sc_mcu7t5v0 -> /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0
+lrwxrwxrwx 1 1000 1000   53 Nov 19 02:54 gf180mcu_fd_sc_mcu9t5v0 -> /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0
+drwxr-xr-x 2 1000 1000 4096 Nov 19 02:54 gf180mcu_ocd_alpha_large
+drwxr-xr-x 2 1000 1000 4096 Nov 19 02:54 gf180mcu_ocd_alpha_misc
+drwxr-xr-x 2 1000 1000 4096 Nov 19 02:54 gf180mcu_ocd_alpha_small
+drwxr-xr-x 3 1000 1000 4096 Nov 19 02:54 gf180mcu_ocd_io
+drwxr-xr-x 3 1000 1000 4096 Nov 18 02:41 gf180mcu_ocd_ip_sram
+
+/foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io:
+total 44
+drwxr-xr-x 3 1000 1000  4096 Nov 19 02:54 .
+drwxr-xr-x 7 1000 1000  4096 Nov 19 02:54 ..
+-rw-r--r-- 1 1000 1000 29298 Nov 19 02:54 import.log
+drwxr-xr-x 2 1000 1000  4096 Nov 19 02:54 mag
+
+##### 4. do the pad cells that gen_padframe.tcl places resolve?
+found    asig_5p0
+found    bi_24t
+found    in_c
+found    vdd
+found    vss
+found    dvdd
+found    dvss
+found    cor
+found    brk5
+found    fill1
+found    fill5
+found    fill10
+--- extra libraries: Magic technology named in each .mag file (first 'tech' line)
+gf180mcu_as_sc_mcu7t3v3: 107 .mag files
+    107 tech gf180mcuD
+found    as_sc tap_2
+found    gf180mcu_ocd_alpha_small/mag/font_76
+found    gf180mcu_ocd_alpha_large/mag/alpha_0
+found    gf180mcu_ocd_alpha_misc/mag/open_source
+found    gf180mcu_ocd_ip_sram/mag/gf180mcu_ocd_ip_sram__sram1024x8m8wm1
+--- technology named in the alpha and sram .mag files (first 'tech' line of each file)
+gf180mcu_ocd_alpha_small: 96 .mag files
+     96 tech gf180mcuD
+gf180mcu_ocd_alpha_large: 16 .mag files
+     16 tech gf180mcuD
+gf180mcu_ocd_alpha_misc: 1 .mag files
+      1 tech gf180mcuD
+gf180mcu_ocd_ip_sram: 2979 .mag files
+   2979 tech gf180mcuD
+
+##### 5. Magic test: load those cells through the overlay (reads only, never saves)
+PDK_ROOT=/foss/designs/pdk_overlay  rcfile=/foss/designs/pdk_overlay/gf180mcuD/libs.tech/magic/gf180mcuD.magicrc
+
+Magic 8.3 revision 685 - Compiled on Thu Oct 15 02:29:39 PM CEST 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology gf180mcuD ...
+10 Magic internal units = 1 Lambda
+Input style import: scaleFactor=10, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    obsactive mvobsactive filldiff fillpoly m1hole obsm1 fillm1 obsv1 m2hole obsm2 fillm2 obsv2 m3hole obsm3 fillm3 m4hole obsm4 fillm4 m5hole obsm5 fillm5 glass fillblock lvstext obscomment 
+Scaled tech values by 10 / 1 to match internal grid scaling
+Loading gf180mcuD Device Generator Menu ...
+Using technology "gf180mcuD", version 1.0.588-62-g1689ac3
+Cell gf180mcu_as_sc_mcu7t3v3__tap_2 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_as_sc_mcu7t3v3/mag
+LOADED gf180mcu_as_sc_mcu7t3v3__tap_2: 0 subcell(s)
+Cell font_76 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_alpha_small/mag
+Scaled magic input cell font_76 geometry by factor of 2
+LOADED font_76: 0 subcell(s)
+Cell alpha_0 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_alpha_large/mag
+Scaled magic input cell alpha_0 geometry by factor of 12
+LOADED alpha_0: 0 subcell(s)
+Cell open_source read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_alpha_misc/mag
+Scaled magic input cell open_source geometry by factor of 10
+LOADED open_source: 0 subcell(s)
+Warning: cell <gf180mcu_ocd_ip_sram__sram1024x8m8wm1> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/gf180mcu_ocd_ip_sram__sram1024x8m8wm1.mag is not writeable
+Cell gf180mcu_ocd_ip_sram__sram1024x8m8wm1 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+LOADED gf180mcu_ocd_ip_sram__sram1024x8m8wm1: 44 subcell(s)
+Cell gf180mcu_ocd_io__asig_5p0 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+LOADED gf180mcu_ocd_io__asig_5p0: 2 subcell(s)
+Cell gf180mcu_ocd_io__bi_24t read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+LOADED gf180mcu_ocd_io__bi_24t: 2 subcell(s)
+Cell gf180mcu_ocd_io__in_c read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+LOADED gf180mcu_ocd_io__in_c: 2 subcell(s)
+Cell gf180mcu_ocd_io__vdd read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+LOADED gf180mcu_ocd_io__vdd: 2 subcell(s)
+Cell gf180mcu_ocd_io__vss read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+LOADED gf180mcu_ocd_io__vss: 2 subcell(s)
+Cell gf180mcu_ocd_io__dvdd read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+LOADED gf180mcu_ocd_io__dvdd: 2 subcell(s)
+Cell gf180mcu_ocd_io__dvss read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+LOADED gf180mcu_ocd_io__dvss: 2 subcell(s)
+Cell gf180mcu_ocd_io__cor read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+LOADED gf180mcu_ocd_io__cor: 2 subcell(s)
+Cell gf180mcu_ocd_io__brk5 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+LOADED gf180mcu_ocd_io__brk5: 1 subcell(s)
+Cell gf180mcu_ocd_io__fill1 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+LOADED gf180mcu_ocd_io__fill1: 1 subcell(s)
+Cell gf180mcu_ocd_io__fill5 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+gf180mcu_ocd_io__fill5: 10000 rects
+LOADED gf180mcu_ocd_io__fill5: 1 subcell(s)
+Cell gf180mcu_ocd_io__fill10 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+gf180mcu_ocd_io__fill10: 10000 rects
+LOADED gf180mcu_ocd_io__fill10: 1 subcell(s)
+Warning: cell <M3_M24310591302015_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M3_M24310591302015_3v1024x8m81.mag is not writeable
+Cell M3_M24310591302015_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M2_M1431059130200_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M2_M1431059130200_3v1024x8m81.mag is not writeable
+Cell M2_M1431059130200_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Cell GF_NI_ASIG_5P0_BASE read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+GF_NI_ASIG_5P0_BASE: 10000 rects
+GF_NI_ASIG_5P0_BASE: 20000 rects
+GF_NI_ASIG_5P0_BASE: 30000 rects
+GF_NI_ASIG_5P0_BASE: 40000 rects
+GF_NI_ASIG_5P0_BASE: 50000 rects
+GF_NI_ASIG_5P0_BASE: 60000 rects
+GF_NI_ASIG_5P0_BASE: 70000 rects
+GF_NI_ASIG_5P0_BASE: 80000 rects
+Warning: cell <M3_M24310591302013_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M3_M24310591302013_3v1024x8m81.mag is not writeable
+Cell M3_M24310591302013_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M3_M24310591302011_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M3_M24310591302011_3v1024x8m81.mag is not writeable
+Cell M3_M24310591302011_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <m2m3_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/m2m3_3v1024x8m81.mag is not writeable
+Cell m2m3_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Cell GF_NI_FILL5_0 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+Warning: cell <lcol4_1024_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/lcol4_1024_3v1024x8m81.mag is not writeable
+Cell lcol4_1024_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <rcol4_1024_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/rcol4_1024_3v1024x8m81.mag is not writeable
+Cell rcol4_1024_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <rarray4_1024_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/rarray4_1024_3v1024x8m81.mag is not writeable
+Cell rarray4_1024_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Cell GF_NI_FILL5_1 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+Warning: cell <G_ring_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/G_ring_3v1024x8m81.mag is not writeable
+Cell G_ring_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M3_M24310591302023_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M3_M24310591302023_3v1024x8m81.mag is not writeable
+Cell M3_M24310591302023_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <via2_x2_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/via2_x2_3v1024x8m81.mag is not writeable
+Cell via2_x2_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M3_M24310591302022_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M3_M24310591302022_3v1024x8m81.mag is not writeable
+Cell M3_M24310591302022_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Cell 5LM_METAL_RAIL_PAD_60 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+Cell Bondpad_5LM read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+Bondpad_5LM: 10000 rects
+Bondpad_5LM: 20000 rects
+Bondpad_5LM: 30000 rects
+Bondpad_5LM: 40000 rects
+Cell GF_NI_IN_C_BASE read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+GF_NI_IN_C_BASE: 10000 rects
+GF_NI_IN_C_BASE: 20000 rects
+Cell comp018green_out_predrv read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+Cell comp018green_esd_cdm read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+Warning: cell <M3_M2$$201248812_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M3_M2$$201248812_3v1024x8m81.mag is not writeable
+Cell M3_M2$$201248812_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Cell POWER_RAIL_COR read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+POWER_RAIL_COR: 10000 rects
+POWER_RAIL_COR: 20000 rects
+POWER_RAIL_COR: 30000 rects
+POWER_RAIL_COR: 40000 rects
+POWER_RAIL_COR: 50000 rects
+POWER_RAIL_COR: 60000 rects
+POWER_RAIL_COR: 70000 rects
+POWER_RAIL_COR: 80000 rects
+POWER_RAIL_COR: 90000 rects
+POWER_RAIL_COR: 100000 rects
+POWER_RAIL_COR: 110000 rects
+POWER_RAIL_COR: 120000 rects
+POWER_RAIL_COR: 130000 rects
+POWER_RAIL_COR: 140000 rects
+POWER_RAIL_COR: 150000 rects
+POWER_RAIL_COR: 160000 rects
+POWER_RAIL_COR: 170000 rects
+POWER_RAIL_COR: 180000 rects
+POWER_RAIL_COR: 190000 rects
+POWER_RAIL_COR: 200000 rects
+POWER_RAIL_COR: 210000 rects
+POWER_RAIL_COR: 220000 rects
+POWER_RAIL_COR: 230000 rects
+POWER_RAIL_COR: 240000 rects
+POWER_RAIL_COR: 250000 rects
+POWER_RAIL_COR: 260000 rects
+POWER_RAIL_COR: 270000 rects
+POWER_RAIL_COR: 280000 rects
+POWER_RAIL_COR: 290000 rects
+POWER_RAIL_COR: 300000 rects
+POWER_RAIL_COR: 310000 rects
+POWER_RAIL_COR: 320000 rects
+POWER_RAIL_COR: 330000 rects
+POWER_RAIL_COR: 340000 rects
+POWER_RAIL_COR: 350000 rects
+POWER_RAIL_COR: 360000 rects
+POWER_RAIL_COR: 370000 rects
+POWER_RAIL_COR: 380000 rects
+POWER_RAIL_COR: 390000 rects
+POWER_RAIL_COR: 400000 rects
+POWER_RAIL_COR: 410000 rects
+POWER_RAIL_COR: 420000 rects
+POWER_RAIL_COR: 430000 rects
+POWER_RAIL_COR: 440000 rects
+POWER_RAIL_COR: 450000 rects
+Warning: cell <M3_M2431059130209_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M3_M2431059130209_3v1024x8m81.mag is not writeable
+Cell M3_M2431059130209_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Cell POWER_RAIL_COR_0 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+POWER_RAIL_COR_0: 10000 rects
+POWER_RAIL_COR_0: 20000 rects
+POWER_RAIL_COR_0: 30000 rects
+POWER_RAIL_COR_0: 40000 rects
+POWER_RAIL_COR_0: 50000 rects
+POWER_RAIL_COR_0: 60000 rects
+POWER_RAIL_COR_0: 70000 rects
+POWER_RAIL_COR_0: 80000 rects
+POWER_RAIL_COR_0: 90000 rects
+POWER_RAIL_COR_0: 100000 rects
+POWER_RAIL_COR_0: 110000 rects
+POWER_RAIL_COR_0: 120000 rects
+POWER_RAIL_COR_0: 130000 rects
+POWER_RAIL_COR_0: 140000 rects
+POWER_RAIL_COR_0: 150000 rects
+POWER_RAIL_COR_0: 160000 rects
+POWER_RAIL_COR_0: 170000 rects
+POWER_RAIL_COR_0: 180000 rects
+POWER_RAIL_COR_0: 190000 rects
+POWER_RAIL_COR_0: 200000 rects
+POWER_RAIL_COR_0: 210000 rects
+POWER_RAIL_COR_0: 220000 rects
+POWER_RAIL_COR_0: 230000 rects
+POWER_RAIL_COR_0: 240000 rects
+POWER_RAIL_COR_0: 250000 rects
+POWER_RAIL_COR_0: 260000 rects
+POWER_RAIL_COR_0: 270000 rects
+POWER_RAIL_COR_0: 280000 rects
+POWER_RAIL_COR_0: 290000 rects
+POWER_RAIL_COR_0: 300000 rects
+POWER_RAIL_COR_0: 310000 rects
+POWER_RAIL_COR_0: 320000 rects
+POWER_RAIL_COR_0: 330000 rects
+POWER_RAIL_COR_0: 340000 rects
+POWER_RAIL_COR_0: 350000 rects
+POWER_RAIL_COR_0: 360000 rects
+POWER_RAIL_COR_0: 370000 rects
+POWER_RAIL_COR_0: 380000 rects
+POWER_RAIL_COR_0: 390000 rects
+POWER_RAIL_COR_0: 400000 rects
+POWER_RAIL_COR_0: 410000 rects
+POWER_RAIL_COR_0: 420000 rects
+POWER_RAIL_COR_0: 430000 rects
+POWER_RAIL_COR_0: 440000 rects
+POWER_RAIL_COR_0: 450000 rects
+Warning: cell <M3_M2$$201249836_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M3_M2$$201249836_3v1024x8m81.mag is not writeable
+Cell M3_M2$$201249836_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <xdec128_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/xdec128_3v1024x8m81.mag is not writeable
+Cell xdec128_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M2_M1$$204140588_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M2_M1$$204140588_3v1024x8m81.mag is not writeable
+Cell M2_M1$$204140588_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Cell POWER_RAIL_COR_1 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+POWER_RAIL_COR_1: 10000 rects
+POWER_RAIL_COR_1: 20000 rects
+POWER_RAIL_COR_1: 30000 rects
+Warning: cell <saout_m2_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/saout_m2_3v1024x8m81.mag is not writeable
+Cell saout_m2_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Cell GF_NI_FILL1_0 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+Warning: cell <M3_M2431059130207_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M3_M2431059130207_3v1024x8m81.mag is not writeable
+Cell M3_M2431059130207_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Cell GF_NI_FILL1_1 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+Cell GF_NI_VSS_BASE read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+GF_NI_VSS_BASE: 10000 rects
+Warning: cell <M3_M2$$43370540_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M3_M2$$43370540_3v1024x8m81.mag is not writeable
+Cell M3_M2$$43370540_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Scaled magic input cell M3_M2$$43370540_3v1024x8m81 geometry by factor of 2
+Warning: cell <M1_PSUB4310591302046_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M1_PSUB4310591302046_3v1024x8m81.mag is not writeable
+Cell M1_PSUB4310591302046_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M3_M2431059130206_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M3_M2431059130206_3v1024x8m81.mag is not writeable
+Cell M3_M2431059130206_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M2_M1$$204138540_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M2_M1$$204138540_3v1024x8m81.mag is not writeable
+Cell M2_M1$$204138540_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M1_POLY2$$204150828_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M1_POLY2$$204150828_3v1024x8m81.mag is not writeable
+Cell M1_POLY2$$204150828_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M1_PSUB4310591302045_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M1_PSUB4310591302045_3v1024x8m81.mag is not writeable
+Cell M1_PSUB4310591302045_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M3_M2431059130205_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M3_M2431059130205_3v1024x8m81.mag is not writeable
+Cell M3_M2431059130205_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <xdec32_468_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/xdec32_468_3v1024x8m81.mag is not writeable
+Cell xdec32_468_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M1_PSUB4310591302044_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M1_PSUB4310591302044_3v1024x8m81.mag is not writeable
+Cell M1_PSUB4310591302044_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <wen_wm1_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/wen_wm1_3v1024x8m81.mag is not writeable
+Cell wen_wm1_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <nmos_5p043105913020111_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/nmos_5p043105913020111_3v1024x8m81.mag is not writeable
+Cell nmos_5p043105913020111_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <nmos_1p2$$202594348_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/nmos_1p2$$202594348_3v1024x8m81.mag is not writeable
+Cell nmos_1p2$$202594348_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <nmos_5p04310591302099_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/nmos_5p04310591302099_3v1024x8m81.mag is not writeable
+Cell nmos_5p04310591302099_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <pmos_1p2$$202586156_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/pmos_1p2$$202586156_3v1024x8m81.mag is not writeable
+Cell pmos_1p2$$202586156_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <pmos_5p04310591302014_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/pmos_5p04310591302014_3v1024x8m81.mag is not writeable
+Cell pmos_5p04310591302014_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M2_M1$$43374636_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M2_M1$$43374636_3v1024x8m81.mag is not writeable
+Cell M2_M1$$43374636_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Cell comp018green_out_sigbuf_a read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+Warning: cell <M3_M24310591302026_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M3_M24310591302026_3v1024x8m81.mag is not writeable
+Cell M3_M24310591302026_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M3_M2$$204143660_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M3_M2$$204143660_3v1024x8m81.mag is not writeable
+Cell M3_M2$$204143660_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M3_M2$$204144684_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M3_M2$$204144684_3v1024x8m81.mag is not writeable
+Cell M3_M2$$204144684_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <mux821_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/mux821_3v1024x8m81.mag is not writeable
+Cell mux821_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <nmos_5p04310591302042_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/nmos_5p04310591302042_3v1024x8m81.mag is not writeable
+Cell nmos_5p04310591302042_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M2_M1$$204222508_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M2_M1$$204222508_3v1024x8m81.mag is not writeable
+Cell M2_M1$$204222508_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <nmos_5p04310591302040_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/nmos_5p04310591302040_3v1024x8m81.mag is not writeable
+Cell nmos_5p04310591302040_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <pmos_1p2_02_R90_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/pmos_1p2_02_R90_3v1024x8m81.mag is not writeable
+Cell pmos_1p2_02_R90_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M1_NACTIVE_02_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M1_NACTIVE_02_3v1024x8m81.mag is not writeable
+Cell M1_NACTIVE_02_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <xdec64_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/xdec64_3v1024x8m81.mag is not writeable
+Cell xdec64_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M1_NACTIVE_01_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M1_NACTIVE_01_3v1024x8m81.mag is not writeable
+Cell M1_NACTIVE_01_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M3_M2$$202397740_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M3_M2$$202397740_3v1024x8m81.mag is not writeable
+Cell M3_M2$$202397740_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M1_PACTIVE$11_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M1_PACTIVE$11_3v1024x8m81.mag is not writeable
+Cell M1_PACTIVE$11_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M1_PACTIVE$10_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M1_PACTIVE$10_3v1024x8m81.mag is not writeable
+Cell M1_PACTIVE$10_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M3_M2$$204146732_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M3_M2$$204146732_3v1024x8m81.mag is not writeable
+Cell M3_M2$$204146732_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M3_M24310591302036_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M3_M24310591302036_3v1024x8m81.mag is not writeable
+Cell M3_M24310591302036_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M3_M2$$201252908_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M3_M2$$201252908_3v1024x8m81.mag is not writeable
+Cell M3_M2$$201252908_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Cell comp018green_esd_clamp_v5p0_DVSS read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+Warning: cell <xdec8_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/xdec8_3v1024x8m81.mag is not writeable
+Cell xdec8_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <pmos_5p04310591302020_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/pmos_5p04310591302020_3v1024x8m81.mag is not writeable
+Cell pmos_5p04310591302020_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M2_M1$$202406956_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M2_M1$$202406956_3v1024x8m81.mag is not writeable
+Cell M2_M1$$202406956_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M2_M1$$204141612_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M2_M1$$204141612_3v1024x8m81.mag is not writeable
+Cell M2_M1$$204141612_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M1_POLY24310591302033_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M1_POLY24310591302033_3v1024x8m81.mag is not writeable
+Cell M1_POLY24310591302033_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Cell nmos_clamp_20_50_4_DVSS read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+nmos_clamp_20_50_4_DVSS: 10000 rects
+nmos_clamp_20_50_4_DVSS: 20000 rects
+nmos_clamp_20_50_4_DVSS: 30000 rects
+Cell GF_NI_FILL10_0 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+GF_NI_FILL10_0: 10000 rects
+Cell comp018green_sigbuf_1 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+Cell GF_NI_COR_BASE read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+Cell lvlshift_up read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+Warning: cell <M1_PSUB4310591302043_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M1_PSUB4310591302043_3v1024x8m81.mag is not writeable
+Cell M1_PSUB4310591302043_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <saout_R_m2_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/saout_R_m2_3v1024x8m81.mag is not writeable
+Cell saout_R_m2_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M2_M1$$204139564_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M2_M1$$204139564_3v1024x8m81.mag is not writeable
+Cell M2_M1$$204139564_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <din_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/din_3v1024x8m81.mag is not writeable
+Cell din_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Cell GF_NI_FILL10_1 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+Cell GF_NI_DVSS_BASE read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+GF_NI_DVSS_BASE: 10000 rects
+GF_NI_DVSS_BASE: 20000 rects
+GF_NI_DVSS_BASE: 30000 rects
+GF_NI_DVSS_BASE: 40000 rects
+GF_NI_DVSS_BASE: 50000 rects
+GF_NI_DVSS_BASE: 60000 rects
+GF_NI_DVSS_BASE: 70000 rects
+Warning: cell <M3_M2431059130202_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M3_M2431059130202_3v1024x8m81.mag is not writeable
+Cell M3_M2431059130202_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M1_POLY24310591302031_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M1_POLY24310591302031_3v1024x8m81.mag is not writeable
+Cell M1_POLY24310591302031_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <via1_x2_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/via1_x2_3v1024x8m81.mag is not writeable
+Cell via1_x2_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Scaled magic input cell via1_x2_3v1024x8m81 geometry by factor of 2
+Warning: cell <m2_saout01_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/m2_saout01_3v1024x8m81.mag is not writeable
+Cell m2_saout01_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <pmos_5p04310591302035_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/pmos_5p04310591302035_3v1024x8m81.mag is not writeable
+Cell pmos_5p04310591302035_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M3_M2$$201258028_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M3_M2$$201258028_3v1024x8m81.mag is not writeable
+Cell M3_M2$$201258028_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M3_M2431059130201_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M3_M2431059130201_3v1024x8m81.mag is not writeable
+Cell M3_M2431059130201_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <col_1024a_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/col_1024a_3v1024x8m81.mag is not writeable
+Cell col_1024a_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <3v1024x8M8W_PWR_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/3v1024x8M8W_PWR_3v1024x8m81.mag is not writeable
+Cell 3v1024x8M8W_PWR_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+ABUTMENT asig_5p0: 0 0 15000 70000
+Warning: cell <outbuf_oe_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/outbuf_oe_3v1024x8m81.mag is not writeable
+Cell outbuf_oe_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <pmos_5p0431059130201_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/pmos_5p0431059130201_3v1024x8m81.mag is not writeable
+Cell pmos_5p0431059130201_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <pmos_5p04310591302051_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/pmos_5p04310591302051_3v1024x8m81.mag is not writeable
+Cell pmos_5p04310591302051_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M2_M1$$168351788_R90_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M2_M1$$168351788_R90_3v1024x8m81.mag is not writeable
+Cell M2_M1$$168351788_R90_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M2_M1$$202395692_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M2_M1$$202395692_3v1024x8m81.mag is not writeable
+Cell M2_M1$$202395692_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <via1_x2_R90_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/via1_x2_R90_3v1024x8m81.mag is not writeable
+Cell via1_x2_R90_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M2_M14310591302035_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M2_M14310591302035_3v1024x8m81.mag is not writeable
+Cell M2_M14310591302035_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Scaled magic input cell M2_M14310591302035_3v1024x8m81 geometry by factor of 2
+Warning: cell <nmos_5p04310591302033_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/nmos_5p04310591302033_3v1024x8m81.mag is not writeable
+Cell nmos_5p04310591302033_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <rdummy_3v512x4_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/rdummy_3v512x4_3v1024x8m81.mag is not writeable
+Cell rdummy_3v512x4_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M2_M1$$45013036_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M2_M1$$45013036_3v1024x8m81.mag is not writeable
+Cell M2_M1$$45013036_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Scaled magic input cell M2_M1$$45013036_3v1024x8m81 geometry by factor of 2
+Warning: cell <via2_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/via2_3v1024x8m81.mag is not writeable
+Cell via2_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <xdec64_468_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/xdec64_468_3v1024x8m81.mag is not writeable
+Cell xdec64_468_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Cell power_via_cor_3 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+Warning: cell <nmos_1p2_01_R270_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/nmos_1p2_01_R270_3v1024x8m81.mag is not writeable
+Cell nmos_1p2_01_R270_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <via1_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/via1_3v1024x8m81.mag is not writeable
+Cell via1_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <pmos_1p2$$202585132_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/pmos_1p2$$202585132_3v1024x8m81.mag is not writeable
+Cell pmos_1p2$$202585132_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <xdec_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/xdec_3v1024x8m81.mag is not writeable
+Cell xdec_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M1_PACTIVE4310591302034_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M1_PACTIVE4310591302034_3v1024x8m81.mag is not writeable
+Cell M1_PACTIVE4310591302034_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <pmos_1p2_02_R270_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/pmos_1p2_02_R270_3v1024x8m81.mag is not writeable
+Cell pmos_1p2_02_R270_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <nmos_5p043105913020109_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/nmos_5p043105913020109_3v1024x8m81.mag is not writeable
+Cell nmos_5p043105913020109_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Cell moscap_corner_1 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+Warning: cell <M1_POLY2$$46559276_3v1024x8m81_0> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M1_POLY2$$46559276_3v1024x8m81_0.mag is not writeable
+Cell M1_POLY2$$46559276_3v1024x8m81_0 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Cell power_via_cor_5 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+power_via_cor_5: 10000 rects
+power_via_cor_5: 20000 rects
+power_via_cor_5: 30000 rects
+power_via_cor_5: 40000 rects
+power_via_cor_5: 50000 rects
+Warning: cell <M1_NWELL_01_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M1_NWELL_01_3v1024x8m81.mag is not writeable
+Cell M1_NWELL_01_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M3_M24310591302029_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M3_M24310591302029_3v1024x8m81.mag is not writeable
+Cell M3_M24310591302029_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <pmos_1p2_01_R90_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/pmos_1p2_01_R90_3v1024x8m81.mag is not writeable
+Cell pmos_1p2_01_R90_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M3_M24310591302079_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M3_M24310591302079_3v1024x8m81.mag is not writeable
+Cell M3_M24310591302079_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Cell moscap_corner_2 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+Warning: cell <nmos_5p043105913020107_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/nmos_5p043105913020107_3v1024x8m81.mag is not writeable
+Cell nmos_5p043105913020107_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <via1_2_x2_R90_3v1024x8m81_0> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/via1_2_x2_R90_3v1024x8m81_0.mag is not writeable
+Cell via1_2_x2_R90_3v1024x8m81_0 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <nmos_5p04310591302098_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/nmos_5p04310591302098_3v1024x8m81.mag is not writeable
+Cell nmos_5p04310591302098_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M3_M24310591302078_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M3_M24310591302078_3v1024x8m81.mag is not writeable
+Cell M3_M24310591302078_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <nmos_5p043105913020106_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/nmos_5p043105913020106_3v1024x8m81.mag is not writeable
+Cell nmos_5p043105913020106_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Cell moscap_corner_3 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+Warning: cell <pmos_5p04310591302013_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/pmos_5p04310591302013_3v1024x8m81.mag is not writeable
+Cell pmos_5p04310591302013_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <nmos_5p04310591302046_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/nmos_5p04310591302046_3v1024x8m81.mag is not writeable
+Cell nmos_5p04310591302046_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M3_M24310591302077_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M3_M24310591302077_3v1024x8m81.mag is not writeable
+Cell M3_M24310591302077_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M2_M1$02_R270_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M2_M1$02_R270_3v1024x8m81.mag is not writeable
+Cell M2_M1$02_R270_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <nmos_5p04310591302096_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/nmos_5p04310591302096_3v1024x8m81.mag is not writeable
+Cell nmos_5p04310591302096_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <nmos_5p04310591302045_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/nmos_5p04310591302045_3v1024x8m81.mag is not writeable
+Cell nmos_5p04310591302045_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M1_NWELL_01_R270_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M1_NWELL_01_R270_3v1024x8m81.mag is not writeable
+Cell M1_NWELL_01_R270_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Cell comp018green_esd_rc_v5p0 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+Warning: cell <nmos_5p04310591302044_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/nmos_5p04310591302044_3v1024x8m81.mag is not writeable
+Cell nmos_5p04310591302044_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M2_M1$$204404780_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M2_M1$$204404780_3v1024x8m81.mag is not writeable
+Cell M2_M1$$204404780_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Scaled magic input cell M2_M1$$204404780_3v1024x8m81 geometry by factor of 2
+Warning: cell <nmos_5p043105913020102_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/nmos_5p043105913020102_3v1024x8m81.mag is not writeable
+Cell nmos_5p043105913020102_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <via1_2_x2_3v1024x8m81_0> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/via1_2_x2_3v1024x8m81_0.mag is not writeable
+Cell via1_2_x2_3v1024x8m81_0 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M1_NACTIVE4310591302041_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M1_NACTIVE4310591302041_3v1024x8m81.mag is not writeable
+Cell M1_NACTIVE4310591302041_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Cell moscap_corner read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+Warning: cell <via1_R90_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/via1_R90_3v1024x8m81.mag is not writeable
+Cell via1_R90_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <pmos_1p2$$46885932_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/pmos_1p2$$46885932_3v1024x8m81.mag is not writeable
+Cell pmos_1p2$$46885932_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Cell moscap_routing read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+moscap_routing: 10000 rects
+moscap_routing: 20000 rects
+moscap_routing: 30000 rects
+moscap_routing: 40000 rects
+moscap_routing: 50000 rects
+moscap_routing: 60000 rects
+moscap_routing: 70000 rects
+moscap_routing: 80000 rects
+moscap_routing: 90000 rects
+moscap_routing: 100000 rects
+moscap_routing: 110000 rects
+moscap_routing: 120000 rects
+moscap_routing: 130000 rects
+moscap_routing: 140000 rects
+moscap_routing: 150000 rects
+Warning: cell <M1_PSUB$$45111340_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M1_PSUB$$45111340_3v1024x8m81.mag is not writeable
+Cell M1_PSUB$$45111340_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M1_PSUB$$46892076_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M1_PSUB$$46892076_3v1024x8m81.mag is not writeable
+Cell M1_PSUB$$46892076_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M3_M2$$204399660_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M3_M2$$204399660_3v1024x8m81.mag is not writeable
+Cell M3_M2$$204399660_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <po_m1_R90_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/po_m1_R90_3v1024x8m81.mag is not writeable
+Cell po_m1_R90_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M1_PACTIVE4310591302040_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M1_PACTIVE4310591302040_3v1024x8m81.mag is not writeable
+Cell M1_PACTIVE4310591302040_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M2_M1$$46894124_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M2_M1$$46894124_3v1024x8m81.mag is not writeable
+Cell M2_M1$$46894124_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <po_m1_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/po_m1_3v1024x8m81.mag is not writeable
+Cell po_m1_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <via2_x2_R90_3v1024x8m81_0> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/via2_x2_R90_3v1024x8m81_0.mag is not writeable
+Cell via2_x2_R90_3v1024x8m81_0 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M3_M2$$204401708_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M3_M2$$204401708_3v1024x8m81.mag is not writeable
+Cell M3_M2$$204401708_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <nmos_1p2$$46884908_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/nmos_1p2$$46884908_3v1024x8m81.mag is not writeable
+Cell nmos_1p2$$46884908_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M2_M1$$204407852_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M2_M1$$204407852_3v1024x8m81.mag is not writeable
+Cell M2_M1$$204407852_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M1_PSUB$$46274604_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M1_PSUB$$46274604_3v1024x8m81.mag is not writeable
+Cell M1_PSUB$$46274604_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M1_PSUB$$46893100_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M1_PSUB$$46893100_3v1024x8m81.mag is not writeable
+Cell M1_PSUB$$46893100_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M3_M2$$204147756_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M3_M2$$204147756_3v1024x8m81.mag is not writeable
+Cell M3_M2$$204147756_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <po_m1_R270_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/po_m1_R270_3v1024x8m81.mag is not writeable
+Cell po_m1_R270_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M2_M1$$47117356_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M2_M1$$47117356_3v1024x8m81.mag is not writeable
+Cell M2_M1$$47117356_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M2_M1$$204408876_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M2_M1$$204408876_3v1024x8m81.mag is not writeable
+Cell M2_M1$$204408876_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <nmos_1p2_02_R270_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/nmos_1p2_02_R270_3v1024x8m81.mag is not writeable
+Cell nmos_1p2_02_R270_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <pmos_5p04310591302038_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/pmos_5p04310591302038_3v1024x8m81.mag is not writeable
+Cell pmos_5p04310591302038_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <nmos_5p04310591302052_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/nmos_5p04310591302052_3v1024x8m81.mag is not writeable
+Cell nmos_5p04310591302052_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <pmos_1p2_03_R270_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/pmos_1p2_03_R270_3v1024x8m81.mag is not writeable
+Cell pmos_1p2_03_R270_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <M1_NWELL$$44998700_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M1_NWELL$$44998700_3v1024x8m81.mag is not writeable
+Cell M1_NWELL$$44998700_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <nmos_5p04310591302050_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/nmos_5p04310591302050_3v1024x8m81.mag is not writeable
+Cell nmos_5p04310591302050_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Warning: cell <via1_R270_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/via1_R270_3v1024x8m81.mag is not writeable
+Cell via1_R270_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+ABUTMENT bi_24t: 0 0 15000 70000
+Cell gf180mcu_ocd_io__bi_a read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+Warning: cell <M1_POLY243105913020105_3v1024x8m81> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/M1_POLY243105913020105_3v1024x8m81.mag is not writeable
+Cell M1_POLY243105913020105_3v1024x8m81 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+ABUTMENT bi_a: 0 0 15000 70000
+Cell gf180mcu_ocd_io__bi_t read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+ABUTMENT bi_t: 0 0 15000 70000
+Cell gf180mcu_ocd_io__brk2 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+Cell GF_NI_BRK2_0 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+Cell GF_NI_BRK2_1 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+Cell POLY_FILL read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+ABUTMENT brk2: 0 0 400 70000
+ABUTMENT brk5: 0 0 1000 70000
+ABUTMENT cor: 0 0 71000 71000
+ABUTMENT dvdd: 0 0 15000 70000
+ABUTMENT dvss: 0 0 15000 70000
+Cell 5LM_METAL_RAIL read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+5LM_METAL_RAIL: 10000 rects
+5LM_METAL_RAIL: 20000 rects
+5LM_METAL_RAIL: 30000 rects
+5LM_METAL_RAIL: 40000 rects
+5LM_METAL_RAIL: 50000 rects
+5LM_METAL_RAIL: 60000 rects
+5LM_METAL_RAIL: 70000 rects
+5LM_METAL_RAIL: 80000 rects
+5LM_METAL_RAIL: 90000 rects
+5LM_METAL_RAIL: 100000 rects
+5LM_METAL_RAIL: 110000 rects
+5LM_METAL_RAIL: 120000 rects
+5LM_METAL_RAIL: 130000 rects
+5LM_METAL_RAIL: 140000 rects
+Cell 4LM_METAL_RAIL read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+4LM_METAL_RAIL: 10000 rects
+4LM_METAL_RAIL: 20000 rects
+4LM_METAL_RAIL: 30000 rects
+4LM_METAL_RAIL: 40000 rects
+4LM_METAL_RAIL: 50000 rects
+4LM_METAL_RAIL: 60000 rects
+4LM_METAL_RAIL: 70000 rects
+4LM_METAL_RAIL: 80000 rects
+4LM_METAL_RAIL: 90000 rects
+4LM_METAL_RAIL: 100000 rects
+4LM_METAL_RAIL: 110000 rects
+Cell 3LM_METAL_RAIL read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+Cell GF_NI_BI_24T_BASE read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+GF_NI_BI_24T_BASE: 10000 rects
+GF_NI_BI_24T_BASE: 20000 rects
+Cell GF_NI_BI_T_BASE read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+GF_NI_BI_T_BASE: 10000 rects
+GF_NI_BI_T_BASE: 20000 rects
+Cell GF_NI_BRK5_0 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+Cell GF_NI_BRK5_1 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+Cell comp018green_out_paddrv_24T read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+Cell comp018green_out_paddrv_6T_NMOS_GROUP read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+ABUTMENT fill1: 0 0 200 70000
+Cell comp018green_out_drv_nleg_6T read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+Cell nmos_metal_stack read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+ABUTMENT fill10: 0 0 2000 70000
+ABUTMENT fill5: 0 0 1000 70000
+Cell gf180mcu_ocd_io__fillnc read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+ABUTMENT fillnc: 0 0 20 70000
+ABUTMENT in_c: 0 0 15000 70000
+Cell gf180mcu_ocd_io__in_s read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+Cell GF_NI_IN_S_BASE read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+GF_NI_IN_S_BASE: 10000 rects
+GF_NI_IN_S_BASE: 20000 rects
+ABUTMENT in_s: 0 0 15000 70000
+ABUTMENT vdd: 0 0 15000 70000
+ABUTMENT vss: 0 0 15000 70000
+(magic exit status 0)
+
+##### 6. timestamps:  pad views, and the harness cells that record them
+--- pad views alone
+scanned 107 cell files in 1 directories, 251 uses; 0 children not in these directories
+no timestamp mismatches
+--- Chipalooza magic/ against this overlay
+    (stale lines here are repaired in the Chipalooza repo with
+     'make resave-stale', run with PDK_ROOT=/foss/designs/pdk_overlay; see that script)
+scanned 158 cell files in 2 directories, 33259 uses; 88 children not in these directories
+8 mismatching uses of 6 cells:
+
+POLY_SUB_FILL_1   [/foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag/POLY_SUB_FILL_1.mag]
+    its own timestamp: 1484588007  (2017-01-16 17:33:27 UTC)
+    GF_NI_FILL10_1pass  (use POLY_SUB_FILL_1_0) records 1765987700  (2025-12-17 16:08:20 UTC)  child older than the parent's record
+    GF_NI_FILL10_1short  (use POLY_SUB_FILL_1_0) records 1765987700  (2025-12-17 16:08:20 UTC)  child older than the parent's record
+
+chipalooza_frame   [magic/chipalooza_frame.mag]
+    its own timestamp: 1793544738  (2026-11-01 14:52:18 UTC)
+    gf180mcu_ocd_chipalooza  (use chipalooza_frame_wrapper_0) records 1793397007  (2026-10-30 21:50:07 UTC)  child newer than the parent's record
+
+constant_block   [magic/constant_block.mag]
+    its own timestamp: 1764982451  (2025-12-06 00:54:11 UTC)
+    constant_block_hrouted  (use constant_block_0) records 1774808302  (2026-03-29 18:18:22 UTC)  child older than the parent's record
+    constant_block_vrouted  (use constant_block_0) records 1774808302  (2026-03-29 18:18:22 UTC)  child older than the parent's record
+
+gf180mcu_ocd_ip__bandgap   [/foss/designs/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/magic/gf180mcu_ocd_ip__bandgap.mag]
+    its own timestamp: 1793633971  (2026-11-02 15:39:31 UTC)
+    chipalooza_frame  (use gf180mcu_ocd_ip__bandgap_0) records 1793541270  (2026-11-01 13:54:30 UTC)  child newer than the parent's record
+
+gf180mcu_ocd_ip_sram__sram1024x8m8wm1   [/foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/gf180mcu_ocd_ip_sram__sram1024x8m8wm1.mag]
+    its own timestamp: 1765926640  (2025-12-16 23:10:40 UTC)
+    chipalooza_frame  (use gf180mcu_ocd_ip_sram__sram1024x8m8wm1_0) records 1546967116  (2019-01-08 17:05:16 UTC)  child newer than the parent's record
+
+user_id_programming   [magic/user_id_programming.mag]
+    its own timestamp: 1793541270  (2026-11-01 13:54:30 UTC)
+    user_id_routing  (use user_id_programming_0) records 1774808302  (2026-03-29 18:18:22 UTC)  child newer than the parent's record
+
+
+##### end
+finished normally
