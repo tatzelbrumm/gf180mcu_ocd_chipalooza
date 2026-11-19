@@ -1,9 +1,9 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1795060304
+timestamp 1795094528
 << checkpaint >>
-rect -2000 -2000 256850 84542
+rect -2010 -2010 256860 84552
 << obsm1 >>
 rect 254454 0 254850 82542
 << metal2 >>
