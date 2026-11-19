@@ -68,11 +68,25 @@ done
 
 sec "3. build the overlay (links, plus pad views generated from GDS)"
 run mkdir -p "$OV/$PDK/libs.ref/gf180mcu_ocd_io"
-# every top-level entry of the PDK variant except libs.ref
+# every top-level entry of the PDK variant except libs.ref and libs.tech
 for e in "$SRC_PDK"/* "$SRC_PDK"/.[!.]*; do
   [ -e "$e" ] || continue
-  b=$(basename "$e"); [ "$b" = libs.ref ] && continue
+  b=$(basename "$e"); [ "$b" = libs.ref ] && continue; [ "$b" = libs.tech ] && continue
   ln -sfn "$e" "$OV/$PDK/$b"
+done
+# libs.tech: links to every entry, except magic/, which gets links to every file except the
+# magicrc. The overlay's own magicrc (written below) is the original plus the overlay libraries
+# at the front of the search path, so `magic -rcfile $PDK_ROOT/$PDK/libs.tech/magic/$PDK.magicrc`
+# finds every cell without extra addpath commands (added 2026-11-19).
+[ -L "$OV/$PDK/libs.tech" ] && rm -f "$OV/$PDK/libs.tech"     # whole-folder link of earlier versions
+mkdir -p "$OV/$PDK/libs.tech/magic"
+for e in "$SRC_PDK"/libs.tech/*; do
+  b=$(basename "$e"); [ "$b" = magic ] && continue
+  ln -sfn "$e" "$OV/$PDK/libs.tech/$b"
+done
+for e in "$SRC_PDK"/libs.tech/magic/*; do
+  b=$(basename "$e"); [ "$b" = "$PDK.magicrc" ] && continue
+  ln -sfn "$e" "$OV/$PDK/libs.tech/magic/$b"
 done
 # every library of libs.ref
 for e in "$SRC_PDK"/libs.ref/*; do
@@ -149,6 +163,27 @@ if [ -d "$SRAM/cells" ]; then
 else
   echo "NOT FOUND gf180mcu_ocd_ip_sram: $SRAM/cells does not exist"
 fi
+# the overlay's magicrc: the original, unchanged, then the overlay libraries put in FRONT of the
+# search path (Belal Shinnawey, 2026-11-19: ocd and as_sc paths first when building the padframe)
+RCO="$OV/$PDK/libs.tech/magic/$PDK.magicrc"
+rm -f "$RCO"
+{
+  cat "$SRC_PDK/libs.tech/magic/$PDK.magicrc"
+  cat <<'RCEOF'
+
+# ---- added by make_pdk_overlay.sh: overlay libraries, searched before all others ----
+# ($PDK_ROOT is set by the original part above.) Directories that do not exist are skipped.
+set _ov_dirs {}
+foreach _ov_l {gf180mcu_ocd_io gf180mcu_as_sc_mcu7t3v3 gf180mcu_ocd_alpha_small gf180mcu_ocd_alpha_large gf180mcu_ocd_alpha_misc gf180mcu_ocd_ip_sram} {
+    if {[file isdirectory $PDK_ROOT/gf180mcuD/libs.ref/$_ov_l/mag]} {
+        lappend _ov_dirs $PDK_ROOT/gf180mcuD/libs.ref/$_ov_l/mag
+    }
+}
+path search "[join $_ov_dirs] [path search]"
+unset _ov_dirs _ov_l
+RCEOF
+} > "$RCO"
+echo "wrote overlay magicrc $RCO ($(wc -l < "$RCO") lines; original $(wc -l < "$SRC_PDK/libs.tech/magic/$PDK.magicrc"))"
 echo "done"
 run ls -la "$OV" "$OV/$PDK" "$OV/$PDK/libs.ref" "$OV/$PDK/libs.ref/gf180mcu_ocd_io"
 
@@ -217,6 +252,19 @@ quit -noprompt
 EOF
 echo "(magic exit status $?)"
 cd / && rmdir "$SCR" 2>/dev/null
+
+sec "5b. Magic with the overlay magicrc ALONE (no addpath): which folder each cell is read from"
+SCR=$(mktemp -d); cd "$SCR" || exit 0
+timeout 120 magic -dnull -noconsole -rcfile "$RC" <<'EOF'
+puts "SEARCHPATH [path search]"
+foreach n {gf180mcu_ocd_io__cor gf180mcu_ocd_io__asig_5p0 gf180mcu_as_sc_mcu7t3v3__tap_2 font_76 alpha_0 open_source gf180mcu_ocd_ip_sram__sram1024x8m8wm1} {
+    if {[catch {load $n} r]} { puts "OPEN $n: ERROR $r" } \
+    else { puts "OPEN $n: [llength [cellname list children $n]] subcell(s)" }
+}
+quit -noprompt
+EOF
+echo "(magic exit status $?)"
+cd / && rm -rf "$SCR"
 
 sec "6. timestamps:  pad views, and the harness cells that record them"
 CHECK=${CHECK:-/foss/designs/gf180mcu_ocd_chipalooza/scripts/check_timestamps.py}
