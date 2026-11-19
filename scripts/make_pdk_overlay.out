@@ -6,7 +6,7 @@ IO_STACK=5lm
 OV=/foss/designs/pdk_overlay
 DESIGNS=/foss/designs
 EXTRA_LIBS=gf180mcu_as_sc_mcu7t3v3
-2026-11-19T01:54:05Z
+2026-11-19T03:27:05Z
 
 ##### 1. preconditions
 ok: PDK, tech file, pad GDS and magic exist
@@ -34,13 +34,8 @@ gf180mcu_ocd_io__vss_5lm.gds.gz  1698078  c6ae1242bb9579233b2184c25a787f89
 
 ##### 3. build the overlay (links, plus pad views generated from GDS)
 $ mkdir -p /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io
-$ (cd /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag.new && magic -dnull -noconsole -rcfile /dev/null import.tcl < /dev/null)
-(magic exit status 0; log: /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/import.log)
-
-real	0m13.771s
-user	0m13.526s
-sys	0m0.230s
-generated 107 .mag files in /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+pad views unchanged (same magic, tech, pad repo commit, GDS): NOT regenerated, timestamps kept
+  (FORCE_IMPORT=1 to regenerate)
 linked    gf180mcu_as_sc_mcu7t3v3 -> /foss/designs/gf180mcu_as_sc_mcu7t3v3/pdk/libs.ref/gf180mcu_as_sc_mcu7t3v3
 linked    gf180mcu_ocd_alpha_small/mag -> /foss/designs/gf180mcu_ocd_alpha/small/magic
 linked    gf180mcu_ocd_alpha_large/mag -> /foss/designs/gf180mcu_ocd_alpha/large/magic
@@ -48,45 +43,46 @@ linked    gf180mcu_ocd_alpha_misc/mag -> /foss/designs/gf180mcu_ocd_alpha/misc/m
 DUPLICATE name test.mag: kept /foss/designs/gf180mcu_ocd_ip_sram/cells/gf180mcu_ocd_ip_sram__sram256x8m8wm1/magic/test.mag, skipped /foss/designs/gf180mcu_ocd_ip_sram/cells/gf180mcu_ocd_ip_sram__sram512x8m8wm1/magic/test.mag
 DUPLICATE name test.mag: kept /foss/designs/gf180mcu_ocd_ip_sram/cells/gf180mcu_ocd_ip_sram__sram256x8m8wm1/magic/test.mag, skipped /foss/designs/gf180mcu_ocd_ip_sram/cells/gf180mcu_ocd_ip_sram__sram64x8m8wm1/magic/test.mag
 linked    gf180mcu_ocd_ip_sram/mag: 2979 .mag files from /foss/designs/gf180mcu_ocd_ip_sram/cells/*/magic (2 duplicate names skipped)
+wrote overlay magicrc /foss/designs/pdk_overlay/gf180mcuD/libs.tech/magic/gf180mcuD.magicrc (70 lines; original 59)
 done
 $ ls -la /foss/designs/pdk_overlay /foss/designs/pdk_overlay/gf180mcuD /foss/designs/pdk_overlay/gf180mcuD/libs.ref /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io
 /foss/designs/pdk_overlay:
 total 12
 drwxr-xr-x  3 1000 1000 4096 Nov 17 22:41 .
 drwxrwxr-x 62 1000 1000 4096 Nov 19 01:53 ..
-drwxr-xr-x  3 1000 1000 4096 Nov 19 02:54 gf180mcuD
+drwxr-xr-x  4 1000 1000 4096 Nov 19 04:27 gf180mcuD
 
 /foss/designs/pdk_overlay/gf180mcuD:
-total 12
-drwxr-xr-x 3 1000 1000 4096 Nov 19 02:54 .
+total 16
+drwxr-xr-x 4 1000 1000 4096 Nov 19 04:27 .
 drwxr-xr-x 3 1000 1000 4096 Nov 17 22:41 ..
-lrwxrwxrwx 1 1000 1000   28 Nov 19 02:54 .config -> /foss/pdks/gf180mcuD/.config
-drwxr-xr-x 7 1000 1000 4096 Nov 19 02:54 libs.ref
-lrwxrwxrwx 1 1000 1000   30 Nov 19 02:54 libs.tech -> /foss/pdks/gf180mcuD/libs.tech
-lrwxrwxrwx 1 1000 1000   28 Nov 19 02:54 SOURCES -> /foss/pdks/gf180mcuD/SOURCES
+lrwxrwxrwx 1 1000 1000   28 Nov 19 04:27 .config -> /foss/pdks/gf180mcuD/.config
+drwxr-xr-x 7 1000 1000 4096 Nov 19 04:27 libs.ref
+drwxr-xr-x 3 1000 1000 4096 Nov 19 04:27 libs.tech
+lrwxrwxrwx 1 1000 1000   28 Nov 19 04:27 SOURCES -> /foss/pdks/gf180mcuD/SOURCES
 
 /foss/designs/pdk_overlay/gf180mcuD/libs.ref:
 total 32
-drwxr-xr-x 7 1000 1000 4096 Nov 19 02:54 .
-drwxr-xr-x 3 1000 1000 4096 Nov 19 02:54 ..
-lrwxrwxrwx 1 1000 1000   74 Nov 19 02:54 gf180mcu_as_sc_mcu7t3v3 -> /foss/designs/gf180mcu_as_sc_mcu7t3v3/pdk/libs.ref/gf180mcu_as_sc_mcu7t3v3
-lrwxrwxrwx 1 1000 1000   44 Nov 19 02:54 gf180mcu_fd_io -> /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io
-lrwxrwxrwx 1 1000 1000   49 Nov 19 02:54 gf180mcu_fd_ip_sram -> /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_ip_sram
-lrwxrwxrwx 1 1000 1000   44 Nov 19 02:54 gf180mcu_fd_pr -> /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_pr
-lrwxrwxrwx 1 1000 1000   53 Nov 19 02:54 gf180mcu_fd_sc_mcu7t5v0 -> /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0
-lrwxrwxrwx 1 1000 1000   53 Nov 19 02:54 gf180mcu_fd_sc_mcu9t5v0 -> /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0
-drwxr-xr-x 2 1000 1000 4096 Nov 19 02:54 gf180mcu_ocd_alpha_large
-drwxr-xr-x 2 1000 1000 4096 Nov 19 02:54 gf180mcu_ocd_alpha_misc
-drwxr-xr-x 2 1000 1000 4096 Nov 19 02:54 gf180mcu_ocd_alpha_small
-drwxr-xr-x 3 1000 1000 4096 Nov 19 02:54 gf180mcu_ocd_io
+drwxr-xr-x 7 1000 1000 4096 Nov 19 04:27 .
+drwxr-xr-x 4 1000 1000 4096 Nov 19 04:27 ..
+lrwxrwxrwx 1 1000 1000   74 Nov 19 04:27 gf180mcu_as_sc_mcu7t3v3 -> /foss/designs/gf180mcu_as_sc_mcu7t3v3/pdk/libs.ref/gf180mcu_as_sc_mcu7t3v3
+lrwxrwxrwx 1 1000 1000   44 Nov 19 04:27 gf180mcu_fd_io -> /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io
+lrwxrwxrwx 1 1000 1000   49 Nov 19 04:27 gf180mcu_fd_ip_sram -> /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_ip_sram
+lrwxrwxrwx 1 1000 1000   44 Nov 19 04:27 gf180mcu_fd_pr -> /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_pr
+lrwxrwxrwx 1 1000 1000   53 Nov 19 04:27 gf180mcu_fd_sc_mcu7t5v0 -> /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0
+lrwxrwxrwx 1 1000 1000   53 Nov 19 04:27 gf180mcu_fd_sc_mcu9t5v0 -> /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0
+drwxr-xr-x 2 1000 1000 4096 Nov 19 04:27 gf180mcu_ocd_alpha_large
+drwxr-xr-x 2 1000 1000 4096 Nov 19 04:27 gf180mcu_ocd_alpha_misc
+drwxr-xr-x 2 1000 1000 4096 Nov 19 04:27 gf180mcu_ocd_alpha_small
+drwxr-xr-x 3 1000 1000 4096 Nov 19 04:18 gf180mcu_ocd_io
 drwxr-xr-x 3 1000 1000 4096 Nov 18 02:41 gf180mcu_ocd_ip_sram
 
 /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io:
 total 44
-drwxr-xr-x 3 1000 1000  4096 Nov 19 02:54 .
-drwxr-xr-x 7 1000 1000  4096 Nov 19 02:54 ..
--rw-r--r-- 1 1000 1000 29298 Nov 19 02:54 import.log
-drwxr-xr-x 2 1000 1000  4096 Nov 19 02:54 mag
+drwxr-xr-x 3 1000 1000  4096 Nov 19 04:18 .
+drwxr-xr-x 7 1000 1000  4096 Nov 19 04:27 ..
+-rw-r--r-- 1 1000 1000 29298 Nov 19 04:18 import.log
+drwxr-xr-x 2 1000 1000  4096 Nov 19 04:18 mag
 
 ##### 4. do the pad cells that gen_padframe.tcl places resolve?
 found    asig_5p0
@@ -700,6 +696,46 @@ ABUTMENT vdd: 0 0 15000 70000
 ABUTMENT vss: 0 0 15000 70000
 (magic exit status 0)
 
+##### 5b. Magic with the overlay magicrc ALONE (no addpath): which folder each cell is read from
+
+Magic 8.3 revision 685 - Compiled on Thu Oct 15 02:29:39 PM CEST 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology gf180mcuD ...
+10 Magic internal units = 1 Lambda
+Input style import: scaleFactor=10, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    obsactive mvobsactive filldiff fillpoly m1hole obsm1 fillm1 obsv1 m2hole obsm2 fillm2 obsv2 m3hole obsm3 fillm3 m4hole obsm4 fillm4 m5hole obsm5 fillm5 glass fillblock lvstext obscomment 
+Scaled tech values by 10 / 1 to match internal grid scaling
+Loading gf180mcuD Device Generator Menu ...
+Using technology "gf180mcuD", version 1.0.588-62-g1689ac3
+SEARCHPATH /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_as_sc_mcu7t3v3/mag /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_alpha_small/mag /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_alpha_large/mag /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_alpha_misc/mag /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag . /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_fd_pr/mag /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/mag /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_fd_io/mag /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_fd_ip_sram/mag /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_as_sc_mcu7t3v3/mag /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+Cell gf180mcu_ocd_io__cor read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+OPEN gf180mcu_ocd_io__cor: 2 subcell(s)
+Cell gf180mcu_ocd_io__asig_5p0 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+OPEN gf180mcu_ocd_io__asig_5p0: 2 subcell(s)
+Cell gf180mcu_as_sc_mcu7t3v3__tap_2 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_as_sc_mcu7t3v3/mag
+OPEN gf180mcu_as_sc_mcu7t3v3__tap_2: 0 subcell(s)
+Cell font_76 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_alpha_small/mag
+Scaled magic input cell font_76 geometry by factor of 2
+OPEN font_76: 0 subcell(s)
+Cell alpha_0 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_alpha_large/mag
+Scaled magic input cell alpha_0 geometry by factor of 12
+OPEN alpha_0: 0 subcell(s)
+Cell open_source read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_alpha_misc/mag
+Scaled magic input cell open_source geometry by factor of 10
+OPEN open_source: 0 subcell(s)
+Warning: cell <gf180mcu_ocd_ip_sram__sram1024x8m8wm1> from file /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/gf180mcu_ocd_ip_sram__sram1024x8m8wm1.mag is not writeable
+Cell gf180mcu_ocd_ip_sram__sram1024x8m8wm1 read from path /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag
+OPEN gf180mcu_ocd_ip_sram__sram1024x8m8wm1: 44 subcell(s)
+(magic exit status 0)
+
 ##### 6. timestamps:  pad views, and the harness cells that record them
 --- pad views alone
 scanned 107 cell files in 1 directories, 251 uses; 0 children not in these directories
@@ -707,35 +743,29 @@ no timestamp mismatches
 --- Chipalooza magic/ against this overlay
     (stale lines here are repaired in the Chipalooza repo with
      'make resave-stale', run with PDK_ROOT=/foss/designs/pdk_overlay; see that script)
-scanned 158 cell files in 2 directories, 33259 uses; 88 children not in these directories
-8 mismatching uses of 6 cells:
-
-POLY_SUB_FILL_1   [/foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag/POLY_SUB_FILL_1.mag]
-    its own timestamp: 1484588007  (2017-01-16 17:33:27 UTC)
-    GF_NI_FILL10_1pass  (use POLY_SUB_FILL_1_0) records 1765987700  (2025-12-17 16:08:20 UTC)  child older than the parent's record
-    GF_NI_FILL10_1short  (use POLY_SUB_FILL_1_0) records 1765987700  (2025-12-17 16:08:20 UTC)  child older than the parent's record
+    full list: /foss/designs/pdk_overlay/timestamp_check.txt (1196 lines); summary:
+scanned 160 cell files in 2 directories, 34427 uses; 86 children not in these directories
+1133 mismatching uses of 20 cells:
 
 chipalooza_frame   [magic/chipalooza_frame.mag]
-    its own timestamp: 1793544738  (2026-11-01 14:52:18 UTC)
-    gf180mcu_ocd_chipalooza  (use chipalooza_frame_wrapper_0) records 1793397007  (2026-10-30 21:50:07 UTC)  child newer than the parent's record
-
+chipalooza_frame_wrapper   [magic/chipalooza_frame_wrapper.mag]
 constant_block   [magic/constant_block.mag]
-    its own timestamp: 1764982451  (2025-12-06 00:54:11 UTC)
-    constant_block_hrouted  (use constant_block_0) records 1774808302  (2026-03-29 18:18:22 UTC)  child older than the parent's record
-    constant_block_vrouted  (use constant_block_0) records 1774808302  (2026-03-29 18:18:22 UTC)  child older than the parent's record
-
+gf180mcu_ocd_io__asig_5p0   [/foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag/gf180mcu_ocd_io__asig_5p0.mag]
+gf180mcu_ocd_io__bi_24t   [/foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag/gf180mcu_ocd_io__bi_24t.mag]
+gf180mcu_ocd_io__brk5   [/foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag/gf180mcu_ocd_io__brk5.mag]
+gf180mcu_ocd_io__cor   [/foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag/gf180mcu_ocd_io__cor.mag]
+gf180mcu_ocd_io__dvdd   [/foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag/gf180mcu_ocd_io__dvdd.mag]
+gf180mcu_ocd_io__dvss   [/foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag/gf180mcu_ocd_io__dvss.mag]
+gf180mcu_ocd_io__fill1   [/foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag/gf180mcu_ocd_io__fill1.mag]
+gf180mcu_ocd_io__fill10   [/foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag/gf180mcu_ocd_io__fill10.mag]
+gf180mcu_ocd_io__fill5   [/foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag/gf180mcu_ocd_io__fill5.mag]
+gf180mcu_ocd_io__in_c   [/foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag/gf180mcu_ocd_io__in_c.mag]
+gf180mcu_ocd_io__vdd   [/foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag/gf180mcu_ocd_io__vdd.mag]
+gf180mcu_ocd_io__vss   [/foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag/gf180mcu_ocd_io__vss.mag]
 gf180mcu_ocd_ip__bandgap   [/foss/designs/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/magic/gf180mcu_ocd_ip__bandgap.mag]
-    its own timestamp: 1793633971  (2026-11-02 15:39:31 UTC)
-    chipalooza_frame  (use gf180mcu_ocd_ip__bandgap_0) records 1793541270  (2026-11-01 13:54:30 UTC)  child newer than the parent's record
-
 gf180mcu_ocd_ip_sram__sram1024x8m8wm1   [/foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/mag/gf180mcu_ocd_ip_sram__sram1024x8m8wm1.mag]
-    its own timestamp: 1765926640  (2025-12-16 23:10:40 UTC)
-    chipalooza_frame  (use gf180mcu_ocd_ip_sram__sram1024x8m8wm1_0) records 1546967116  (2019-01-08 17:05:16 UTC)  child newer than the parent's record
-
+gf180mcu_padframe   [magic/gf180mcu_padframe.mag]
 user_id_programming   [magic/user_id_programming.mag]
-    its own timestamp: 1793541270  (2026-11-01 13:54:30 UTC)
-    user_id_routing  (use user_id_programming_0) records 1774808302  (2026-03-29 18:18:22 UTC)  child newer than the parent's record
-
 
 ##### end
 finished normally
