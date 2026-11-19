@@ -1,5 +1,4 @@
 ./scripts/run_gen_xschem_syms.sh
-  SKIP gf180mcu_ocd_ip_sram__sram1024x8m8wm1: no /foss/designs/pdk_overlay/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/spice/gf180mcu_ocd_ip_sram__sram1024x8m8wm1.spice
   slot template: 200 x 380 (18 left rows, 1 right)
   housekeeping_top.sym                        53 pins (12 left, 41 right)  [gl]
   user_project_control.sym                    26 pins (16 left, 10 right)  [gl]
@@ -21,5 +20,6 @@
   slot16_wrapper.sym                          17 pins (16 left, 1 right)  [mag]  + gl/slot16_wrapper_lvs.v
   slot17_wrapper.sym                          18 pins (17 left, 1 right)  [mag]  + gl/slot17_wrapper_lvs.v
   slot18_wrapper.sym                          17 pins (16 left, 1 right)  [mag]  + gl/slot18_wrapper_lvs.v
+  gf180mcu_ocd_ip_sram__sram1024x8m8wm1.sym    9 pins (8 left, 1 right)  [spice]
   gf180mcu_padframe.sym                       70 pins (52 left, 18 right)  [vsrc]
 Done!

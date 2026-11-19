@@ -3,6 +3,6 @@ Setting project user ID to: 20260908
 Step 1:  Modify layout of the user_id_vias subcell
 Done!
 Step 2:  Set the user project ID in the programming block verilog.
-Done!  (16 line(s) changed)
+Done!  (parameter and all 32 bits were already correct)
 Step 3:  Add user project ID text to top level layout.
 Done!
