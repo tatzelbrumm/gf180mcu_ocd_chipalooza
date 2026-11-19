@@ -91,8 +91,11 @@ rm -rf "$IOD/mag.new"; mkdir -p "$IOD/mag.new"
   echo "writeall force"
   echo "quit -noprompt"
 } > "$IOD/mag.new/import.tcl"
-echo "\$ (cd $IOD/mag.new && magic -dnull -noconsole -rcfile /dev/null import.tcl)"
-( cd "$IOD/mag.new" && time timeout 1800 magic -dnull -noconsole -rcfile /dev/null import.tcl ) \
+echo "\$ (cd $IOD/mag.new && magic -dnull -noconsole -rcfile /dev/null import.tcl < /dev/null)"
+# stdin from /dev/null:  `timeout' runs magic outside the terminal's foreground
+# process group, and magic touches a terminal on stdin, so the kernel stops it
+# (state T, do_signal_stop) and the run hangs with an empty log.  Seen 2026-11-19.
+( cd "$IOD/mag.new" && time timeout 1800 magic -dnull -noconsole -rcfile /dev/null import.tcl < /dev/null ) \
   > "$IOD/import.log" 2>&1
 echo "(magic exit status $?; log: $IOD/import.log)"
 grep -i "error" "$IOD/import.log" | sort | uniq -c | head -20
