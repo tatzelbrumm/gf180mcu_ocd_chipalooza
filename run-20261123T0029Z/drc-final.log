@@ -112,3 +112,18 @@ gf180mcu_ocd_chipalooza_final
 2026-11-23 02:06:40 +0000: Memory Usage (692880K) : metal5_blk has 0 polygons
 2026-11-23 02:06:40 +0000: Memory Usage (692880K) : metal5_label has 32560 polygons
 2026-11-23 02:06:40 +0000: Memory Usage (692880K) : metal5_res has 0 polygons
+2026-11-23 02:06:48 +0000: Memory Usage (786540K) : Rule requiring connectivity detected, constructing connectivity for the design.
+2026-11-23 02:06:48 +0000: Memory Usage (786672K) : Connectivity rules enabled, Netlist object will be generated.
+2026-11-23 02:07:13 +0000: Memory Usage (983364K) : # Setup took 37.963527573 seconds
+2026-11-23 02:07:13 +0000: Memory Usage (983364K) : Starting GF180MCU DRC rules.
+2026-11-23 02:07:13 +0000: Memory Usage (983492K) : Starting DRC: executing 177 deck(s).
+2026-11-23 02:07:13 +0000: Memory Usage (983492K) : Executing deck V1.1 from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/via.rb
+2026-11-23 02:07:13 +0000: Memory Usage (983492K) : Executing rule V1.1
+2026-11-23 02:07:25 +0000: Memory Usage (1283640K) : Executing deck V1.2a from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/via.rb
+2026-11-23 02:07:25 +0000: Memory Usage (1283640K) : Executing rule V1.2a
+2026-11-23 02:07:26 +0000: Memory Usage (1298384K) : Executing deck V1.2b from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/via.rb
+2026-11-23 02:07:26 +0000: Memory Usage (1298384K) : Executing rule V1.2b
+2026-11-23 02:07:34 +0000: Memory Usage (1309148K) : Executing deck V1.3a from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/via.rb
+2026-11-23 02:07:34 +0000: Memory Usage (1309148K) : Executing rule V1.3a
+2026-11-23 02:07:36 +0000: Memory Usage (1328988K) : Executing deck V1.3c from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/via.rb
+2026-11-23 02:07:36 +0000: Memory Usage (1328988K) : Executing rule V1.3c
