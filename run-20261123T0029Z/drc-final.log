@@ -208,3 +208,23 @@ gf180mcu_ocd_chipalooza_final
 2026-11-23 01:44:02 +0000: Memory Usage (1703876K) : Executing rule ANT.16_ii_ANT.3
 2026-11-23 01:44:02 +0000: Memory Usage (1703876K) : Executing deck antenna_metal3 from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/antenna.rb
 2026-11-23 01:44:02 +0000: Memory Usage (1703876K) : Executing rule ANT.16_i_ANT.4
+2026-11-23 01:44:16 +0000: Memory Usage (1704388K) : Executing rule ANT.16_ii_ANT.4
+2026-11-23 01:44:18 +0000: Memory Usage (1704388K) : Executing deck antenna_metal4 from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/antenna.rb
+2026-11-23 01:44:18 +0000: Memory Usage (1704388K) : Executing rule ANT.16_i_ANT.5
+2026-11-23 01:44:42 +0000: Memory Usage (1704388K) : Executing rule ANT.16_ii_ANT.5
+2026-11-23 01:44:47 +0000: Memory Usage (1704388K) : Executing rule ANT.16_iii_ANT.15_M4_MIMB
+2026-11-23 01:44:47 +0000: Memory Usage (1704388K) : Executing deck antenna_metal5 from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/antenna.rb
+2026-11-23 01:44:47 +0000: Memory Usage (1704388K) : Executing rule ANT.16_i_ANT.6
+2026-11-23 01:45:18 +0000: Memory Usage (1704388K) : Executing rule ANT.16_ii_ANT.6
+2026-11-23 01:45:23 +0000: Memory Usage (1704388K) : Executing rule ANT.16_iii_ANT.15_M5_MIMB
+2026-11-23 01:45:26 +0000: Memory Usage (1704388K) : Executing deck antenna_metaltop from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/antenna.rb
+2026-11-23 01:45:26 +0000: Memory Usage (1704388K) : Executing deck antenna_poly2 from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/antenna.rb
+2026-11-23 01:45:27 +0000: Memory Usage (1704388K) : Executing rule ANT.1
+2026-11-23 01:45:27 +0000: Memory Usage (1704388K) : Executing deck antenna_via1 from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/antenna.rb
+2026-11-23 01:45:27 +0000: Memory Usage (1704388K) : Executing rule ANT.16_i_ANT.9
+2026-11-23 01:45:35 +0000: Memory Usage (1704388K) : Executing rule ANT.16_ii_ANT.9
+2026-11-23 01:45:36 +0000: Memory Usage (1704388K) : Executing deck antenna_via2 from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/antenna.rb
+2026-11-23 01:45:36 +0000: Memory Usage (1704388K) : Executing rule ANT.16_i_ANT.10
+2026-11-23 01:45:48 +0000: Memory Usage (1704388K) : Executing rule ANT.16_ii_ANT.10
+2026-11-23 01:45:48 +0000: Memory Usage (1704388K) : Executing deck antenna_via3 from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/antenna.rb
+2026-11-23 01:45:48 +0000: Memory Usage (1704388K) : Executing rule ANT.16_i_ANT.11
