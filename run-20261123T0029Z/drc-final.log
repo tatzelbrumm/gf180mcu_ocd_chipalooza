@@ -436,3 +436,29 @@ gf180mcu_ocd_chipalooza_final
 2026-11-23 01:54:23 +0000: Memory Usage (1771380K) : Executing rule ubmeplate_ACUTE
 2026-11-23 01:54:24 +0000: Memory Usage (1771380K) : Executing rule pr_bndry_OFFGRID
 2026-11-23 01:54:25 +0000: Memory Usage (1771380K) : Executing rule pr_bndry_ACUTE
+2026-11-23 01:54:26 +0000: Memory Usage (1771380K) : Executing rule border_OFFGRID
+2026-11-23 01:54:26 +0000: Memory Usage (1771380K) : Executing rule border_ACUTE
+2026-11-23 01:54:27 +0000: Memory Usage (1771380K) : Executing deck CO.10_no_contact_on_poly_gate from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/contact.rb
+2026-11-23 01:54:27 +0000: Memory Usage (1771380K) : Executing rule CO.10
+2026-11-23 01:54:27 +0000: Memory Usage (1771380K) : Executing deck CO.11_no_contact_on_field_oxide from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/contact.rb
+2026-11-23 01:54:27 +0000: Memory Usage (1771380K) : Executing rule CO.11
+2026-11-23 01:54:31 +0000: Memory Usage (1771404K) : Executing deck CO.1_min_max_contact_size from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/contact.rb
+2026-11-23 01:54:31 +0000: Memory Usage (1771404K) : Executing rule CO.1
+2026-11-23 01:54:33 +0000: Memory Usage (1771404K) : Executing deck CO.2a_min_contact_spacing from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/contact.rb
+2026-11-23 01:54:33 +0000: Memory Usage (1771404K) : Executing rule CO.2a
+2026-11-23 01:54:34 +0000: Memory Usage (1771532K) : Executing deck CO.2b_contact_array_spacing from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/contact.rb
+2026-11-23 01:54:34 +0000: Memory Usage (1771532K) : Executing rule CO.2b
+2026-11-23 01:54:46 +0000: Memory Usage (1771532K) : Executing deck CO.3_poly2_overlap from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/contact.rb
+2026-11-23 01:54:46 +0000: Memory Usage (1771532K) : Executing rule CO.3
+2026-11-23 01:55:02 +0000: Memory Usage (1805964K) : Executing deck CO.4_comp_overlap from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/contact.rb
+2026-11-23 01:55:02 +0000: Memory Usage (1805964K) : Executing rule CO.4
+2026-11-23 01:55:22 +0000: Memory Usage (1811144K) : Executing deck CO.5a_nplus_overlap_butted from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/contact.rb
+2026-11-23 01:55:22 +0000: Memory Usage (1811144K) : Executing rule CO.5a
+2026-11-23 01:55:23 +0000: Memory Usage (1811144K) : Executing deck CO.5b_pplus_overlap_butted from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/contact.rb
+2026-11-23 01:55:23 +0000: Memory Usage (1811144K) : Executing rule CO.5b
+2026-11-23 01:55:25 +0000: Memory Usage (1811144K) : Executing deck CO.6_metal1_overlap from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/contact.rb
+2026-11-23 01:55:25 +0000: Memory Usage (1811144K) : Executing rule CO.6
+2026-11-23 01:55:35 +0000: Memory Usage (1945756K) : Executing deck CO.6a_metal1_eol_overlap from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/contact.rb
+2026-11-23 01:55:35 +0000: Memory Usage (1945756K) : Executing rule CO.6a
+2026-11-23 01:55:45 +0000: Memory Usage (1945624K) : Executing deck CO.6b_adjacent_edge_overlap from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/contact.rb
+2026-11-23 01:55:45 +0000: Memory Usage (1945624K) : Executing rule CO.6b
