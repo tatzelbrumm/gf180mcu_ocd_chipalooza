@@ -228,3 +228,8 @@ gf180mcu_ocd_chipalooza_final
 2026-11-23 01:45:48 +0000: Memory Usage (1704388K) : Executing rule ANT.16_ii_ANT.10
 2026-11-23 01:45:48 +0000: Memory Usage (1704388K) : Executing deck antenna_via3 from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/antenna.rb
 2026-11-23 01:45:48 +0000: Memory Usage (1704388K) : Executing rule ANT.16_i_ANT.11
+2026-11-23 01:46:30 +0000: Memory Usage (1704352K) : Executing rule ANT.16_ii_ANT.11
+2026-11-23 01:47:05 +0000: Memory Usage (1704356K) : Executing rule ANT.16_iii_ANT.15_V3_MIMB
+2026-11-23 01:47:05 +0000: Memory Usage (1704356K) : Executing deck antenna_via4 from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/antenna.rb
+2026-11-23 01:47:06 +0000: Memory Usage (1704356K) : Executing rule ANT.16_i_ANT.12
+2026-11-23 01:47:53 +0000: Memory Usage (1704356K) : Executing rule ANT.16_ii_ANT.12
