@@ -773,3 +773,86 @@ gf180mcu_ocd_chipalooza_final
 2026-11-23 05:02:18 +0000: Memory Usage (3414952K) : Executing rule MDP.3c
 2026-11-23 05:02:19 +0000: Memory Usage (3414952K) : Executing rule MDP.3d
 2026-11-23 05:02:19 +0000: Memory Usage (3414952K) : Executing rule MDP.4
+2026-11-23 05:02:56 +0000: Memory Usage (3604936K) : Executing rule MDP.4a
+2026-11-23 05:02:56 +0000: Memory Usage (3604936K) : Executing rule MDP.4b
+2026-11-23 05:02:57 +0000: Memory Usage (3604936K) : Executing rule MDP.5
+2026-11-23 05:02:58 +0000: Memory Usage (3604936K) : Executing rule MDP.5a
+2026-11-23 05:02:58 +0000: Memory Usage (3604936K) : Executing rule MDP.6
+2026-11-23 05:02:58 +0000: Memory Usage (3604936K) : Executing rule MDP.6a
+2026-11-23 05:02:58 +0000: Memory Usage (3604936K) : Executing rule MDP.7
+2026-11-23 05:02:59 +0000: Memory Usage (3604936K) : Executing rule MDP.8
+2026-11-23 05:02:59 +0000: Memory Usage (3604936K) : Executing rule MDP.9a
+2026-11-23 05:02:59 +0000: Memory Usage (3604936K) : Executing rule MDP.9b
+2026-11-23 05:03:01 +0000: Memory Usage (3604936K) : Executing rule MDP.9c
+2026-11-23 05:03:02 +0000: Memory Usage (3604936K) : Executing rule MDP.9d
+2026-11-23 05:03:08 +0000: Memory Usage (3604936K) : Executing rule MDP.9ei
+2026-11-23 05:03:08 +0000: Memory Usage (3604936K) : Executing rule MDP.9eii
+2026-11-23 05:03:08 +0000: Memory Usage (3604936K) : Executing rule MDP.9f
+2026-11-23 05:03:09 +0000: Memory Usage (3604936K) : Executing rule MDP.10
+2026-11-23 05:03:09 +0000: Memory Usage (3604936K) : Executing rule MDP.10a
+2026-11-23 05:03:09 +0000: Memory Usage (3604936K) : Executing rule MDP.10b
+2026-11-23 05:03:09 +0000: Memory Usage (3604936K) : Executing rule MDP.11
+2026-11-23 05:03:11 +0000: Memory Usage (3604936K) : Executing rule MDP.12
+2026-11-23 05:03:11 +0000: Memory Usage (3604936K) : Executing rule MDP.13a
+2026-11-23 05:03:13 +0000: Memory Usage (3605064K) : Executing rule MDP.13b
+2026-11-23 05:03:13 +0000: Memory Usage (3605064K) : Executing rule MDP.13c
+2026-11-23 05:03:18 +0000: Memory Usage (3605012K) : Executing rule MDP.15
+2026-11-23 05:03:18 +0000: Memory Usage (3605012K) : Executing rule MDP.16a
+2026-11-23 05:03:18 +0000: Memory Usage (3605012K) : Executing rule MDP.16b
+2026-11-23 05:03:18 +0000: Memory Usage (3605012K) : Executing rule MDP.17a
+2026-11-23 05:03:19 +0000: Memory Usage (3605012K) : Executing rule MDP.17c
+2026-11-23 05:03:19 +0000: Memory Usage (3605012K) : Executing deck lres from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/lres.rb
+2026-11-23 05:03:19 +0000: Memory Usage (3605012K) : Starting LRES derivations
+2026-11-23 05:03:21 +0000: Memory Usage (3605012K) : Executing rule LRES.1
+2026-11-23 05:03:21 +0000: Memory Usage (3605012K) : Executing rule LRES.2
+2026-11-23 05:03:21 +0000: Memory Usage (3605012K) : Executing rule LRES.3
+2026-11-23 05:03:21 +0000: Memory Usage (3605012K) : Executing rule LRES.4
+2026-11-23 05:03:22 +0000: Memory Usage (3605012K) : Executing rule LRES.5
+2026-11-23 05:03:22 +0000: Memory Usage (3605012K) : Executing rule LRES.6
+2026-11-23 05:03:22 +0000: Memory Usage (3605012K) : Executing rule LRES.7
+2026-11-23 05:03:22 +0000: Memory Usage (3605012K) : Executing rule LRES.9a
+2026-11-23 05:03:23 +0000: Memory Usage (3605012K) : Executing rule LRES.9b
+2026-11-23 05:03:24 +0000: Memory Usage (3605012K) : Executing deck lvpwell from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/lvpwell.rb
+2026-11-23 05:03:24 +0000: Memory Usage (3605012K) : Starting LVPWELL derivations
+2026-11-23 05:03:24 +0000: Memory Usage (3605012K) : Executing rule LPW.1_LV
+2026-11-23 05:03:24 +0000: Memory Usage (3605012K) : Executing rule LPW.1_MV
+2026-11-23 05:03:24 +0000: Memory Usage (3605012K) : Executing rule LPW.2a_LV
+2026-11-23 05:03:24 +0000: Memory Usage (3605012K) : Executing rule LPW.2a_MV
+2026-11-23 05:03:24 +0000: Memory Usage (3605012K) : Executing rule LPW.2b_LV
+2026-11-23 05:03:24 +0000: Memory Usage (3605012K) : Executing rule LPW.2b_MV
+2026-11-23 05:03:24 +0000: Memory Usage (3605012K) : Executing rule LPW.3_LV
+2026-11-23 05:03:24 +0000: Memory Usage (3605012K) : Executing rule LPW.5
+2026-11-23 05:03:26 +0000: Memory Usage (3605012K) : Executing rule LPW.11
+2026-11-23 05:03:27 +0000: Memory Usage (3605012K) : Executing rule LPW.12
+2026-11-23 05:03:27 +0000: Memory Usage (3605012K) : Executing deck lvs_bjt from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/lvs_bjt.rb
+2026-11-23 05:03:27 +0000: Memory Usage (3605012K) : Executing rule LVS_BJT.1
+2026-11-23 05:03:28 +0000: Memory Usage (3605012K) : Executing deck mcell from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/mcell.rb
+2026-11-23 05:03:28 +0000: Memory Usage (3605012K) : Executing rule MC.1
+2026-11-23 05:03:28 +0000: Memory Usage (3605012K) : Executing rule MC.2
+2026-11-23 05:03:28 +0000: Memory Usage (3605012K) : Executing rule MC.3
+2026-11-23 05:03:28 +0000: Memory Usage (3605012K) : Executing rule MC.4
+2026-11-23 05:03:28 +0000: Memory Usage (3605012K) : Executing deck metal1 from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/metal.rb
+2026-11-23 05:03:28 +0000: Memory Usage (3605012K) : Executing rule M1.1
+2026-11-23 05:03:34 +0000: Memory Usage (3605012K) : Executing rule M1.2a
+2026-11-23 05:03:42 +0000: Memory Usage (3605012K) : Executing rule M1.2b
+2026-11-23 05:03:49 +0000: Memory Usage (3605012K) : Executing rule M1.3
+2026-11-23 05:03:49 +0000: Memory Usage (3605012K) : Executing deck metal2 from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/metal.rb
+2026-11-23 05:03:49 +0000: Memory Usage (3605012K) : Executing rule M2.1
+2026-11-23 05:03:49 +0000: Memory Usage (3605012K) : Executing rule M2.2a
+2026-11-23 05:03:51 +0000: Memory Usage (3605012K) : Executing rule M2.2b
+2026-11-23 05:03:54 +0000: Memory Usage (3605012K) : Executing rule M2.3
+2026-11-23 05:03:55 +0000: Memory Usage (3605012K) : Executing deck metal3 from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/metal.rb
+2026-11-23 05:03:55 +0000: Memory Usage (3605012K) : Executing rule M3.1
+2026-11-23 05:03:55 +0000: Memory Usage (3605012K) : Executing rule M3.2a
+2026-11-23 05:03:57 +0000: Memory Usage (3605012K) : Executing rule M3.2b
+2026-11-23 05:04:03 +0000: Memory Usage (3605012K) : Executing rule M3.3
+2026-11-23 05:04:03 +0000: Memory Usage (3605012K) : Executing deck metal4 from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/metal.rb
+2026-11-23 05:04:03 +0000: Memory Usage (3605012K) : Executing rule M4.1
+2026-11-23 05:04:03 +0000: Memory Usage (3605012K) : Executing rule M4.2a
+2026-11-23 05:04:08 +0000: Memory Usage (3605012K) : Executing rule M4.2b
+2026-11-23 05:04:21 +0000: Memory Usage (3612216K) : Executing rule M4.3
+2026-11-23 05:04:22 +0000: Memory Usage (3612216K) : Executing deck metal5 from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/metal.rb
+2026-11-23 05:04:22 +0000: Memory Usage (3612216K) : Executing deck metaltop from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/metaltop.rb
+2026-11-23 05:04:22 +0000: Memory Usage (3612216K) : MetalTop thickness 9k/11k section
+2026-11-23 05:04:22 +0000: Memory Usage (3612216K) : Executing rule MT.1
+2026-11-23 05:04:22 +0000: Memory Usage (3612216K) : Executing rule MT.2a
