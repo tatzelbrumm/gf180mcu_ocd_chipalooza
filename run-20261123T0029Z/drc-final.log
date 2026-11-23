@@ -857,3 +857,9 @@ gf180mcu_ocd_chipalooza_final
 2026-11-23 05:04:22 +0000: Memory Usage (3612216K) : Executing rule MT.1
 2026-11-23 05:04:22 +0000: Memory Usage (3612216K) : Executing rule MT.2a
 2026-11-23 05:04:38 +0000: Memory Usage (3612180K) : Executing rule MT.2b
+2026-11-23 05:08:10 +0000: Memory Usage (5718772K) : Executing rule MT.4
+2026-11-23 05:08:10 +0000: Memory Usage (3618416K) : Executing deck metaltop_30k from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/metaltop_30k.rb
+2026-11-23 05:08:10 +0000: Memory Usage (3618416K) : Executing deck mim_a from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/mim_a.rb
+2026-11-23 05:08:10 +0000: Memory Usage (3618416K) : Executing deck mim_b from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/mim_b.rb
+2026-11-23 05:08:10 +0000: Memory Usage (3618416K) : MIM Capacitor Option B section
+2026-11-23 05:08:12 +0000: Memory Usage (3618436K) : Executing rule MIMTM.1
