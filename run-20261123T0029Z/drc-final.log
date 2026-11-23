@@ -402,3 +402,37 @@ gf180mcu_ocd_chipalooza_final
 2026-11-23 01:52:14 +0000: Memory Usage (1764468K) : Executing rule metal4_OFFGRID
 2026-11-23 01:52:17 +0000: Memory Usage (1764468K) : Executing rule metal4_ACUTE
 2026-11-23 01:52:17 +0000: Memory Usage (1764468K) : Executing rule metal4_dummy_OFFGRID
+2026-11-23 01:54:05 +0000: Memory Usage (1764468K) : Executing rule metal4_dummy_ACUTE
+2026-11-23 01:54:06 +0000: Memory Usage (1764468K) : Executing rule metal4_label_OFFGRID
+2026-11-23 01:54:07 +0000: Memory Usage (1764468K) : Executing rule metal4_label_ACUTE
+2026-11-23 01:54:08 +0000: Memory Usage (1764468K) : Executing rule metal4_blk_OFFGRID
+2026-11-23 01:54:08 +0000: Memory Usage (1764468K) : Executing rule metal4_blk_ACUTE
+2026-11-23 01:54:08 +0000: Memory Usage (1764468K) : Executing rule metal4_res_OFFGRID
+2026-11-23 01:54:08 +0000: Memory Usage (1764468K) : Executing rule metal4_res_ACUTE
+2026-11-23 01:54:09 +0000: Memory Usage (1764468K) : Executing deck geom_m5 from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/geom.rb
+2026-11-23 01:54:09 +0000: Memory Usage (1764468K) : OFFGRID-ANGLES section (geom_m5)
+2026-11-23 01:54:09 +0000: Memory Usage (1764468K) : Executing rule via4_OFFGRID
+2026-11-23 01:54:09 +0000: Memory Usage (1764468K) : Executing rule via4_ACUTE
+2026-11-23 01:54:11 +0000: Memory Usage (1771380K) : Executing rule metal5_OFFGRID
+2026-11-23 01:54:13 +0000: Memory Usage (1771380K) : Executing rule metal5_ACUTE
+2026-11-23 01:54:14 +0000: Memory Usage (1771380K) : Executing rule metal5_dummy_OFFGRID
+2026-11-23 01:54:17 +0000: Memory Usage (1771380K) : Executing rule metal5_dummy_ACUTE
+2026-11-23 01:54:18 +0000: Memory Usage (1771380K) : Executing rule metal5_label_OFFGRID
+2026-11-23 01:54:18 +0000: Memory Usage (1771380K) : Executing rule metal5_label_ACUTE
+2026-11-23 01:54:19 +0000: Memory Usage (1771380K) : Executing rule metal5_blk_OFFGRID
+2026-11-23 01:54:19 +0000: Memory Usage (1771380K) : Executing rule metal5_blk_ACUTE
+2026-11-23 01:54:20 +0000: Memory Usage (1771380K) : Executing rule metal5_res_OFFGRID
+2026-11-23 01:54:20 +0000: Memory Usage (1771380K) : Executing rule metal5_res_ACUTE
+2026-11-23 01:54:20 +0000: Memory Usage (1771380K) : Executing deck geom_metaltop from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/geom.rb
+2026-11-23 01:54:20 +0000: Memory Usage (1771380K) : Executing deck geom_topmarkers from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/geom.rb
+2026-11-23 01:54:20 +0000: Memory Usage (1771380K) : OFFGRID-ANGLES section (geom_topmarkers)
+2026-11-23 01:54:20 +0000: Memory Usage (1771380K) : Executing rule pad_OFFGRID
+2026-11-23 01:54:21 +0000: Memory Usage (1771380K) : Executing rule pad_ACUTE
+2026-11-23 01:54:22 +0000: Memory Usage (1771380K) : Executing rule ubmpperi_OFFGRID
+2026-11-23 01:54:22 +0000: Memory Usage (1771380K) : Executing rule ubmpperi_ACUTE
+2026-11-23 01:54:22 +0000: Memory Usage (1771380K) : Executing rule ubmparray_OFFGRID
+2026-11-23 01:54:22 +0000: Memory Usage (1771380K) : Executing rule ubmparray_ACUTE
+2026-11-23 01:54:23 +0000: Memory Usage (1771380K) : Executing rule ubmeplate_OFFGRID
+2026-11-23 01:54:23 +0000: Memory Usage (1771380K) : Executing rule ubmeplate_ACUTE
+2026-11-23 01:54:24 +0000: Memory Usage (1771380K) : Executing rule pr_bndry_OFFGRID
+2026-11-23 01:54:25 +0000: Memory Usage (1771380K) : Executing rule pr_bndry_ACUTE
