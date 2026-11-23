@@ -1,0 +1,7 @@
+final_gds/: renamed final GDS (top cell gf180mcu_ocd_chipalooza_final), xz chunks + gds_unpack.sh
+old_final_unrenamed_topcell.gds.gz: first final GDS (top cell not renamed)
+cells.tsv: per-cell hashes of the renamed final GDS
+mag_files.tar.xz: magic/*.mag archive/*.mag; gds_prefill_and_slots.tar: pre-fill GDS and slot GDS
+fixes/: ISSUE.md PR.md patch for the top-cell name; scripts/ patched script and rename_top_cell.rb
+worktree/: whole working tree without .git; unpack: cat worktree.tar.xz.part-* | xz -d | tar -x
+results/: lvs-top3.log + comp out (patched LVS, verdict do not match), partial killed DRC lyrdb; fixes/pad_pins from planning session; fixes/ALL_TRACKED_CHANGES_applied_in_tree.patch = every tracked-file change I applied
