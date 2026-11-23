@@ -888,3 +888,131 @@ gf180mcu_ocd_chipalooza_final
 2026-11-23 05:14:30 +0000: Memory Usage (3618636K) : Executing deck mslot2 from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/mslot.rb
 2026-11-23 05:14:30 +0000: Memory Usage (3618636K) : Starting Metal Slotting rules derivations
 2026-11-23 05:14:36 +0000: Memory Usage (3618636K) : Checking slots for Metal2
+2026-11-23 05:14:39 +0000: Memory Usage (3618636K) : Executing rule MSLOT2.1
+2026-11-23 05:14:39 +0000: Memory Usage (3618636K) : Executing rule MSLOT2.2
+2026-11-23 05:14:39 +0000: Memory Usage (3618636K) : Executing rule MSLOT2.3
+2026-11-23 05:14:39 +0000: Memory Usage (3618636K) : Executing rule MSLOT2.4
+2026-11-23 05:14:39 +0000: Memory Usage (3618636K) : Executing rule MSLOT2.5
+2026-11-23 05:14:40 +0000: Memory Usage (3618636K) : Executing rule MSLOT2.7
+2026-11-23 05:14:40 +0000: Memory Usage (3618636K) : Executing rule MSLOT2.8
+2026-11-23 05:14:40 +0000: Memory Usage (3618764K) : Executing rule MSLOT2.9
+2026-11-23 05:14:40 +0000: Memory Usage (3618764K) : Executing deck mslot3 from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/mslot.rb
+2026-11-23 05:14:40 +0000: Memory Usage (3618764K) : Starting Metal Slotting rules derivations
+2026-11-23 05:14:45 +0000: Memory Usage (3618592K) : Checking slots for Metal3
+2026-11-23 05:14:49 +0000: Memory Usage (3618848K) : Executing rule MSLOT3.1
+2026-11-23 05:14:49 +0000: Memory Usage (3618848K) : Executing rule MSLOT3.2
+2026-11-23 05:14:49 +0000: Memory Usage (3618848K) : Executing rule MSLOT3.3
+2026-11-23 05:14:50 +0000: Memory Usage (3618848K) : Executing rule MSLOT3.4
+2026-11-23 05:14:50 +0000: Memory Usage (3618848K) : Executing rule MSLOT3.5
+2026-11-23 05:14:50 +0000: Memory Usage (3618848K) : Executing rule MSLOT3.7
+2026-11-23 05:14:50 +0000: Memory Usage (3618848K) : Executing rule MSLOT3.8
+2026-11-23 05:14:50 +0000: Memory Usage (3618848K) : Executing rule MSLOT3.9
+2026-11-23 05:14:50 +0000: Memory Usage (3618848K) : Executing deck mslot4 from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/mslot.rb
+2026-11-23 05:14:50 +0000: Memory Usage (3618848K) : Starting Metal Slotting rules derivations
+2026-11-23 05:14:56 +0000: Memory Usage (3618792K) : Checking slots for Metal4
+2026-11-23 05:15:03 +0000: Memory Usage (3618792K) : Executing rule MSLOT4.1
+2026-11-23 05:15:04 +0000: Memory Usage (3618792K) : Executing rule MSLOT4.2
+2026-11-23 05:15:04 +0000: Memory Usage (3618792K) : Executing rule MSLOT4.3
+2026-11-23 05:15:04 +0000: Memory Usage (3618792K) : Executing rule MSLOT4.4
+2026-11-23 05:15:04 +0000: Memory Usage (3618792K) : Executing rule MSLOT4.5
+2026-11-23 05:15:04 +0000: Memory Usage (3618792K) : Executing rule MSLOT4.7
+2026-11-23 05:15:05 +0000: Memory Usage (3618792K) : Executing rule MSLOT4.8
+2026-11-23 05:15:05 +0000: Memory Usage (3618792K) : Executing rule MSLOT4.9
+2026-11-23 05:15:05 +0000: Memory Usage (3618792K) : Executing deck mslot5 from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/mslot.rb
+2026-11-23 05:15:05 +0000: Memory Usage (3618792K) : Starting Metal Slotting rules derivations
+2026-11-23 05:15:10 +0000: Memory Usage (3618844K) : Checking slots for Metal5
+2026-11-23 05:15:15 +0000: Memory Usage (3618844K) : Executing rule MSLOT5.1
+2026-11-23 05:15:15 +0000: Memory Usage (3618844K) : Executing rule MSLOT5.2
+2026-11-23 05:15:15 +0000: Memory Usage (3618844K) : Executing rule MSLOT5.3
+2026-11-23 05:15:15 +0000: Memory Usage (3618844K) : Executing rule MSLOT5.4
+2026-11-23 05:15:15 +0000: Memory Usage (3618844K) : Executing rule MSLOT5.5
+2026-11-23 05:15:15 +0000: Memory Usage (3618844K) : Executing rule MSLOT5.7
+2026-11-23 05:15:15 +0000: Memory Usage (3618844K) : Executing rule MSLOT5.8
+2026-11-23 05:15:15 +0000: Memory Usage (3618844K) : Executing rule MSLOT5.9
+2026-11-23 05:15:15 +0000: Memory Usage (3618844K) : Executing deck mslot6 from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/mslot.rb
+2026-11-23 05:15:15 +0000: Memory Usage (3618844K) : Executing deck nat from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/nat.rb
+2026-11-23 05:15:15 +0000: Memory Usage (3618844K) : Starting NAT derivations
+2026-11-23 05:15:16 +0000: Memory Usage (3618844K) : Executing rule NAT.1
+2026-11-23 05:15:16 +0000: Memory Usage (3618844K) : Executing rule NAT.2
+2026-11-23 05:15:16 +0000: Memory Usage (3618844K) : Executing rule NAT.3
+2026-11-23 05:15:16 +0000: Memory Usage (3618844K) : Executing rule NAT.4
+2026-11-23 05:15:17 +0000: Memory Usage (3618844K) : Executing rule NAT.5
+2026-11-23 05:15:19 +0000: Memory Usage (3618844K) : Executing rule NAT.6
+2026-11-23 05:15:19 +0000: Memory Usage (3618844K) : Executing rule NAT.7
+2026-11-23 05:15:19 +0000: Memory Usage (3618844K) : Executing rule NAT.8
+2026-11-23 05:15:19 +0000: Memory Usage (3618844K) : Executing rule NAT.9
+2026-11-23 05:15:19 +0000: Memory Usage (3618844K) : Executing rule NAT.10
+2026-11-23 05:15:19 +0000: Memory Usage (3618844K) : Executing rule NAT.11
+2026-11-23 05:15:19 +0000: Memory Usage (3618844K) : Executing rule NAT.12
+2026-11-23 05:15:19 +0000: Memory Usage (3618844K) : Executing deck nplus from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/nplus.rb
+2026-11-23 05:15:19 +0000: Memory Usage (3618844K) : Starting NPLUS derivations
+2026-11-23 05:15:21 +0000: Memory Usage (3618844K) : Executing rule NP.1
+2026-11-23 05:15:21 +0000: Memory Usage (3618844K) : Executing rule NP.2
+2026-11-23 05:15:22 +0000: Memory Usage (3618844K) : Executing rule NP.3a
+2026-11-23 05:15:26 +0000: Memory Usage (3618844K) : Executing rule NP.3bi
+2026-11-23 05:15:26 +0000: Memory Usage (3618844K) : Executing rule NP.3bii
+2026-11-23 05:15:26 +0000: Memory Usage (3618844K) : Executing rule NP.3ci
+2026-11-23 05:15:29 +0000: Memory Usage (3618844K) : Executing rule NP.3cii
+2026-11-23 05:15:31 +0000: Memory Usage (3618844K) : Executing rule NP.3d
+2026-11-23 05:15:32 +0000: Memory Usage (3618844K) : Executing rule NP.3e
+2026-11-23 05:15:32 +0000: Memory Usage (3618844K) : Executing rule NP.4a
+2026-11-23 05:15:36 +0000: Memory Usage (3618844K) : Executing rule NP.4b
+2026-11-23 05:15:36 +0000: Memory Usage (3618844K) : Executing rule NP.5a
+2026-11-23 05:15:39 +0000: Memory Usage (3618844K) : Executing rule PP.5b
+2026-11-23 05:15:43 +0000: Memory Usage (3618844K) : Executing rule NP.5ci
+2026-11-23 05:15:46 +0000: Memory Usage (3618844K) : Executing rule NP.5cii
+2026-11-23 05:15:48 +0000: Memory Usage (3618844K) : Executing rule NP.5di
+2026-11-23 05:15:53 +0000: Memory Usage (3618844K) : Executing rule NP.5dii
+2026-11-23 05:15:57 +0000: Memory Usage (3618972K) : Executing rule NP.6
+2026-11-23 05:16:02 +0000: Memory Usage (3618928K) : Executing rule NP.7
+2026-11-23 05:16:03 +0000: Memory Usage (3618928K) : Executing rule NP.8a
+2026-11-23 05:16:03 +0000: Memory Usage (3618928K) : Executing rule NP.8b
+2026-11-23 05:16:03 +0000: Memory Usage (3618928K) : Executing rule NP.9
+2026-11-23 05:16:06 +0000: Memory Usage (3618928K) : Executing rule NP.10
+2026-11-23 05:16:08 +0000: Memory Usage (3618928K) : Executing rule NP.11
+2026-11-23 05:16:08 +0000: Memory Usage (3618928K) : Executing rule NP.12
+2026-11-23 05:16:09 +0000: Memory Usage (3618928K) : Executing deck nwell from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/nwell.rb
+2026-11-23 05:16:09 +0000: Memory Usage (3618928K) : Starting NWELL derivations
+2026-11-23 05:16:10 +0000: Memory Usage (3618928K) : Executing rule NW.1a_LV
+2026-11-23 05:16:11 +0000: Memory Usage (3618928K) : Executing rule NW.1a_MV
+2026-11-23 05:16:11 +0000: Memory Usage (3618928K) : Executing rule NW.1b_LV
+2026-11-23 05:16:11 +0000: Memory Usage (3618928K) : Executing rule NW.1b_MV
+2026-11-23 05:16:21 +0000: Memory Usage (3618928K) : Executing rule NW.2a_LV
+2026-11-23 05:16:21 +0000: Memory Usage (3618928K) : Executing rule NW.2a_MV
+2026-11-23 05:16:22 +0000: Memory Usage (3618928K) : Executing rule NW.2b_LV
+2026-11-23 05:16:22 +0000: Memory Usage (3618928K) : Executing rule NW.2b_MV
+2026-11-23 05:16:22 +0000: Memory Usage (3618928K) : Executing rule NW.3
+2026-11-23 05:16:22 +0000: Memory Usage (3618928K) : Executing rule NW.4
+2026-11-23 05:16:22 +0000: Memory Usage (3618928K) : Executing rule NW.5_LV
+2026-11-23 05:16:22 +0000: Memory Usage (3618928K) : Executing rule NW.5_MV
+2026-11-23 05:16:22 +0000: Memory Usage (3618928K) : Executing rule NW.6
+2026-11-23 05:16:22 +0000: Memory Usage (3618800K) : Executing deck otp_mk from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/otp_mk.rb
+2026-11-23 05:16:22 +0000: Memory Usage (3618800K) : Starting OTP_MK derivations
+2026-11-23 05:16:23 +0000: Memory Usage (3618800K) : Executing rule O.DF.3a
+2026-11-23 05:16:23 +0000: Memory Usage (3618800K) : Executing rule O.DF.6
+2026-11-23 05:16:23 +0000: Memory Usage (3618800K) : Executing rule O.DF.9
+2026-11-23 05:16:23 +0000: Memory Usage (3618800K) : Executing rule O.PL.2
+2026-11-23 05:16:23 +0000: Memory Usage (3618800K) : Executing rule O.PL.3a
+2026-11-23 05:16:25 +0000: Memory Usage (3618800K) : Executing rule O.PL.4
+2026-11-23 05:16:25 +0000: Memory Usage (3618800K) : Executing rule O.SB.2
+2026-11-23 05:16:25 +0000: Memory Usage (3618800K) : Executing rule O.SB.3
+2026-11-23 05:16:25 +0000: Memory Usage (3618800K) : Executing rule O.SB.4
+2026-11-23 05:16:25 +0000: Memory Usage (3618800K) : Executing rule O.SB.5b_LV
+2026-11-23 05:16:26 +0000: Memory Usage (3618800K) : Executing rule O.SB.9
+2026-11-23 05:16:26 +0000: Memory Usage (3618800K) : Executing rule O.SB.11
+2026-11-23 05:16:26 +0000: Memory Usage (3618800K) : Executing rule O.SB.13_LV
+2026-11-23 05:16:26 +0000: Memory Usage (3618800K) : Executing rule O.SB.13_MV
+2026-11-23 05:16:26 +0000: Memory Usage (3618800K) : Executing rule O.CO.7
+2026-11-23 05:16:26 +0000: Memory Usage (3618800K) : Executing rule O.PL.ORT
+2026-11-23 05:16:27 +0000: Memory Usage (3618800K) : Executing deck poly2 from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/poly2.rb
+2026-11-23 05:16:27 +0000: Memory Usage (3618800K) : Starting POLY2 derivations
+2026-11-23 05:16:28 +0000: Memory Usage (3618800K) : Executing rule PL.1_LV
+2026-11-23 05:16:29 +0000: Memory Usage (3618800K) : Executing rule PL.1_MV
+2026-11-23 05:16:30 +0000: Memory Usage (3618800K) : Executing rule PL.1a_LV
+2026-11-23 05:16:30 +0000: Memory Usage (3618800K) : Executing rule PL.1a_MV
+2026-11-23 05:16:30 +0000: Memory Usage (3618800K) : Executing rule PL.2_LV
+2026-11-23 05:16:32 +0000: Memory Usage (3618800K) : Executing rule PL.2_MV
+2026-11-23 05:16:37 +0000: Memory Usage (3618800K) : Executing rule PL.3a
+2026-11-23 05:16:40 +0000: Memory Usage (3618800K) : Executing rule PL.4_LV
+2026-11-23 05:16:41 +0000: Memory Usage (3618800K) : Executing rule PL.4_MV
+2026-11-23 05:16:42 +0000: Memory Usage (3618800K) : Executing rule PL.5a_LV
