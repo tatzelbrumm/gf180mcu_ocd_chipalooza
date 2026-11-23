@@ -3356,3 +3356,10 @@ Extracting gf180mcu_ocd_chipalooza into extfiles/gf180mcu_ocd_chipalooza.ext:
 Processing gf180mcu_ocd_chipalooza
 Warning:  Ports "s14_an[2]" and "s14_an[1]" are electrically shorted.
 Warning:  Ports "s5_an[2]" and "s5_an[1]" are electrically shorted.
+gf180mcu_ocd_chipalooza: 13138 errors
+Total of 13170 errors (check feedback entries).
+Total of 3 warnings.
+Warning:  Ports "s14_an[2]" and "s14_an[1]" are electrically shorted.
+Warning:  Ports "s5_an[2]" and "s5_an[1]" are electrically shorted.
+Warning:  Ports "s10_an[1]" and "s10_an[0]" are electrically shorted.
+exttospice finished.
