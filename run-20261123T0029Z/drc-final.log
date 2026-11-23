@@ -506,3 +506,33 @@ gf180mcu_ocd_chipalooza_final
 2026-11-23 02:41:13 +0000: Memory Usage (3310860K) : Executing rule DF.12
 2026-11-23 02:41:14 +0000: Memory Usage (3310988K) : Executing deck df_13_lv from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/comp.rb
 2026-11-23 02:41:14 +0000: Memory Usage (3310988K) : Preparations for rule DF.13_LV
+2026-11-23 02:42:09 +0000: Memory Usage (3310856K) : Executing rule DF.13_LV
+2026-11-23 02:42:10 +0000: Memory Usage (3310856K) : Executing deck df_13_mv from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/comp.rb
+2026-11-23 02:42:10 +0000: Memory Usage (3310856K) : Preparations for rule DF.13_MV
+2026-11-23 02:42:53 +0000: Memory Usage (3310856K) : Executing rule DF.13_MV
+2026-11-23 02:42:53 +0000: Memory Usage (3310856K) : Executing deck df_14_lv from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/comp.rb
+2026-11-23 02:42:53 +0000: Memory Usage (3310856K) : Executing rule DF.14_LV
+2026-11-23 02:42:57 +0000: Memory Usage (3310856K) : Executing deck df_14_mv from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/comp.rb
+2026-11-23 02:42:57 +0000: Memory Usage (3310856K) : Executing rule DF.14_MV
+2026-11-23 02:42:58 +0000: Memory Usage (3310856K) : Executing deck df_16_lv from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/comp.rb
+2026-11-23 02:43:04 +0000: Memory Usage (3310848K) : Executing rule DF.16_LV
+2026-11-23 02:43:07 +0000: Memory Usage (3310848K) : Executing deck df_16_mv from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/comp.rb
+2026-11-23 02:43:10 +0000: Memory Usage (3310848K) : Executing rule DF.16_MV
+2026-11-23 02:43:12 +0000: Memory Usage (3310848K) : Executing deck df_17_lv from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/comp.rb
+2026-11-23 02:43:17 +0000: Memory Usage (3310848K) : Executing rule DF.17_LV
+2026-11-23 02:43:18 +0000: Memory Usage (3310848K) : Executing deck df_17_mv from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/comp.rb
+2026-11-23 02:43:21 +0000: Memory Usage (3310848K) : Executing rule DF.17_MV
+2026-11-23 02:43:22 +0000: Memory Usage (3310848K) : Executing deck df_18 from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/comp.rb
+2026-11-23 02:43:23 +0000: Memory Usage (3310848K) : Executing rule DF.18
+2026-11-23 02:43:23 +0000: Memory Usage (3310848K) : Executing deck df_19_lv from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/comp.rb
+2026-11-23 02:43:27 +0000: Memory Usage (3310848K) : Executing rule DF.19_LV
+2026-11-23 02:43:28 +0000: Memory Usage (3310848K) : Executing deck df_19_mv from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/comp.rb
+2026-11-23 02:43:30 +0000: Memory Usage (3310848K) : Executing rule DF.19_MV
+2026-11-23 02:43:31 +0000: Memory Usage (3310848K) : Executing deck df_1a_lv from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/comp.rb
+2026-11-23 02:43:33 +0000: Memory Usage (3310848K) : Executing rule DF.1a_LV
+2026-11-23 02:43:33 +0000: Memory Usage (3310848K) : Executing deck df_1a_mv from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/comp.rb
+2026-11-23 02:43:34 +0000: Memory Usage (3310848K) : Executing rule DF.1a_MV
+2026-11-23 02:43:35 +0000: Memory Usage (3310848K) : Executing deck df_1c from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/comp.rb
+2026-11-23 02:43:35 +0000: Memory Usage (3310848K) : Executing rule DF.1c
+2026-11-23 02:43:36 +0000: Memory Usage (3310848K) : Executing deck df_2a_lv from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/comp.rb
+2026-11-23 02:43:37 +0000: Memory Usage (3310848K) : Executing rule DF.2a_LV
