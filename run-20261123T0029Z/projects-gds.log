@@ -4,10 +4,8 @@ Reading slot wrapper placements from magic ...
 
 slot_1: ERROR no slot_1.gds or slot_1.gds.gz anywhere in dependencies/slot_1/
 slot_5: ERROR no slot_5.gds or slot_5.gds.gz anywhere in dependencies/slot_5/
-slot_7: ERROR no slot_7.gds or slot_7.gds.gz anywhere in dependencies/slot_7/
 slot_8: ERROR no slot_8.gds or slot_8.gds.gz anywhere in dependencies/slot_8/
 slot_14: ERROR no slot_14.gds or slot_14.gds.gz anywhere in dependencies/slot_14/
-slot_15: ERROR no slot_15.gds or slot_15.gds.gz anywhere in dependencies/slot_15/
 slot_16: ERROR no slot_16.gds or slot_16.gds.gz anywhere in dependencies/slot_16/
 slot_17: ERROR no slot_17.gds or slot_17.gds.gz anywhere in dependencies/slot_17/
 slot_18: ERROR no slot_18.gds or slot_18.gds.gz anywhere in dependencies/slot_18/
@@ -17,11 +15,15 @@ slot_4: dependencies/slot_4/gds/slot_4.gds.gz
     place at 2281.97 2168.65
 slot_6: dependencies/slot_6/gds/slot_6.gds
     place at 2281.97 2994.65
+slot_7: dependencies/slot_7/final/gds/slot_7.gds
+    place at 2281.97 3407.65
+slot_15: dependencies/slot_15/final/gds/slot_15.gds
+    place at 375.76 2168.65
 
 No project assigned:  3 9 10 11 12 13
 
-Wrote scripts/user_projects.tcl (3 project(s) placed).
+Wrote scripts/user_projects.tcl (5 project(s) placed).
 
-9 slot(s) had problems (see above).  scripts/user_projects.tcl was written for
+7 slot(s) had problems (see above).  scripts/user_projects.tcl was written for
 the slots that succeeded, but the chip is not complete.
 make: *** [Makefile:132: projects-gds] Error 1
