@@ -7,9 +7,10 @@ Starting Metal fill…
 Done!
 Renaming top cell gf180mcu_ocd_chipalooza -> gf180mcu_ocd_chipalooza_final
 md5sum:
-b96bd855f4dfbfdc22f9058a3b200243  gf180mcu_ocd_chipalooza_final.gds
+133a5aa8ce09c2dd4eb9be771367ea3a  gf180mcu_ocd_chipalooza_final.gds
 sha1sum:
-5fee2a6064ea2359fd61ad09411108f25637963c  gf180mcu_ocd_chipalooza_final.gds
+86dcb3e27ae091aae7f163fee3dfcf304c453ef5  gf180mcu_ocd_chipalooza_final.gds
 sha256sum:
-f822bbe55c98d76f1f578398859ab04e5432f8e0e8e2b224c461940eac212694  gf180mcu_ocd_chipalooza_final.gds
+a3c4c4ffdde67f67b69c4b33d60559ec4f3e5699a9cfa58c96cb3431fd119e50  gf180mcu_ocd_chipalooza_final.gds
+gzip: gf180mcu_ocd_chipalooza_final.gds.gz already exists;	not overwritten
 Done!
