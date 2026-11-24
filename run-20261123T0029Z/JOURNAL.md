@@ -16,3 +16,4 @@ Times UTC, 2026-11-23/24. Model claude-sonnet-5-5, effort medium.
 - User asked to preserve run 1 first: created branches chipalooza_artifacts_run1 (f0008a6) and chipalooza_logs_run1 (7da927b), same commits as before.
 - 23:45 MISTAKE: I started the rerun (clean-config .. projects-gds) before the user's go. Reported, stopped. projects-gds failed because make projects had not been run.
 - 23:49 on user's go: make projects ran (31 s, rc 0): 12 slot repositories cloned into dependencies/slot_N, config.txt hashes and .gitmodules updated by the script.
+- 23:54 user: place as many slots as possible and note the fixes for Tim. projects-gds placed 2, 4, 6; I made renamed copies slot_7.gds and slot_15.gds (script slot_gds_fixes.sh) -> 5 placed. Slots 1, 5, 18 (core only / empty GDS) and 8, 14, 16, 17 (no GDS) not placed. Details: SLOT_PROJECT_ISSUES.md. Continuing with gds-prefill, gds-final, drc-final, extract-sch-top, extract-top, lvs-top.

@@ -4518,21 +4518,872 @@ Reading "gate_drive_3v3".
 Reading "power_stage3v3".
 Reading "project_control_area".
 Reading "chipalooza_frame".
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "via__M2_M3_SQU".
+Reading "via__M1_M2_SQU".
+Reading "via__M3_M4_SQU".
+Reading "via__M1_M4_SQU".
+Reading "via__M2_M4_SQU".
+Reading "pfet_06v0_8u_2u_2nf".
+Reading "nfet_06v0_8u_2u_2nf".
+Reading "pfet_06v0_8u_4u_2nf".
+Reading "nfet_06v0_8u_1u_4nf".
+Reading "ppolyf_u_1k_6p0_1u_5u".
+Reading "via__M1_M2_MIN".
+Reading "pfet_06v0_8u_1u_8nf".
+Reading "pfet_06v0_8u_1u_2nf".
+Reading "nfet_06v0_4u_1u_2nf".
+Reading "nfet_06v0_8u_1u_2nf".
+Reading "cap_mim_30u_30u".
+Reading "ppolyf_u_1k_6p0_9p5_2u_4nf".
+Reading "pfet_06v0_8u_1u_12nf".
+Reading "via__M4_M5_SQU".
+Reading "via__M1_M3_SQU".
+Reading "via__M2_M5_SQU".
+Reading "via__M3_M5_SQU".
+Reading "bga__mb3_mc5_mc6".
+Reading "bga__mb4_mc3_mc4".
+Reading "bga__mb1_mb2_mt1".
+Reading "bga__md1_md2".
+Reading "bga__mb5_mc1_mc2".
+Reading "bga__mc7_mc8".
+Reading "bgt__trimsw".
+Reading "bgt__runits".
+Reading "ppoly_u_1k_6p0_1u_20u".
+Reading "cap_mim_10u_10u".
+Reading "via__M1_M5_SQU".
+Reading "nfet_06v0_1u_1u_1nf".
+Reading "pnp_05p00x05p00".
+Reading "pfet_06v0_8u_8u_1nf".
+Reading "nfet_06v0_2u_1u_1nf".
+Reading "pfet_06v0_2u_1u_1nf".
+Reading "nfet_06v0_8u_8u_1nf".
+Reading "via__M1_M4_ROU".
+Reading "via__M2_M3_ROU".
+Reading "spdt__m2_m4".
+Reading "spdt__m1_m3".
+Reading "spdt__mi1_mi2".
+Reading "spdt__mi3_mi4".
+Reading "pfet_06v0_2u_1u_2nf".
+Reading "tba__cc".
+Reading "via__M2_M4_ROU".
+Reading "tba__xrcc".
+Reading "tba__xmb1_xmb2_xm5_xm6".
+Reading "tba__xm3_xm4".
+Reading "tba__xm1_xm2".
+Reading "tba__xm7".
+Reading "tba__xmb3_xmb4".
+Reading "bg__mi1_mi2_me1_me2_me3_me4".
+Error while reading cell "bg__mi1_mi2_me1_me2_me3_me4" (byte position 467916): Warning: cell "pfet_06v0_2u_1u_1nf" placed on top of itself.  Ignoring the extra one.
+Reading "bg__trimres".
+Reading "bg__pnp_group".
+Reading "bg__amplifier".
+Error while reading cell "bg__amplifier" (byte position 487674): Warning: cell "via__M3_M4_SQU" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "bg__amplifier" (byte position 487712): Warning: cell "via__M3_M4_SQU" placed on top of itself.  Ignoring the extra one.
+Reading "bg__r1_r2_r3_ro".
+Error while reading cell "bg__r1_r2_r3_ro" (byte position 496094): Warning: cell "via__M1_M2_SQU" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "bg__r1_r2_r3_ro" (byte position 496170): Warning: cell "via__M1_M2_SQU" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "bg__r1_r2_r3_ro" (byte position 496208): Warning: cell "via__M1_M2_SQU" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "bg__r1_r2_r3_ro" (byte position 496246): Warning: cell "via__M1_M2_SQU" placed on top of itself.  Ignoring the extra one.
+Reading "bg__m1_m2_mb1_mo1_mo2".
+Error while reading cell "bg__m1_m2_mb1_mo1_mo2" (byte position 510614): Warning: cell "via__M1_M2_MIN" placed on top of itself.  Ignoring the extra one.
+Reading "bg__mb2_mb3".
+Reading "bg__ms1_ms2_ms3_ms4_c1".
+Reading "bg__dnwell".
+Reading "via__M1_M3_ROU".
+Reading "spg__dnwell".
+Reading "spg__spdt".
+Error while reading cell "spg__spdt" (byte position 828010): Warning: cell "via__M2_M3_SQU" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "spg__spdt" (byte position 828066): Warning: cell "via__M2_M3_SQU" placed on top of itself.  Ignoring the extra one.
+Reading "lvl__m1_m2".
+Reading "lvl__m3_m4".
+Reading "lvl__mi1_mi2".
+Reading "lvl__mi3_mi4".
+Reading "tb__dnwell".
+Reading "tb__amplifier".
+Reading "via__M2_M5_ROU".
+Reading "via__M3_M5_ROU".
+Reading "gf__spdt_group".
+Reading "gf__testbuffer".
+Reading "gf__levelshifter".
+Reading "gf__bandgap_cm".
+Error while reading cell "gf__bandgap_cm" (byte position 933820): Warning: cell "via__M2_M3_SQU" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "gf__bandgap_cm" (byte position 933988): Warning: cell "via__M2_M3_SQU" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "gf__bandgap_cm" (byte position 935820): Warning: cell "via__M2_M4_SQU" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "gf__bandgap_cm" (byte position 935932): Warning: cell "via__M2_M4_SQU" placed on top of itself.  Ignoring the extra one.
+CIF file read warning: Input off lambda grid by 2/5; snapped to grid.
+Reading "via__M4_M5_ROU".
+Reading "via__M3_M4_ROU".
+Reading "gf180mcu_cw_ip_vref".
+Reading "slot_2".
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: slot_4
+Reading "Bandgap_Core_Res".
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Error while reading cell "Bandgap_Core_Res" (byte position 15764112): Warning:  Cell Bandgap_Core_Res boundary was redefined.
+Reading "slot_4".
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 3.0
+Library name: slot_6
+Reading "lvlshifter".
+Reading "lpopamp_slice".
+Reading "lpopamp".
+Reading "slot_6".
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: sar_r4_hifa
+Reading "pfet_03v3_XEZNMC".
+Reading "pfet_03v3_ZE833C".
+Reading "nfet_03v3_CEG9X9".
+Reading "nfet_03v3_KP96ZV".
+Reading "cdac_r4_unit".
+Reading "cdac_r4_unit_br".
+Reading "cdac_r4_unit_dc".
+Reading "cdac_r4_unit_dcv".
+Reading "cdac_r4_unit_dr".
+Reading "cdac_r4_unit_g".
+Reading "cdac_r4_unit_x".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkbuf_12".
+Reading "gf180mcu_fd_sc_mcu7t5v0__and4_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__tiel".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi22_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__icgtp_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffnrnq_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__or4_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffsnq_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__and3_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__and2_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai32_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi221_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__and3_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffnrnq_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkbuf_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__or2_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkinv_3".
+Reading "gf180mcu_fd_sc_mcu7t5v0__or3_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai32_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi211_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai211_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai31_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai32_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__inv_12".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffnrnq_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkinv_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__inv_16".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffrnq_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_16".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkinv_8".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkbuf_16".
+Reading "gf180mcu_fd_sc_mcu7t5v0__and2_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi221_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai221_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffrnq_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__inv_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai22_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai22_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai31_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__mux2_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__and4_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai31_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai22_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_8".
+Reading "gf180mcu_fd_sc_mcu7t5v0__inv_8".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor3_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi22_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_20".
+Reading "gf180mcu_fd_sc_mcu7t5v0__inv_3".
+Reading "gf180mcu_fd_sc_mcu7t5v0__and2_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand3_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai211_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__or2_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand3_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8".
+Reading "gf180mcu_fd_sc_mcu7t5v0__or2_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkinv_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi22_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__or3_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi221_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai221_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_3".
+Reading "gf180mcu_fd_sc_mcu7t5v0__mux2_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__or4_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor4_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand4_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor3_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand4_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand4_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi21_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi211_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor4_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor2_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkbuf_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai211_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai21_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor4_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__and3_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand2_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor3_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor2_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi21_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand3_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai21_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi21_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai221_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkbuf_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__inv_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor2_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand2_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkinv_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__inv_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_64".
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_12".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_32".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai21_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffrnq_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__filltie".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_16".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_8".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand2_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__endcap".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fill_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fill_2".
+Reading "pfet_03v3_2888UM".
+Reading "nfet_03v3_A96D3S".
+Reading "nfet_03v3_EKZEGB$4".
+Reading "nfet_03v3_EKZEGB$3".
+Reading "nfet_03v3_EKZEGB$2".
+Reading "nfet_03v3_EKZEGB$1".
+Reading "pfet_03v3_ZE833C$2".
+Reading "pfet_03v3_GRPKVP$2".
+Reading "pfet_03v3_AWP2WN".
+Reading "pfet_03v3_LLA5YU".
+Reading "nfet_03v3_KP96ZV$2".
+Reading "nfet_03v3_PSNR9F$2".
+Reading "nfet_03v3_GGV944".
+Reading "nfet_03v3_EKZEGB".
+Reading "nfet_03v3_HMD882".
+Reading "pfet_03v3_3SLJFC$1".
+Reading "nfet_03v3_4JYFU7$1".
+Reading "pfet_03v3_3SLJFC".
+Reading "nfet_03v3_4JYFU7".
+Reading "pfet_03v3_GRPKVP$1".
+Reading "nfet_03v3_PSNR9F$1".
+Reading "pfet_03v3_GRPKVP".
+Reading "nfet_03v3_PSNR9F".
+Reading "pfet_03v3_Y9ZHKL".
+Reading "pfet_03v3_ZE833C$1".
+Reading "pfet_03v3_GP42X3".
+Reading "pfet_03v3_AMAGLZ".
+Reading "nfet_03v3_425GBQ".
+Reading "nfet_03v3_KP96ZV$1".
+Reading "nfet_03v3_42MD5L".
+Reading "nfet_03v3_9WNJZ7".
+Reading "nfet_03v3_9XUDBL".
+Reading "nfet_03v3_7YJ47K".
+Reading "nfet_03v3_A8DK6G".
+Reading "nfet_03v3_WDBF7J".
+Reading "dac_sw_2to1_tg_x0".
+Reading "dac_sw_2to1_tg_x".
+Reading "dac_sw_2to1_tg_y".
+Reading "cdac_r4_half".
+Reading "sar_r4_wrapper".
+    5000 uses
+Reading "fe_dload".
+Reading "fe_decap$3".
+Reading "fe_decap$2".
+Reading "fe_decap$1".
+Reading "fe_decap".
+Reading "fe_logic".
+Moving label "sdl1" from metal2 to via2 in cell fe_logic.
+Moving label "sdl2" from metal2 to via2 in cell fe_logic.
+Moving label "snx" from metal2 to via2 in cell fe_logic.
+Moving label "snd" from metal2 to via2 in cell fe_logic.
+Reading "fe_rsw$1".
+Reading "fe_rsw".
+Reading "fe_sw$1".
+Reading "fe_sw".
+Reading "strong_arm_comp".
+Moving label "P" from metal2 to via1 in cell strong_arm_comp.
+Moving label "Q" from metal2 to via2 in cell strong_arm_comp.
+Moving label "P" from metal2 to via2 in cell strong_arm_comp.
+Moving label "X" from metal2 to via2 in cell strong_arm_comp.
+Moving label "Y" from metal2 to via2 in cell strong_arm_comp.
+Moving label "net3" from metal2 to via2 in cell strong_arm_comp.
+Moving label "net2" from metal2 to via2 in cell strong_arm_comp.
+Moving label "X" from metal2 to via2 in cell strong_arm_comp.
+Moving label "Y" from metal2 to via2 in cell strong_arm_comp.
+Reading "bpsw_bank".
+Reading "cdac_r4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi222_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi211_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkbuf_3".
+Reading "gf180mcu_fd_sc_mcu7t5v0__tieh".
+Reading "gf180mcu_fd_sc_mcu7t5v0__or4_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__xor2_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffsnq_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__xor2_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__xnor2_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__and4_4".
+Reading "sar_adc_r4".
+Reading "sar_r4_hifa".
+Reading "slot_7".
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: slot15_wrapper
+Reading "lv2hv_core".
+Reading "lv2hv_dual_inv".
+Reading "lv2hv".
+Reading "tg_nmos".
+Reading "tg_pmos".
+Reading "fstx_diode_small".
+Reading "fstx_inv_small".
+Reading "fstx_logic".
+Reading "fstx_predrv".
+Reading "fstx_tie".
+Reading "pad_rails".
+Reading "asw_5v0".
+Reading "fstx_test".
+Reading "pad_rails_shift".
+Reading "slot_15".
 Cell gf180mcu_ocd_chipalooza read from current working directory
 Processing timestamp mismatches.
 Timestamp mismatches found in these cells: chipalooza_frame.
-Cell sealring read from path sealring
-Scaled magic input cell sealring geometry by factor of 10
-Cell sealring$1 read from path sealring
-Cell gf180mcu_ws_ip__shuttle_id read from path wafer_space
-Scaled magic input cell gf180mcu_ws_ip__shuttle_id geometry by factor of 10
-Cell gf180mcu_ws_ip__qrcode_id read from path wafer_space
-Scaled magic input cell gf180mcu_ws_ip__qrcode_id geometry by factor of 2
 Cell gf180mcu_ws_ip__project_id read from path wafer_space
 Scaled magic input cell gf180mcu_ws_ip__project_id geometry by factor of 10
-Cell gf180mcu_ws_ip__marker read from path wafer_space
+Cell gf180mcu_ws_ip__qrcode_id read from path wafer_space
+Scaled magic input cell gf180mcu_ws_ip__qrcode_id geometry by factor of 2
+Cell gf180mcu_ws_ip__shuttle_id read from path wafer_space
+Scaled magic input cell gf180mcu_ws_ip__shuttle_id geometry by factor of 10
 Cell gf180mcu_ws_ip__logo read from path wafer_space
 Scaled magic input cell gf180mcu_ws_ip__logo geometry by factor of 10
+Cell gf180mcu_ws_ip__marker read from path wafer_space
 Cell gf180mcu_padframe read from current working directory
 Cell vert_power_connect read from current working directory
 Cell user_id_textblock read from current working directory
@@ -4917,8 +5768,309 @@ GF_NI_FILL10_0short: 10000 rects
 Cell GF_NI_FILL10_1short read from current working directory
 Cell constant_block read from current working directory
 Cell caravel_logo read from current working directory
+Cell sealring read from path sealring
+Scaled magic input cell sealring geometry by factor of 10
+Cell sealring$1 read from path sealring
 Processing timestamp mismatches.
 Timestamp mismatches found in these cells: gf180mcu_padframe, gf180mcu_as_sc_mcu7t3v3__buff_12, gf180mcu_as_sc_mcu7t3v3__fillcap_4, gf180mcu_as_sc_mcu7t3v3__tap_2, gf180mcu_as_sc_mcu7t3v3__tieh_4, gf180mcu_as_sc_mcu7t3v3__tiel_4.
+   Generating output for cell gf180mcu_ws_ip__project_id
+   Generating output for cell gf180mcu_ws_ip__qrcode_id
+   Generating output for cell gf180mcu_ws_ip__shuttle_id
+   Copying output for cell slot_2 from ../dependencies/slot_2/gds/slot_2.gds.gz
+Reading "via__M2_M3_SQU".
+Reading "via__M1_M2_SQU".
+Reading "via__M3_M4_SQU".
+Reading "via__M1_M4_SQU".
+Reading "via__M2_M4_SQU".
+Reading "pfet_06v0_8u_2u_2nf".
+Reading "nfet_06v0_8u_2u_2nf".
+Reading "pfet_06v0_8u_4u_2nf".
+Reading "nfet_06v0_8u_1u_4nf".
+Reading "ppolyf_u_1k_6p0_1u_5u".
+Reading "via__M1_M2_MIN".
+Reading "pfet_06v0_8u_1u_8nf".
+Reading "pfet_06v0_8u_1u_2nf".
+Reading "nfet_06v0_4u_1u_2nf".
+Reading "nfet_06v0_8u_1u_2nf".
+Reading "cap_mim_30u_30u".
+Reading "ppolyf_u_1k_6p0_9p5_2u_4nf".
+Reading "pfet_06v0_8u_1u_12nf".
+Reading "via__M4_M5_SQU".
+Reading "via__M1_M3_SQU".
+Reading "via__M2_M5_SQU".
+Reading "via__M3_M5_SQU".
+Reading "bga__mb3_mc5_mc6".
+Reading "bga__mb4_mc3_mc4".
+Reading "bga__mb1_mb2_mt1".
+Reading "bga__md1_md2".
+Reading "bga__mb5_mc1_mc2".
+Reading "bga__mc7_mc8".
+Reading "bgt__trimsw".
+Reading "bgt__runits".
+Reading "ppoly_u_1k_6p0_1u_20u".
+Reading "cap_mim_10u_10u".
+Reading "via__M1_M5_SQU".
+Reading "nfet_06v0_1u_1u_1nf".
+Reading "pnp_05p00x05p00".
+Reading "pfet_06v0_8u_8u_1nf".
+Reading "nfet_06v0_2u_1u_1nf".
+Reading "pfet_06v0_2u_1u_1nf".
+Reading "nfet_06v0_8u_8u_1nf".
+Reading "via__M1_M4_ROU".
+Reading "via__M2_M3_ROU".
+Reading "spdt__m2_m4".
+Reading "spdt__m1_m3".
+Reading "spdt__mi1_mi2".
+Reading "spdt__mi3_mi4".
+Reading "pfet_06v0_2u_1u_2nf".
+Reading "tba__cc".
+Reading "via__M2_M4_ROU".
+Reading "tba__xrcc".
+Reading "tba__xmb1_xmb2_xm5_xm6".
+Reading "tba__xm3_xm4".
+Reading "tba__xm1_xm2".
+Reading "tba__xm7".
+Reading "tba__xmb3_xmb4".
+Reading "bg__mi1_mi2_me1_me2_me3_me4".
+Reading "bg__trimres".
+Reading "bg__pnp_group".
+Reading "bg__amplifier".
+Reading "bg__r1_r2_r3_ro".
+Reading "bg__m1_m2_mb1_mo1_mo2".
+Reading "bg__mb2_mb3".
+Reading "bg__ms1_ms2_ms3_ms4_c1".
+Reading "bg__dnwell".
+Reading "via__M1_M3_ROU".
+Reading "spg__dnwell".
+Reading "spg__spdt".
+Reading "lvl__m1_m2".
+Reading "lvl__m3_m4".
+Reading "lvl__mi1_mi2".
+Reading "lvl__mi3_mi4".
+Reading "tb__dnwell".
+Reading "tb__amplifier".
+Reading "via__M2_M5_ROU".
+Reading "via__M3_M5_ROU".
+Reading "gf__spdt_group".
+Reading "gf__testbuffer".
+Reading "gf__levelshifter".
+Reading "gf__bandgap_cm".
+Reading "via__M4_M5_ROU".
+Reading "via__M3_M4_ROU".
+Reading "gf180mcu_cw_ip_vref".
+Reading "slot_2".
+   Copying output for cell slot_4 from ../dependencies/slot_4/gds/slot_4.gds.gz
+Reading "Bandgap_Core_Res".
+Reading "slot_4".
+   Copying output for cell slot_15 from ../dependencies/slot_15/final/gds/slot_15.gds
+Reading "lv2hv_core".
+Reading "lv2hv_dual_inv".
+Reading "lv2hv".
+Reading "tg_nmos".
+Reading "tg_pmos".
+Reading "fstx_diode_small".
+Reading "fstx_inv_small".
+Reading "fstx_logic".
+Reading "fstx_predrv".
+Reading "fstx_tie".
+Reading "pad_rails".
+Reading "asw_5v0".
+Reading "fstx_test".
+Reading "pad_rails_shift".
+Reading "slot_15".
+   Generating output for cell gf180mcu_ws_ip__logo
+   Generating output for cell gf180mcu_ws_ip__marker
+   Copying output for cell slot_6 from ../dependencies/slot_6/gds/slot_6.gds
+Reading "lvlshifter".
+Reading "lpopamp_slice".
+Reading "lpopamp".
+Reading "slot_6".
+   Copying output for cell slot_7 from ../dependencies/slot_7/final/gds/slot_7.gds
+Reading "pfet_03v3_XEZNMC".
+Reading "pfet_03v3_ZE833C".
+Reading "nfet_03v3_CEG9X9".
+Reading "nfet_03v3_KP96ZV".
+Reading "cdac_r4_unit".
+Reading "cdac_r4_unit_br".
+Reading "cdac_r4_unit_dc".
+Reading "cdac_r4_unit_dcv".
+Reading "cdac_r4_unit_dr".
+Reading "cdac_r4_unit_g".
+Reading "cdac_r4_unit_x".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkbuf_12".
+Reading "gf180mcu_fd_sc_mcu7t5v0__and4_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__tiel".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi22_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__icgtp_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffnrnq_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__or4_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffsnq_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__and3_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__and2_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai32_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi221_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__and3_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffnrnq_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkbuf_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__or2_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkinv_3".
+Reading "gf180mcu_fd_sc_mcu7t5v0__or3_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai32_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi211_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai211_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai31_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai32_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__inv_12".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffnrnq_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkinv_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__inv_16".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffrnq_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_16".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkinv_8".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkbuf_16".
+Reading "gf180mcu_fd_sc_mcu7t5v0__and2_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi221_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai221_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffrnq_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__inv_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai22_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai22_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai31_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__mux2_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__and4_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai31_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai22_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_8".
+Reading "gf180mcu_fd_sc_mcu7t5v0__inv_8".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor3_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi22_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_20".
+Reading "gf180mcu_fd_sc_mcu7t5v0__inv_3".
+Reading "gf180mcu_fd_sc_mcu7t5v0__and2_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand3_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai211_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__or2_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand3_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8".
+Reading "gf180mcu_fd_sc_mcu7t5v0__or2_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkinv_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi22_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__or3_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi221_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai221_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_3".
+Reading "gf180mcu_fd_sc_mcu7t5v0__mux2_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__or4_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor4_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand4_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor3_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand4_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand4_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi21_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi211_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor4_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor2_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkbuf_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai211_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai21_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor4_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__and3_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand2_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor3_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor2_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi21_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand3_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai21_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi21_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai221_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkbuf_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__inv_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor2_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand2_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkinv_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__inv_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_64".
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_12".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_32".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai21_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffrnq_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__filltie".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_16".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_8".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand2_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__endcap".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fill_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fill_2".
+Reading "pfet_03v3_2888UM".
+Reading "nfet_03v3_A96D3S".
+Reading "nfet_03v3_EKZEGB$4".
+Reading "nfet_03v3_EKZEGB$3".
+Reading "nfet_03v3_EKZEGB$2".
+Reading "nfet_03v3_EKZEGB$1".
+Reading "pfet_03v3_ZE833C$2".
+Reading "pfet_03v3_GRPKVP$2".
+Reading "pfet_03v3_AWP2WN".
+Reading "pfet_03v3_LLA5YU".
+Reading "nfet_03v3_KP96ZV$2".
+Reading "nfet_03v3_PSNR9F$2".
+Reading "nfet_03v3_GGV944".
+Reading "nfet_03v3_EKZEGB".
+Reading "nfet_03v3_HMD882".
+Reading "pfet_03v3_3SLJFC$1".
+Reading "nfet_03v3_4JYFU7$1".
+Reading "pfet_03v3_3SLJFC".
+Reading "nfet_03v3_4JYFU7".
+Reading "pfet_03v3_GRPKVP$1".
+Reading "nfet_03v3_PSNR9F$1".
+Reading "pfet_03v3_GRPKVP".
+Reading "nfet_03v3_PSNR9F".
+Reading "pfet_03v3_Y9ZHKL".
+Reading "pfet_03v3_ZE833C$1".
+Reading "pfet_03v3_GP42X3".
+Reading "pfet_03v3_AMAGLZ".
+Reading "nfet_03v3_425GBQ".
+Reading "nfet_03v3_KP96ZV$1".
+Reading "nfet_03v3_42MD5L".
+Reading "nfet_03v3_9WNJZ7".
+Reading "nfet_03v3_9XUDBL".
+Reading "nfet_03v3_7YJ47K".
+Reading "nfet_03v3_A8DK6G".
+Reading "nfet_03v3_WDBF7J".
+Reading "dac_sw_2to1_tg_x0".
+Reading "dac_sw_2to1_tg_x".
+Reading "dac_sw_2to1_tg_y".
+Reading "cdac_r4_half".
+Reading "sar_r4_wrapper".
+Reading "fe_dload".
+Reading "fe_decap$3".
+Reading "fe_decap$2".
+Reading "fe_decap$1".
+Reading "fe_decap".
+Reading "fe_logic".
+Reading "fe_rsw$1".
+Reading "fe_rsw".
+Reading "fe_sw$1".
+Reading "fe_sw".
+Reading "strong_arm_comp".
+Reading "bpsw_bank".
+Reading "cdac_r4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi222_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi211_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkbuf_3".
+Reading "gf180mcu_fd_sc_mcu7t5v0__tieh".
+Reading "gf180mcu_fd_sc_mcu7t5v0__or4_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__xor2_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffsnq_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__xor2_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__xnor2_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__and4_4".
+Reading "sar_adc_r4".
+Reading "sar_r4_hifa".
+Reading "slot_7".
    Generating output for cell vert_power_connect
    Generating output for cell alpha_2
    Generating output for cell alpha_0
@@ -5929,10 +7081,5 @@ Timestamp mismatches found in these cells: gf180mcu_padframe, gf180mcu_as_sc_mcu
    Copying output for cell chipalooza_frame from chipalooza_frame.gds
    Copying output for cell sealring$1 from ../../gds/wafer_space_sealring.gds.gz
    Copying output for cell sealring from ../../gds/wafer_space_sealring.gds.gz
-   Generating output for cell gf180mcu_ws_ip__shuttle_id
-   Generating output for cell gf180mcu_ws_ip__qrcode_id
-   Generating output for cell gf180mcu_ws_ip__project_id
-   Generating output for cell gf180mcu_ws_ip__marker
-   Generating output for cell gf180mcu_ws_ip__logo
    Generating output for cell gf180mcu_ocd_chipalooza
 Done!
