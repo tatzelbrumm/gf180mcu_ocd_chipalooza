@@ -1,0 +1,41 @@
+./scripts/get_projects.sh 
+slot_1: cloning https://github.com/sckzor/CMOS_LNB
+Cloning into '/home/user/gf180mcu_ocd_chipalooza/dependencies/slot_1'...
+    at e00865635729, recorded in config.txt
+slot_2: cloning https://github.com/christoph-weiser/gf180mcu_cw_ip_vref
+Cloning into '/home/user/gf180mcu_ocd_chipalooza/dependencies/slot_2'...
+    at 363d3ecf5a16, recorded in config.txt
+slot_4: cloning https://github.com/jonahsaunders/gf180mcu_jonah_saunders_ip__bandgap
+Cloning into '/home/user/gf180mcu_ocd_chipalooza/dependencies/slot_4'...
+    at db216c86da2a, recorded in config.txt
+slot_5: cloning https://github.com/juansebastian-moya/Chipalooza_2026_INL
+Cloning into '/home/user/gf180mcu_ocd_chipalooza/dependencies/slot_5'...
+    at 64588e765271, recorded in config.txt
+slot_6: cloning https://github.com/lhrodovalho/gf180mcu_rodovalho_ip__lpopamp
+Cloning into '/home/user/gf180mcu_ocd_chipalooza/dependencies/slot_6'...
+    at c9d4e6dadf71, recorded in config.txt
+slot_7: cloning https://github.com/arjun2000ananth/sar_adc_gf180
+Cloning into '/home/user/gf180mcu_ocd_chipalooza/dependencies/slot_7'...
+    at adae0d2e86b6, recorded in config.txt
+slot_8: cloning https://github.com/harrydshill/CMOS_INA_GF180MCU
+Cloning into '/home/user/gf180mcu_ocd_chipalooza/dependencies/slot_8'...
+    at e2da58e3b8c8, recorded in config.txt
+slot_14: cloning https://github.com/tdextrous/gf180mcu_tjd_ip__rofncppll
+Cloning into '/home/user/gf180mcu_ocd_chipalooza/dependencies/slot_14'...
+    at 142b03af6b4e, recorded in config.txt
+slot_15: cloning https://gitea.osmocom.org/no2/gf180mcu_no2_chipalooza_3__usb_tests
+Cloning into '/home/user/gf180mcu_ocd_chipalooza/dependencies/slot_15'...
+    at f9f9a082ab70, recorded in config.txt
+slot_16: cloning https://github.com/tatzelbrumm/gf180_cm_ip__single2diff2single
+Cloning into '/home/user/gf180mcu_ocd_chipalooza/dependencies/slot_16'...
+    at fe84ab33cbf6, recorded in config.txt
+slot_17: cloning https://github.com/bhagwat-rahul/gf180mcud_rahulbhagwat_ip_ldo
+Cloning into '/home/user/gf180mcu_ocd_chipalooza/dependencies/slot_17'...
+    at cdaac045d5d5, recorded in config.txt
+slot_18: cloning https://github.com/Vaticori/chipalooza3-ldo-gf180
+Cloning into '/home/user/gf180mcu_ocd_chipalooza/dependencies/slot_18'...
+    at fbe56e490290, recorded in config.txt
+
+12 slot(s) changed.  Review and commit:
+    git status
+    git commit config.txt .gitmodules dependencies
