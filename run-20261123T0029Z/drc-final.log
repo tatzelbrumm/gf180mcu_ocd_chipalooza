@@ -402,3 +402,61 @@ gf180mcu_ocd_chipalooza_final
 2026-11-25 02:15:23 +0000: Memory Usage (2515380K) : Executing rule metal4_OFFGRID
 2026-11-25 02:15:25 +0000: Memory Usage (2515380K) : Executing rule metal4_ACUTE
 2026-11-25 02:15:26 +0000: Memory Usage (2515380K) : Executing rule metal4_dummy_OFFGRID
+2026-11-25 02:16:52 +0000: Memory Usage (2515380K) : Executing rule metal4_dummy_ACUTE
+2026-11-25 02:16:52 +0000: Memory Usage (2515380K) : Executing rule metal4_label_OFFGRID
+2026-11-25 02:16:53 +0000: Memory Usage (2515380K) : Executing rule metal4_label_ACUTE
+2026-11-25 02:16:54 +0000: Memory Usage (2515380K) : Executing rule metal4_blk_OFFGRID
+2026-11-25 02:16:54 +0000: Memory Usage (2515380K) : Executing rule metal4_blk_ACUTE
+2026-11-25 02:16:55 +0000: Memory Usage (2515380K) : Executing rule metal4_res_OFFGRID
+2026-11-25 02:16:55 +0000: Memory Usage (2515380K) : Executing rule metal4_res_ACUTE
+2026-11-25 02:16:55 +0000: Memory Usage (2515380K) : Executing deck geom_m5 from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/geom.rb
+2026-11-25 02:16:55 +0000: Memory Usage (2515380K) : OFFGRID-ANGLES section (geom_m5)
+2026-11-25 02:16:55 +0000: Memory Usage (2515380K) : Executing rule via4_OFFGRID
+2026-11-25 02:16:56 +0000: Memory Usage (2515380K) : Executing rule via4_ACUTE
+2026-11-25 02:16:59 +0000: Memory Usage (2515380K) : Executing rule metal5_OFFGRID
+2026-11-25 02:17:01 +0000: Memory Usage (2515380K) : Executing rule metal5_ACUTE
+2026-11-25 02:17:02 +0000: Memory Usage (2515380K) : Executing rule metal5_dummy_OFFGRID
+2026-11-25 02:17:04 +0000: Memory Usage (2515380K) : Executing rule metal5_dummy_ACUTE
+2026-11-25 02:17:05 +0000: Memory Usage (2515380K) : Executing rule metal5_label_OFFGRID
+2026-11-25 02:17:06 +0000: Memory Usage (2515380K) : Executing rule metal5_label_ACUTE
+2026-11-25 02:17:07 +0000: Memory Usage (2515380K) : Executing rule metal5_blk_OFFGRID
+2026-11-25 02:17:07 +0000: Memory Usage (2515380K) : Executing rule metal5_blk_ACUTE
+2026-11-25 02:17:08 +0000: Memory Usage (2515380K) : Executing rule metal5_res_OFFGRID
+2026-11-25 02:17:08 +0000: Memory Usage (2515380K) : Executing rule metal5_res_ACUTE
+2026-11-25 02:17:09 +0000: Memory Usage (2515380K) : Executing deck geom_metaltop from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/geom.rb
+2026-11-25 02:17:09 +0000: Memory Usage (2515380K) : Executing deck geom_topmarkers from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/geom.rb
+2026-11-25 02:17:09 +0000: Memory Usage (2515380K) : OFFGRID-ANGLES section (geom_topmarkers)
+2026-11-25 02:17:09 +0000: Memory Usage (2515380K) : Executing rule pad_OFFGRID
+2026-11-25 02:17:10 +0000: Memory Usage (2515380K) : Executing rule pad_ACUTE
+2026-11-25 02:17:10 +0000: Memory Usage (2515380K) : Executing rule ubmpperi_OFFGRID
+2026-11-25 02:17:10 +0000: Memory Usage (2515380K) : Executing rule ubmpperi_ACUTE
+2026-11-25 02:17:11 +0000: Memory Usage (2515380K) : Executing rule ubmparray_OFFGRID
+2026-11-25 02:17:11 +0000: Memory Usage (2515380K) : Executing rule ubmparray_ACUTE
+2026-11-25 02:17:12 +0000: Memory Usage (2515380K) : Executing rule ubmeplate_OFFGRID
+2026-11-25 02:17:12 +0000: Memory Usage (2515380K) : Executing rule ubmeplate_ACUTE
+2026-11-25 02:17:13 +0000: Memory Usage (2515380K) : Executing rule pr_bndry_OFFGRID
+2026-11-25 02:17:15 +0000: Memory Usage (2515380K) : Executing rule pr_bndry_ACUTE
+2026-11-25 02:17:15 +0000: Memory Usage (2515380K) : Executing rule border_OFFGRID
+2026-11-25 02:17:15 +0000: Memory Usage (2515380K) : Executing rule border_ACUTE
+2026-11-25 02:17:16 +0000: Memory Usage (2515380K) : Executing deck CO.10_no_contact_on_poly_gate from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/contact.rb
+2026-11-25 02:17:16 +0000: Memory Usage (2515380K) : Executing rule CO.10
+2026-11-25 02:17:16 +0000: Memory Usage (2515380K) : Executing deck CO.11_no_contact_on_field_oxide from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/contact.rb
+2026-11-25 02:17:16 +0000: Memory Usage (2515380K) : Executing rule CO.11
+2026-11-25 02:17:21 +0000: Memory Usage (2515368K) : Executing deck CO.1_min_max_contact_size from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/contact.rb
+2026-11-25 02:17:21 +0000: Memory Usage (2515368K) : Executing rule CO.1
+2026-11-25 02:17:22 +0000: Memory Usage (2515368K) : Executing deck CO.2a_min_contact_spacing from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/contact.rb
+2026-11-25 02:17:22 +0000: Memory Usage (2515368K) : Executing rule CO.2a
+2026-11-25 02:17:24 +0000: Memory Usage (2515368K) : Executing deck CO.2b_contact_array_spacing from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/contact.rb
+2026-11-25 02:17:24 +0000: Memory Usage (2515368K) : Executing rule CO.2b
+2026-11-25 02:17:38 +0000: Memory Usage (2515368K) : Executing deck CO.3_poly2_overlap from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/contact.rb
+2026-11-25 02:17:38 +0000: Memory Usage (2515368K) : Executing rule CO.3
+2026-11-25 02:17:56 +0000: Memory Usage (2515368K) : Executing deck CO.4_comp_overlap from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/contact.rb
+2026-11-25 02:17:56 +0000: Memory Usage (2515368K) : Executing rule CO.4
+2026-11-25 02:18:21 +0000: Memory Usage (2515452K) : Executing deck CO.5a_nplus_overlap_butted from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/contact.rb
+2026-11-25 02:18:21 +0000: Memory Usage (2515452K) : Executing rule CO.5a
+2026-11-25 02:18:23 +0000: Memory Usage (2515452K) : Executing deck CO.5b_pplus_overlap_butted from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/contact.rb
+2026-11-25 02:18:23 +0000: Memory Usage (2515452K) : Executing rule CO.5b
+2026-11-25 02:18:26 +0000: Memory Usage (2519536K) : Executing deck CO.6_metal1_overlap from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/contact.rb
+2026-11-25 02:18:26 +0000: Memory Usage (2519536K) : Executing rule CO.6
+2026-11-25 02:18:37 +0000: Memory Usage (2561188K) : Executing deck CO.6a_metal1_eol_overlap from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/contact.rb
+2026-11-25 02:18:37 +0000: Memory Usage (2561188K) : Executing rule CO.6a
