@@ -1,0 +1,6 @@
+file: gf180mcu_ocd_chipalooza_final.gds.gz
+original bytes: 54932865
+compressed bytes: 37635036 (xz -6 -T0, chunks of 90M)
+chunks: 1
+packed: 2026-11-25T00:11Z
+unpack: ./gds_unpack.sh <dir with the chunks> [output dir]   (cat chunks | xz -d, then sha256sum -c)

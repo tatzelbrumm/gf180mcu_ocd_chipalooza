@@ -1,0 +1,11 @@
+--- a/config.txt
++++ b/config.txt
+@@ -77,7 +77,7 @@
+ s5_source:	https://github.com/juansebastian-moya/Chipalooza_2026_INL
+ s6_source:	https://github.com/lhrodovalho/gf180mcu_rodovalho_ip__lpopamp
+ s7_source:	https://github.com/arjun2000ananth/sar_adc_gf180
+-s8_source:	https://github.cm/harrydshill/CMOS_INA_GF180MCU
++s8_source:	https://github.com/harrydshill/CMOS_INA_GF180MCU
+ s9_source:	-
+ s10_source:	-
+ s11_source:	-

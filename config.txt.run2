@@ -1,0 +1,174 @@
+#--------------------------------------------------------------------------------------
+# config.txt:  Project and I/O configuration for the Chipalooza Harness
+#
+# Editable fields:
+#
+# 1. "project_id" is the chip ID number, an arbitrary string of 8 hex
+#    digits.  This value applies for the entire chip, appears in the
+#    corner of the chip on the top layer metal, and can be read back
+#    from the SPI.  This value should be unique for each tapeout.
+#
+# 2. The "s[x]_source" for [x] = 1 to 18 are the URLs for the user
+#    projects and are used to automatically clone the user repositories
+#    into submodules, check them, and integrate	them into the chip top
+#    level.
+#
+# 3. The "s[x]_version" for [x] = 1 to 18 provides the branch and the
+#    commit hash to use for each project.  The commit is what freezes a
+#    project for tapeout.  Either field may be given as "-":  a branch
+#    of "-" means the remote's own default branch (these are eighteen
+#    independent repositories, and not all of them call it "main"), and
+#    a commit of "-" means to take the tip of that branch, in which case
+#    scripts/get_projects.sh records the hash it checked out here.  An
+#    existing hash is never overwritten;  edit it yourself to move a
+#    project, then run "make projects-update".
+#
+#    Note that prior to tapeout of the harness chip, all projects
+#    should be marked with a valid commit so that the state of the
+#    whole chip at tapeout is frozen.
+#
+# 4. The "slot_[x]" entry is unused by any script but assigns slots to
+#    users by name for the convenience of remembering whose design is
+#    associated with which slot.
+#
+# 5. The "s[x]_an[[y]]" entry allows users to specify that individual
+#    dedicated pads connected to the corresponding user project should
+#    be a specific pad type.  Changes may *only* be made in coordination
+#    with the slot's project designer, as changes modify a number of
+#    cell views, including the project wrapper and its pinout, the
+#    padframe and its pinout, and the harness chip core and its pinout.
+#    See the README and the Makefile options for how to rebuild the
+#    entire chip after a project pad has been changed.  (By contrast,
+#    barring pad changes, a user project is simply dropped into the chip
+#    top level and requires no additional changes.)
+#    Note:  [x] is the slot number and [y] is the pad count for the
+#    slot.  Different slot numbers have different numbers of dedicated
+#    pads.
+#    
+#    The "s[x]_an[[y]]" entry has two fields:
+#
+#    A. The "pad type" is one of 6 valid pad types:
+#		gf180mcu_ocd_io__bi_24t
+#		gf180mcu_ocd_io__bi_t
+#		gf180mcu_ocd_io__bi_a
+#		gf180mcu_ocd_io__in_c
+#		gf180mcu_ocd_io__in_s
+#		gf180mcu_ocd_io__asig_5p0
+#
+#	The default value of each user project pad type is an analog
+#	pad gf180mcu_ocd_io__asig_5p0.
+#
+#    B. The "core signal name" is an arbitrary name for the core signal
+#	(root name) at each pin.
+#
+# Do *not* change the key values (e.g., "project_id" or "s*_an[x]"), which are
+# parsed by various scripts.
+#--------------------------------------------------------------------------------------
+
+project_id: 20261213
+
+#--------------------------------------------------------------------------------------
+# Project	URL
+#--------------------------------------------------------------------------------------
+s1_source:	https://github.com/sckzor/CMOS_LNB
+s2_source:	https://github.com/christoph-weiser/gf180mcu_cw_ip_vref
+s3_source:	-
+s4_source:	https://github.com/jonahsaunders/gf180mcu_jonah_saunders_ip__bandgap
+s5_source:	https://github.com/juansebastian-moya/Chipalooza_2026_INL
+s6_source:	https://github.com/lhrodovalho/gf180mcu_rodovalho_ip__lpopamp
+s7_source:	https://github.com/arjun2000ananth/sar_adc_gf180
+s8_source:	https://github.com/harrydshill/CMOS_INA_GF180MCU
+s9_source:	-
+s10_source:	-
+s11_source:	-
+s12_source:	-
+s13_source:	-
+s14_source:	https://github.com/tdextrous/gf180mcu_tjd_ip__rofncppll
+s15_source:	https://gitea.osmocom.org/no2/gf180mcu_no2_chipalooza_3__usb_tests
+s16_source:	https://github.com/tatzelbrumm/gf180_cm_ip__single2diff2single
+s17_source:	https://github.com/bhagwat-rahul/gf180mcud_rahulbhagwat_ip_ldo
+s18_source:	https://github.com/Vaticori/chipalooza3-ldo-gf180
+
+#--------------------------------------------------------------------------------------
+# Project	Branch		Commit
+#--------------------------------------------------------------------------------------
+s1_version:	-		e00865635729e31c26c51ecd9effd0377e90706c
+s2_version:	-		363d3ecf5a1646003339e66235d9c853700443a5
+s3_version:	-		-
+s4_version:	-		db216c86da2a8fb4567fa7900e8a0b4bc898c48a
+s5_version:	-		64588e7652711042fc88b9ab29d1ee622538b788
+s6_version:	-		c9d4e6dadf7100940e5a6e350d1e539214469c2a
+s7_version:	-		adae0d2e86b6f1b86023c5ee38dbe5860b74ae39
+s8_version:	-		e2da58e3b8c871f1eb1c94a7ed2ea557e934e997
+s9_version:	-		-
+s10_version:	-		-
+s11_version:	-		-
+s12_version:	-		-
+s13_version:	-		-
+s14_version:	-		142b03af6b4e884da7e1fa019f8a041f2c780710
+s15_version:	-		f9f9a082ab70fec8118f09b7330a6c71a3d00061
+s16_version:	-		fe84ab33cbf6e0653460e3713589cc23c4fedf4a
+s17_version:	-		cdaac045d5d50520237e15142f29036d2c975fe7
+s18_version:	-		fbe56e490290053e59871ca2fb679854ebd22d73
+
+#--------------------------------------------------------------------------------------
+# Project	Author
+#--------------------------------------------------------------------------------------
+slot_1:		Sands and Araujo
+slot_2:		Weiser
+slot_3:		Hubai
+slot_4:		Saunders
+slot_5:		Moya
+slot_6:		Rodovalho
+slot_7:		Ananth and Yu
+slot_8:		Hill and Hoshino
+slot_9:		Hill and Hoshino
+slot_10:	Al Sabagh
+slot_11:	Al Sabagh
+slot_12:	(reserved)
+slot_13:	Hasler
+slot_14:	Dexter
+slot_15:	Munaut
+slot_16:	Maier
+slot_17:	Bhagwat
+slot_18:	Novatska
+
+#--------------------------------------------------------------------------------------
+# Pad name	Pad type			Core signal name
+#--------------------------------------------------------------------------------------
+s1_an[0]:	gf180mcu_ocd_io__asig_5p0		s1_an_0
+s1_an[1]:	gf180mcu_ocd_io__asig_5p0		s1_an_1
+s2_an[0]:	gf180mcu_ocd_io__asig_5p0		s2_an_0
+s2_an[1]:	gf180mcu_ocd_io__asig_5p0		s2_an_1
+s3_an[0]:	gf180mcu_ocd_io__asig_5p0		s3_an_0
+s3_an[1]:	gf180mcu_ocd_io__asig_5p0		s3_an_1
+s4_an[0]:	gf180mcu_ocd_io__asig_5p0		s4_an_0
+s4_an[1]:	gf180mcu_ocd_io__asig_5p0		s4_an_1
+s5_an[0]:	gf180mcu_ocd_io__asig_5p0		s5_an_0
+s5_an[1]:	gf180mcu_ocd_io__asig_5p0		s5_an_1
+s6_an[0]:	gf180mcu_ocd_io__asig_5p0		s6_an_0
+s6_an[1]:	gf180mcu_ocd_io__asig_5p0		s6_an_1
+s7_an[0]:	gf180mcu_ocd_io__asig_5p0		s7_an_0
+s7_an[1]:	gf180mcu_ocd_io__asig_5p0		s7_an_1
+s8_an[0]:	gf180mcu_ocd_io__asig_5p0		s8_an_0
+s9_an[0]:	gf180mcu_ocd_io__asig_5p0		s9_an_0
+s9_an[1]:	gf180mcu_ocd_io__asig_5p0		s9_an_1
+s9_an[2]:	gf180mcu_ocd_io__asig_5p0		s9_an_2
+s10_an[0]:	gf180mcu_ocd_io__asig_5p0		s10_an_0
+s10_an[1]:	gf180mcu_ocd_io__asig_5p0		s10_an_1
+s10_an[2]:	gf180mcu_ocd_io__asig_5p0		s10_an_2
+s11_an[0]:	gf180mcu_ocd_io__asig_5p0		s11_an_0
+s12_an[0]:	gf180mcu_ocd_io__asig_5p0		s12_an_0
+s12_an[1]:	gf180mcu_ocd_io__asig_5p0		s12_an_1
+s13_an[0]:	gf180mcu_ocd_io__asig_5p0		s13_an_0
+s13_an[1]:	gf180mcu_ocd_io__asig_5p0		s13_an_1
+s14_an[0]:	gf180mcu_ocd_io__asig_5p0		s14_an_0
+s14_an[1]:	gf180mcu_ocd_io__asig_5p0		s14_an_1
+s15_an[0]:	gf180mcu_ocd_io__asig_5p0		s15_an_0
+s15_an[1]:	gf180mcu_ocd_io__asig_5p0		s15_an_1
+s16_an[0]:	gf180mcu_ocd_io__asig_5p0		s16_an_0
+s16_an[1]:	gf180mcu_ocd_io__asig_5p0		s16_an_1
+s17_an[0]:	gf180mcu_ocd_io__asig_5p0		s17_an_0
+s17_an[1]:	gf180mcu_ocd_io__asig_5p0		s17_an_1
+s18_an[0]:	gf180mcu_ocd_io__asig_5p0		s18_an_0
+s18_an[1]:	gf180mcu_ocd_io__asig_5p0		s18_an_1
