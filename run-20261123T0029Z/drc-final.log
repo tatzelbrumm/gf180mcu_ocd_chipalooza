@@ -628,3 +628,4 @@ gf180mcu_ocd_chipalooza_final
 2026-11-25 02:49:39 +0000: Memory Usage (4076864K) : Executing deck dummy_metal2 from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/dummy_metal.rb
 2026-11-25 02:49:39 +0000: Memory Usage (4076864K) : Executing rule DM2.2b
 2026-11-25 02:54:17 +0000: Memory Usage (4282776K) : Executing rule DM2.3
+2026-11-25 02:58:49 +0000: Memory Usage (4077212K) : Executing rule DM2.8
