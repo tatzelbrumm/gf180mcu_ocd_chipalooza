@@ -1061,3 +1061,77 @@ gf180mcu_ocd_chipalooza_final
 2026-11-25 04:26:03 +0000: Memory Usage (4734448K) : Executing rule PRES.5
 2026-11-25 04:26:04 +0000: Memory Usage (4734448K) : Executing rule PRES.6
 2026-11-25 04:26:04 +0000: Memory Usage (4734448K) : Executing rule PRES.7
+2026-11-25 04:26:06 +0000: Memory Usage (4734448K) : Executing rule PRES.9a
+2026-11-25 04:26:08 +0000: Memory Usage (4734448K) : Executing rule PRES.9b
+2026-11-25 04:26:09 +0000: Memory Usage (4734448K) : Executing deck sab from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/sab.rb
+2026-11-25 04:26:09 +0000: Memory Usage (4734448K) : Starting sab derivations
+2026-11-25 04:26:10 +0000: Memory Usage (4734448K) : Executing rule SB.1
+2026-11-25 04:26:11 +0000: Memory Usage (4734448K) : Executing rule SB.2
+2026-11-25 04:26:11 +0000: Memory Usage (4734448K) : Executing rule SB.3
+2026-11-25 04:26:12 +0000: Memory Usage (4734448K) : Executing rule SB.4
+2026-11-25 04:26:12 +0000: Memory Usage (4734448K) : Executing rule SB.5a
+2026-11-25 04:26:15 +0000: Memory Usage (4734448K) : Executing rule SB.5b
+2026-11-25 04:26:16 +0000: Memory Usage (4734448K) : Executing rule SB.6
+2026-11-25 04:26:16 +0000: Memory Usage (4734448K) : Executing rule SB.7
+2026-11-25 04:26:16 +0000: Memory Usage (4734448K) : Executing rule SB.8
+2026-11-25 04:26:16 +0000: Memory Usage (4734448K) : Executing rule SB.9
+2026-11-25 04:26:17 +0000: Memory Usage (4734448K) : Executing rule SB.10
+2026-11-25 04:26:17 +0000: Memory Usage (4734448K) : Executing rule SB.11
+2026-11-25 04:26:17 +0000: Memory Usage (4734448K) : Executing rule SB.12
+2026-11-25 04:26:18 +0000: Memory Usage (4734448K) : Executing rule SB.13
+2026-11-25 04:26:18 +0000: Memory Usage (4734448K) : Executing rule SB.14a
+2026-11-25 04:26:21 +0000: Memory Usage (4734448K) : Executing rule SB.14b
+2026-11-25 04:26:22 +0000: Memory Usage (4734448K) : Executing rule SB.15a
+2026-11-25 04:26:26 +0000: Memory Usage (4734448K) : Executing rule SB.15b
+2026-11-25 04:26:31 +0000: Memory Usage (4734576K) : Executing rule SB.16
+2026-11-25 04:26:32 +0000: Memory Usage (4734576K) : Executing deck sram_3p3 from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/sram_3p3.rb
+2026-11-25 04:26:32 +0000: Memory Usage (4734576K) : Starting 3.3V SRAM derivations
+2026-11-25 04:26:36 +0000: Memory Usage (4826764K) : Executing rule S.DF.4c_LV
+2026-11-25 04:26:40 +0000: Memory Usage (4734532K) : Executing rule S.DF.16_LV
+2026-11-25 04:26:42 +0000: Memory Usage (4734532K) : Executing rule S.CO.3_LV
+2026-11-25 04:26:44 +0000: Memory Usage (4734532K) : Executing rule S.CO.4_LV
+2026-11-25 04:26:45 +0000: Memory Usage (4734532K) : Executing rule S.CO.6_ii_LV
+2026-11-25 04:26:50 +0000: Memory Usage (4734400K) : Executing rule S.M1.1_LV
+2026-11-25 04:26:51 +0000: Memory Usage (4734400K) : Executing deck sram_5p0 from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/sram_5p0.rb
+2026-11-25 04:26:51 +0000: Memory Usage (4734400K) : Starting 5V SRAM derivations
+2026-11-25 04:26:52 +0000: Memory Usage (4734400K) : Executing rule S.DF.4c_MV
+2026-11-25 04:26:53 +0000: Memory Usage (4734400K) : Executing rule S.DF.6_MV
+2026-11-25 04:26:53 +0000: Memory Usage (4734400K) : Executing rule S.DF.7_MV
+2026-11-25 04:26:53 +0000: Memory Usage (4734400K) : Executing rule S.DF.8_MV
+2026-11-25 04:26:53 +0000: Memory Usage (4734400K) : Executing rule S.DF.16_MV
+2026-11-25 04:26:55 +0000: Memory Usage (4734400K) : Executing rule S.PL.5a_MV
+2026-11-25 04:26:55 +0000: Memory Usage (4734400K) : Executing rule S.PL.5b_MV
+2026-11-25 04:26:55 +0000: Memory Usage (4734400K) : Executing rule S.CO.4_MV
+2026-11-25 04:26:55 +0000: Memory Usage (4734400K) : Executing deck ymtp_mk from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/ymtp_mk.rb
+2026-11-25 04:26:55 +0000: Memory Usage (4734400K) : Starting YMTP_MK derivations
+2026-11-25 04:26:55 +0000: Memory Usage (4734400K) : Executing rule Y.NW.2b_LV
+2026-11-25 04:26:55 +0000: Memory Usage (4734400K) : Executing rule Y.NW.2b_MV
+2026-11-25 04:26:55 +0000: Memory Usage (4734400K) : Executing rule Y.DF.6_MV
+2026-11-25 04:26:56 +0000: Memory Usage (4734400K) : Executing rule Y.DF.16_LV
+2026-11-25 04:26:56 +0000: Memory Usage (4734400K) : Executing rule Y.DF.16_MV
+2026-11-25 04:26:56 +0000: Memory Usage (4734400K) : Executing rule Y.PL.1_LV
+2026-11-25 04:26:56 +0000: Memory Usage (4734400K) : Executing rule Y.PL.1_MV
+2026-11-25 04:26:56 +0000: Memory Usage (4734400K) : Executing rule Y.PL.2_LV
+2026-11-25 04:26:57 +0000: Memory Usage (4734400K) : Executing rule Y.PL.2_MV
+2026-11-25 04:26:58 +0000: Memory Usage (4734400K) : Executing rule Y.PL.4_MV
+2026-11-25 04:26:58 +0000: Memory Usage (4734400K) : Executing rule Y.PL.5a_LV
+2026-11-25 04:26:58 +0000: Memory Usage (4734400K) : Executing rule Y.PL.5a_MV
+2026-11-25 04:26:58 +0000: Memory Usage (4734400K) : Executing rule Y.PL.5b_LV
+2026-11-25 04:26:58 +0000: Memory Usage (4734400K) : Executing rule Y.PL.5b_MV
+2026-11-25 04:26:58 +0000: Memory Usage (4735180K) : 
+2026-11-25 04:26:58 +0000: Memory Usage (4735180K) : DRC RESULT: FAILURE (3159 violation(s))
+2026-11-25 04:26:58 +0000: Memory Usage (4735180K) : Violated Rules:
+2026-11-25 04:26:58 +0000: Memory Usage (4735180K) :   'DCF.4'              :    41 violation(s)
+2026-11-25 04:26:58 +0000: Memory Usage (4735180K) :   'DF.18'              :    12 violation(s)
+2026-11-25 04:26:58 +0000: Memory Usage (4735180K) :   'DPF.1'              :   336 violation(s)
+2026-11-25 04:26:58 +0000: Memory Usage (4735180K) :   'DPF.4'              :    16 violation(s)
+2026-11-25 04:26:58 +0000: Memory Usage (4735180K) :   'DV.8'               :   206 violation(s)
+2026-11-25 04:26:58 +0000: Memory Usage (4735180K) :   'M4.2a'              :     4 violation(s)
+2026-11-25 04:26:58 +0000: Memory Usage (4735180K) :   'PL.2_MV'            :  1050 violation(s)
+2026-11-25 04:26:58 +0000: Memory Usage (4735180K) :   'PL.9'               :   206 violation(s)
+2026-11-25 04:26:58 +0000: Memory Usage (4735180K) :   'V2.1'               :    80 violation(s)
+2026-11-25 04:26:58 +0000: Memory Usage (4735180K) :   'V2.2a'              :   148 violation(s)
+2026-11-25 04:26:58 +0000: Memory Usage (4735180K) :   'V3.2b'              :   940 violation(s)
+2026-11-25 04:26:58 +0000: Memory Usage (4735180K) :   'V4.2b'              :   120 violation(s)
+2026-11-25 04:26:58 +0000: Memory Usage (4735180K) : # DRC Total Run time 12666.751147253 seconds
+Done!
