@@ -821,3 +821,39 @@ gf180mcu_ocd_chipalooza_final
 2026-11-25 04:11:48 +0000: Memory Usage (4690416K) : Executing rule LPW.2b_LV
 2026-11-25 04:11:48 +0000: Memory Usage (4690416K) : Executing rule LPW.2b_MV
 2026-11-25 04:11:48 +0000: Memory Usage (4690416K) : Executing rule LPW.3_LV
+2026-11-25 04:11:49 +0000: Memory Usage (4690416K) : Executing rule LPW.5
+2026-11-25 04:11:51 +0000: Memory Usage (4690416K) : Executing rule LPW.11
+2026-11-25 04:11:52 +0000: Memory Usage (4690416K) : Executing rule LPW.12
+2026-11-25 04:11:53 +0000: Memory Usage (4690544K) : Executing deck lvs_bjt from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/lvs_bjt.rb
+2026-11-25 04:11:53 +0000: Memory Usage (4690544K) : Executing rule LVS_BJT.1
+2026-11-25 04:11:54 +0000: Memory Usage (4690544K) : Executing deck mcell from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/mcell.rb
+2026-11-25 04:11:54 +0000: Memory Usage (4690544K) : Executing rule MC.1
+2026-11-25 04:11:54 +0000: Memory Usage (4690544K) : Executing rule MC.2
+2026-11-25 04:11:54 +0000: Memory Usage (4690544K) : Executing rule MC.3
+2026-11-25 04:11:54 +0000: Memory Usage (4690544K) : Executing rule MC.4
+2026-11-25 04:11:54 +0000: Memory Usage (4690544K) : Executing deck metal1 from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/metal.rb
+2026-11-25 04:11:54 +0000: Memory Usage (4690544K) : Executing rule M1.1
+2026-11-25 04:12:03 +0000: Memory Usage (4690544K) : Executing rule M1.2a
+2026-11-25 04:12:13 +0000: Memory Usage (4690544K) : Executing rule M1.2b
+2026-11-25 04:12:22 +0000: Memory Usage (4690544K) : Executing rule M1.3
+2026-11-25 04:12:22 +0000: Memory Usage (4690544K) : Executing deck metal2 from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/metal.rb
+2026-11-25 04:12:22 +0000: Memory Usage (4690544K) : Executing rule M2.1
+2026-11-25 04:12:22 +0000: Memory Usage (4690544K) : Executing rule M2.2a
+2026-11-25 04:12:24 +0000: Memory Usage (4690544K) : Executing rule M2.2b
+2026-11-25 04:12:28 +0000: Memory Usage (4690544K) : Executing rule M2.3
+2026-11-25 04:12:28 +0000: Memory Usage (4690544K) : Executing deck metal3 from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/metal.rb
+2026-11-25 04:12:28 +0000: Memory Usage (4690544K) : Executing rule M3.1
+2026-11-25 04:12:28 +0000: Memory Usage (4690544K) : Executing rule M3.2a
+2026-11-25 04:12:30 +0000: Memory Usage (4690544K) : Executing rule M3.2b
+2026-11-25 04:12:37 +0000: Memory Usage (4690544K) : Executing rule M3.3
+2026-11-25 04:12:38 +0000: Memory Usage (4690544K) : Executing deck metal4 from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/metal.rb
+2026-11-25 04:12:38 +0000: Memory Usage (4690544K) : Executing rule M4.1
+2026-11-25 04:12:38 +0000: Memory Usage (4690544K) : Executing rule M4.2a
+2026-11-25 04:12:44 +0000: Memory Usage (4690544K) : Executing rule M4.2b
+2026-11-25 04:12:59 +0000: Memory Usage (4690492K) : Executing rule M4.3
+2026-11-25 04:13:00 +0000: Memory Usage (4690492K) : Executing deck metal5 from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/metal.rb
+2026-11-25 04:13:00 +0000: Memory Usage (4690492K) : Executing deck metaltop from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/metaltop.rb
+2026-11-25 04:13:00 +0000: Memory Usage (4690492K) : MetalTop thickness 9k/11k section
+2026-11-25 04:13:00 +0000: Memory Usage (4690492K) : Executing rule MT.1
+2026-11-25 04:13:00 +0000: Memory Usage (4690492K) : Executing rule MT.2a
+2026-11-25 04:13:17 +0000: Memory Usage (4690492K) : Executing rule MT.2b
