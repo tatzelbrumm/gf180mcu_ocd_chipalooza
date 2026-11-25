@@ -460,3 +460,24 @@ gf180mcu_ocd_chipalooza_final
 2026-11-25 02:18:26 +0000: Memory Usage (2519536K) : Executing rule CO.6
 2026-11-25 02:18:37 +0000: Memory Usage (2561188K) : Executing deck CO.6a_metal1_eol_overlap from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/contact.rb
 2026-11-25 02:18:37 +0000: Memory Usage (2561188K) : Executing rule CO.6a
+2026-11-25 02:18:50 +0000: Memory Usage (2561188K) : Executing deck CO.6b_adjacent_edge_overlap from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/contact.rb
+2026-11-25 02:18:50 +0000: Memory Usage (2561188K) : Executing rule CO.6b
+2026-11-25 02:20:20 +0000: Memory Usage (3786196K) : Executing deck CO.7_comp_to_poly_spacing from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/contact.rb
+2026-11-25 02:20:20 +0000: Memory Usage (3786196K) : Executing rule CO.7
+2026-11-25 02:20:25 +0000: Memory Usage (3786552K) : Executing deck CO.8_poly_to_comp_spacing from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/contact.rb
+2026-11-25 02:20:25 +0000: Memory Usage (3786552K) : Executing rule CO.8
+2026-11-25 02:20:27 +0000: Memory Usage (3786552K) : Executing deck CO.9_no_contact_on_butting_edge from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/contact.rb
+2026-11-25 02:20:27 +0000: Memory Usage (3786552K) : Executing rule CO.9
+2026-11-25 02:20:28 +0000: Memory Usage (3786724K) : Executing deck cup from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/cup.rb
+2026-11-25 02:20:28 +0000: Memory Usage (3786724K) : Executing rule CUP.2
+2026-11-25 02:20:28 +0000: Memory Usage (3786864K) : Executing rule CUP.3
+2026-11-25 02:20:28 +0000: Memory Usage (3786864K) : Executing rule CUP.2
+2026-11-25 02:20:29 +0000: Memory Usage (3786864K) : Executing rule CUP.3
+2026-11-25 02:20:29 +0000: Memory Usage (3786864K) : Executing rule CUP.2
+2026-11-25 02:20:30 +0000: Memory Usage (3786864K) : Executing rule CUP.3
+2026-11-25 02:20:31 +0000: Memory Usage (3786864K) : Executing rule CUP.2
+2026-11-25 02:20:31 +0000: Memory Usage (3786864K) : Executing rule CUP.3
+2026-11-25 02:20:32 +0000: Memory Usage (3786864K) : Executing rule CUP.2
+2026-11-25 02:20:32 +0000: Memory Usage (3786864K) : Executing rule CUP.3
+2026-11-25 02:20:33 +0000: Memory Usage (3786864K) : Executing deck density from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/density.rb
+2026-11-25 02:20:34 +0000: Memory Usage (3786864K) : Executing rule DCF.1a
