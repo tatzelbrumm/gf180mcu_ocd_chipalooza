@@ -165,3 +165,7 @@ gf180mcu_ocd_chipalooza_final
 2026-11-25 01:20:04 +0000: Memory Usage (2374060K) : Executing rule V3.3c
 2026-11-25 01:20:06 +0000: Memory Usage (2374060K) : Executing deck V3.3d from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/via.rb
 2026-11-25 01:20:06 +0000: Memory Usage (2374060K) : Executing rule V3.3d
+2026-11-25 01:20:22 +0000: Memory Usage (2374188K) : Executing deck V3.4a from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/via.rb
+2026-11-25 01:20:22 +0000: Memory Usage (2374188K) : Executing rule V3.4a
+2026-11-25 01:20:33 +0000: Memory Usage (2379968K) : Executing deck V3.4b from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/via.rb
+2026-11-25 01:20:33 +0000: Memory Usage (2379968K) : Executing rule V3.4b
