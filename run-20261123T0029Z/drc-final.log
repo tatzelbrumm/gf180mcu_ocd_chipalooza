@@ -637,3 +637,72 @@ gf180mcu_ocd_chipalooza_final
 2026-11-25 03:26:59 +0000: Memory Usage (4077256K) : Executing rule DM4.2b
 2026-11-25 03:30:57 +0000: Memory Usage (4167452K) : Executing rule DM4.3
 2026-11-25 03:35:01 +0000: Memory Usage (4256212K) : Executing rule DM4.8
+2026-11-25 03:44:20 +0000: Memory Usage (4101728K) : Executing deck dummy_metal5 from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/dummy_metal.rb
+2026-11-25 03:44:20 +0000: Memory Usage (4101728K) : Executing rule DM5.2b
+2026-11-25 03:44:28 +0000: Memory Usage (4083008K) : Executing rule DM5.3
+2026-11-25 03:44:40 +0000: Memory Usage (4082924K) : Executing rule DM5.8
+2026-11-25 03:44:55 +0000: Memory Usage (4083028K) : Executing deck dummy_metal6 from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/dummy_metal.rb
+2026-11-25 03:44:55 +0000: Memory Usage (4083028K) : Executing deck dummy_poly2 from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/dummy_poly2.rb
+2026-11-25 03:44:55 +0000: Memory Usage (4083028K) : Starting Dummy Poly2 derivations
+2026-11-25 03:44:55 +0000: Memory Usage (4083028K) : Executing rule DPF.1
+2026-11-25 03:45:00 +0000: Memory Usage (4083028K) : Executing rule DPF.2b
+2026-11-25 03:45:01 +0000: Memory Usage (4083028K) : Executing rule DPF.4
+2026-11-25 03:45:03 +0000: Memory Usage (4083028K) : Executing rule DPF.5
+2026-11-25 03:45:05 +0000: Memory Usage (4083028K) : Executing rule DPF.6a
+2026-11-25 03:45:06 +0000: Memory Usage (4083028K) : Executing rule DPF.6b
+2026-11-25 03:45:07 +0000: Memory Usage (4083028K) : Executing rule DPF.6c
+2026-11-25 03:45:09 +0000: Memory Usage (4083028K) : Executing rule DPF.6d
+2026-11-25 03:45:10 +0000: Memory Usage (4083028K) : Executing rule DPF.8
+2026-11-25 03:45:11 +0000: Memory Usage (4083028K) : Executing rule DPF.9
+2026-11-25 03:45:13 +0000: Memory Usage (4083028K) : Executing rule DPF.11
+2026-11-25 03:45:14 +0000: Memory Usage (4083028K) : Executing rule DPF.14
+2026-11-25 03:45:14 +0000: Memory Usage (4083028K) : Executing rule DPF.16
+2026-11-25 03:45:14 +0000: Memory Usage (4083028K) : Executing rule DPF.19
+2026-11-25 03:45:16 +0000: Memory Usage (4083028K) : Executing deck efuse from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/efuse.rb
+2026-11-25 03:45:16 +0000: Memory Usage (4083028K) : Starting EFUSE derivations
+2026-11-25 03:45:16 +0000: Memory Usage (4083028K) : Executing rule EF.01
+2026-11-25 03:45:16 +0000: Memory Usage (4083028K) : Executing rule EF.02
+2026-11-25 03:45:16 +0000: Memory Usage (4083028K) : Executing rule EF.03
+2026-11-25 03:45:18 +0000: Memory Usage (4083028K) : Executing rule EF.04a
+2026-11-25 03:45:18 +0000: Memory Usage (4083028K) : Executing rule EF.04b
+2026-11-25 03:45:18 +0000: Memory Usage (4083028K) : Executing rule EF.04c
+2026-11-25 03:45:18 +0000: Memory Usage (4083028K) : Executing rule EF.04d
+2026-11-25 03:45:18 +0000: Memory Usage (4083028K) : Executing rule EF.05
+2026-11-25 03:45:18 +0000: Memory Usage (4083028K) : Executing rule EF.06
+2026-11-25 03:45:19 +0000: Memory Usage (4083028K) : Executing rule EF.07
+2026-11-25 03:45:19 +0000: Memory Usage (4083028K) : Executing rule EF.08
+2026-11-25 03:45:20 +0000: Memory Usage (4083028K) : Executing rule EF.09
+2026-11-25 03:45:20 +0000: Memory Usage (4083028K) : Executing rule EF.10
+2026-11-25 03:45:20 +0000: Memory Usage (4083028K) : Executing rule EF.11
+2026-11-25 03:45:20 +0000: Memory Usage (4083028K) : Executing rule EF.12
+2026-11-25 03:45:20 +0000: Memory Usage (4083028K) : Executing rule EF.13
+2026-11-25 03:45:20 +0000: Memory Usage (4083028K) : Executing rule EF.14
+2026-11-25 03:45:20 +0000: Memory Usage (4083028K) : Executing rule EF.15
+2026-11-25 03:45:20 +0000: Memory Usage (4083028K) : Executing rule EF.16a
+2026-11-25 03:45:20 +0000: Memory Usage (4083028K) : Executing rule EF.16b
+2026-11-25 03:45:20 +0000: Memory Usage (4083028K) : Executing rule EF.17
+2026-11-25 03:45:20 +0000: Memory Usage (4083028K) : Executing rule EF.18
+2026-11-25 03:45:23 +0000: Memory Usage (4083156K) : Executing rule EF.19
+2026-11-25 03:45:23 +0000: Memory Usage (4083156K) : Executing rule EF.20
+2026-11-25 03:45:25 +0000: Memory Usage (4083156K) : Executing rule EF.21
+2026-11-25 03:45:26 +0000: Memory Usage (4083024K) : Executing rule EF.22a
+2026-11-25 03:45:27 +0000: Memory Usage (4083024K) : Executing rule EF.22b
+2026-11-25 03:45:27 +0000: Memory Usage (4083024K) : Executing deck esd from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/esd.rb
+2026-11-25 03:45:27 +0000: Memory Usage (4083024K) : Starting ESD derivations
+2026-11-25 03:45:28 +0000: Memory Usage (4083024K) : Executing rule ESD.1
+2026-11-25 03:45:28 +0000: Memory Usage (4083024K) : Executing rule ESD.2
+2026-11-25 03:45:28 +0000: Memory Usage (4083024K) : Executing rule ESD.3a
+2026-11-25 03:45:28 +0000: Memory Usage (4083024K) : Executing rule ESD.3b
+2026-11-25 03:45:28 +0000: Memory Usage (4083024K) : Executing rule ESD.4a
+2026-11-25 03:45:29 +0000: Memory Usage (4083024K) : Executing rule ESD.4b
+2026-11-25 03:45:29 +0000: Memory Usage (4083024K) : Executing rule ESD.5a
+2026-11-25 03:45:29 +0000: Memory Usage (4083024K) : Executing rule ESD.5b
+2026-11-25 03:45:29 +0000: Memory Usage (4083024K) : Executing rule ESD.6
+2026-11-25 03:45:30 +0000: Memory Usage (4083152K) : Executing rule ESD.7
+2026-11-25 03:45:30 +0000: Memory Usage (4083152K) : Executing rule ESD.8
+2026-11-25 03:45:34 +0000: Memory Usage (4083152K) : Executing rule ESD.pl
+2026-11-25 03:45:35 +0000: Memory Usage (4083152K) : Executing rule ESD.9
+2026-11-25 03:45:35 +0000: Memory Usage (4083152K) : Executing rule ESD.10
+2026-11-25 03:45:35 +0000: Memory Usage (4083152K) : Executing deck guard_ring from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/guard_ring.rb
+2026-11-25 03:45:36 +0000: Memory Usage (4083152K) : Executing rule GR.1
+2026-11-25 03:45:36 +0000: Memory Usage (4083152K) : Executing rule GR.2
