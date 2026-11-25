@@ -602,3 +602,24 @@ gf180mcu_ocd_chipalooza_final
 2026-11-25 02:26:32 +0000: Memory Usage (4047592K) : Executing rule DV.2
 2026-11-25 02:26:34 +0000: Memory Usage (4047592K) : Executing rule DV.3
 2026-11-25 02:26:55 +0000: Memory Usage (4047564K) : Executing rule DV.5
+2026-11-25 02:26:59 +0000: Memory Usage (4047564K) : Executing rule DV.6
+2026-11-25 02:27:03 +0000: Memory Usage (4047564K) : Executing rule DV.7
+2026-11-25 02:27:05 +0000: Memory Usage (4047564K) : Executing rule DV.8
+2026-11-25 02:27:11 +0000: Memory Usage (4047564K) : Executing rule DV.9
+2026-11-25 02:27:13 +0000: Memory Usage (4047564K) : Executing deck dummy_comp from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/dummy_comp.rb
+2026-11-25 02:27:13 +0000: Memory Usage (4047564K) : Executing rule DCF.2b
+2026-11-25 02:27:15 +0000: Memory Usage (4050068K) : Executing rule DCF.4
+2026-11-25 02:27:17 +0000: Memory Usage (4057364K) : Executing rule DCF.5
+2026-11-25 02:27:19 +0000: Memory Usage (4057364K) : Executing rule DCF.6a
+2026-11-25 02:27:20 +0000: Memory Usage (4057492K) : Executing rule DCF.6b
+2026-11-25 02:27:21 +0000: Memory Usage (4057492K) : Executing rule DCF.6c
+2026-11-25 02:27:23 +0000: Memory Usage (4057492K) : Executing rule DCF.6d
+2026-11-25 02:27:25 +0000: Memory Usage (4057492K) : Executing rule DCF.8a
+2026-11-25 02:27:26 +0000: Memory Usage (4057492K) : Executing rule DCF.11a
+2026-11-25 02:27:27 +0000: Memory Usage (4057492K) : Executing rule DCF.12
+2026-11-25 02:27:27 +0000: Memory Usage (4057492K) : Executing deck dummy_exclude from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/dummy_exclude.rb
+2026-11-25 02:27:27 +0000: Memory Usage (4057492K) : Executing rule DE.2
+2026-11-25 02:27:28 +0000: Memory Usage (4057492K) : Executing rule DE.3
+2026-11-25 02:27:28 +0000: Memory Usage (4057492K) : Executing rule DE.4
+2026-11-25 02:27:28 +0000: Memory Usage (4057492K) : Executing deck dummy_metal1 from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/dummy_metal.rb
+2026-11-25 02:27:28 +0000: Memory Usage (4057492K) : Executing rule DM1.2b
