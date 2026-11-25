@@ -863,3 +863,60 @@ gf180mcu_ocd_chipalooza_final
 2026-11-25 04:16:05 +0000: Memory Usage (5029056K) : Executing deck mim_b from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/mim_b.rb
 2026-11-25 04:16:05 +0000: Memory Usage (5029056K) : MIM Capacitor Option B section
 2026-11-25 04:16:06 +0000: Memory Usage (5036224K) : Executing rule MIMTM.1
+2026-11-25 04:20:26 +0000: Memory Usage (4728696K) : Executing rule MIMTM.2
+2026-11-25 04:20:29 +0000: Memory Usage (4728696K) : Executing rule MIMTM.3
+2026-11-25 04:20:29 +0000: Memory Usage (4728696K) : Executing rule MIMTM.4
+2026-11-25 04:20:32 +0000: Memory Usage (4728696K) : Executing rule MIMTM.5
+2026-11-25 04:20:53 +0000: Memory Usage (4733600K) : Executing rule MIMTM.6
+2026-11-25 04:20:53 +0000: Memory Usage (4733600K) : Executing rule MIMTM.7
+2026-11-25 04:20:54 +0000: Memory Usage (4733600K) : Executing rule MIMTM.8a
+2026-11-25 04:20:54 +0000: Memory Usage (4733600K) : Executing rule MIMTM.8b
+2026-11-25 04:20:54 +0000: Memory Usage (4733600K) : Executing rule MIMTM.9
+2026-11-25 04:20:55 +0000: Memory Usage (4733600K) : Executing rule MIMTM.10
+2026-11-25 04:20:57 +0000: Memory Usage (4733600K) : Executing rule MIMTM.11
+2026-11-25 04:21:00 +0000: Memory Usage (4734112K) : Executing deck mslot1 from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/mslot.rb
+2026-11-25 04:21:00 +0000: Memory Usage (4734112K) : Starting Metal Slotting rules derivations
+2026-11-25 04:21:05 +0000: Memory Usage (4734064K) : Checking slots for Metal1
+2026-11-25 04:21:13 +0000: Memory Usage (4734064K) : Executing rule MSLOT1.1
+2026-11-25 04:21:13 +0000: Memory Usage (4734064K) : Executing rule MSLOT1.2
+2026-11-25 04:21:13 +0000: Memory Usage (4734064K) : Executing rule MSLOT1.3
+2026-11-25 04:21:13 +0000: Memory Usage (4734064K) : Executing rule MSLOT1.4
+2026-11-25 04:21:13 +0000: Memory Usage (4734192K) : Executing rule MSLOT1.5
+2026-11-25 04:21:14 +0000: Memory Usage (4734192K) : Executing rule MSLOT1.7
+2026-11-25 04:21:14 +0000: Memory Usage (4734192K) : Executing rule MSLOT1.8
+2026-11-25 04:21:14 +0000: Memory Usage (4734192K) : Executing rule MSLOT1.9
+2026-11-25 04:21:14 +0000: Memory Usage (4734192K) : Executing deck mslot2 from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/mslot.rb
+2026-11-25 04:21:14 +0000: Memory Usage (4734192K) : Starting Metal Slotting rules derivations
+2026-11-25 04:21:19 +0000: Memory Usage (4734240K) : Checking slots for Metal2
+2026-11-25 04:21:24 +0000: Memory Usage (4734240K) : Executing rule MSLOT2.1
+2026-11-25 04:21:24 +0000: Memory Usage (4734240K) : Executing rule MSLOT2.2
+2026-11-25 04:21:25 +0000: Memory Usage (4734240K) : Executing rule MSLOT2.3
+2026-11-25 04:21:25 +0000: Memory Usage (4734240K) : Executing rule MSLOT2.4
+2026-11-25 04:21:25 +0000: Memory Usage (4734240K) : Executing rule MSLOT2.5
+2026-11-25 04:21:25 +0000: Memory Usage (4734368K) : Executing rule MSLOT2.7
+2026-11-25 04:21:26 +0000: Memory Usage (4734368K) : Executing rule MSLOT2.8
+2026-11-25 04:21:26 +0000: Memory Usage (4734368K) : Executing rule MSLOT2.9
+2026-11-25 04:21:26 +0000: Memory Usage (4734368K) : Executing deck mslot3 from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/mslot.rb
+2026-11-25 04:21:26 +0000: Memory Usage (4734368K) : Starting Metal Slotting rules derivations
+2026-11-25 04:21:31 +0000: Memory Usage (4734260K) : Checking slots for Metal3
+2026-11-25 04:21:38 +0000: Memory Usage (4734260K) : Executing rule MSLOT3.1
+2026-11-25 04:21:38 +0000: Memory Usage (4734260K) : Executing rule MSLOT3.2
+2026-11-25 04:21:38 +0000: Memory Usage (4734260K) : Executing rule MSLOT3.3
+2026-11-25 04:21:38 +0000: Memory Usage (4734260K) : Executing rule MSLOT3.4
+2026-11-25 04:21:38 +0000: Memory Usage (4734260K) : Executing rule MSLOT3.5
+2026-11-25 04:21:38 +0000: Memory Usage (4734260K) : Executing rule MSLOT3.7
+2026-11-25 04:21:39 +0000: Memory Usage (4734260K) : Executing rule MSLOT3.8
+2026-11-25 04:21:39 +0000: Memory Usage (4734388K) : Executing rule MSLOT3.9
+2026-11-25 04:21:39 +0000: Memory Usage (4734388K) : Executing deck mslot4 from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/mslot.rb
+2026-11-25 04:21:39 +0000: Memory Usage (4734388K) : Starting Metal Slotting rules derivations
+2026-11-25 04:21:45 +0000: Memory Usage (4734388K) : Checking slots for Metal4
+2026-11-25 04:21:55 +0000: Memory Usage (4734388K) : Executing rule MSLOT4.1
+2026-11-25 04:21:56 +0000: Memory Usage (4734388K) : Executing rule MSLOT4.2
+2026-11-25 04:21:57 +0000: Memory Usage (4734388K) : Executing rule MSLOT4.3
+2026-11-25 04:21:57 +0000: Memory Usage (4734388K) : Executing rule MSLOT4.4
+2026-11-25 04:21:57 +0000: Memory Usage (4734388K) : Executing rule MSLOT4.5
+2026-11-25 04:21:57 +0000: Memory Usage (4734388K) : Executing rule MSLOT4.7
+2026-11-25 04:21:57 +0000: Memory Usage (4734388K) : Executing rule MSLOT4.8
+2026-11-25 04:21:57 +0000: Memory Usage (4734388K) : Executing rule MSLOT4.9
+2026-11-25 04:21:57 +0000: Memory Usage (4734388K) : Executing deck mslot5 from /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/rule_decks/mslot.rb
+2026-11-25 04:21:57 +0000: Memory Usage (4734388K) : Starting Metal Slotting rules derivations
