@@ -1,5 +1,4 @@
 cd xschem && ./run_extract_ocd_chipalooza.sh
-Created /root/.xschem dir with template xschemrc
 Using run time directory XSCHEM_SHAREDIR = /foss/tools/xschem/share/xschem
 Sourcing /foss/tools/xschem/share/xschem/xschemrc init file
 Sourcing ./xschemrc init file

@@ -1,3 +1,1 @@
-START 02:06:32 make drc-final
-END 05:18:46 rc=0 seconds=11534
-PUSH_LOGS_FAILED after drc-final
+START 00:00:26 make drc-final
