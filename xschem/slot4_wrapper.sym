@@ -7,8 +7,8 @@ template="name=x1"
 V {}
 S {}
 E {}
-P 4 5 0 0 0 -640 210 -640 210 0 0 0 {}
-T {slot4_wrapper} 105.0 -658.0 0 0 0.3 0.3 {hcenter=true}
+P 4 5 0 0 0 -640 200 -640 200 0 0 0 {}
+T {slot4_wrapper} 100.0 -658.0 0 0 0.3 0.3 {hcenter=true}
 L 4 -20 -360 0 -360 {}
 T {s4_an[0:1]} 5 -360.0 0 0 0.25 0.25 {vcenter=true}
 B 5 -22.5 -362.5 -17.5 -357.5 {name=s4_an[0:1] dir=inout}
@@ -45,9 +45,9 @@ B 5 -22.5 -102.5 -17.5 -97.5 {name=ibias0 dir=inout}
 L 4 -20 -120 0 -120 {}
 T {ibias1} 5 -120.0 0 0 0.25 0.25 {vcenter=true}
 B 5 -22.5 -122.5 -17.5 -117.5 {name=ibias1 dir=inout}
-L 4 210 -20 230 -20 {}
-T {dig_out[11:0]} 205 -20.0 0 1 0.25 0.25 {vcenter=true}
-B 5 227.5 -22.5 232.5 -17.5 {name=dig_out[11:0] dir=out}
+L 4 200 -20 220 -20 {}
+T {dig_out[11:0]} 195 -20.0 0 1 0.25 0.25 {vcenter=true}
+B 5 217.5 -22.5 222.5 -17.5 {name=dig_out[11:0] dir=out}
 L 4 -20 -20 0 -20 {}
 T {dig_in[23:0]} 5 -20.0 0 0 0.25 0.25 {vcenter=true}
 B 5 -22.5 -22.5 -17.5 -17.5 {name=dig_in[23:0] dir=in}

@@ -9,9 +9,6 @@ S {}
 E {}
 P 4 5 0 0 0 -640 210 -640 210 0 0 0 {}
 T {slot16_wrapper} 105.0 -658.0 0 0 0.3 0.3 {hcenter=true}
-L 4 -20 -360 0 -360 {}
-T {s16_an[0:1]} 5 -360.0 0 0 0.25 0.25 {vcenter=true}
-B 5 -22.5 -362.5 -17.5 -357.5 {name=s16_an[0:1] dir=inout}
 L 4 -20 -460 0 -460 {}
 T {s16_an_0_outp} 5 -460.0 0 0 0.25 0.25 {vcenter=true}
 B 5 -22.5 -462.5 -17.5 -457.5 {name=s16_an_0_outp dir=inout}
