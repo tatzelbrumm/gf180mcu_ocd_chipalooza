@@ -71,8 +71,28 @@ module slot16_wrapper (
      *
      * The names match the layout and the documented chip pinout,
      * which is also what LVS compares against.
+     *
+     * Slot 16 uses custom pads (config.txt: s16_an[0] gf180_cm_io__asig_in,
+     * s16_an[1] gf180_cm_io__asig_out, views in custom_pads/gf180_cm_io/).
+     * Their bond pads are the chip pins s16_an[1:0];  the slot sees only
+     * their core-side pins <signal name>_<pin>.  Directions as seen from
+     * the slot:  the input pad delivers outp/outn and takes vcm, vref;
+     * the output pad takes vinp, vinn, vref;  both take en_3v3, en_3v3_b
+     * and share a bias current on iref.
      */
-    inout wire [1:0] s16_an,	// dedicated analog pad(s)
+    input  wire s16_an_0_outp,
+    input  wire s16_an_0_outn,
+    output wire s16_an_0_vcm,
+    output wire s16_an_0_vref,
+    inout  wire s16_an_0_iref,
+    output wire s16_an_0_en_3v3,
+    output wire s16_an_0_en_3v3_b,
+    output wire s16_an_1_vinp,
+    output wire s16_an_1_vinn,
+    output wire s16_an_1_vref,
+    inout  wire s16_an_1_iref,
+    output wire s16_an_1_en_3v3,
+    output wire s16_an_1_en_3v3_b,
     input real ibias0,		// shared current bias 0
     input real ibias1,		// shared current bias 1
     input real vbias,		// shared voltage bias

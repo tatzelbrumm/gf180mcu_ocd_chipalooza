@@ -87,8 +87,20 @@ module gf180mcu_ocd_chipalooza (
     wire s14_an_1_esd;
     wire s14_an_2_esd;
     wire s15_an_0_esd;
-    wire s16_an_0_esd;
-    wire s16_an_1_esd;
+    // slot 16 custom pads: core-side pins between padframe and harness core
+    wire s16_an_0_outp;
+    wire s16_an_0_outn;
+    wire s16_an_0_vcm;
+    wire s16_an_0_vref;
+    wire s16_an_0_iref;
+    wire s16_an_0_en_3v3;
+    wire s16_an_0_en_3v3_b;
+    wire s16_an_1_vinp;
+    wire s16_an_1_vinn;
+    wire s16_an_1_vref;
+    wire s16_an_1_iref;
+    wire s16_an_1_en_3v3;
+    wire s16_an_1_en_3v3_b;
     wire s17_an_0_esd;
     wire s17_an_1_esd;
     wire s18_an_0_esd;
@@ -132,6 +144,19 @@ module gf180mcu_ocd_chipalooza (
 	.s18_an(s18_an),
 
 	// Core-facing signals
+	.s16_an_0_outp(s16_an_0_outp),
+	.s16_an_0_outn(s16_an_0_outn),
+	.s16_an_0_vcm(s16_an_0_vcm),
+	.s16_an_0_vref(s16_an_0_vref),
+	.s16_an_0_iref(s16_an_0_iref),
+	.s16_an_0_en_3v3(s16_an_0_en_3v3),
+	.s16_an_0_en_3v3_b(s16_an_0_en_3v3_b),
+	.s16_an_1_vinp(s16_an_1_vinp),
+	.s16_an_1_vinn(s16_an_1_vinn),
+	.s16_an_1_vref(s16_an_1_vref),
+	.s16_an_1_iref(s16_an_1_iref),
+	.s16_an_1_en_3v3(s16_an_1_en_3v3),
+	.s16_an_1_en_3v3_b(s16_an_1_en_3v3_b),
 	.SDO_out(SDO_out),
 	.SDO_ena(SDO_ena),
 	.CSB_in(CSB_in),
@@ -205,8 +230,6 @@ module gf180mcu_ocd_chipalooza (
 	.s14_an_1_esd(s14_an_1_esd),
 	.s14_an_2_esd(s14_an_2_esd),
 	.s15_an_0_esd(s15_an_0_esd),
-	.s16_an_0_esd(s16_an_0_esd),
-	.s16_an_1_esd(s16_an_1_esd),
 	.s17_an_0_esd(s17_an_0_esd),
 	.s17_an_1_esd(s17_an_1_esd),
 	.s18_an_0_esd(s18_an_0_esd),
@@ -257,8 +280,19 @@ module gf180mcu_ocd_chipalooza (
 	.s14_an_1(s14_an[1]),
 	.s14_an_2(s14_an[2]),
 	.s15_an_0(s15_an[0]),
-	.s16_an_0(s16_an[0]),
-	.s16_an_1(s16_an[1]),
+	.s16_an_0_outp(s16_an_0_outp),
+	.s16_an_0_outn(s16_an_0_outn),
+	.s16_an_0_vcm(s16_an_0_vcm),
+	.s16_an_0_vref(s16_an_0_vref),
+	.s16_an_0_iref(s16_an_0_iref),
+	.s16_an_0_en_3v3(s16_an_0_en_3v3),
+	.s16_an_0_en_3v3_b(s16_an_0_en_3v3_b),
+	.s16_an_1_vinp(s16_an_1_vinp),
+	.s16_an_1_vinn(s16_an_1_vinn),
+	.s16_an_1_vref(s16_an_1_vref),
+	.s16_an_1_iref(s16_an_1_iref),
+	.s16_an_1_en_3v3(s16_an_1_en_3v3),
+	.s16_an_1_en_3v3_b(s16_an_1_en_3v3_b),
 	.s17_an_0(s17_an[0]),
 	.s17_an_1(s17_an[1]),
 	.s18_an_0(s18_an[0]),
@@ -294,8 +328,6 @@ module gf180mcu_ocd_chipalooza (
 	.s14_an_1_esd(s14_an_1_esd),
 	.s14_an_2_esd(s14_an_2_esd),
 	.s15_an_0_esd(s15_an_0_esd),
-	.s16_an_0_esd(s16_an_0_esd),
-	.s16_an_1_esd(s16_an_1_esd),
 	.s17_an_0_esd(s17_an_0_esd),
 	.s17_an_1_esd(s17_an_1_esd),
 	.s18_an_0_esd(s18_an_0_esd),

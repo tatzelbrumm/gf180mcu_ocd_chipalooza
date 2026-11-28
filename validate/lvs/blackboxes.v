@@ -92,7 +92,7 @@ module user_project_control (
 );
 endmodule
 
-/* gf180mcu_ocd_ip_sram__sram1024x8m8wm1 --- 9 pins, from ../../../../usr/share/pdk/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/verilog/gf180mcu_ocd_ip_sram__sram1024x8m8wm1__blackbox_pp.v */
+/* gf180mcu_ocd_ip_sram__sram1024x8m8wm1 --- 9 pins, from ../../../foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_ip_sram/verilog/gf180mcu_ocd_ip_sram__sram1024x8m8wm1__blackbox_pp.v */
 (* blackbox *)
 module gf180mcu_ocd_ip_sram__sram1024x8m8wm1 (
     input wire CLK,
@@ -613,7 +613,7 @@ module slot15_wrapper (
 );
 endmodule
 
-/* slot16_wrapper --- 17 pins, from verilog/rtl/slot16_wrapper.v */
+/* slot16_wrapper --- 29 pins, from verilog/rtl/slot16_wrapper.v */
 (* blackbox *)
 module slot16_wrapper (
     inout wire vdd_5v0,
@@ -625,7 +625,19 @@ module slot16_wrapper (
     input wire reset,
     input wire [23:0] dig_in,
     output wire [11:0] dig_out,
-    inout wire [1:0] s16_an,
+    input wire s16_an_0_outp,
+    input wire s16_an_0_outn,
+    output wire s16_an_0_vcm,
+    output wire s16_an_0_vref,
+    inout wire s16_an_0_iref,
+    output wire s16_an_0_en_3v3,
+    output wire s16_an_0_en_3v3_b,
+    output wire s16_an_1_vinp,
+    output wire s16_an_1_vinn,
+    output wire s16_an_1_vref,
+    inout wire s16_an_1_iref,
+    output wire s16_an_1_en_3v3,
+    output wire s16_an_1_en_3v3_b,
     inout wire ibias0,
     inout wire ibias1,
     inout wire vbias,

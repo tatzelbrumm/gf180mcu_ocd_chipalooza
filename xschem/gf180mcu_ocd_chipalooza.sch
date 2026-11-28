@@ -63,7 +63,6 @@ N -490 -420 -450 -420 {lab=s5_an[0:1]}
 N -490 -400 -450 -400 {lab=s14_an[0:1]}
 N -490 -380 -450 -380 {lab=s4_an[0:1]}
 N -490 -340 -450 -340 {lab=s3_an[0:1]}
-N -490 -320 -450 -320 {lab=s16_an[0:1]}
 N -490 -300 -450 -300 {lab=vss3v3}
 N -490 -280 -450 -280 {lab=vss5v0}
 N -490 -260 -450 -260 {lab=s2_an[0:1]}
@@ -141,6 +140,32 @@ N -490 -180 -450 -180 {lab=#net8}
 N -490 -160 -450 -160 {lab=#net9}
 N -490 -140 -450 -140 {lab=vss3v3}
 N -490 -120 -450 -120 {lab=vss3v3}
+N -490 -100 -450 -100 {lab=s16_an_0_outp}
+N 250 -380 290 -380 {lab=s16_an_0_outp}
+N -490 -80 -450 -80 {lab=s16_an_0_outn}
+N 250 -400 290 -400 {lab=s16_an_0_outn}
+N -490 -60 -450 -60 {lab=s16_an_0_vcm}
+N -60 -1060 -20 -1060 {lab=s16_an_0_vcm}
+N -490 -40 -450 -40 {lab=s16_an_0_vref}
+N -60 -1080 -20 -1080 {lab=s16_an_0_vref}
+N -490 -20 -450 -20 {lab=s16_an_0_iref}
+N -60 -1100 -20 -1100 {lab=s16_an_0_iref}
+N -490 0 -450 0 {lab=s16_an_0_en_3v3}
+N -60 -1120 -20 -1120 {lab=s16_an_0_en_3v3}
+N -490 20 -450 20 {lab=s16_an_0_en_3v3_b}
+N -60 -1140 -20 -1140 {lab=s16_an_0_en_3v3_b}
+N -490 40 -450 40 {lab=s16_an_1_vinp}
+N -60 -1160 -20 -1160 {lab=s16_an_1_vinp}
+N -490 60 -450 60 {lab=s16_an_1_vinn}
+N -60 -1180 -20 -1180 {lab=s16_an_1_vinn}
+N -490 80 -450 80 {lab=s16_an_1_vref}
+N -60 -1200 -20 -1200 {lab=s16_an_1_vref}
+N -490 100 -450 100 {lab=s16_an_1_iref}
+N -60 -1220 -20 -1220 {lab=s16_an_1_iref}
+N -490 120 -450 120 {lab=s16_an_1_en_3v3}
+N -60 -1240 -20 -1240 {lab=s16_an_1_en_3v3}
+N -490 140 -450 140 {lab=s16_an_1_en_3v3_b}
+N -60 -1260 -20 -1260 {lab=s16_an_1_en_3v3_b}
 C {gf180mcu_padframe.sym} 0 0 0 0 {name=x1}
 C {chipalooza_frame.sym} -640 -650 0 0 {name=x2}
 C {lab_pin.sym} -870 -1060 0 0 {name=p6 sig_type=std_logic lab=gpio_in[11:0]}
@@ -188,7 +213,6 @@ C {lab_pin.sym} -450 -440 0 1 {name=p82 sig_type=std_logic lab=s13_an[0:1]}
 C {lab_pin.sym} -450 -420 0 1 {name=p83 sig_type=std_logic lab=s5_an[0:1]}
 C {lab_pin.sym} -450 -400 0 1 {name=p84 sig_type=std_logic lab=s14_an[0:1]}
 C {lab_pin.sym} -450 -340 0 1 {name=p85 sig_type=std_logic lab=s3_an[0:1]}
-C {lab_pin.sym} -450 -320 0 1 {name=p86 sig_type=std_logic lab=s16_an[0:1]}
 C {lab_pin.sym} -450 -260 0 1 {name=p87 sig_type=std_logic lab=s2_an[0:1]}
 C {lab_pin.sym} -450 -240 0 1 {name=p88 sig_type=std_logic lab=s17_an[0:1]}
 C {lab_pin.sym} -450 -220 0 1 {name=p89 sig_type=std_logic lab=s1_an[0:1]}
@@ -278,3 +302,29 @@ C {lab_pin.sym} -450 -140 0 1 {name=p60 sig_type=std_logic lab=vss3v3}
 C {lab_pin.sym} -450 -120 0 1 {name=p61 sig_type=std_logic lab=vss3v3}
 C {lab_pin.sym} -450 -180 0 1 {name=p58 sig_type=std_logic lab=vss5v0}
 C {lab_pin.sym} -450 -160 0 1 {name=p59 sig_type=std_logic lab=vss5v0}
+C {lab_pin.sym} -450 -100 0 1 {name=p301 sig_type=std_logic lab=s16_an_0_outp}
+C {lab_pin.sym} 290 -380 0 1 {name=p302 sig_type=std_logic lab=s16_an_0_outp}
+C {lab_pin.sym} -450 -80 0 1 {name=p303 sig_type=std_logic lab=s16_an_0_outn}
+C {lab_pin.sym} 290 -400 0 1 {name=p304 sig_type=std_logic lab=s16_an_0_outn}
+C {lab_pin.sym} -450 -60 0 1 {name=p305 sig_type=std_logic lab=s16_an_0_vcm}
+C {lab_pin.sym} -60 -1060 0 0 {name=p306 sig_type=std_logic lab=s16_an_0_vcm}
+C {lab_pin.sym} -450 -40 0 1 {name=p307 sig_type=std_logic lab=s16_an_0_vref}
+C {lab_pin.sym} -60 -1080 0 0 {name=p308 sig_type=std_logic lab=s16_an_0_vref}
+C {lab_pin.sym} -450 -20 0 1 {name=p309 sig_type=std_logic lab=s16_an_0_iref}
+C {lab_pin.sym} -60 -1100 0 0 {name=p310 sig_type=std_logic lab=s16_an_0_iref}
+C {lab_pin.sym} -450 0 0 1 {name=p311 sig_type=std_logic lab=s16_an_0_en_3v3}
+C {lab_pin.sym} -60 -1120 0 0 {name=p312 sig_type=std_logic lab=s16_an_0_en_3v3}
+C {lab_pin.sym} -450 20 0 1 {name=p313 sig_type=std_logic lab=s16_an_0_en_3v3_b}
+C {lab_pin.sym} -60 -1140 0 0 {name=p314 sig_type=std_logic lab=s16_an_0_en_3v3_b}
+C {lab_pin.sym} -450 40 0 1 {name=p315 sig_type=std_logic lab=s16_an_1_vinp}
+C {lab_pin.sym} -60 -1160 0 0 {name=p316 sig_type=std_logic lab=s16_an_1_vinp}
+C {lab_pin.sym} -450 60 0 1 {name=p317 sig_type=std_logic lab=s16_an_1_vinn}
+C {lab_pin.sym} -60 -1180 0 0 {name=p318 sig_type=std_logic lab=s16_an_1_vinn}
+C {lab_pin.sym} -450 80 0 1 {name=p319 sig_type=std_logic lab=s16_an_1_vref}
+C {lab_pin.sym} -60 -1200 0 0 {name=p320 sig_type=std_logic lab=s16_an_1_vref}
+C {lab_pin.sym} -450 100 0 1 {name=p321 sig_type=std_logic lab=s16_an_1_iref}
+C {lab_pin.sym} -60 -1220 0 0 {name=p322 sig_type=std_logic lab=s16_an_1_iref}
+C {lab_pin.sym} -450 120 0 1 {name=p323 sig_type=std_logic lab=s16_an_1_en_3v3}
+C {lab_pin.sym} -60 -1240 0 0 {name=p324 sig_type=std_logic lab=s16_an_1_en_3v3}
+C {lab_pin.sym} -450 140 0 1 {name=p325 sig_type=std_logic lab=s16_an_1_en_3v3_b}
+C {lab_pin.sym} -60 -1260 0 0 {name=p326 sig_type=std_logic lab=s16_an_1_en_3v3_b}

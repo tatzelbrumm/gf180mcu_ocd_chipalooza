@@ -1,4 +1,4 @@
-** sch_path: /home/tim/gits/gf180mcu_ocd_chipalooza/xschem/gf180mcu_ocd_chipalooza.sch
+** sch_path: /home/user/gf180mcu_ocd_chipalooza/xschem/gf180mcu_ocd_chipalooza.sch
 .subckt gf180mcu_ocd_chipalooza SDO analog[3] analog[2] analog[1] analog[0] gpio[11] gpio[10] gpio[9] gpio[8] gpio[7] gpio[6]
 + gpio[5] gpio[4] gpio[3] gpio[2] gpio[1] gpio[0] vdd5v0 vss5v0 vdd3v3 vss3v3 vddd SDI SCK clk CSB s18_an[1] s18_an[0] s17_an[1] s17_an[0]
 + s16_an[1] s16_an[0] s15_an[1] s15_an[0] s14_an[1] s14_an[0] s13_an[1] s13_an[0] s12_an[1] s12_an[0] s11_an[0] s10_an[2] s10_an[1] s10_an[0]
@@ -11,19 +11,21 @@ x1 vdd3v3 vss3v3 vdd5v0 vss5v0 vddd gpio[11] gpio[10] gpio[9] gpio[8] gpio[7] gp
 + gpio[0] analog[3] analog[2] analog[1] analog[0] SDO SDI CSB SCK clk s1_an[1] s1_an[0] s2_an[1] s2_an[0] s3_an[1] s3_an[0] s4_an[1]
 + s4_an[0] s5_an[1] s5_an[0] s6_an[1] s6_an[0] s7_an[1] s7_an[0] s8_an[0] s9_an[2] s9_an[1] s9_an[0] s10_an[2] s10_an[1] s10_an[0] s11_an[0]
 + s12_an[1] s12_an[0] s13_an[1] s13_an[0] s14_an[1] s14_an[0] s15_an[1] s15_an[0] s16_an[1] s16_an[0] s17_an[1] s17_an[0] s18_an[1] s18_an[0]
-+ gpio_in[11] gpio_in[10] gpio_in[9] gpio_in[8] gpio_in[7] gpio_in[6] gpio_in[5] gpio_in[4] gpio_in[3] gpio_in[2] gpio_in[1] gpio_in[0]
-+ net4[11] net4[10] net4[9] net4[8] net4[7] net4[6] net4[5] net4[4] net4[3] net4[2] net4[1] net4[0] net3[11] net3[10] net3[9] net3[8]
-+ net3[7] net3[6] net3[5] net3[4] net3[3] net3[2] net3[1] net3[0] gpio_out[11] gpio_out[10] gpio_out[9] gpio_out[8] gpio_out[7] gpio_out[6]
-+ gpio_out[5] gpio_out[4] gpio_out[3] gpio_out[2] gpio_out[1] gpio_out[0] gpio_oe[11] gpio_oe[10] gpio_oe[9] gpio_oe[8] gpio_oe[7] gpio_oe[6]
-+ gpio_oe[5] gpio_oe[4] gpio_oe[3] gpio_oe[2] gpio_oe[1] gpio_oe[0] gpio_ie[11] gpio_ie[10] gpio_ie[9] gpio_ie[8] gpio_ie[7] gpio_ie[6]
-+ gpio_ie[5] gpio_ie[4] gpio_ie[3] gpio_ie[2] gpio_ie[1] gpio_ie[0] gpio_slew[11] gpio_slew[10] gpio_slew[9] gpio_slew[8] gpio_slew[7]
-+ gpio_slew[6] gpio_slew[5] gpio_slew[4] gpio_slew[3] gpio_slew[2] gpio_slew[1] gpio_slew[0] gpio_schmitt[11] gpio_schmitt[10] gpio_schmitt[9]
-+ gpio_schmitt[8] gpio_schmitt[7] gpio_schmitt[6] gpio_schmitt[5] gpio_schmitt[4] gpio_schmitt[3] gpio_schmitt[2] gpio_schmitt[1] gpio_schmitt[0]
-+ gpio_pullup[11] gpio_pullup[10] gpio_pullup[9] gpio_pullup[8] gpio_pullup[7] gpio_pullup[6] gpio_pullup[5] gpio_pullup[4] gpio_pullup[3]
-+ gpio_pullup[2] gpio_pullup[1] gpio_pullup[0] gpio_pulldown[11] gpio_pulldown[10] gpio_pulldown[9] gpio_pulldown[8] gpio_pulldown[7]
-+ gpio_pulldown[6] gpio_pulldown[5] gpio_pulldown[4] gpio_pulldown[3] gpio_pulldown[2] gpio_pulldown[1] gpio_pulldown[0] net2 SDO_zero net1 sdo_out
-+ sdo_ena SDO_ie SDO_slew SDO_schmitt SDO_pullup SDO_pulldown SDI_in SDI_zero net5 SDI_pullup SDI_pulldown CSB_in CSB_zero CSB_one
-+ CSB_pullup CSB_pulldown SCK_in SCK_zero net6 SCK_pullup SCK_pulldown clk_in clk_zero net7 clk_pullup clk_pulldown gf180mcu_padframe
++ gpio_in[11] gpio_in[10] gpio_in[9] gpio_in[8] gpio_in[7] gpio_in[6] gpio_in[5] gpio_in[4] gpio_in[3] gpio_in[2] gpio_in[1] gpio_in[0] net4_11
++ net4_10 net4_9 net4_8 net4_7 net4_6 net4_5 net4_4 net4_3 net4_2 net4_1 net4_0 net3_11 net3_10 net3_9 net3_8 net3_7 net3_6 net3_5 net3_4
++ net3_3 net3_2 net3_1 net3_0 gpio_out[11] gpio_out[10] gpio_out[9] gpio_out[8] gpio_out[7] gpio_out[6] gpio_out[5] gpio_out[4]
++ gpio_out[3] gpio_out[2] gpio_out[1] gpio_out[0] gpio_oe[11] gpio_oe[10] gpio_oe[9] gpio_oe[8] gpio_oe[7] gpio_oe[6] gpio_oe[5] gpio_oe[4]
++ gpio_oe[3] gpio_oe[2] gpio_oe[1] gpio_oe[0] gpio_ie[11] gpio_ie[10] gpio_ie[9] gpio_ie[8] gpio_ie[7] gpio_ie[6] gpio_ie[5] gpio_ie[4]
++ gpio_ie[3] gpio_ie[2] gpio_ie[1] gpio_ie[0] gpio_slew[11] gpio_slew[10] gpio_slew[9] gpio_slew[8] gpio_slew[7] gpio_slew[6] gpio_slew[5]
++ gpio_slew[4] gpio_slew[3] gpio_slew[2] gpio_slew[1] gpio_slew[0] gpio_schmitt[11] gpio_schmitt[10] gpio_schmitt[9] gpio_schmitt[8]
++ gpio_schmitt[7] gpio_schmitt[6] gpio_schmitt[5] gpio_schmitt[4] gpio_schmitt[3] gpio_schmitt[2] gpio_schmitt[1] gpio_schmitt[0] gpio_pullup[11]
++ gpio_pullup[10] gpio_pullup[9] gpio_pullup[8] gpio_pullup[7] gpio_pullup[6] gpio_pullup[5] gpio_pullup[4] gpio_pullup[3] gpio_pullup[2]
++ gpio_pullup[1] gpio_pullup[0] gpio_pulldown[11] gpio_pulldown[10] gpio_pulldown[9] gpio_pulldown[8] gpio_pulldown[7] gpio_pulldown[6]
++ gpio_pulldown[5] gpio_pulldown[4] gpio_pulldown[3] gpio_pulldown[2] gpio_pulldown[1] gpio_pulldown[0] net2 SDO_zero net1 sdo_out sdo_ena SDO_ie
++ SDO_slew SDO_schmitt SDO_pullup SDO_pulldown SDI_in SDI_zero net5 SDI_pullup SDI_pulldown CSB_in CSB_zero CSB_one CSB_pullup CSB_pulldown
++ SCK_in SCK_zero net6 SCK_pullup SCK_pulldown clk_in clk_zero net7 clk_pullup clk_pulldown s16_an_0_outp s16_an_0_outn s16_an_0_vcm
++ s16_an_0_vref s16_an_0_iref s16_an_0_en_3v3 s16_an_0_en_3v3_b s16_an_1_vinp s16_an_1_vinn s16_an_1_vref s16_an_1_iref s16_an_1_en_3v3
++ s16_an_1_en_3v3_b gf180mcu_padframe
 x2 SDO_ie SDO_schmitt SDO_slew SDO_pullup SDO_pulldown SDO_zero clk_pullup clk_zero clk_pulldown SDI_pullup SDI_pulldown SDI_zero
 + SCK_pullup SCK_zero SCK_pulldown vdd5v0 vss5v0 CSB_pullup CSB_zero vdd3v3 CSB_pulldown CSB_one vss3v3 vddd gpio_out[11] gpio_out[10]
 + gpio_out[9] gpio_out[8] gpio_out[7] gpio_out[6] gpio_out[5] gpio_out[4] gpio_out[3] gpio_out[2] gpio_out[1] gpio_out[0] gpio_oe[11]
@@ -37,8 +39,10 @@ x2 SDO_ie SDO_schmitt SDO_slew SDO_pullup SDO_pulldown SDO_zero clk_pullup clk_z
 + gpio_pulldown[9] gpio_pulldown[8] gpio_pulldown[7] gpio_pulldown[6] gpio_pulldown[5] gpio_pulldown[4] gpio_pulldown[3] gpio_pulldown[2]
 + gpio_pulldown[1] gpio_pulldown[0] analog[3] analog[2] analog[1] analog[0] CSB_in SDI_in SCK_in sdo_ena clk_in sdo_out s9_an[0] s9_an[1] s9_an[2]
 + s10_an[0] s10_an[1] s10_an[2] vss3v3 vss5v0 s8_an[0] s11_an[0] s7_an[0] s7_an[1] s12_an[0] s12_an[1] s6_an[0] s6_an[1] s13_an[0] s13_an[1]
-+ s5_an[0] s5_an[1] s14_an[0] s14_an[1] s4_an[0] s4_an[1] s15_an[0] s15_an[0] s3_an[0] s3_an[1] s16_an[0] s16_an[1] vss3v3 vss5v0 s2_an[0]
-+ s2_an[1] s17_an[0] s17_an[1] s1_an[0] s1_an[1] s18_an[0] s18_an[1] vss5v0 vss5v0 vss3v3 vss3v3 chipalooza_frame
++ s5_an[0] s5_an[1] s14_an[0] s14_an[1] s4_an[0] s4_an[1] s15_an[0] s15_an[0] s3_an[0] s3_an[1] vss3v3 vss5v0 s2_an[0] s2_an[1] s17_an[0]
++ s17_an[1] s1_an[0] s1_an[1] s18_an[0] s18_an[1] vss5v0 vss5v0 vss3v3 vss3v3 s16_an_0_outp s16_an_0_outn s16_an_0_vcm s16_an_0_vref
++ s16_an_0_iref s16_an_0_en_3v3 s16_an_0_en_3v3_b s16_an_1_vinp s16_an_1_vinn s16_an_1_vref s16_an_1_iref s16_an_1_en_3v3 s16_an_1_en_3v3_b
++ chipalooza_frame
 * noconn #net4
 * noconn #net3
 * noconn #net7
@@ -48,9 +52,9 @@ x2 SDO_ie SDO_schmitt SDO_slew SDO_pullup SDO_pulldown SDO_zero clk_pullup clk_z
 * noconn #net2
 .ends
 
-* expanding   symbol:  chipalooza_frame.sym # of pins=65
-** sym_path: /home/tim/gits/gf180mcu_ocd_chipalooza/xschem/chipalooza_frame.sym
-** sch_path: /home/tim/gits/gf180mcu_ocd_chipalooza/xschem/chipalooza_frame.sch
+* expanding   symbol:  chipalooza_frame.sym # of pins=77
+** sym_path: /home/user/gf180mcu_ocd_chipalooza/xschem/chipalooza_frame.sym
+** sch_path: /home/user/gf180mcu_ocd_chipalooza/xschem/chipalooza_frame.sch
 .subckt chipalooza_frame SDO_ie SDO_schmitt SDO_slew SDO_pullup SDO_pulldown SDO_zero clk_pullup clk_zero clk_pulldown SDI_pullup
 + SDI_pulldown SDI_zero SCK_pullup SCK_zero SCK_pulldown vdd5v0 vss5v0 CSB_pulldown CSB_zero vdd3v3 CSB_pullup CSB_one vss3v3 vddd gpio_out[11]
 + gpio_out[10] gpio_out[9] gpio_out[8] gpio_out[7] gpio_out[6] gpio_out[5] gpio_out[4] gpio_out[3] gpio_out[2] gpio_out[1] gpio_out[0]
@@ -64,16 +68,18 @@ x2 SDO_ie SDO_schmitt SDO_slew SDO_pullup SDO_pulldown SDO_zero clk_pullup clk_z
 + gpio_pulldown[9] gpio_pulldown[8] gpio_pulldown[7] gpio_pulldown[6] gpio_pulldown[5] gpio_pulldown[4] gpio_pulldown[3] gpio_pulldown[2]
 + gpio_pulldown[1] gpio_pulldown[0] analog[3] analog[2] analog[1] analog[0] CSB_in SDI_in SCK_in SDO_ena clk_in SDO_out s9_an[0] s9_an[1] s9_an[2]
 + s10_an[0] s10_an[1] s10_an[2] vss3v3_slot11 vss5v0_slot8 s8_an[0] s11_an[0] s7_an[0] s7_an[1] s12_an[0] s12_an[1] s6_an[0] s6_an[1]
-+ s13_an[0] s13_an[1] s5_an[0] s5_an[1] s14_an[0] s14_an[1] s4_an[0] s4_an[1] s15_an[0] s15_an[1] s3_an[0] s3_an[1] s16_an[0] s16_an[1]
-+ vss3v3_slot17 vss5v0_slot2 s2_an[0] s2_an[1] s17_an[0] s17_an[1] s1_an[0] s1_an[1] s18_an[0] s18_an[1] vss5v0_slot12_13 vss5v0_slot14_15
-+ vss3v3_slot4_5 vss3v3_slot6_7
++ s13_an[0] s13_an[1] s5_an[0] s5_an[1] s14_an[0] s14_an[1] s4_an[0] s4_an[1] s15_an[0] s15_an[1] s3_an[0] s3_an[1] vss3v3_slot17
++ vss5v0_slot2 s2_an[0] s2_an[1] s17_an[0] s17_an[1] s1_an[0] s1_an[1] s18_an[0] s18_an[1] vss5v0_slot12_13 vss5v0_slot14_15 vss3v3_slot4_5
++ vss3v3_slot6_7 s16_an_0_outp s16_an_0_outn s16_an_0_vcm s16_an_0_vref s16_an_0_iref s16_an_0_en_3v3 s16_an_0_en_3v3_b s16_an_1_vinp
++ s16_an_1_vinn s16_an_1_vref s16_an_1_iref s16_an_1_en_3v3 s16_an_1_en_3v3_b
 *.PININFO vdd5v0:B vdd3v3:B vss3v3:B clk_in:I SDO_out:O SDO_ena:O SDI_in:I CSB_in:I SCK_in:I gpio_in[11:0]:I gpio_out[11:0]:O
-*+ gpio_oe[11:0]:O analog[3:0]:O s10_an[0:2]:B s11_an[0]:B s12_an[0:1]:B s13_an[0:1]:B s14_an[0:1]:B s15_an[0:1]:B s16_an[0:1]:B s17_an[0:1]:B
-*+ s18_an[0:1]:B s1_an[0:1]:B s2_an[0:1]:B s3_an[0:1]:B s4_an[0:1]:B s5_an[0:1]:B s6_an[0:1]:B s7_an[0:1]:B s8_an[0]:B s9_an[0:2]:B vddd:B
-*+ vss5v0:B gpio_ie[11:0]:O gpio_schmitt[11:0]:O gpio_slew[11:0]:O gpio_pullup[11:0]:O gpio_pulldown[11:0]:O SDO_zero:I SDI_zero:I SCK_zero:I
-*+ clk_zero:I CSB_zero:I CSB_one:I SDO_pulldown:O SDO_pullup:O SDO_slew:O SDO_schmitt:O SDO_ie:O CSB_pulldown:O CSB_pullup:O SCK_pulldown:O
-*+ SCK_pullup:O SDI_pulldown:O SDI_pullup:O clk_pulldown:O clk_pullup:O vss5v0_slot8:B vss5v0_slot2:B vss3v3_slot17:B vss3v3_slot11:B
-*+ vss5v0_slot12_13:B vss5v0_slot14_15:B vss3v3_slot4_5:B vss3v3_slot6_7:B
+*+ gpio_oe[11:0]:O analog[3:0]:O s10_an[0:2]:B s11_an[0]:B s12_an[0:1]:B s13_an[0:1]:B s14_an[0:1]:B s15_an[0:1]:B s17_an[0:1]:B s18_an[0:1]:B
+*+ s1_an[0:1]:B s2_an[0:1]:B s3_an[0:1]:B s4_an[0:1]:B s5_an[0:1]:B s6_an[0:1]:B s7_an[0:1]:B s8_an[0]:B s9_an[0:2]:B vddd:B vss5v0:B
+*+ gpio_ie[11:0]:O gpio_schmitt[11:0]:O gpio_slew[11:0]:O gpio_pullup[11:0]:O gpio_pulldown[11:0]:O SDO_zero:I SDI_zero:I SCK_zero:I clk_zero:I
+*+ CSB_zero:I CSB_one:I SDO_pulldown:O SDO_pullup:O SDO_slew:O SDO_schmitt:O SDO_ie:O CSB_pulldown:O CSB_pullup:O SCK_pulldown:O SCK_pullup:O
+*+ SDI_pulldown:O SDI_pullup:O clk_pulldown:O clk_pullup:O vss5v0_slot8:B vss5v0_slot2:B vss3v3_slot17:B vss3v3_slot11:B vss5v0_slot12_13:B
+*+ vss5v0_slot14_15:B vss3v3_slot4_5:B vss3v3_slot6_7:B s16_an_0_outp:B s16_an_0_outn:B s16_an_0_vcm:B s16_an_0_vref:B s16_an_0_iref:B
+*+ s16_an_0_en_3v3:B s16_an_0_en_3v3_b:B s16_an_1_vinp:B s16_an_1_vinn:B s16_an_1_vref:B s16_an_1_iref:B s16_an_1_en_3v3:B s16_an_1_en_3v3_b:B
 x18 CSB_in SCK_in SDI_in SDO_out bandgap_ena biasgen_coarse biasgen_ena biasgen_fine biasgen_ref_vbg clk_in clk_out porb
 + proj_3v3_ena proj_5v0_ena proj_dig_ena proj_ena proj_vbias_ena project_zero reset SDO_ena sram_clk sram_writeb voltgen_high vddd vss3v3
 + analog_ena[3] analog_ena[2] analog_ena[1] analog_ena[0] bandgap_sink1[2] bandgap_sink1[1] bandgap_sink1[0] bandgap_sink2[1] bandgap_sink2[0]
@@ -111,13 +117,13 @@ x22 biasgen_ena vdd5v0 vss5v0 vdd5v0 vdd3v3 vbg biasgen_ref_vbg vss3v3 bandgap_s
 x16 vbg net239 bandgap_trim[15] bandgap_trim[14] bandgap_trim[13] bandgap_trim[12] bandgap_trim[11] bandgap_trim[10]
 + bandgap_trim[9] bandgap_trim[8] bandgap_trim[7] bandgap_trim[6] bandgap_trim[5] bandgap_trim[4] bandgap_trim[3] bandgap_trim[2] bandgap_trim[1]
 + bandgap_trim[0] vss3v3 vdd3v3 bandgap_ena net238 gf180mcu_ocd_ip__bandgap
-x15[1] vdd3v3 vss3v3 vdd5v0 ibias10[1] vss5v0 net10[1] idac2_source analog_pswitch_small
-x15[0] vdd3v3 vss3v3 vdd5v0 ibias10[0] vss5v0 net10[0] idac1_source analog_pswitch_small
+x15[1] vdd3v3 vss3v3 vdd5v0 ibias10[1] vss5v0 net10_1 idac2_source analog_pswitch_small
+x15[0] vdd3v3 vss3v3 vdd5v0 ibias10[0] vss5v0 net10_0 idac1_source analog_pswitch_small
 x17 vdd3v3 vss3v3 vdd5v0 vbias10 vss5v0 net11 voltgen_vout analog_switch_small
-x23[3] vdd3v3 vss3v3 vdd5v0 ana10[3] vss5v0 net9[3] analog[3] analog_switch_med
-x23[2] vdd3v3 vss3v3 vdd5v0 ana10[2] vss5v0 net9[2] analog[2] analog_switch_med
-x23[1] vdd3v3 vss3v3 vdd5v0 ana10[1] vss5v0 net9[1] analog[1] analog_switch_med
-x23[0] vdd3v3 vss3v3 vdd5v0 ana10[0] vss5v0 net9[0] analog[0] analog_switch_med
+x23[3] vdd3v3 vss3v3 vdd5v0 ana10[3] vss5v0 net9_3 analog[3] analog_switch_med
+x23[2] vdd3v3 vss3v3 vdd5v0 ana10[2] vss5v0 net9_2 analog[2] analog_switch_med
+x23[1] vdd3v3 vss3v3 vdd5v0 ana10[1] vss5v0 net9_1 analog[1] analog_switch_med
+x23[0] vdd3v3 vss3v3 vdd5v0 ana10[0] vss5v0 net9_0 analog[0] analog_switch_med
 x25 net8 vdd3v3 vss3v3 net7 power_stage3v3
 x7 net6 vdd5v0 vss5v0 vss3v3 vdd3v3 net72 power_stage
 x20 vdd3v3 vdd3v3 net5 vss3v3 porb por gf180mcu_ocd_ip__por
@@ -129,155 +135,147 @@ x26 vss3v3 vddd sram_addr[9] sram_addr[8] sram_addr[7] sram_addr[6] sram_addr[5]
 x27 clk_out proj_dig_ena proj_ena proj_3v3_ena proj_5v0_ena net8 net6 net140 net141 net139 net11 reset proj_vbias_ena vdd3v3
 + vss3v3 analog_ena[3] analog_ena[2] analog_ena[1] analog_ena[0] dbus_out[23] dbus_out[22] dbus_out[21] dbus_out[20] dbus_out[19]
 + dbus_out[18] dbus_out[17] dbus_out[16] dbus_out[15] dbus_out[14] dbus_out[13] dbus_out[12] dbus_out[11] dbus_out[10] dbus_out[9] dbus_out[8]
-+ dbus_out[7] dbus_out[6] dbus_out[5] dbus_out[4] dbus_out[3] dbus_out[2] dbus_out[1] dbus_out[0] net14[11] net14[10] net14[9] net14[8]
-+ net14[7] net14[6] net14[5] net14[4] net14[3] net14[2] net14[1] net14[0] vss3v3 vss3v3 vss3v3 vss3v3 vss3v3 vss3v3 vss3v3 vss3v3 vss3v3
-+ vss3v3 vss3v3 vss3v3 proj_ibias_ena[1] proj_ibias_ena[0] vss3v3 vdd3v3 vss3v3 vdd3v3 vss3v3 net9[3] net9[2] net9[1] net9[0] net12[23]
-+ net12[22] net12[21] net12[20] net12[19] net12[18] net12[17] net12[16] net12[15] net12[14] net12[13] net12[12] net12[11] net12[10] net12[9]
-+ net12[8] net12[7] net12[6] net12[5] net12[4] net12[3] net12[2] net12[1] net12[0] net13[11] net13[10] net13[9] net13[8] net13[7] net13[6]
-+ net13[5] net13[4] net13[3] net13[2] net13[1] net13[0] net10[1] net10[0] proj_sel[4] proj_sel[3] proj_sel[2] proj_sel[1] proj_sel[0]
-+ user_project_control
++ dbus_out[7] dbus_out[6] dbus_out[5] dbus_out[4] dbus_out[3] dbus_out[2] dbus_out[1] dbus_out[0] net14_11 net14_10 net14_9 net14_8 net14_7
++ net14_6 net14_5 net14_4 net14_3 net14_2 net14_1 net14_0 vss3v3 vss3v3 vss3v3 vss3v3 vss3v3 vss3v3 vss3v3 vss3v3 vss3v3 vss3v3 vss3v3
++ vss3v3 proj_ibias_ena[1] proj_ibias_ena[0] vss3v3 vdd3v3 vss3v3 vdd3v3 vss3v3 net9_3 net9_2 net9_1 net9_0 net12_23 net12_22 net12_21
++ net12_20 net12_19 net12_18 net12_17 net12_16 net12_15 net12_14 net12_13 net12_12 net12_11 net12_10 net12_9 net12_8 net12_7 net12_6 net12_5
++ net12_4 net12_3 net12_2 net12_1 net12_0 net13_11 net13_10 net13_9 net13_8 net13_7 net13_6 net13_5 net13_4 net13_3 net13_2 net13_1 net13_0
++ net10_1 net10_0 proj_sel[4] proj_sel[3] proj_sel[2] proj_sel[1] proj_sel[0] user_project_control
 x98 vdd3v3 vss3v3 vdd5v0 analog[1] vss5v0 project_zero idac1_source analog_pswitch_small
 x97 vdd3v3 vss3v3 vdd5v0 analog[3] vss5v0 project_zero vbg analog_switch_small
-x5[1] vdd3v3 vss3v3 vdd5v0 ibias11[1] vss5v0 net18[1] idac2_source analog_pswitch_small
-x5[0] vdd3v3 vss3v3 vdd5v0 ibias11[0] vss5v0 net18[0] idac1_source analog_pswitch_small
+x5[1] vdd3v3 vss3v3 vdd5v0 ibias11[1] vss5v0 net18_1 idac2_source analog_pswitch_small
+x5[0] vdd3v3 vss3v3 vdd5v0 ibias11[0] vss5v0 net18_0 idac1_source analog_pswitch_small
 x6 vdd3v3 vss3v3 vdd5v0 vbias11 vss5v0 net19 voltgen_vout analog_switch_small
-x6[3] vdd3v3 vss3v3 vdd5v0 ana11[3] vss5v0 net17[3] analog[3] analog_switch_med
-x6[2] vdd3v3 vss3v3 vdd5v0 ana11[2] vss5v0 net17[2] analog[2] analog_switch_med
-x6[1] vdd3v3 vss3v3 vdd5v0 ana11[1] vss5v0 net17[1] analog[1] analog_switch_med
-x6[0] vdd3v3 vss3v3 vdd5v0 ana11[0] vss5v0 net17[0] analog[0] analog_switch_med
+x6[3] vdd3v3 vss3v3 vdd5v0 ana11[3] vss5v0 net17_3 analog[3] analog_switch_med
+x6[2] vdd3v3 vss3v3 vdd5v0 ana11[2] vss5v0 net17_2 analog[2] analog_switch_med
+x6[1] vdd3v3 vss3v3 vdd5v0 ana11[1] vss5v0 net17_1 analog[1] analog_switch_med
+x6[0] vdd3v3 vss3v3 vdd5v0 ana11[0] vss5v0 net17_0 analog[0] analog_switch_med
 x8 net16 vdd3v3 vss3v3 net142 power_stage3v3
 x9 net15 vdd5v0 vss5v0 vss3v3 vdd3v3 net144 power_stage
 x10 clk_out proj_dig_ena proj_ena proj_3v3_ena proj_5v0_ena net16 net15 net146 net147 net145 net19 reset proj_vbias_ena vdd3v3
 + vss3v3 analog_ena[3] analog_ena[2] analog_ena[1] analog_ena[0] dbus_out[23] dbus_out[22] dbus_out[21] dbus_out[20] dbus_out[19]
 + dbus_out[18] dbus_out[17] dbus_out[16] dbus_out[15] dbus_out[14] dbus_out[13] dbus_out[12] dbus_out[11] dbus_out[10] dbus_out[9] dbus_out[8]
-+ dbus_out[7] dbus_out[6] dbus_out[5] dbus_out[4] dbus_out[3] dbus_out[2] dbus_out[1] dbus_out[0] net21[11] net21[10] net21[9] net21[8]
-+ net21[7] net21[6] net21[5] net21[4] net21[3] net21[2] net21[1] net21[0] net14[11] net14[10] net14[9] net14[8] net14[7] net14[6] net14[5]
-+ net14[4] net14[3] net14[2] net14[1] net14[0] proj_ibias_ena[1] proj_ibias_ena[0] vss3v3 vdd3v3 vss3v3 vdd3v3 vdd3v3 net17[3] net17[2]
-+ net17[1] net17[0] net143[23] net143[22] net143[21] net143[20] net143[19] net143[18] net143[17] net143[16] net143[15] net143[14] net143[13]
-+ net143[12] net143[11] net143[10] net143[9] net143[8] net143[7] net143[6] net143[5] net143[4] net143[3] net143[2] net143[1] net143[0]
-+ net20[11] net20[10] net20[9] net20[8] net20[7] net20[6] net20[5] net20[4] net20[3] net20[2] net20[1] net20[0] net18[1] net18[0] proj_sel[4]
-+ proj_sel[3] proj_sel[2] proj_sel[1] proj_sel[0] user_project_control
-x7[1] vdd3v3 vss3v3 vdd5v0 ibias12[1] vss5v0 net25[1] idac2_source analog_pswitch_small
-x7[0] vdd3v3 vss3v3 vdd5v0 ibias12[0] vss5v0 net25[0] idac1_source analog_pswitch_small
++ dbus_out[7] dbus_out[6] dbus_out[5] dbus_out[4] dbus_out[3] dbus_out[2] dbus_out[1] dbus_out[0] net21_11 net21_10 net21_9 net21_8 net21_7
++ net21_6 net21_5 net21_4 net21_3 net21_2 net21_1 net21_0 net14_11 net14_10 net14_9 net14_8 net14_7 net14_6 net14_5 net14_4 net14_3 net14_2
++ net14_1 net14_0 proj_ibias_ena[1] proj_ibias_ena[0] vss3v3 vdd3v3 vss3v3 vdd3v3 vdd3v3 net17_3 net17_2 net17_1 net17_0 net143_23
++ net143_22 net143_21 net143_20 net143_19 net143_18 net143_17 net143_16 net143_15 net143_14 net143_13 net143_12 net143_11 net143_10 net143_9
++ net143_8 net143_7 net143_6 net143_5 net143_4 net143_3 net143_2 net143_1 net143_0 net20_11 net20_10 net20_9 net20_8 net20_7 net20_6 net20_5
++ net20_4 net20_3 net20_2 net20_1 net20_0 net18_1 net18_0 proj_sel[4] proj_sel[3] proj_sel[2] proj_sel[1] proj_sel[0] user_project_control
+x7[1] vdd3v3 vss3v3 vdd5v0 ibias12[1] vss5v0 net25_1 idac2_source analog_pswitch_small
+x7[0] vdd3v3 vss3v3 vdd5v0 ibias12[0] vss5v0 net25_0 idac1_source analog_pswitch_small
 x12 vdd3v3 vss3v3 vdd5v0 vbias12 vss5v0 net26 voltgen_vout analog_switch_small
-x8[3] vdd3v3 vss3v3 vdd5v0 ana12[3] vss5v0 net24[3] analog[3] analog_switch_med
-x8[2] vdd3v3 vss3v3 vdd5v0 ana12[2] vss5v0 net24[2] analog[2] analog_switch_med
-x8[1] vdd3v3 vss3v3 vdd5v0 ana12[1] vss5v0 net24[1] analog[1] analog_switch_med
-x8[0] vdd3v3 vss3v3 vdd5v0 ana12[0] vss5v0 net24[0] analog[0] analog_switch_med
+x8[3] vdd3v3 vss3v3 vdd5v0 ana12[3] vss5v0 net24_3 analog[3] analog_switch_med
+x8[2] vdd3v3 vss3v3 vdd5v0 ana12[2] vss5v0 net24_2 analog[2] analog_switch_med
+x8[1] vdd3v3 vss3v3 vdd5v0 ana12[1] vss5v0 net24_1 analog[1] analog_switch_med
+x8[0] vdd3v3 vss3v3 vdd5v0 ana12[0] vss5v0 net24_0 analog[0] analog_switch_med
 x13 net23 vdd3v3 vss3v3 net148 power_stage3v3
 x14 net22 vdd5v0 vss5v0 vss3v3 vdd3v3 net150 power_stage
 x15 clk_out proj_dig_ena proj_ena proj_3v3_ena proj_5v0_ena net23 net22 net152 net153 net151 net26 reset proj_vbias_ena vdd3v3
 + vss3v3 analog_ena[3] analog_ena[2] analog_ena[1] analog_ena[0] dbus_out[23] dbus_out[22] dbus_out[21] dbus_out[20] dbus_out[19]
 + dbus_out[18] dbus_out[17] dbus_out[16] dbus_out[15] dbus_out[14] dbus_out[13] dbus_out[12] dbus_out[11] dbus_out[10] dbus_out[9] dbus_out[8]
-+ dbus_out[7] dbus_out[6] dbus_out[5] dbus_out[4] dbus_out[3] dbus_out[2] dbus_out[1] dbus_out[0] net28[11] net28[10] net28[9] net28[8]
-+ net28[7] net28[6] net28[5] net28[4] net28[3] net28[2] net28[1] net28[0] net21[11] net21[10] net21[9] net21[8] net21[7] net21[6] net21[5]
-+ net21[4] net21[3] net21[2] net21[1] net21[0] proj_ibias_ena[1] proj_ibias_ena[0] vss3v3 vdd3v3 vdd3v3 vss3v3 vss3v3 net24[3] net24[2]
-+ net24[1] net24[0] net149[23] net149[22] net149[21] net149[20] net149[19] net149[18] net149[17] net149[16] net149[15] net149[14] net149[13]
-+ net149[12] net149[11] net149[10] net149[9] net149[8] net149[7] net149[6] net149[5] net149[4] net149[3] net149[2] net149[1] net149[0]
-+ net27[11] net27[10] net27[9] net27[8] net27[7] net27[6] net27[5] net27[4] net27[3] net27[2] net27[1] net27[0] net25[1] net25[0] proj_sel[4]
-+ proj_sel[3] proj_sel[2] proj_sel[1] proj_sel[0] user_project_control
-x3[1] vdd3v3 vss3v3 vdd5v0 ibias13[1] vss5v0 net32[1] idac2_source analog_pswitch_small
-x3[0] vdd3v3 vss3v3 vdd5v0 ibias13[0] vss5v0 net32[0] idac1_source analog_pswitch_small
++ dbus_out[7] dbus_out[6] dbus_out[5] dbus_out[4] dbus_out[3] dbus_out[2] dbus_out[1] dbus_out[0] net28_11 net28_10 net28_9 net28_8 net28_7
++ net28_6 net28_5 net28_4 net28_3 net28_2 net28_1 net28_0 net21_11 net21_10 net21_9 net21_8 net21_7 net21_6 net21_5 net21_4 net21_3 net21_2
++ net21_1 net21_0 proj_ibias_ena[1] proj_ibias_ena[0] vss3v3 vdd3v3 vdd3v3 vss3v3 vss3v3 net24_3 net24_2 net24_1 net24_0 net149_23
++ net149_22 net149_21 net149_20 net149_19 net149_18 net149_17 net149_16 net149_15 net149_14 net149_13 net149_12 net149_11 net149_10 net149_9
++ net149_8 net149_7 net149_6 net149_5 net149_4 net149_3 net149_2 net149_1 net149_0 net27_11 net27_10 net27_9 net27_8 net27_7 net27_6 net27_5
++ net27_4 net27_3 net27_2 net27_1 net27_0 net25_1 net25_0 proj_sel[4] proj_sel[3] proj_sel[2] proj_sel[1] proj_sel[0] user_project_control
+x3[1] vdd3v3 vss3v3 vdd5v0 ibias13[1] vss5v0 net32_1 idac2_source analog_pswitch_small
+x3[0] vdd3v3 vss3v3 vdd5v0 ibias13[0] vss5v0 net32_0 idac1_source analog_pswitch_small
 x1 vdd3v3 vss3v3 vdd5v0 vbias13 vss5v0 net33 voltgen_vout analog_switch_small
-x4[3] vdd3v3 vss3v3 vdd5v0 ana13[3] vss5v0 net31[3] analog[3] analog_switch_med
-x4[2] vdd3v3 vss3v3 vdd5v0 ana13[2] vss5v0 net31[2] analog[2] analog_switch_med
-x4[1] vdd3v3 vss3v3 vdd5v0 ana13[1] vss5v0 net31[1] analog[1] analog_switch_med
-x4[0] vdd3v3 vss3v3 vdd5v0 ana13[0] vss5v0 net31[0] analog[0] analog_switch_med
+x4[3] vdd3v3 vss3v3 vdd5v0 ana13[3] vss5v0 net31_3 analog[3] analog_switch_med
+x4[2] vdd3v3 vss3v3 vdd5v0 ana13[2] vss5v0 net31_2 analog[2] analog_switch_med
+x4[1] vdd3v3 vss3v3 vdd5v0 ana13[1] vss5v0 net31_1 analog[1] analog_switch_med
+x4[0] vdd3v3 vss3v3 vdd5v0 ana13[0] vss5v0 net31_0 analog[0] analog_switch_med
 x2 net30 vdd3v3 vss3v3 net154 power_stage3v3
 x3 net29 vdd5v0 vss5v0 vss3v3 vdd3v3 net156 power_stage
 x4 clk_out proj_dig_ena proj_ena proj_3v3_ena proj_5v0_ena net30 net29 net158 net159 net157 net33 reset proj_vbias_ena vdd3v3
 + vss3v3 analog_ena[3] analog_ena[2] analog_ena[1] analog_ena[0] dbus_out[23] dbus_out[22] dbus_out[21] dbus_out[20] dbus_out[19]
 + dbus_out[18] dbus_out[17] dbus_out[16] dbus_out[15] dbus_out[14] dbus_out[13] dbus_out[12] dbus_out[11] dbus_out[10] dbus_out[9] dbus_out[8]
-+ dbus_out[7] dbus_out[6] dbus_out[5] dbus_out[4] dbus_out[3] dbus_out[2] dbus_out[1] dbus_out[0] net35[11] net35[10] net35[9] net35[8]
-+ net35[7] net35[6] net35[5] net35[4] net35[3] net35[2] net35[1] net35[0] net28[11] net28[10] net28[9] net28[8] net28[7] net28[6] net28[5]
-+ net28[4] net28[3] net28[2] net28[1] net28[0] proj_ibias_ena[1] proj_ibias_ena[0] vss3v3 vdd3v3 vdd3v3 vss3v3 vdd3v3 net31[3] net31[2]
-+ net31[1] net31[0] net155[23] net155[22] net155[21] net155[20] net155[19] net155[18] net155[17] net155[16] net155[15] net155[14] net155[13]
-+ net155[12] net155[11] net155[10] net155[9] net155[8] net155[7] net155[6] net155[5] net155[4] net155[3] net155[2] net155[1] net155[0]
-+ net34[11] net34[10] net34[9] net34[8] net34[7] net34[6] net34[5] net34[4] net34[3] net34[2] net34[1] net34[0] net32[1] net32[0] proj_sel[4]
-+ proj_sel[3] proj_sel[2] proj_sel[1] proj_sel[0] user_project_control
-x9[1] vdd3v3 vss3v3 vdd5v0 ibias14[1] vss5v0 net39[1] idac2_source analog_pswitch_small
-x9[0] vdd3v3 vss3v3 vdd5v0 ibias14[0] vss5v0 net39[0] idac1_source analog_pswitch_small
++ dbus_out[7] dbus_out[6] dbus_out[5] dbus_out[4] dbus_out[3] dbus_out[2] dbus_out[1] dbus_out[0] net35_11 net35_10 net35_9 net35_8 net35_7
++ net35_6 net35_5 net35_4 net35_3 net35_2 net35_1 net35_0 net28_11 net28_10 net28_9 net28_8 net28_7 net28_6 net28_5 net28_4 net28_3 net28_2
++ net28_1 net28_0 proj_ibias_ena[1] proj_ibias_ena[0] vss3v3 vdd3v3 vdd3v3 vss3v3 vdd3v3 net31_3 net31_2 net31_1 net31_0 net155_23
++ net155_22 net155_21 net155_20 net155_19 net155_18 net155_17 net155_16 net155_15 net155_14 net155_13 net155_12 net155_11 net155_10 net155_9
++ net155_8 net155_7 net155_6 net155_5 net155_4 net155_3 net155_2 net155_1 net155_0 net34_11 net34_10 net34_9 net34_8 net34_7 net34_6 net34_5
++ net34_4 net34_3 net34_2 net34_1 net34_0 net32_1 net32_0 proj_sel[4] proj_sel[3] proj_sel[2] proj_sel[1] proj_sel[0] user_project_control
+x9[1] vdd3v3 vss3v3 vdd5v0 ibias14[1] vss5v0 net39_1 idac2_source analog_pswitch_small
+x9[0] vdd3v3 vss3v3 vdd5v0 ibias14[0] vss5v0 net39_0 idac1_source analog_pswitch_small
 x23 vdd3v3 vss3v3 vdd5v0 vbias14 vss5v0 net40 voltgen_vout analog_switch_small
-x10[3] vdd3v3 vss3v3 vdd5v0 ana14[3] vss5v0 net38[3] analog[3] analog_switch_med
-x10[2] vdd3v3 vss3v3 vdd5v0 ana14[2] vss5v0 net38[2] analog[2] analog_switch_med
-x10[1] vdd3v3 vss3v3 vdd5v0 ana14[1] vss5v0 net38[1] analog[1] analog_switch_med
-x10[0] vdd3v3 vss3v3 vdd5v0 ana14[0] vss5v0 net38[0] analog[0] analog_switch_med
+x10[3] vdd3v3 vss3v3 vdd5v0 ana14[3] vss5v0 net38_3 analog[3] analog_switch_med
+x10[2] vdd3v3 vss3v3 vdd5v0 ana14[2] vss5v0 net38_2 analog[2] analog_switch_med
+x10[1] vdd3v3 vss3v3 vdd5v0 ana14[1] vss5v0 net38_1 analog[1] analog_switch_med
+x10[0] vdd3v3 vss3v3 vdd5v0 ana14[0] vss5v0 net38_0 analog[0] analog_switch_med
 x24 net37 vdd3v3 vss3v3 net160 power_stage3v3
 x29 net36 vdd5v0 vss5v0 vss3v3 vdd3v3 net162 power_stage
 x30 clk_out proj_dig_ena proj_ena proj_3v3_ena proj_5v0_ena net37 net36 net164 net165 net163 net40 reset proj_vbias_ena vdd3v3
 + vss3v3 analog_ena[3] analog_ena[2] analog_ena[1] analog_ena[0] dbus_out[23] dbus_out[22] dbus_out[21] dbus_out[20] dbus_out[19]
 + dbus_out[18] dbus_out[17] dbus_out[16] dbus_out[15] dbus_out[14] dbus_out[13] dbus_out[12] dbus_out[11] dbus_out[10] dbus_out[9] dbus_out[8]
-+ dbus_out[7] dbus_out[6] dbus_out[5] dbus_out[4] dbus_out[3] dbus_out[2] dbus_out[1] dbus_out[0] net42[11] net42[10] net42[9] net42[8]
-+ net42[7] net42[6] net42[5] net42[4] net42[3] net42[2] net42[1] net42[0] net35[11] net35[10] net35[9] net35[8] net35[7] net35[6] net35[5]
-+ net35[4] net35[3] net35[2] net35[1] net35[0] proj_ibias_ena[1] proj_ibias_ena[0] vss3v3 vdd3v3 vdd3v3 vdd3v3 vss3v3 net38[3] net38[2]
-+ net38[1] net38[0] net161[23] net161[22] net161[21] net161[20] net161[19] net161[18] net161[17] net161[16] net161[15] net161[14] net161[13]
-+ net161[12] net161[11] net161[10] net161[9] net161[8] net161[7] net161[6] net161[5] net161[4] net161[3] net161[2] net161[1] net161[0]
-+ net41[11] net41[10] net41[9] net41[8] net41[7] net41[6] net41[5] net41[4] net41[3] net41[2] net41[1] net41[0] net39[1] net39[0] proj_sel[4]
-+ proj_sel[3] proj_sel[2] proj_sel[1] proj_sel[0] user_project_control
-x11[1] vdd3v3 vss3v3 vdd5v0 ibias15[1] vss5v0 net46[1] idac2_source analog_pswitch_small
-x11[0] vdd3v3 vss3v3 vdd5v0 ibias15[0] vss5v0 net46[0] idac1_source analog_pswitch_small
++ dbus_out[7] dbus_out[6] dbus_out[5] dbus_out[4] dbus_out[3] dbus_out[2] dbus_out[1] dbus_out[0] net42_11 net42_10 net42_9 net42_8 net42_7
++ net42_6 net42_5 net42_4 net42_3 net42_2 net42_1 net42_0 net35_11 net35_10 net35_9 net35_8 net35_7 net35_6 net35_5 net35_4 net35_3 net35_2
++ net35_1 net35_0 proj_ibias_ena[1] proj_ibias_ena[0] vss3v3 vdd3v3 vdd3v3 vdd3v3 vss3v3 net38_3 net38_2 net38_1 net38_0 net161_23
++ net161_22 net161_21 net161_20 net161_19 net161_18 net161_17 net161_16 net161_15 net161_14 net161_13 net161_12 net161_11 net161_10 net161_9
++ net161_8 net161_7 net161_6 net161_5 net161_4 net161_3 net161_2 net161_1 net161_0 net41_11 net41_10 net41_9 net41_8 net41_7 net41_6 net41_5
++ net41_4 net41_3 net41_2 net41_1 net41_0 net39_1 net39_0 proj_sel[4] proj_sel[3] proj_sel[2] proj_sel[1] proj_sel[0] user_project_control
+x11[1] vdd3v3 vss3v3 vdd5v0 ibias15[1] vss5v0 net46_1 idac2_source analog_pswitch_small
+x11[0] vdd3v3 vss3v3 vdd5v0 ibias15[0] vss5v0 net46_0 idac1_source analog_pswitch_small
 x32 vdd3v3 vss3v3 vdd5v0 vbias15 vss5v0 net47 voltgen_vout analog_switch_small
-x12[3] vdd3v3 vss3v3 vdd5v0 ana15[3] vss5v0 net45[3] analog[3] analog_switch_med
-x12[2] vdd3v3 vss3v3 vdd5v0 ana15[2] vss5v0 net45[2] analog[2] analog_switch_med
-x12[1] vdd3v3 vss3v3 vdd5v0 ana15[1] vss5v0 net45[1] analog[1] analog_switch_med
-x12[0] vdd3v3 vss3v3 vdd5v0 ana15[0] vss5v0 net45[0] analog[0] analog_switch_med
+x12[3] vdd3v3 vss3v3 vdd5v0 ana15[3] vss5v0 net45_3 analog[3] analog_switch_med
+x12[2] vdd3v3 vss3v3 vdd5v0 ana15[2] vss5v0 net45_2 analog[2] analog_switch_med
+x12[1] vdd3v3 vss3v3 vdd5v0 ana15[1] vss5v0 net45_1 analog[1] analog_switch_med
+x12[0] vdd3v3 vss3v3 vdd5v0 ana15[0] vss5v0 net45_0 analog[0] analog_switch_med
 x33 net44 vdd3v3 vss3v3 net172 power_stage3v3
 x34 net43 vdd5v0 vss5v0 vss3v3 vdd3v3 net173 power_stage
 x35 clk_out proj_dig_ena proj_ena proj_3v3_ena proj_5v0_ena net44 net43 net175 net176 net174 net47 reset proj_vbias_ena vdd3v3
 + vss3v3 analog_ena[3] analog_ena[2] analog_ena[1] analog_ena[0] dbus_out[23] dbus_out[22] dbus_out[21] dbus_out[20] dbus_out[19]
 + dbus_out[18] dbus_out[17] dbus_out[16] dbus_out[15] dbus_out[14] dbus_out[13] dbus_out[12] dbus_out[11] dbus_out[10] dbus_out[9] dbus_out[8]
-+ dbus_out[7] dbus_out[6] dbus_out[5] dbus_out[4] dbus_out[3] dbus_out[2] dbus_out[1] dbus_out[0] net50[11] net50[10] net50[9] net50[8]
-+ net50[7] net50[6] net50[5] net50[4] net50[3] net50[2] net50[1] net50[0] net42[11] net42[10] net42[9] net42[8] net42[7] net42[6] net42[5]
-+ net42[4] net42[3] net42[2] net42[1] net42[0] proj_ibias_ena[1] proj_ibias_ena[0] vss3v3 vdd3v3 vdd3v3 vdd3v3 vdd3v3 net45[3] net45[2]
-+ net45[1] net45[0] net48[23] net48[22] net48[21] net48[20] net48[19] net48[18] net48[17] net48[16] net48[15] net48[14] net48[13] net48[12]
-+ net48[11] net48[10] net48[9] net48[8] net48[7] net48[6] net48[5] net48[4] net48[3] net48[2] net48[1] net48[0] net49[11] net49[10] net49[9]
-+ net49[8] net49[7] net49[6] net49[5] net49[4] net49[3] net49[2] net49[1] net49[0] net46[1] net46[0] proj_sel[4] proj_sel[3] proj_sel[2]
-+ proj_sel[1] proj_sel[0] user_project_control
-x13[1] vdd3v3 vss3v3 vdd5v0 ibias16[1] vss5v0 net54[1] idac2_source analog_pswitch_small
-x13[0] vdd3v3 vss3v3 vdd5v0 ibias16[0] vss5v0 net54[0] idac1_source analog_pswitch_small
++ dbus_out[7] dbus_out[6] dbus_out[5] dbus_out[4] dbus_out[3] dbus_out[2] dbus_out[1] dbus_out[0] net50_11 net50_10 net50_9 net50_8 net50_7
++ net50_6 net50_5 net50_4 net50_3 net50_2 net50_1 net50_0 net42_11 net42_10 net42_9 net42_8 net42_7 net42_6 net42_5 net42_4 net42_3 net42_2
++ net42_1 net42_0 proj_ibias_ena[1] proj_ibias_ena[0] vss3v3 vdd3v3 vdd3v3 vdd3v3 vdd3v3 net45_3 net45_2 net45_1 net45_0 net48_23 net48_22
++ net48_21 net48_20 net48_19 net48_18 net48_17 net48_16 net48_15 net48_14 net48_13 net48_12 net48_11 net48_10 net48_9 net48_8 net48_7
++ net48_6 net48_5 net48_4 net48_3 net48_2 net48_1 net48_0 net49_11 net49_10 net49_9 net49_8 net49_7 net49_6 net49_5 net49_4 net49_3 net49_2
++ net49_1 net49_0 net46_1 net46_0 proj_sel[4] proj_sel[3] proj_sel[2] proj_sel[1] proj_sel[0] user_project_control
+x13[1] vdd3v3 vss3v3 vdd5v0 ibias16[1] vss5v0 net54_1 idac2_source analog_pswitch_small
+x13[0] vdd3v3 vss3v3 vdd5v0 ibias16[0] vss5v0 net54_0 idac1_source analog_pswitch_small
 x37 vdd3v3 vss3v3 vdd5v0 vbias16 vss5v0 net55 voltgen_vout analog_switch_small
-x14[3] vdd3v3 vss3v3 vdd5v0 ana16[3] vss5v0 net53[3] analog[3] analog_switch_med
-x14[2] vdd3v3 vss3v3 vdd5v0 ana16[2] vss5v0 net53[2] analog[2] analog_switch_med
-x14[1] vdd3v3 vss3v3 vdd5v0 ana16[1] vss5v0 net53[1] analog[1] analog_switch_med
-x14[0] vdd3v3 vss3v3 vdd5v0 ana16[0] vss5v0 net53[0] analog[0] analog_switch_med
+x14[3] vdd3v3 vss3v3 vdd5v0 ana16[3] vss5v0 net53_3 analog[3] analog_switch_med
+x14[2] vdd3v3 vss3v3 vdd5v0 ana16[2] vss5v0 net53_2 analog[2] analog_switch_med
+x14[1] vdd3v3 vss3v3 vdd5v0 ana16[1] vss5v0 net53_1 analog[1] analog_switch_med
+x14[0] vdd3v3 vss3v3 vdd5v0 ana16[0] vss5v0 net53_0 analog[0] analog_switch_med
 x38 net52 vdd3v3 vss3v3 net166 power_stage3v3
 x39 net51 vdd5v0 vss5v0 vss3v3 vdd3v3 net168 power_stage
 x40 clk_out proj_dig_ena proj_ena proj_3v3_ena proj_5v0_ena net52 net51 net170 net171 net169 net55 reset proj_vbias_ena vdd3v3
 + vss3v3 analog_ena[3] analog_ena[2] analog_ena[1] analog_ena[0] dbus_out[23] dbus_out[22] dbus_out[21] dbus_out[20] dbus_out[19]
 + dbus_out[18] dbus_out[17] dbus_out[16] dbus_out[15] dbus_out[14] dbus_out[13] dbus_out[12] dbus_out[11] dbus_out[10] dbus_out[9] dbus_out[8]
-+ dbus_out[7] dbus_out[6] dbus_out[5] dbus_out[4] dbus_out[3] dbus_out[2] dbus_out[1] dbus_out[0] net57[11] net57[10] net57[9] net57[8]
-+ net57[7] net57[6] net57[5] net57[4] net57[3] net57[2] net57[1] net57[0] net50[11] net50[10] net50[9] net50[8] net50[7] net50[6] net50[5]
-+ net50[4] net50[3] net50[2] net50[1] net50[0] proj_ibias_ena[1] proj_ibias_ena[0] vdd3v3 vss3v3 vss3v3 vss3v3 vss3v3 net53[3] net53[2]
-+ net53[1] net53[0] net167[23] net167[22] net167[21] net167[20] net167[19] net167[18] net167[17] net167[16] net167[15] net167[14] net167[13]
-+ net167[12] net167[11] net167[10] net167[9] net167[8] net167[7] net167[6] net167[5] net167[4] net167[3] net167[2] net167[1] net167[0]
-+ net56[11] net56[10] net56[9] net56[8] net56[7] net56[6] net56[5] net56[4] net56[3] net56[2] net56[1] net56[0] net54[1] net54[0] proj_sel[4]
-+ proj_sel[3] proj_sel[2] proj_sel[1] proj_sel[0] user_project_control
-x16[1] vdd3v3 vss3v3 vdd5v0 ibias17[1] vss5v0 net62[1] idac2_source analog_pswitch_small
-x16[0] vdd3v3 vss3v3 vdd5v0 ibias17[0] vss5v0 net62[0] idac1_source analog_pswitch_small
++ dbus_out[7] dbus_out[6] dbus_out[5] dbus_out[4] dbus_out[3] dbus_out[2] dbus_out[1] dbus_out[0] net57_11 net57_10 net57_9 net57_8 net57_7
++ net57_6 net57_5 net57_4 net57_3 net57_2 net57_1 net57_0 net50_11 net50_10 net50_9 net50_8 net50_7 net50_6 net50_5 net50_4 net50_3 net50_2
++ net50_1 net50_0 proj_ibias_ena[1] proj_ibias_ena[0] vdd3v3 vss3v3 vss3v3 vss3v3 vss3v3 net53_3 net53_2 net53_1 net53_0 net167_23
++ net167_22 net167_21 net167_20 net167_19 net167_18 net167_17 net167_16 net167_15 net167_14 net167_13 net167_12 net167_11 net167_10 net167_9
++ net167_8 net167_7 net167_6 net167_5 net167_4 net167_3 net167_2 net167_1 net167_0 net56_11 net56_10 net56_9 net56_8 net56_7 net56_6 net56_5
++ net56_4 net56_3 net56_2 net56_1 net56_0 net54_1 net54_0 proj_sel[4] proj_sel[3] proj_sel[2] proj_sel[1] proj_sel[0] user_project_control
+x16[1] vdd3v3 vss3v3 vdd5v0 ibias17[1] vss5v0 net62_1 idac2_source analog_pswitch_small
+x16[0] vdd3v3 vss3v3 vdd5v0 ibias17[0] vss5v0 net62_0 idac1_source analog_pswitch_small
 x42 vdd3v3 vss3v3 vdd5v0 vbias17 vss5v0 net63 voltgen_vout analog_switch_small
-x17[3] vdd3v3 vss3v3 vdd5v0 ana17[3] vss5v0 net61[3] analog[3] analog_switch_med
-x17[2] vdd3v3 vss3v3 vdd5v0 ana17[2] vss5v0 net61[2] analog[2] analog_switch_med
-x17[1] vdd3v3 vss3v3 vdd5v0 ana17[1] vss5v0 net61[1] analog[1] analog_switch_med
-x17[0] vdd3v3 vss3v3 vdd5v0 ana17[0] vss5v0 net61[0] analog[0] analog_switch_med
+x17[3] vdd3v3 vss3v3 vdd5v0 ana17[3] vss5v0 net61_3 analog[3] analog_switch_med
+x17[2] vdd3v3 vss3v3 vdd5v0 ana17[2] vss5v0 net61_2 analog[2] analog_switch_med
+x17[1] vdd3v3 vss3v3 vdd5v0 ana17[1] vss5v0 net61_1 analog[1] analog_switch_med
+x17[0] vdd3v3 vss3v3 vdd5v0 ana17[0] vss5v0 net61_0 analog[0] analog_switch_med
 x43 net60 vdd3v3 vss3v3 net59 power_stage3v3
 x44 net58 vdd5v0 vss5v0 vss3v3 vdd3v3 net73 power_stage
 x45 clk_out proj_dig_ena proj_ena proj_3v3_ena proj_5v0_ena net60 net58 net179 net180 net178 net63 reset proj_vbias_ena vdd3v3
 + vss3v3 analog_ena[3] analog_ena[2] analog_ena[1] analog_ena[0] dbus_out[23] dbus_out[22] dbus_out[21] dbus_out[20] dbus_out[19]
 + dbus_out[18] dbus_out[17] dbus_out[16] dbus_out[15] dbus_out[14] dbus_out[13] dbus_out[12] dbus_out[11] dbus_out[10] dbus_out[9] dbus_out[8]
-+ dbus_out[7] dbus_out[6] dbus_out[5] dbus_out[4] dbus_out[3] dbus_out[2] dbus_out[1] dbus_out[0] net65[11] net65[10] net65[9] net65[8]
-+ net65[7] net65[6] net65[5] net65[4] net65[3] net65[2] net65[1] net65[0] net57[11] net57[10] net57[9] net57[8] net57[7] net57[6] net57[5]
-+ net57[4] net57[3] net57[2] net57[1] net57[0] proj_ibias_ena[1] proj_ibias_ena[0] vdd3v3 vss3v3 vss3v3 vss3v3 vdd3v3 net61[3] net61[2]
-+ net61[1] net61[0] net177[23] net177[22] net177[21] net177[20] net177[19] net177[18] net177[17] net177[16] net177[15] net177[14] net177[13]
-+ net177[12] net177[11] net177[10] net177[9] net177[8] net177[7] net177[6] net177[5] net177[4] net177[3] net177[2] net177[1] net177[0]
-+ net64[11] net64[10] net64[9] net64[8] net64[7] net64[6] net64[5] net64[4] net64[3] net64[2] net64[1] net64[0] net62[1] net62[0] proj_sel[4]
-+ proj_sel[3] proj_sel[2] proj_sel[1] proj_sel[0] user_project_control
-x18[1] vdd3v3 vss3v3 vdd5v0 ibias18[1] vss5v0 net69[1] idac2_source analog_pswitch_small
-x18[0] vdd3v3 vss3v3 vdd5v0 ibias18[0] vss5v0 net69[0] idac1_source analog_pswitch_small
++ dbus_out[7] dbus_out[6] dbus_out[5] dbus_out[4] dbus_out[3] dbus_out[2] dbus_out[1] dbus_out[0] net65_11 net65_10 net65_9 net65_8 net65_7
++ net65_6 net65_5 net65_4 net65_3 net65_2 net65_1 net65_0 net57_11 net57_10 net57_9 net57_8 net57_7 net57_6 net57_5 net57_4 net57_3 net57_2
++ net57_1 net57_0 proj_ibias_ena[1] proj_ibias_ena[0] vdd3v3 vss3v3 vss3v3 vss3v3 vdd3v3 net61_3 net61_2 net61_1 net61_0 net177_23
++ net177_22 net177_21 net177_20 net177_19 net177_18 net177_17 net177_16 net177_15 net177_14 net177_13 net177_12 net177_11 net177_10 net177_9
++ net177_8 net177_7 net177_6 net177_5 net177_4 net177_3 net177_2 net177_1 net177_0 net64_11 net64_10 net64_9 net64_8 net64_7 net64_6 net64_5
++ net64_4 net64_3 net64_2 net64_1 net64_0 net62_1 net62_0 proj_sel[4] proj_sel[3] proj_sel[2] proj_sel[1] proj_sel[0] user_project_control
+x18[1] vdd3v3 vss3v3 vdd5v0 ibias18[1] vss5v0 net69_1 idac2_source analog_pswitch_small
+x18[0] vdd3v3 vss3v3 vdd5v0 ibias18[0] vss5v0 net69_0 idac1_source analog_pswitch_small
 x47 vdd3v3 vss3v3 vdd5v0 vbias18 vss5v0 net70 voltgen_vout analog_switch_small
-x19[3] vdd3v3 vss3v3 vdd5v0 ana18[3] vss5v0 net68[3] analog[3] analog_switch_med
-x19[2] vdd3v3 vss3v3 vdd5v0 ana18[2] vss5v0 net68[2] analog[2] analog_switch_med
-x19[1] vdd3v3 vss3v3 vdd5v0 ana18[1] vss5v0 net68[1] analog[1] analog_switch_med
-x19[0] vdd3v3 vss3v3 vdd5v0 ana18[0] vss5v0 net68[0] analog[0] analog_switch_med
+x19[3] vdd3v3 vss3v3 vdd5v0 ana18[3] vss5v0 net68_3 analog[3] analog_switch_med
+x19[2] vdd3v3 vss3v3 vdd5v0 ana18[2] vss5v0 net68_2 analog[2] analog_switch_med
+x19[1] vdd3v3 vss3v3 vdd5v0 ana18[1] vss5v0 net68_1 analog[1] analog_switch_med
+x19[0] vdd3v3 vss3v3 vdd5v0 ana18[0] vss5v0 net68_0 analog[0] analog_switch_med
 x48 net67 vdd3v3 vss3v3 net186 power_stage3v3
 x49 net66 vdd5v0 vss5v0 vss3v3 vdd3v3 net183 power_stage
 x50 clk_out proj_dig_ena proj_ena proj_3v3_ena proj_5v0_ena net67 net66 net184 net185 net182 net70 reset proj_vbias_ena vdd3v3
@@ -285,206 +283,204 @@ x50 clk_out proj_dig_ena proj_ena proj_3v3_ena proj_5v0_ena net67 net66 net184 n
 + dbus_out[18] dbus_out[17] dbus_out[16] dbus_out[15] dbus_out[14] dbus_out[13] dbus_out[12] dbus_out[11] dbus_out[10] dbus_out[9] dbus_out[8]
 + dbus_out[7] dbus_out[6] dbus_out[5] dbus_out[4] dbus_out[3] dbus_out[2] dbus_out[1] dbus_out[0] dbus_in_left[11] dbus_in_left[10]
 + dbus_in_left[9] dbus_in_left[8] dbus_in_left[7] dbus_in_left[6] dbus_in_left[5] dbus_in_left[4] dbus_in_left[3] dbus_in_left[2] dbus_in_left[1]
-+ dbus_in_left[0] net65[11] net65[10] net65[9] net65[8] net65[7] net65[6] net65[5] net65[4] net65[3] net65[2] net65[1] net65[0] proj_ibias_ena[1]
-+ proj_ibias_ena[0] vdd3v3 vss3v3 vss3v3 vdd3v3 vss3v3 net68[3] net68[2] net68[1] net68[0] net181[23] net181[22] net181[21] net181[20] net181[19]
-+ net181[18] net181[17] net181[16] net181[15] net181[14] net181[13] net181[12] net181[11] net181[10] net181[9] net181[8] net181[7] net181[6]
-+ net181[5] net181[4] net181[3] net181[2] net181[1] net181[0] net71[11] net71[10] net71[9] net71[8] net71[7] net71[6] net71[5] net71[4]
-+ net71[3] net71[2] net71[1] net71[0] net69[1] net69[0] proj_sel[4] proj_sel[3] proj_sel[2] proj_sel[1] proj_sel[0] user_project_control
-x5 s18_an[0] s18_an[1] net186 vss5v0 net183 vss3v3 ana18[3] ana18[2] ana18[1] ana18[0] vbias18 ibias18[0] ibias18[1] net71[11]
-+ net71[10] net71[9] net71[8] net71[7] net71[6] net71[5] net71[4] net71[3] net71[2] net71[1] net71[0] net181[23] net181[22] net181[21]
-+ net181[20] net181[19] net181[18] net181[17] net181[16] net181[15] net181[14] net181[13] net181[12] net181[11] net181[10] net181[9] net181[8]
-+ net181[7] net181[6] net181[5] net181[4] net181[3] net181[2] net181[1] net181[0] net182 net185 net184 slot18_wrapper
++ dbus_in_left[0] net65_11 net65_10 net65_9 net65_8 net65_7 net65_6 net65_5 net65_4 net65_3 net65_2 net65_1 net65_0 proj_ibias_ena[1]
++ proj_ibias_ena[0] vdd3v3 vss3v3 vss3v3 vdd3v3 vss3v3 net68_3 net68_2 net68_1 net68_0 net181_23 net181_22 net181_21 net181_20 net181_19 net181_18
++ net181_17 net181_16 net181_15 net181_14 net181_13 net181_12 net181_11 net181_10 net181_9 net181_8 net181_7 net181_6 net181_5 net181_4
++ net181_3 net181_2 net181_1 net181_0 net71_11 net71_10 net71_9 net71_8 net71_7 net71_6 net71_5 net71_4 net71_3 net71_2 net71_1 net71_0
++ net69_1 net69_0 proj_sel[4] proj_sel[3] proj_sel[2] proj_sel[1] proj_sel[0] user_project_control
+x5 s18_an[0] s18_an[1] net186 vss5v0 net183 vss3v3 ana18[3] ana18[2] ana18[1] ana18[0] vbias18 ibias18[0] ibias18[1] net71_11
++ net71_10 net71_9 net71_8 net71_7 net71_6 net71_5 net71_4 net71_3 net71_2 net71_1 net71_0 net181_23 net181_22 net181_21 net181_20 net181_19
++ net181_18 net181_17 net181_16 net181_15 net181_14 net181_13 net181_12 net181_11 net181_10 net181_9 net181_8 net181_7 net181_6 net181_5
++ net181_4 net181_3 net181_2 net181_1 net181_0 net182 net185 net184 slot18_wrapper
 x11 vss3v3_slot17 s17_an[0] s17_an[1] net59 vss5v0 net73 vss3v3 ana17[3] ana17[2] ana17[1] ana17[0] vbias17 ibias17[0] ibias17[1]
-+ net64[11] net64[10] net64[9] net64[8] net64[7] net64[6] net64[5] net64[4] net64[3] net64[2] net64[1] net64[0] net177[23] net177[22]
-+ net177[21] net177[20] net177[19] net177[18] net177[17] net177[16] net177[15] net177[14] net177[13] net177[12] net177[11] net177[10]
-+ net177[9] net177[8] net177[7] net177[6] net177[5] net177[4] net177[3] net177[2] net177[1] net177[0] net178 net180 net179 slot17_wrapper
-x19 s16_an[0] s16_an[1] net166 vss5v0 net168 vss3v3 ana16[3] ana16[2] ana16[1] ana16[0] vbias16 ibias16[0] ibias16[1] net56[11]
-+ net56[10] net56[9] net56[8] net56[7] net56[6] net56[5] net56[4] net56[3] net56[2] net56[1] net56[0] net167[23] net167[22] net167[21]
-+ net167[20] net167[19] net167[18] net167[17] net167[16] net167[15] net167[14] net167[13] net167[12] net167[11] net167[10] net167[9] net167[8]
-+ net167[7] net167[6] net167[5] net167[4] net167[3] net167[2] net167[1] net167[0] net169 net171 net170 slot16_wrapper
-x28 s15_an[0] s15_an[1] net172 vss5v0 net173 vss3v3 ana15[3] ana15[2] ana15[1] ana15[0] vbias15 ibias15[0] ibias15[1] net49[11]
-+ net49[10] net49[9] net49[8] net49[7] net49[6] net49[5] net49[4] net49[3] net49[2] net49[1] net49[0] net48[23] net48[22] net48[21] net48[20]
-+ net48[19] net48[18] net48[17] net48[16] net48[15] net48[14] net48[13] net48[12] net48[11] net48[10] net48[9] net48[8] net48[7] net48[6]
-+ net48[5] net48[4] net48[3] net48[2] net48[1] net48[0] net174 net176 net175 slot15_wrapper
-x31 s14_an[0] s14_an[1] net160 vss5v0 net162 vss3v3 ana14[3] ana14[2] ana14[1] ana14[0] vbias14 ibias14[0] ibias14[1] net41[11]
-+ net41[10] net41[9] net41[8] net41[7] net41[6] net41[5] net41[4] net41[3] net41[2] net41[1] net41[0] net161[23] net161[22] net161[21]
-+ net161[20] net161[19] net161[18] net161[17] net161[16] net161[15] net161[14] net161[13] net161[12] net161[11] net161[10] net161[9] net161[8]
-+ net161[7] net161[6] net161[5] net161[4] net161[3] net161[2] net161[1] net161[0] net163 net165 net164 slot14_wrapper
-x36 s13_an[0] s13_an[1] net154 vss5v0 net156 vss3v3 ana13[3] ana13[2] ana13[1] ana13[0] vbias13 ibias13[0] ibias13[1] net34[11]
-+ net34[10] net34[9] net34[8] net34[7] net34[6] net34[5] net34[4] net34[3] net34[2] net34[1] net34[0] net155[23] net155[22] net155[21]
-+ net155[20] net155[19] net155[18] net155[17] net155[16] net155[15] net155[14] net155[13] net155[12] net155[11] net155[10] net155[9] net155[8]
-+ net155[7] net155[6] net155[5] net155[4] net155[3] net155[2] net155[1] net155[0] net157 net159 net158 slot13_wrapper
-x41 s12_an[0] s12_an[1] net148 vss5v0 net150 vss3v3 ana12[3] ana12[2] ana12[1] ana12[0] vbias12 ibias12[0] ibias12[1] net27[11]
-+ net27[10] net27[9] net27[8] net27[7] net27[6] net27[5] net27[4] net27[3] net27[2] net27[1] net27[0] net149[23] net149[22] net149[21]
-+ net149[20] net149[19] net149[18] net149[17] net149[16] net149[15] net149[14] net149[13] net149[12] net149[11] net149[10] net149[9] net149[8]
-+ net149[7] net149[6] net149[5] net149[4] net149[3] net149[2] net149[1] net149[0] net151 net153 net152 slot12_wrapper
-x46 vss3v3_slot11 s11_an[0] net142 vss5v0 net144 vss3v3 ana11[3] ana11[2] ana11[1] ana11[0] vbias11 ibias11[0] ibias11[1]
-+ net20[11] net20[10] net20[9] net20[8] net20[7] net20[6] net20[5] net20[4] net20[3] net20[2] net20[1] net20[0] net143[23] net143[22]
-+ net143[21] net143[20] net143[19] net143[18] net143[17] net143[16] net143[15] net143[14] net143[13] net143[12] net143[11] net143[10]
-+ net143[9] net143[8] net143[7] net143[6] net143[5] net143[4] net143[3] net143[2] net143[1] net143[0] net145 net147 net146 slot11_wrapper
-x51 s10_an[0] s10_an[1] s10_an[2] net7 vss5v0 net72 vss3v3 ana10[3] ana10[2] ana10[1] ana10[0] vbias10 ibias10[0] ibias10[1]
-+ net13[11] net13[10] net13[9] net13[8] net13[7] net13[6] net13[5] net13[4] net13[3] net13[2] net13[1] net13[0] net12[23] net12[22] net12[21]
-+ net12[20] net12[19] net12[18] net12[17] net12[16] net12[15] net12[14] net12[13] net12[12] net12[11] net12[10] net12[9] net12[8] net12[7]
-+ net12[6] net12[5] net12[4] net12[3] net12[2] net12[1] net12[0] net139 net141 net140 slot10_wrapper
-x20[1] vdd3v3 vss3v3 vdd5v0 ibias9[1] vss5v0 net78[1] idac2_source analog_pswitch_small
-x20[0] vdd3v3 vss3v3 vdd5v0 ibias9[0] vss5v0 net78[0] idac1_source analog_pswitch_small
++ net64_11 net64_10 net64_9 net64_8 net64_7 net64_6 net64_5 net64_4 net64_3 net64_2 net64_1 net64_0 net177_23 net177_22 net177_21 net177_20
++ net177_19 net177_18 net177_17 net177_16 net177_15 net177_14 net177_13 net177_12 net177_11 net177_10 net177_9 net177_8 net177_7 net177_6
++ net177_5 net177_4 net177_3 net177_2 net177_1 net177_0 net178 net180 net179 slot17_wrapper
+x19 s16_an_0_outp s16_an_0_outn s16_an_0_vcm s16_an_0_vref s16_an_0_iref s16_an_0_en_3v3 s16_an_0_en_3v3_b s16_an_1_vinp
++ s16_an_1_vinn s16_an_1_vref s16_an_1_iref s16_an_1_en_3v3 s16_an_1_en_3v3_b net166 vss5v0 net168 vss3v3 ana16[3] ana16[2] ana16[1] ana16[0]
++ vbias16 ibias16[0] ibias16[1] net56_11 net56_10 net56_9 net56_8 net56_7 net56_6 net56_5 net56_4 net56_3 net56_2 net56_1 net56_0 net167_23
++ net167_22 net167_21 net167_20 net167_19 net167_18 net167_17 net167_16 net167_15 net167_14 net167_13 net167_12 net167_11 net167_10 net167_9
++ net167_8 net167_7 net167_6 net167_5 net167_4 net167_3 net167_2 net167_1 net167_0 net169 net171 net170 slot16_wrapper
+x28 s15_an[0] s15_an[1] net172 vss5v0 net173 vss3v3 ana15[3] ana15[2] ana15[1] ana15[0] vbias15 ibias15[0] ibias15[1] net49_11
++ net49_10 net49_9 net49_8 net49_7 net49_6 net49_5 net49_4 net49_3 net49_2 net49_1 net49_0 net48_23 net48_22 net48_21 net48_20 net48_19
++ net48_18 net48_17 net48_16 net48_15 net48_14 net48_13 net48_12 net48_11 net48_10 net48_9 net48_8 net48_7 net48_6 net48_5 net48_4 net48_3
++ net48_2 net48_1 net48_0 net174 net176 net175 slot15_wrapper
+x31 s14_an[0] s14_an[1] net160 vss5v0 net162 vss3v3 ana14[3] ana14[2] ana14[1] ana14[0] vbias14 ibias14[0] ibias14[1] net41_11
++ net41_10 net41_9 net41_8 net41_7 net41_6 net41_5 net41_4 net41_3 net41_2 net41_1 net41_0 net161_23 net161_22 net161_21 net161_20 net161_19
++ net161_18 net161_17 net161_16 net161_15 net161_14 net161_13 net161_12 net161_11 net161_10 net161_9 net161_8 net161_7 net161_6 net161_5
++ net161_4 net161_3 net161_2 net161_1 net161_0 net163 net165 net164 slot14_wrapper
+x36 s13_an[0] s13_an[1] net154 vss5v0 net156 vss3v3 ana13[3] ana13[2] ana13[1] ana13[0] vbias13 ibias13[0] ibias13[1] net34_11
++ net34_10 net34_9 net34_8 net34_7 net34_6 net34_5 net34_4 net34_3 net34_2 net34_1 net34_0 net155_23 net155_22 net155_21 net155_20 net155_19
++ net155_18 net155_17 net155_16 net155_15 net155_14 net155_13 net155_12 net155_11 net155_10 net155_9 net155_8 net155_7 net155_6 net155_5
++ net155_4 net155_3 net155_2 net155_1 net155_0 net157 net159 net158 slot13_wrapper
+x41 s12_an[0] s12_an[1] net148 vss5v0 net150 vss3v3 ana12[3] ana12[2] ana12[1] ana12[0] vbias12 ibias12[0] ibias12[1] net27_11
++ net27_10 net27_9 net27_8 net27_7 net27_6 net27_5 net27_4 net27_3 net27_2 net27_1 net27_0 net149_23 net149_22 net149_21 net149_20 net149_19
++ net149_18 net149_17 net149_16 net149_15 net149_14 net149_13 net149_12 net149_11 net149_10 net149_9 net149_8 net149_7 net149_6 net149_5
++ net149_4 net149_3 net149_2 net149_1 net149_0 net151 net153 net152 slot12_wrapper
+x46 vss3v3_slot11 s11_an[0] net142 vss5v0 net144 vss3v3 ana11[3] ana11[2] ana11[1] ana11[0] vbias11 ibias11[0] ibias11[1] net20_11
++ net20_10 net20_9 net20_8 net20_7 net20_6 net20_5 net20_4 net20_3 net20_2 net20_1 net20_0 net143_23 net143_22 net143_21 net143_20 net143_19
++ net143_18 net143_17 net143_16 net143_15 net143_14 net143_13 net143_12 net143_11 net143_10 net143_9 net143_8 net143_7 net143_6 net143_5
++ net143_4 net143_3 net143_2 net143_1 net143_0 net145 net147 net146 slot11_wrapper
+x51 net240 s10_an[0] s10_an[1] s10_an[2] net7 vss5v0 net72 vss3v3 ana10[3] ana10[2] ana10[1] ana10[0] vbias10 ibias10[0]
++ ibias10[1] net13_11 net13_10 net13_9 net13_8 net13_7 net13_6 net13_5 net13_4 net13_3 net13_2 net13_1 net13_0 net12_23 net12_22 net12_21
++ net12_20 net12_19 net12_18 net12_17 net12_16 net12_15 net12_14 net12_13 net12_12 net12_11 net12_10 net12_9 net12_8 net12_7 net12_6 net12_5
++ net12_4 net12_3 net12_2 net12_1 net12_0 net139 net141 net140 slot10_wrapper
+x20[1] vdd3v3 vss3v3 vdd5v0 ibias9[1] vss5v0 net78_1 idac2_source analog_pswitch_small
+x20[0] vdd3v3 vss3v3 vdd5v0 ibias9[0] vss5v0 net78_0 idac1_source analog_pswitch_small
 x52 vdd3v3 vss3v3 vdd5v0 vbias9 vss5v0 net79 voltgen_vout analog_switch_small
-x21[3] vdd3v3 vss3v3 vdd5v0 ana9[3] vss5v0 net77[3] analog[3] analog_switch_med
-x21[2] vdd3v3 vss3v3 vdd5v0 ana9[2] vss5v0 net77[2] analog[2] analog_switch_med
-x21[1] vdd3v3 vss3v3 vdd5v0 ana9[1] vss5v0 net77[1] analog[1] analog_switch_med
-x21[0] vdd3v3 vss3v3 vdd5v0 ana9[0] vss5v0 net77[0] analog[0] analog_switch_med
+x21[3] vdd3v3 vss3v3 vdd5v0 ana9[3] vss5v0 net77_3 analog[3] analog_switch_med
+x21[2] vdd3v3 vss3v3 vdd5v0 ana9[2] vss5v0 net77_2 analog[2] analog_switch_med
+x21[1] vdd3v3 vss3v3 vdd5v0 ana9[1] vss5v0 net77_1 analog[1] analog_switch_med
+x21[0] vdd3v3 vss3v3 vdd5v0 ana9[0] vss5v0 net77_0 analog[0] analog_switch_med
 x53 net76 vdd3v3 vss3v3 net75 power_stage3v3
 x54 net74 vdd5v0 vss5v0 vss3v3 vdd3v3 net137 power_stage
 x55 clk_out proj_dig_ena proj_ena proj_3v3_ena proj_5v0_ena net76 net74 net189 net138 net187 net79 reset proj_vbias_ena vdd3v3
 + vss3v3 analog_ena[3] analog_ena[2] analog_ena[1] analog_ena[0] dbus_out[23] dbus_out[22] dbus_out[21] dbus_out[20] dbus_out[19]
 + dbus_out[18] dbus_out[17] dbus_out[16] dbus_out[15] dbus_out[14] dbus_out[13] dbus_out[12] dbus_out[11] dbus_out[10] dbus_out[9] dbus_out[8]
-+ dbus_out[7] dbus_out[6] dbus_out[5] dbus_out[4] dbus_out[3] dbus_out[2] dbus_out[1] dbus_out[0] net81[11] net81[10] net81[9] net81[8]
-+ net81[7] net81[6] net81[5] net81[4] net81[3] net81[2] net81[1] net81[0] vss3v3 vss3v3 vss3v3 vss3v3 vss3v3 vss3v3 vss3v3 vss3v3 vss3v3
-+ vss3v3 vss3v3 vss3v3 proj_ibias_ena[1] proj_ibias_ena[0] vss3v3 vdd3v3 vss3v3 vss3v3 vdd3v3 net77[3] net77[2] net77[1] net77[0]
-+ net188[23] net188[22] net188[21] net188[20] net188[19] net188[18] net188[17] net188[16] net188[15] net188[14] net188[13] net188[12]
-+ net188[11] net188[10] net188[9] net188[8] net188[7] net188[6] net188[5] net188[4] net188[3] net188[2] net188[1] net188[0] net80[11]
-+ net80[10] net80[9] net80[8] net80[7] net80[6] net80[5] net80[4] net80[3] net80[2] net80[1] net80[0] net78[1] net78[0] proj_sel[4]
-+ proj_sel[3] proj_sel[2] proj_sel[1] proj_sel[0] user_project_control
-x22[1] vdd3v3 vss3v3 vdd5v0 ibias8[1] vss5v0 net85[1] idac2_source analog_pswitch_small
-x22[0] vdd3v3 vss3v3 vdd5v0 ibias8[0] vss5v0 net85[0] idac1_source analog_pswitch_small
++ dbus_out[7] dbus_out[6] dbus_out[5] dbus_out[4] dbus_out[3] dbus_out[2] dbus_out[1] dbus_out[0] net81_11 net81_10 net81_9 net81_8 net81_7
++ net81_6 net81_5 net81_4 net81_3 net81_2 net81_1 net81_0 vss3v3 vss3v3 vss3v3 vss3v3 vss3v3 vss3v3 vss3v3 vss3v3 vss3v3 vss3v3 vss3v3
++ vss3v3 proj_ibias_ena[1] proj_ibias_ena[0] vss3v3 vdd3v3 vss3v3 vss3v3 vdd3v3 net77_3 net77_2 net77_1 net77_0 net188_23 net188_22
++ net188_21 net188_20 net188_19 net188_18 net188_17 net188_16 net188_15 net188_14 net188_13 net188_12 net188_11 net188_10 net188_9 net188_8
++ net188_7 net188_6 net188_5 net188_4 net188_3 net188_2 net188_1 net188_0 net80_11 net80_10 net80_9 net80_8 net80_7 net80_6 net80_5 net80_4
++ net80_3 net80_2 net80_1 net80_0 net78_1 net78_0 proj_sel[4] proj_sel[3] proj_sel[2] proj_sel[1] proj_sel[0] user_project_control
+x22[1] vdd3v3 vss3v3 vdd5v0 ibias8[1] vss5v0 net85_1 idac2_source analog_pswitch_small
+x22[0] vdd3v3 vss3v3 vdd5v0 ibias8[0] vss5v0 net85_0 idac1_source analog_pswitch_small
 x56 vdd3v3 vss3v3 vdd5v0 vbias8 vss5v0 net86 voltgen_vout analog_switch_small
-x24[3] vdd3v3 vss3v3 vdd5v0 ana8[3] vss5v0 net84[3] analog[3] analog_switch_med
-x24[2] vdd3v3 vss3v3 vdd5v0 ana8[2] vss5v0 net84[2] analog[2] analog_switch_med
-x24[1] vdd3v3 vss3v3 vdd5v0 ana8[1] vss5v0 net84[1] analog[1] analog_switch_med
-x24[0] vdd3v3 vss3v3 vdd5v0 ana8[0] vss5v0 net84[0] analog[0] analog_switch_med
+x24[3] vdd3v3 vss3v3 vdd5v0 ana8[3] vss5v0 net84_3 analog[3] analog_switch_med
+x24[2] vdd3v3 vss3v3 vdd5v0 ana8[2] vss5v0 net84_2 analog[2] analog_switch_med
+x24[1] vdd3v3 vss3v3 vdd5v0 ana8[1] vss5v0 net84_1 analog[1] analog_switch_med
+x24[0] vdd3v3 vss3v3 vdd5v0 ana8[0] vss5v0 net84_0 analog[0] analog_switch_med
 x57 net83 vdd3v3 vss3v3 net190 power_stage3v3
 x58 net82 vdd5v0 vss5v0 vss3v3 vdd3v3 net191 power_stage
 x59 clk_out proj_dig_ena proj_ena proj_3v3_ena proj_5v0_ena net83 net82 net195 net192 net193 net86 reset proj_vbias_ena vdd3v3
 + vss3v3 analog_ena[3] analog_ena[2] analog_ena[1] analog_ena[0] dbus_out[23] dbus_out[22] dbus_out[21] dbus_out[20] dbus_out[19]
 + dbus_out[18] dbus_out[17] dbus_out[16] dbus_out[15] dbus_out[14] dbus_out[13] dbus_out[12] dbus_out[11] dbus_out[10] dbus_out[9] dbus_out[8]
-+ dbus_out[7] dbus_out[6] dbus_out[5] dbus_out[4] dbus_out[3] dbus_out[2] dbus_out[1] dbus_out[0] net88[11] net88[10] net88[9] net88[8]
-+ net88[7] net88[6] net88[5] net88[4] net88[3] net88[2] net88[1] net88[0] net81[11] net81[10] net81[9] net81[8] net81[7] net81[6] net81[5]
-+ net81[4] net81[3] net81[2] net81[1] net81[0] proj_ibias_ena[1] proj_ibias_ena[0] vss3v3 vdd3v3 vss3v3 vss3v3 vss3v3 net84[3] net84[2]
-+ net84[1] net84[0] net194[23] net194[22] net194[21] net194[20] net194[19] net194[18] net194[17] net194[16] net194[15] net194[14] net194[13]
-+ net194[12] net194[11] net194[10] net194[9] net194[8] net194[7] net194[6] net194[5] net194[4] net194[3] net194[2] net194[1] net194[0]
-+ net87[11] net87[10] net87[9] net87[8] net87[7] net87[6] net87[5] net87[4] net87[3] net87[2] net87[1] net87[0] net85[1] net85[0] proj_sel[4]
-+ proj_sel[3] proj_sel[2] proj_sel[1] proj_sel[0] user_project_control
-x25[1] vdd3v3 vss3v3 vdd5v0 ibias7[1] vss5v0 net92[1] idac2_source analog_pswitch_small
-x25[0] vdd3v3 vss3v3 vdd5v0 ibias7[0] vss5v0 net92[0] idac1_source analog_pswitch_small
++ dbus_out[7] dbus_out[6] dbus_out[5] dbus_out[4] dbus_out[3] dbus_out[2] dbus_out[1] dbus_out[0] net88_11 net88_10 net88_9 net88_8 net88_7
++ net88_6 net88_5 net88_4 net88_3 net88_2 net88_1 net88_0 net81_11 net81_10 net81_9 net81_8 net81_7 net81_6 net81_5 net81_4 net81_3 net81_2
++ net81_1 net81_0 proj_ibias_ena[1] proj_ibias_ena[0] vss3v3 vdd3v3 vss3v3 vss3v3 vss3v3 net84_3 net84_2 net84_1 net84_0 net194_23
++ net194_22 net194_21 net194_20 net194_19 net194_18 net194_17 net194_16 net194_15 net194_14 net194_13 net194_12 net194_11 net194_10 net194_9
++ net194_8 net194_7 net194_6 net194_5 net194_4 net194_3 net194_2 net194_1 net194_0 net87_11 net87_10 net87_9 net87_8 net87_7 net87_6 net87_5
++ net87_4 net87_3 net87_2 net87_1 net87_0 net85_1 net85_0 proj_sel[4] proj_sel[3] proj_sel[2] proj_sel[1] proj_sel[0] user_project_control
+x25[1] vdd3v3 vss3v3 vdd5v0 ibias7[1] vss5v0 net92_1 idac2_source analog_pswitch_small
+x25[0] vdd3v3 vss3v3 vdd5v0 ibias7[0] vss5v0 net92_0 idac1_source analog_pswitch_small
 x60 vdd3v3 vss3v3 vdd5v0 vbias7 vss5v0 net93 voltgen_vout analog_switch_small
-x26[3] vdd3v3 vss3v3 vdd5v0 ana7[3] vss5v0 net91[3] analog[3] analog_switch_med
-x26[2] vdd3v3 vss3v3 vdd5v0 ana7[2] vss5v0 net91[2] analog[2] analog_switch_med
-x26[1] vdd3v3 vss3v3 vdd5v0 ana7[1] vss5v0 net91[1] analog[1] analog_switch_med
-x26[0] vdd3v3 vss3v3 vdd5v0 ana7[0] vss5v0 net91[0] analog[0] analog_switch_med
+x26[3] vdd3v3 vss3v3 vdd5v0 ana7[3] vss5v0 net91_3 analog[3] analog_switch_med
+x26[2] vdd3v3 vss3v3 vdd5v0 ana7[2] vss5v0 net91_2 analog[2] analog_switch_med
+x26[1] vdd3v3 vss3v3 vdd5v0 ana7[1] vss5v0 net91_1 analog[1] analog_switch_med
+x26[0] vdd3v3 vss3v3 vdd5v0 ana7[0] vss5v0 net91_0 analog[0] analog_switch_med
 x61 net90 vdd3v3 vss3v3 net196 power_stage3v3
 x62 net89 vdd5v0 vss5v0 vss3v3 vdd3v3 net197 power_stage
 x63 clk_out proj_dig_ena proj_ena proj_3v3_ena proj_5v0_ena net90 net89 net201 net198 net199 net93 reset proj_vbias_ena vdd3v3
 + vss3v3 analog_ena[3] analog_ena[2] analog_ena[1] analog_ena[0] dbus_out[23] dbus_out[22] dbus_out[21] dbus_out[20] dbus_out[19]
 + dbus_out[18] dbus_out[17] dbus_out[16] dbus_out[15] dbus_out[14] dbus_out[13] dbus_out[12] dbus_out[11] dbus_out[10] dbus_out[9] dbus_out[8]
-+ dbus_out[7] dbus_out[6] dbus_out[5] dbus_out[4] dbus_out[3] dbus_out[2] dbus_out[1] dbus_out[0] net95[11] net95[10] net95[9] net95[8]
-+ net95[7] net95[6] net95[5] net95[4] net95[3] net95[2] net95[1] net95[0] net88[11] net88[10] net88[9] net88[8] net88[7] net88[6] net88[5]
-+ net88[4] net88[3] net88[2] net88[1] net88[0] proj_ibias_ena[1] proj_ibias_ena[0] vss3v3 vss3v3 vdd3v3 vdd3v3 vdd3v3 net91[3] net91[2]
-+ net91[1] net91[0] net200[23] net200[22] net200[21] net200[20] net200[19] net200[18] net200[17] net200[16] net200[15] net200[14] net200[13]
-+ net200[12] net200[11] net200[10] net200[9] net200[8] net200[7] net200[6] net200[5] net200[4] net200[3] net200[2] net200[1] net200[0]
-+ net94[11] net94[10] net94[9] net94[8] net94[7] net94[6] net94[5] net94[4] net94[3] net94[2] net94[1] net94[0] net92[1] net92[0] proj_sel[4]
-+ proj_sel[3] proj_sel[2] proj_sel[1] proj_sel[0] user_project_control
-x27[1] vdd3v3 vss3v3 vdd5v0 ibias6[1] vss5v0 net99[1] idac2_source analog_pswitch_small
-x27[0] vdd3v3 vss3v3 vdd5v0 ibias6[0] vss5v0 net99[0] idac1_source analog_pswitch_small
++ dbus_out[7] dbus_out[6] dbus_out[5] dbus_out[4] dbus_out[3] dbus_out[2] dbus_out[1] dbus_out[0] net95_11 net95_10 net95_9 net95_8 net95_7
++ net95_6 net95_5 net95_4 net95_3 net95_2 net95_1 net95_0 net88_11 net88_10 net88_9 net88_8 net88_7 net88_6 net88_5 net88_4 net88_3 net88_2
++ net88_1 net88_0 proj_ibias_ena[1] proj_ibias_ena[0] vss3v3 vss3v3 vdd3v3 vdd3v3 vdd3v3 net91_3 net91_2 net91_1 net91_0 net200_23
++ net200_22 net200_21 net200_20 net200_19 net200_18 net200_17 net200_16 net200_15 net200_14 net200_13 net200_12 net200_11 net200_10 net200_9
++ net200_8 net200_7 net200_6 net200_5 net200_4 net200_3 net200_2 net200_1 net200_0 net94_11 net94_10 net94_9 net94_8 net94_7 net94_6 net94_5
++ net94_4 net94_3 net94_2 net94_1 net94_0 net92_1 net92_0 proj_sel[4] proj_sel[3] proj_sel[2] proj_sel[1] proj_sel[0] user_project_control
+x27[1] vdd3v3 vss3v3 vdd5v0 ibias6[1] vss5v0 net99_1 idac2_source analog_pswitch_small
+x27[0] vdd3v3 vss3v3 vdd5v0 ibias6[0] vss5v0 net99_0 idac1_source analog_pswitch_small
 x64 vdd3v3 vss3v3 vdd5v0 vbias6 vss5v0 net100 voltgen_vout analog_switch_small
-x28[3] vdd3v3 vss3v3 vdd5v0 ana6[3] vss5v0 net98[3] analog[3] analog_switch_med
-x28[2] vdd3v3 vss3v3 vdd5v0 ana6[2] vss5v0 net98[2] analog[2] analog_switch_med
-x28[1] vdd3v3 vss3v3 vdd5v0 ana6[1] vss5v0 net98[1] analog[1] analog_switch_med
-x28[0] vdd3v3 vss3v3 vdd5v0 ana6[0] vss5v0 net98[0] analog[0] analog_switch_med
+x28[3] vdd3v3 vss3v3 vdd5v0 ana6[3] vss5v0 net98_3 analog[3] analog_switch_med
+x28[2] vdd3v3 vss3v3 vdd5v0 ana6[2] vss5v0 net98_2 analog[2] analog_switch_med
+x28[1] vdd3v3 vss3v3 vdd5v0 ana6[1] vss5v0 net98_1 analog[1] analog_switch_med
+x28[0] vdd3v3 vss3v3 vdd5v0 ana6[0] vss5v0 net98_0 analog[0] analog_switch_med
 x65 net97 vdd3v3 vss3v3 net202 power_stage3v3
 x66 net96 vdd5v0 vss5v0 vss3v3 vdd3v3 net203 power_stage
 x67 clk_out proj_dig_ena proj_ena proj_3v3_ena proj_5v0_ena net97 net96 net207 net204 net205 net100 reset proj_vbias_ena vdd3v3
 + vss3v3 analog_ena[3] analog_ena[2] analog_ena[1] analog_ena[0] dbus_out[23] dbus_out[22] dbus_out[21] dbus_out[20] dbus_out[19]
 + dbus_out[18] dbus_out[17] dbus_out[16] dbus_out[15] dbus_out[14] dbus_out[13] dbus_out[12] dbus_out[11] dbus_out[10] dbus_out[9] dbus_out[8]
-+ dbus_out[7] dbus_out[6] dbus_out[5] dbus_out[4] dbus_out[3] dbus_out[2] dbus_out[1] dbus_out[0] net102[11] net102[10] net102[9] net102[8]
-+ net102[7] net102[6] net102[5] net102[4] net102[3] net102[2] net102[1] net102[0] net95[11] net95[10] net95[9] net95[8] net95[7] net95[6]
-+ net95[5] net95[4] net95[3] net95[2] net95[1] net95[0] proj_ibias_ena[1] proj_ibias_ena[0] vss3v3 vss3v3 vdd3v3 vdd3v3 vss3v3 net98[3]
-+ net98[2] net98[1] net98[0] net206[23] net206[22] net206[21] net206[20] net206[19] net206[18] net206[17] net206[16] net206[15] net206[14]
-+ net206[13] net206[12] net206[11] net206[10] net206[9] net206[8] net206[7] net206[6] net206[5] net206[4] net206[3] net206[2] net206[1]
-+ net206[0] net101[11] net101[10] net101[9] net101[8] net101[7] net101[6] net101[5] net101[4] net101[3] net101[2] net101[1] net101[0]
-+ net99[1] net99[0] proj_sel[4] proj_sel[3] proj_sel[2] proj_sel[1] proj_sel[0] user_project_control
-x29[1] vdd3v3 vss3v3 vdd5v0 ibias5[1] vss5v0 net106[1] idac2_source analog_pswitch_small
-x29[0] vdd3v3 vss3v3 vdd5v0 ibias5[0] vss5v0 net106[0] idac1_source analog_pswitch_small
++ dbus_out[7] dbus_out[6] dbus_out[5] dbus_out[4] dbus_out[3] dbus_out[2] dbus_out[1] dbus_out[0] net102_11 net102_10 net102_9 net102_8
++ net102_7 net102_6 net102_5 net102_4 net102_3 net102_2 net102_1 net102_0 net95_11 net95_10 net95_9 net95_8 net95_7 net95_6 net95_5 net95_4
++ net95_3 net95_2 net95_1 net95_0 proj_ibias_ena[1] proj_ibias_ena[0] vss3v3 vss3v3 vdd3v3 vdd3v3 vss3v3 net98_3 net98_2 net98_1 net98_0
++ net206_23 net206_22 net206_21 net206_20 net206_19 net206_18 net206_17 net206_16 net206_15 net206_14 net206_13 net206_12 net206_11 net206_10
++ net206_9 net206_8 net206_7 net206_6 net206_5 net206_4 net206_3 net206_2 net206_1 net206_0 net101_11 net101_10 net101_9 net101_8 net101_7
++ net101_6 net101_5 net101_4 net101_3 net101_2 net101_1 net101_0 net99_1 net99_0 proj_sel[4] proj_sel[3] proj_sel[2] proj_sel[1] proj_sel[0]
++ user_project_control
+x29[1] vdd3v3 vss3v3 vdd5v0 ibias5[1] vss5v0 net106_1 idac2_source analog_pswitch_small
+x29[0] vdd3v3 vss3v3 vdd5v0 ibias5[0] vss5v0 net106_0 idac1_source analog_pswitch_small
 x68 vdd3v3 vss3v3 vdd5v0 vbias5 vss5v0 net107 voltgen_vout analog_switch_small
-x30[3] vdd3v3 vss3v3 vdd5v0 ana5[3] vss5v0 net105[3] analog[3] analog_switch_med
-x30[2] vdd3v3 vss3v3 vdd5v0 ana5[2] vss5v0 net105[2] analog[2] analog_switch_med
-x30[1] vdd3v3 vss3v3 vdd5v0 ana5[1] vss5v0 net105[1] analog[1] analog_switch_med
-x30[0] vdd3v3 vss3v3 vdd5v0 ana5[0] vss5v0 net105[0] analog[0] analog_switch_med
+x30[3] vdd3v3 vss3v3 vdd5v0 ana5[3] vss5v0 net105_3 analog[3] analog_switch_med
+x30[2] vdd3v3 vss3v3 vdd5v0 ana5[2] vss5v0 net105_2 analog[2] analog_switch_med
+x30[1] vdd3v3 vss3v3 vdd5v0 ana5[1] vss5v0 net105_1 analog[1] analog_switch_med
+x30[0] vdd3v3 vss3v3 vdd5v0 ana5[0] vss5v0 net105_0 analog[0] analog_switch_med
 x69 net104 vdd3v3 vss3v3 net208 power_stage3v3
 x70 net103 vdd5v0 vss5v0 vss3v3 vdd3v3 net209 power_stage
 x71 clk_out proj_dig_ena proj_ena proj_3v3_ena proj_5v0_ena net104 net103 net213 net210 net211 net107 reset proj_vbias_ena vdd3v3
 + vss3v3 analog_ena[3] analog_ena[2] analog_ena[1] analog_ena[0] dbus_out[23] dbus_out[22] dbus_out[21] dbus_out[20] dbus_out[19]
 + dbus_out[18] dbus_out[17] dbus_out[16] dbus_out[15] dbus_out[14] dbus_out[13] dbus_out[12] dbus_out[11] dbus_out[10] dbus_out[9] dbus_out[8]
-+ dbus_out[7] dbus_out[6] dbus_out[5] dbus_out[4] dbus_out[3] dbus_out[2] dbus_out[1] dbus_out[0] net109[11] net109[10] net109[9] net109[8]
-+ net109[7] net109[6] net109[5] net109[4] net109[3] net109[2] net109[1] net109[0] net102[11] net102[10] net102[9] net102[8] net102[7]
-+ net102[6] net102[5] net102[4] net102[3] net102[2] net102[1] net102[0] proj_ibias_ena[1] proj_ibias_ena[0] vss3v3 vss3v3 vdd3v3 vss3v3
-+ vdd3v3 net105[3] net105[2] net105[1] net105[0] net212[23] net212[22] net212[21] net212[20] net212[19] net212[18] net212[17] net212[16]
-+ net212[15] net212[14] net212[13] net212[12] net212[11] net212[10] net212[9] net212[8] net212[7] net212[6] net212[5] net212[4] net212[3]
-+ net212[2] net212[1] net212[0] net108[11] net108[10] net108[9] net108[8] net108[7] net108[6] net108[5] net108[4] net108[3] net108[2]
-+ net108[1] net108[0] net106[1] net106[0] proj_sel[4] proj_sel[3] proj_sel[2] proj_sel[1] proj_sel[0] user_project_control
-x31[1] vdd3v3 vss3v3 vdd5v0 ibias4[1] vss5v0 net113[1] idac2_source analog_pswitch_small
-x31[0] vdd3v3 vss3v3 vdd5v0 ibias4[0] vss5v0 net113[0] idac1_source analog_pswitch_small
++ dbus_out[7] dbus_out[6] dbus_out[5] dbus_out[4] dbus_out[3] dbus_out[2] dbus_out[1] dbus_out[0] net109_11 net109_10 net109_9 net109_8
++ net109_7 net109_6 net109_5 net109_4 net109_3 net109_2 net109_1 net109_0 net102_11 net102_10 net102_9 net102_8 net102_7 net102_6 net102_5
++ net102_4 net102_3 net102_2 net102_1 net102_0 proj_ibias_ena[1] proj_ibias_ena[0] vss3v3 vss3v3 vdd3v3 vss3v3 vdd3v3 net105_3 net105_2
++ net105_1 net105_0 net212_23 net212_22 net212_21 net212_20 net212_19 net212_18 net212_17 net212_16 net212_15 net212_14 net212_13 net212_12
++ net212_11 net212_10 net212_9 net212_8 net212_7 net212_6 net212_5 net212_4 net212_3 net212_2 net212_1 net212_0 net108_11 net108_10 net108_9
++ net108_8 net108_7 net108_6 net108_5 net108_4 net108_3 net108_2 net108_1 net108_0 net106_1 net106_0 proj_sel[4] proj_sel[3] proj_sel[2]
++ proj_sel[1] proj_sel[0] user_project_control
+x31[1] vdd3v3 vss3v3 vdd5v0 ibias4[1] vss5v0 net113_1 idac2_source analog_pswitch_small
+x31[0] vdd3v3 vss3v3 vdd5v0 ibias4[0] vss5v0 net113_0 idac1_source analog_pswitch_small
 x72 vdd3v3 vss3v3 vdd5v0 vbias4 vss5v0 net114 voltgen_vout analog_switch_small
-x32[3] vdd3v3 vss3v3 vdd5v0 ana4[3] vss5v0 net112[3] analog[3] analog_switch_med
-x32[2] vdd3v3 vss3v3 vdd5v0 ana4[2] vss5v0 net112[2] analog[2] analog_switch_med
-x32[1] vdd3v3 vss3v3 vdd5v0 ana4[1] vss5v0 net112[1] analog[1] analog_switch_med
-x32[0] vdd3v3 vss3v3 vdd5v0 ana4[0] vss5v0 net112[0] analog[0] analog_switch_med
+x32[3] vdd3v3 vss3v3 vdd5v0 ana4[3] vss5v0 net112_3 analog[3] analog_switch_med
+x32[2] vdd3v3 vss3v3 vdd5v0 ana4[2] vss5v0 net112_2 analog[2] analog_switch_med
+x32[1] vdd3v3 vss3v3 vdd5v0 ana4[1] vss5v0 net112_1 analog[1] analog_switch_med
+x32[0] vdd3v3 vss3v3 vdd5v0 ana4[0] vss5v0 net112_0 analog[0] analog_switch_med
 x73 net111 vdd3v3 vss3v3 net214 power_stage3v3
 x74 net110 vdd5v0 vss5v0 vss3v3 vdd3v3 net215 power_stage
 x75 clk_out proj_dig_ena proj_ena proj_3v3_ena proj_5v0_ena net111 net110 net219 net216 net217 net114 reset proj_vbias_ena vdd3v3
 + vss3v3 analog_ena[3] analog_ena[2] analog_ena[1] analog_ena[0] dbus_out[23] dbus_out[22] dbus_out[21] dbus_out[20] dbus_out[19]
 + dbus_out[18] dbus_out[17] dbus_out[16] dbus_out[15] dbus_out[14] dbus_out[13] dbus_out[12] dbus_out[11] dbus_out[10] dbus_out[9] dbus_out[8]
-+ dbus_out[7] dbus_out[6] dbus_out[5] dbus_out[4] dbus_out[3] dbus_out[2] dbus_out[1] dbus_out[0] net116[11] net116[10] net116[9] net116[8]
-+ net116[7] net116[6] net116[5] net116[4] net116[3] net116[2] net116[1] net116[0] net109[11] net109[10] net109[9] net109[8] net109[7]
-+ net109[6] net109[5] net109[4] net109[3] net109[2] net109[1] net109[0] proj_ibias_ena[1] proj_ibias_ena[0] vss3v3 vss3v3 vdd3v3 vss3v3
-+ vss3v3 net112[3] net112[2] net112[1] net112[0] net218[23] net218[22] net218[21] net218[20] net218[19] net218[18] net218[17] net218[16]
-+ net218[15] net218[14] net218[13] net218[12] net218[11] net218[10] net218[9] net218[8] net218[7] net218[6] net218[5] net218[4] net218[3]
-+ net218[2] net218[1] net218[0] net115[11] net115[10] net115[9] net115[8] net115[7] net115[6] net115[5] net115[4] net115[3] net115[2]
-+ net115[1] net115[0] net113[1] net113[0] proj_sel[4] proj_sel[3] proj_sel[2] proj_sel[1] proj_sel[0] user_project_control
-x33[1] vdd3v3 vss3v3 vdd5v0 ibias3[1] vss5v0 net120[1] idac2_source analog_pswitch_small
-x33[0] vdd3v3 vss3v3 vdd5v0 ibias3[0] vss5v0 net120[0] idac1_source analog_pswitch_small
++ dbus_out[7] dbus_out[6] dbus_out[5] dbus_out[4] dbus_out[3] dbus_out[2] dbus_out[1] dbus_out[0] net116_11 net116_10 net116_9 net116_8
++ net116_7 net116_6 net116_5 net116_4 net116_3 net116_2 net116_1 net116_0 net109_11 net109_10 net109_9 net109_8 net109_7 net109_6 net109_5
++ net109_4 net109_3 net109_2 net109_1 net109_0 proj_ibias_ena[1] proj_ibias_ena[0] vss3v3 vss3v3 vdd3v3 vss3v3 vss3v3 net112_3 net112_2
++ net112_1 net112_0 net218_23 net218_22 net218_21 net218_20 net218_19 net218_18 net218_17 net218_16 net218_15 net218_14 net218_13 net218_12
++ net218_11 net218_10 net218_9 net218_8 net218_7 net218_6 net218_5 net218_4 net218_3 net218_2 net218_1 net218_0 net115_11 net115_10 net115_9
++ net115_8 net115_7 net115_6 net115_5 net115_4 net115_3 net115_2 net115_1 net115_0 net113_1 net113_0 proj_sel[4] proj_sel[3] proj_sel[2]
++ proj_sel[1] proj_sel[0] user_project_control
+x33[1] vdd3v3 vss3v3 vdd5v0 ibias3[1] vss5v0 net120_1 idac2_source analog_pswitch_small
+x33[0] vdd3v3 vss3v3 vdd5v0 ibias3[0] vss5v0 net120_0 idac1_source analog_pswitch_small
 x76 vdd3v3 vss3v3 vdd5v0 vbias3 vss5v0 net121 voltgen_vout analog_switch_small
-x34[3] vdd3v3 vss3v3 vdd5v0 ana3[3] vss5v0 net119[3] analog[3] analog_switch_med
-x34[2] vdd3v3 vss3v3 vdd5v0 ana3[2] vss5v0 net119[2] analog[2] analog_switch_med
-x34[1] vdd3v3 vss3v3 vdd5v0 ana3[1] vss5v0 net119[1] analog[1] analog_switch_med
-x34[0] vdd3v3 vss3v3 vdd5v0 ana3[0] vss5v0 net119[0] analog[0] analog_switch_med
+x34[3] vdd3v3 vss3v3 vdd5v0 ana3[3] vss5v0 net119_3 analog[3] analog_switch_med
+x34[2] vdd3v3 vss3v3 vdd5v0 ana3[2] vss5v0 net119_2 analog[2] analog_switch_med
+x34[1] vdd3v3 vss3v3 vdd5v0 ana3[1] vss5v0 net119_1 analog[1] analog_switch_med
+x34[0] vdd3v3 vss3v3 vdd5v0 ana3[0] vss5v0 net119_0 analog[0] analog_switch_med
 x77 net118 vdd3v3 vss3v3 net220 power_stage3v3
 x78 net117 vdd5v0 vss5v0 vss3v3 vdd3v3 net221 power_stage
 x79 clk_out proj_dig_ena proj_ena proj_3v3_ena proj_5v0_ena net118 net117 net225 net222 net223 net121 reset proj_vbias_ena vdd3v3
 + vss3v3 analog_ena[3] analog_ena[2] analog_ena[1] analog_ena[0] dbus_out[23] dbus_out[22] dbus_out[21] dbus_out[20] dbus_out[19]
 + dbus_out[18] dbus_out[17] dbus_out[16] dbus_out[15] dbus_out[14] dbus_out[13] dbus_out[12] dbus_out[11] dbus_out[10] dbus_out[9] dbus_out[8]
-+ dbus_out[7] dbus_out[6] dbus_out[5] dbus_out[4] dbus_out[3] dbus_out[2] dbus_out[1] dbus_out[0] net123[11] net123[10] net123[9] net123[8]
-+ net123[7] net123[6] net123[5] net123[4] net123[3] net123[2] net123[1] net123[0] net116[11] net116[10] net116[9] net116[8] net116[7]
-+ net116[6] net116[5] net116[4] net116[3] net116[2] net116[1] net116[0] proj_ibias_ena[1] proj_ibias_ena[0] vss3v3 vss3v3 vss3v3 vdd3v3
-+ vdd3v3 net119[3] net119[2] net119[1] net119[0] net224[23] net224[22] net224[21] net224[20] net224[19] net224[18] net224[17] net224[16]
-+ net224[15] net224[14] net224[13] net224[12] net224[11] net224[10] net224[9] net224[8] net224[7] net224[6] net224[5] net224[4] net224[3]
-+ net224[2] net224[1] net224[0] net122[11] net122[10] net122[9] net122[8] net122[7] net122[6] net122[5] net122[4] net122[3] net122[2]
-+ net122[1] net122[0] net120[1] net120[0] proj_sel[4] proj_sel[3] proj_sel[2] proj_sel[1] proj_sel[0] user_project_control
-x35[1] vdd3v3 vss3v3 vdd5v0 ibias2[1] vss5v0 net127[1] idac2_source analog_pswitch_small
-x35[0] vdd3v3 vss3v3 vdd5v0 ibias2[0] vss5v0 net127[0] idac1_source analog_pswitch_small
++ dbus_out[7] dbus_out[6] dbus_out[5] dbus_out[4] dbus_out[3] dbus_out[2] dbus_out[1] dbus_out[0] net123_11 net123_10 net123_9 net123_8
++ net123_7 net123_6 net123_5 net123_4 net123_3 net123_2 net123_1 net123_0 net116_11 net116_10 net116_9 net116_8 net116_7 net116_6 net116_5
++ net116_4 net116_3 net116_2 net116_1 net116_0 proj_ibias_ena[1] proj_ibias_ena[0] vss3v3 vss3v3 vss3v3 vdd3v3 vdd3v3 net119_3 net119_2
++ net119_1 net119_0 net224_23 net224_22 net224_21 net224_20 net224_19 net224_18 net224_17 net224_16 net224_15 net224_14 net224_13 net224_12
++ net224_11 net224_10 net224_9 net224_8 net224_7 net224_6 net224_5 net224_4 net224_3 net224_2 net224_1 net224_0 net122_11 net122_10 net122_9
++ net122_8 net122_7 net122_6 net122_5 net122_4 net122_3 net122_2 net122_1 net122_0 net120_1 net120_0 proj_sel[4] proj_sel[3] proj_sel[2]
++ proj_sel[1] proj_sel[0] user_project_control
+x35[1] vdd3v3 vss3v3 vdd5v0 ibias2[1] vss5v0 net127_1 idac2_source analog_pswitch_small
+x35[0] vdd3v3 vss3v3 vdd5v0 ibias2[0] vss5v0 net127_0 idac1_source analog_pswitch_small
 x80 vdd3v3 vss3v3 vdd5v0 vbias2 vss5v0 net128 voltgen_vout analog_switch_small
-x36[3] vdd3v3 vss3v3 vdd5v0 ana2[3] vss5v0 net126[3] analog[3] analog_switch_med
-x36[2] vdd3v3 vss3v3 vdd5v0 ana2[2] vss5v0 net126[2] analog[2] analog_switch_med
-x36[1] vdd3v3 vss3v3 vdd5v0 ana2[1] vss5v0 net126[1] analog[1] analog_switch_med
-x36[0] vdd3v3 vss3v3 vdd5v0 ana2[0] vss5v0 net126[0] analog[0] analog_switch_med
+x36[3] vdd3v3 vss3v3 vdd5v0 ana2[3] vss5v0 net126_3 analog[3] analog_switch_med
+x36[2] vdd3v3 vss3v3 vdd5v0 ana2[2] vss5v0 net126_2 analog[2] analog_switch_med
+x36[1] vdd3v3 vss3v3 vdd5v0 ana2[1] vss5v0 net126_1 analog[1] analog_switch_med
+x36[0] vdd3v3 vss3v3 vdd5v0 ana2[0] vss5v0 net126_0 analog[0] analog_switch_med
 x81 net125 vdd3v3 vss3v3 net226 power_stage3v3
 x82 net124 vdd5v0 vss5v0 vss3v3 vdd3v3 net227 power_stage
 x83 clk_out proj_dig_ena proj_ena proj_3v3_ena proj_5v0_ena net125 net124 net231 net228 net229 net128 reset proj_vbias_ena vdd3v3
 + vss3v3 analog_ena[3] analog_ena[2] analog_ena[1] analog_ena[0] dbus_out[23] dbus_out[22] dbus_out[21] dbus_out[20] dbus_out[19]
 + dbus_out[18] dbus_out[17] dbus_out[16] dbus_out[15] dbus_out[14] dbus_out[13] dbus_out[12] dbus_out[11] dbus_out[10] dbus_out[9] dbus_out[8]
-+ dbus_out[7] dbus_out[6] dbus_out[5] dbus_out[4] dbus_out[3] dbus_out[2] dbus_out[1] dbus_out[0] net130[11] net130[10] net130[9] net130[8]
-+ net130[7] net130[6] net130[5] net130[4] net130[3] net130[2] net130[1] net130[0] net123[11] net123[10] net123[9] net123[8] net123[7]
-+ net123[6] net123[5] net123[4] net123[3] net123[2] net123[1] net123[0] proj_ibias_ena[1] proj_ibias_ena[0] vss3v3 vss3v3 vss3v3 vdd3v3
-+ vss3v3 net126[3] net126[2] net126[1] net126[0] net230[23] net230[22] net230[21] net230[20] net230[19] net230[18] net230[17] net230[16]
-+ net230[15] net230[14] net230[13] net230[12] net230[11] net230[10] net230[9] net230[8] net230[7] net230[6] net230[5] net230[4] net230[3]
-+ net230[2] net230[1] net230[0] net129[11] net129[10] net129[9] net129[8] net129[7] net129[6] net129[5] net129[4] net129[3] net129[2]
-+ net129[1] net129[0] net127[1] net127[0] proj_sel[4] proj_sel[3] proj_sel[2] proj_sel[1] proj_sel[0] user_project_control
-x37[1] vdd3v3 vss3v3 vdd5v0 ibias1[1] vss5v0 net134[1] idac2_source analog_pswitch_small
-x37[0] vdd3v3 vss3v3 vdd5v0 ibias1[0] vss5v0 net134[0] idac1_source analog_pswitch_small
++ dbus_out[7] dbus_out[6] dbus_out[5] dbus_out[4] dbus_out[3] dbus_out[2] dbus_out[1] dbus_out[0] net130_11 net130_10 net130_9 net130_8
++ net130_7 net130_6 net130_5 net130_4 net130_3 net130_2 net130_1 net130_0 net123_11 net123_10 net123_9 net123_8 net123_7 net123_6 net123_5
++ net123_4 net123_3 net123_2 net123_1 net123_0 proj_ibias_ena[1] proj_ibias_ena[0] vss3v3 vss3v3 vss3v3 vdd3v3 vss3v3 net126_3 net126_2
++ net126_1 net126_0 net230_23 net230_22 net230_21 net230_20 net230_19 net230_18 net230_17 net230_16 net230_15 net230_14 net230_13 net230_12
++ net230_11 net230_10 net230_9 net230_8 net230_7 net230_6 net230_5 net230_4 net230_3 net230_2 net230_1 net230_0 net129_11 net129_10 net129_9
++ net129_8 net129_7 net129_6 net129_5 net129_4 net129_3 net129_2 net129_1 net129_0 net127_1 net127_0 proj_sel[4] proj_sel[3] proj_sel[2]
++ proj_sel[1] proj_sel[0] user_project_control
+x37[1] vdd3v3 vss3v3 vdd5v0 ibias1[1] vss5v0 net134_1 idac2_source analog_pswitch_small
+x37[0] vdd3v3 vss3v3 vdd5v0 ibias1[0] vss5v0 net134_0 idac1_source analog_pswitch_small
 x84 vdd3v3 vss3v3 vdd5v0 vbias1 vss5v0 net135 voltgen_vout analog_switch_small
-x38[3] vdd3v3 vss3v3 vdd5v0 ana1[3] vss5v0 net133[3] analog[3] analog_switch_med
-x38[2] vdd3v3 vss3v3 vdd5v0 ana1[2] vss5v0 net133[2] analog[2] analog_switch_med
-x38[1] vdd3v3 vss3v3 vdd5v0 ana1[1] vss5v0 net133[1] analog[1] analog_switch_med
-x38[0] vdd3v3 vss3v3 vdd5v0 ana1[0] vss5v0 net133[0] analog[0] analog_switch_med
+x38[3] vdd3v3 vss3v3 vdd5v0 ana1[3] vss5v0 net133_3 analog[3] analog_switch_med
+x38[2] vdd3v3 vss3v3 vdd5v0 ana1[2] vss5v0 net133_2 analog[2] analog_switch_med
+x38[1] vdd3v3 vss3v3 vdd5v0 ana1[1] vss5v0 net133_1 analog[1] analog_switch_med
+x38[0] vdd3v3 vss3v3 vdd5v0 ana1[0] vss5v0 net133_0 analog[0] analog_switch_med
 x85 net132 vdd3v3 vss3v3 net232 power_stage3v3
 x86 net131 vdd5v0 vss5v0 vss3v3 vdd3v3 net233 power_stage
 x87 clk_out proj_dig_ena proj_ena proj_3v3_ena proj_5v0_ena net132 net131 net237 net234 net235 net135 reset proj_vbias_ena vdd3v3
@@ -492,52 +488,50 @@ x87 clk_out proj_dig_ena proj_ena proj_3v3_ena proj_5v0_ena net132 net131 net237
 + dbus_out[18] dbus_out[17] dbus_out[16] dbus_out[15] dbus_out[14] dbus_out[13] dbus_out[12] dbus_out[11] dbus_out[10] dbus_out[9] dbus_out[8]
 + dbus_out[7] dbus_out[6] dbus_out[5] dbus_out[4] dbus_out[3] dbus_out[2] dbus_out[1] dbus_out[0] dbus_in_right[11] dbus_in_right[10]
 + dbus_in_right[9] dbus_in_right[8] dbus_in_right[7] dbus_in_right[6] dbus_in_right[5] dbus_in_right[4] dbus_in_right[3] dbus_in_right[2]
-+ dbus_in_right[1] dbus_in_right[0] net130[11] net130[10] net130[9] net130[8] net130[7] net130[6] net130[5] net130[4] net130[3] net130[2] net130[1]
-+ net130[0] proj_ibias_ena[1] proj_ibias_ena[0] vss3v3 vss3v3 vss3v3 vss3v3 vdd3v3 net133[3] net133[2] net133[1] net133[0] net236[23]
-+ net236[22] net236[21] net236[20] net236[19] net236[18] net236[17] net236[16] net236[15] net236[14] net236[13] net236[12] net236[11]
-+ net236[10] net236[9] net236[8] net236[7] net236[6] net236[5] net236[4] net236[3] net236[2] net236[1] net236[0] net136[11] net136[10]
-+ net136[9] net136[8] net136[7] net136[6] net136[5] net136[4] net136[3] net136[2] net136[1] net136[0] net134[1] net134[0] proj_sel[4]
-+ proj_sel[3] proj_sel[2] proj_sel[1] proj_sel[0] user_project_control
-x88 s1_an[0] s1_an[1] net232 vss5v0 net233 vss3v3 ana1[3] ana1[2] ana1[1] ana1[0] vbias1 ibias1[0] ibias1[1] net136[11] net136[10]
-+ net136[9] net136[8] net136[7] net136[6] net136[5] net136[4] net136[3] net136[2] net136[1] net136[0] net236[23] net236[22] net236[21]
-+ net236[20] net236[19] net236[18] net236[17] net236[16] net236[15] net236[14] net236[13] net236[12] net236[11] net236[10] net236[9] net236[8]
-+ net236[7] net236[6] net236[5] net236[4] net236[3] net236[2] net236[1] net236[0] net235 net234 net237 slot1_wrapper
++ dbus_in_right[1] dbus_in_right[0] net130_11 net130_10 net130_9 net130_8 net130_7 net130_6 net130_5 net130_4 net130_3 net130_2 net130_1 net130_0
++ proj_ibias_ena[1] proj_ibias_ena[0] vss3v3 vss3v3 vss3v3 vss3v3 vdd3v3 net133_3 net133_2 net133_1 net133_0 net236_23 net236_22 net236_21 net236_20
++ net236_19 net236_18 net236_17 net236_16 net236_15 net236_14 net236_13 net236_12 net236_11 net236_10 net236_9 net236_8 net236_7 net236_6
++ net236_5 net236_4 net236_3 net236_2 net236_1 net236_0 net136_11 net136_10 net136_9 net136_8 net136_7 net136_6 net136_5 net136_4 net136_3
++ net136_2 net136_1 net136_0 net134_1 net134_0 proj_sel[4] proj_sel[3] proj_sel[2] proj_sel[1] proj_sel[0] user_project_control
+x88 s1_an[0] s1_an[1] net232 vss5v0 net233 vss3v3 ana1[3] ana1[2] ana1[1] ana1[0] vbias1 ibias1[0] ibias1[1] net136_11 net136_10
++ net136_9 net136_8 net136_7 net136_6 net136_5 net136_4 net136_3 net136_2 net136_1 net136_0 net236_23 net236_22 net236_21 net236_20
++ net236_19 net236_18 net236_17 net236_16 net236_15 net236_14 net236_13 net236_12 net236_11 net236_10 net236_9 net236_8 net236_7 net236_6
++ net236_5 net236_4 net236_3 net236_2 net236_1 net236_0 net235 net234 net237 slot1_wrapper
 x89 s2_an[0] s2_an[1] vss5v0_slot2 net226 vss5v0 net227 vss3v3 ana2[3] ana2[2] ana2[1] ana2[0] vbias2 ibias2[0] ibias2[1]
-+ net129[11] net129[10] net129[9] net129[8] net129[7] net129[6] net129[5] net129[4] net129[3] net129[2] net129[1] net129[0] net230[23]
-+ net230[22] net230[21] net230[20] net230[19] net230[18] net230[17] net230[16] net230[15] net230[14] net230[13] net230[12] net230[11]
-+ net230[10] net230[9] net230[8] net230[7] net230[6] net230[5] net230[4] net230[3] net230[2] net230[1] net230[0] net229 net228 net231
-+ slot2_wrapper
-x90 s3_an[0] s3_an[1] net220 vss5v0 net221 vss3v3 ana3[3] ana3[2] ana3[1] ana3[0] vbias3 ibias3[0] ibias3[1] net122[11] net122[10]
-+ net122[9] net122[8] net122[7] net122[6] net122[5] net122[4] net122[3] net122[2] net122[1] net122[0] net224[23] net224[22] net224[21]
-+ net224[20] net224[19] net224[18] net224[17] net224[16] net224[15] net224[14] net224[13] net224[12] net224[11] net224[10] net224[9] net224[8]
-+ net224[7] net224[6] net224[5] net224[4] net224[3] net224[2] net224[1] net224[0] net223 net222 net225 slot3_wrapper
-x91 s4_an[0] s4_an[1] net214 vss5v0 net215 vss3v3 ana4[3] ana4[2] ana4[1] ana4[0] vbias4 ibias4[0] ibias4[1] net115[11] net115[10]
-+ net115[9] net115[8] net115[7] net115[6] net115[5] net115[4] net115[3] net115[2] net115[1] net115[0] net218[23] net218[22] net218[21]
-+ net218[20] net218[19] net218[18] net218[17] net218[16] net218[15] net218[14] net218[13] net218[12] net218[11] net218[10] net218[9] net218[8]
-+ net218[7] net218[6] net218[5] net218[4] net218[3] net218[2] net218[1] net218[0] net217 net216 net219 slot4_wrapper
-x92 s5_an[0] s5_an[1] net208 vss5v0 net209 vss3v3 ana5[3] ana5[2] ana5[1] ana5[0] vbias5 ibias5[0] ibias5[1] net108[11] net108[10]
-+ net108[9] net108[8] net108[7] net108[6] net108[5] net108[4] net108[3] net108[2] net108[1] net108[0] net212[23] net212[22] net212[21]
-+ net212[20] net212[19] net212[18] net212[17] net212[16] net212[15] net212[14] net212[13] net212[12] net212[11] net212[10] net212[9] net212[8]
-+ net212[7] net212[6] net212[5] net212[4] net212[3] net212[2] net212[1] net212[0] net211 net210 net213 slot5_wrapper
-x93 s6_an[0] s6_an[1] net202 vss5v0 net203 vss3v3 ana6[3] ana6[2] ana6[1] ana6[0] vbias6 ibias6[0] ibias6[1] net101[11] net101[10]
-+ net101[9] net101[8] net101[7] net101[6] net101[5] net101[4] net101[3] net101[2] net101[1] net101[0] net206[23] net206[22] net206[21]
-+ net206[20] net206[19] net206[18] net206[17] net206[16] net206[15] net206[14] net206[13] net206[12] net206[11] net206[10] net206[9] net206[8]
-+ net206[7] net206[6] net206[5] net206[4] net206[3] net206[2] net206[1] net206[0] net205 net204 net207 slot6_wrapper
-x94 s7_an[0] s7_an[1] net196 vss5v0 net197 vss3v3 ana7[3] ana7[2] ana7[1] ana7[0] vbias7 ibias7[0] ibias7[1] net94[11] net94[10]
-+ net94[9] net94[8] net94[7] net94[6] net94[5] net94[4] net94[3] net94[2] net94[1] net94[0] net200[23] net200[22] net200[21] net200[20]
-+ net200[19] net200[18] net200[17] net200[16] net200[15] net200[14] net200[13] net200[12] net200[11] net200[10] net200[9] net200[8] net200[7]
-+ net200[6] net200[5] net200[4] net200[3] net200[2] net200[1] net200[0] net199 net198 net201 slot7_wrapper
-x95 vss5v0_slot8 s8_an[0] net190 vss5v0 net191 vss3v3 ana8[3] ana8[2] ana8[1] ana8[0] vbias8 ibias8[0] ibias8[1] net87[11]
-+ net87[10] net87[9] net87[8] net87[7] net87[6] net87[5] net87[4] net87[3] net87[2] net87[1] net87[0] net194[23] net194[22] net194[21]
-+ net194[20] net194[19] net194[18] net194[17] net194[16] net194[15] net194[14] net194[13] net194[12] net194[11] net194[10] net194[9] net194[8]
-+ net194[7] net194[6] net194[5] net194[4] net194[3] net194[2] net194[1] net194[0] net193 net192 net195 slot8_wrapper
-x96 s9_an[0] s9_an[1] s9_an[2] net75 vss5v0 net137 vss3v3 ana9[3] ana9[2] ana9[1] ana9[0] vbias9 ibias9[0] ibias9[1] net80[11]
-+ net80[10] net80[9] net80[8] net80[7] net80[6] net80[5] net80[4] net80[3] net80[2] net80[1] net80[0] net188[23] net188[22] net188[21]
-+ net188[20] net188[19] net188[18] net188[17] net188[16] net188[15] net188[14] net188[13] net188[12] net188[11] net188[10] net188[9] net188[8]
-+ net188[7] net188[6] net188[5] net188[4] net188[3] net188[2] net188[1] net188[0] net187 net138 net189 slot9_wrapper
++ net129_11 net129_10 net129_9 net129_8 net129_7 net129_6 net129_5 net129_4 net129_3 net129_2 net129_1 net129_0 net230_23 net230_22 net230_21
++ net230_20 net230_19 net230_18 net230_17 net230_16 net230_15 net230_14 net230_13 net230_12 net230_11 net230_10 net230_9 net230_8 net230_7
++ net230_6 net230_5 net230_4 net230_3 net230_2 net230_1 net230_0 net229 net228 net231 slot2_wrapper
+x90 s3_an[0] s3_an[1] net220 vss5v0 net221 vss3v3 ana3[3] ana3[2] ana3[1] ana3[0] vbias3 ibias3[0] ibias3[1] net122_11 net122_10
++ net122_9 net122_8 net122_7 net122_6 net122_5 net122_4 net122_3 net122_2 net122_1 net122_0 net224_23 net224_22 net224_21 net224_20
++ net224_19 net224_18 net224_17 net224_16 net224_15 net224_14 net224_13 net224_12 net224_11 net224_10 net224_9 net224_8 net224_7 net224_6
++ net224_5 net224_4 net224_3 net224_2 net224_1 net224_0 net223 net222 net225 slot3_wrapper
+x91 s4_an[0] s4_an[1] net214 vss5v0 net215 vss3v3 ana4[3] ana4[2] ana4[1] ana4[0] vbias4 ibias4[0] ibias4[1] net115_11 net115_10
++ net115_9 net115_8 net115_7 net115_6 net115_5 net115_4 net115_3 net115_2 net115_1 net115_0 net218_23 net218_22 net218_21 net218_20
++ net218_19 net218_18 net218_17 net218_16 net218_15 net218_14 net218_13 net218_12 net218_11 net218_10 net218_9 net218_8 net218_7 net218_6
++ net218_5 net218_4 net218_3 net218_2 net218_1 net218_0 net217 net216 net219 slot4_wrapper
+x92 s5_an[0] s5_an[1] net208 vss5v0 net209 vss3v3 ana5[3] ana5[2] ana5[1] ana5[0] vbias5 ibias5[0] ibias5[1] net108_11 net108_10
++ net108_9 net108_8 net108_7 net108_6 net108_5 net108_4 net108_3 net108_2 net108_1 net108_0 net212_23 net212_22 net212_21 net212_20
++ net212_19 net212_18 net212_17 net212_16 net212_15 net212_14 net212_13 net212_12 net212_11 net212_10 net212_9 net212_8 net212_7 net212_6
++ net212_5 net212_4 net212_3 net212_2 net212_1 net212_0 net211 net210 net213 slot5_wrapper
+x93 s6_an[0] s6_an[1] net202 vss5v0 net203 vss3v3 ana6[3] ana6[2] ana6[1] ana6[0] vbias6 ibias6[0] ibias6[1] net101_11 net101_10
++ net101_9 net101_8 net101_7 net101_6 net101_5 net101_4 net101_3 net101_2 net101_1 net101_0 net206_23 net206_22 net206_21 net206_20
++ net206_19 net206_18 net206_17 net206_16 net206_15 net206_14 net206_13 net206_12 net206_11 net206_10 net206_9 net206_8 net206_7 net206_6
++ net206_5 net206_4 net206_3 net206_2 net206_1 net206_0 net205 net204 net207 slot6_wrapper
+x94 s7_an[0] s7_an[1] net196 vss5v0 net197 vss3v3 ana7[3] ana7[2] ana7[1] ana7[0] vbias7 ibias7[0] ibias7[1] net94_11 net94_10
++ net94_9 net94_8 net94_7 net94_6 net94_5 net94_4 net94_3 net94_2 net94_1 net94_0 net200_23 net200_22 net200_21 net200_20 net200_19
++ net200_18 net200_17 net200_16 net200_15 net200_14 net200_13 net200_12 net200_11 net200_10 net200_9 net200_8 net200_7 net200_6 net200_5
++ net200_4 net200_3 net200_2 net200_1 net200_0 net199 net198 net201 slot7_wrapper
+x95 vss5v0_slot8 s8_an[0] net190 vss5v0 net191 vss3v3 ana8[3] ana8[2] ana8[1] ana8[0] vbias8 ibias8[0] ibias8[1] net87_11 net87_10
++ net87_9 net87_8 net87_7 net87_6 net87_5 net87_4 net87_3 net87_2 net87_1 net87_0 net194_23 net194_22 net194_21 net194_20 net194_19
++ net194_18 net194_17 net194_16 net194_15 net194_14 net194_13 net194_12 net194_11 net194_10 net194_9 net194_8 net194_7 net194_6 net194_5
++ net194_4 net194_3 net194_2 net194_1 net194_0 net193 net192 net195 slot8_wrapper
+x96 s9_an[0] s9_an[1] s9_an[2] net75 vss5v0 net137 vss3v3 ana9[3] ana9[2] ana9[1] ana9[0] vbias9 ibias9[0] ibias9[1] net80_11
++ net80_10 net80_9 net80_8 net80_7 net80_6 net80_5 net80_4 net80_3 net80_2 net80_1 net80_0 net188_23 net188_22 net188_21 net188_20 net188_19
++ net188_18 net188_17 net188_16 net188_15 net188_14 net188_13 net188_12 net188_11 net188_10 net188_9 net188_8 net188_7 net188_6 net188_5
++ net188_4 net188_3 net188_2 net188_1 net188_0 net187 net138 net189 slot9_wrapper
 x100 vdd3v3 vss3v3 vdd5v0 analog[2] vss5v0 project_zero idac2_source analog_pswitch_small
 x99 vdd3v3 vss3v3 vdd5v0 analog[0] vss5v0 project_zero voltgen_vout analog_switch_small
-R1 vss3v3 vss5v0 0 m=1
+R1 vss3v3 vss5v0 0
 x101 vdd3v3 vss3v3 vdd5v0 voltgen_value[2] voltgen_value[1] voltgen_value[0] vbg vss5v0 net4 voltgen_vout net3 voltgen_ena[0] net1
 + voltgen_ena[2] voltgen_ena[1] voltgen_high vgen_ena2 gf180mcu_ocd_ip__voltgen
 x102 vdd5v0 voltgen_vout net1 vss5v0 net2 vgen_ena2 gf180mcu_ocd_ip__classab_buffer
@@ -545,19 +539,19 @@ x21 vddd vss3v3 mask_rev[31] mask_rev[30] mask_rev[29] mask_rev[28] mask_rev[27]
 + mask_rev[23] mask_rev[22] mask_rev[21] mask_rev[20] mask_rev[19] mask_rev[18] mask_rev[17] mask_rev[16] mask_rev[15] mask_rev[14] mask_rev[13]
 + mask_rev[12] mask_rev[11] mask_rev[10] mask_rev[9] mask_rev[8] mask_rev[7] mask_rev[6] mask_rev[5] mask_rev[4] mask_rev[3] mask_rev[2]
 + mask_rev[1] mask_rev[0] user_id_programming
-XR3 CSB_one CSB_pullup rm2 r_width=0.38e-6 r_length=0.12e-6 m=1
-XR2 CSB_zero CSB_pulldown rm2 r_width=0.38e-6 r_length=0.12e-6 m=1
-XR4 SCK_zero SCK_pulldown rm2 r_width=0.38e-6 r_length=0.12e-6 m=1
-XR5 SCK_zero SCK_pullup rm2 r_width=0.38e-6 r_length=0.12e-6 m=1
-XR6 SDI_zero SDI_pulldown rm2 r_width=0.38e-6 r_length=0.12e-6 m=1
-XR7 SDI_zero SDI_pullup rm2 r_width=0.38e-6 r_length=0.12e-6 m=1
-XR8 clk_zero clk_pulldown rm2 r_width=0.38e-6 r_length=0.12e-6 m=1
-XR9 clk_zero clk_pullup rm2 r_width=0.38e-6 r_length=0.12e-6 m=1
-XR10 SDO_zero SDO_pulldown rm2 r_width=0.38e-6 r_length=0.12e-6 m=1
-XR11 SDO_zero SDO_pullup rm2 r_width=0.38e-6 r_length=0.12e-6 m=1
-XR12 SDO_zero SDO_slew rm2 r_width=0.38e-6 r_length=0.12e-6 m=1
-XR13 SDO_zero SDO_schmitt rm2 r_width=0.38e-6 r_length=0.12e-6 m=1
-XR14 SDO_zero SDO_ie rm2 r_width=0.38e-6 r_length=0.12e-6 m=1
+XR3 CSB_one CSB_pullup rm2 r_width=0.38e-6 r_length=0.12e-6
+XR2 CSB_zero CSB_pulldown rm2 r_width=0.38e-6 r_length=0.12e-6
+XR4 SCK_zero SCK_pulldown rm2 r_width=0.38e-6 r_length=0.12e-6
+XR5 SCK_zero SCK_pullup rm2 r_width=0.38e-6 r_length=0.12e-6
+XR6 SDI_zero SDI_pulldown rm2 r_width=0.38e-6 r_length=0.12e-6
+XR7 SDI_zero SDI_pullup rm2 r_width=0.38e-6 r_length=0.12e-6
+XR8 clk_zero clk_pulldown rm2 r_width=0.38e-6 r_length=0.12e-6
+XR9 clk_zero clk_pullup rm2 r_width=0.38e-6 r_length=0.12e-6
+XR10 SDO_zero SDO_pulldown rm2 r_width=0.38e-6 r_length=0.12e-6
+XR11 SDO_zero SDO_pullup rm2 r_width=0.38e-6 r_length=0.12e-6
+XR12 SDO_zero SDO_slew rm2 r_width=0.38e-6 r_length=0.12e-6
+XR13 SDO_zero SDO_schmitt rm2 r_width=0.38e-6 r_length=0.12e-6
+XR14 SDO_zero SDO_ie rm2 r_width=0.38e-6 r_length=0.12e-6
 * noconn vss5v0_slot12_13
 * noconn vss5v0_slot14_15
 * noconn vss3v3_slot4_5
@@ -566,8 +560,8 @@ XR14 SDO_zero SDO_ie rm2 r_width=0.38e-6 r_length=0.12e-6 m=1
 
 
 * expanding   symbol:  gf180mcu_ocd_ip__biasgen.sym # of pins=24
-** sym_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/gf180mcu_ocd_ip__biasgen.sym
-** sch_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/gf180mcu_ocd_ip__biasgen.sch
+** sym_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/gf180mcu_ocd_ip__biasgen.sym
+** sch_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/gf180mcu_ocd_ip__biasgen.sch
 .subckt gf180mcu_ocd_ip__biasgen ena avdd avss ref_in dvdd vbg ref_sel_vbg dvss bandgap_sink2[1] bandgap_sink2[0]
 + voltgen_source[4] voltgen_source[3] voltgen_source[2] voltgen_source[1] voltgen_source[0] bandgap_sink2_ibias voltgen_sink1[2] voltgen_sink1[1]
 + voltgen_sink1[0] voltgen_source_ibias idac1_source[4] idac1_source[3] idac1_source[2] idac1_source[1] idac1_source[0] voltgen_sink1_ibias
@@ -609,8 +603,8 @@ x6 dvdd dvss avdd pcasc pbias idac2_source[4] idac2_source[3] idac2_source[2] id
 
 
 * expanding   symbol:  gf180mcu_ocd_ip__bandgap.sym # of pins=7
-** sym_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/gf180mcu_ocd_ip__bandgap.sym
-** sch_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/gf180mcu_ocd_ip__bandgap.sch
+** sym_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/gf180mcu_ocd_ip__bandgap.sym
+** sch_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/gf180mcu_ocd_ip__bandgap.sch
 .subckt gf180mcu_ocd_ip__bandgap vbg ibias1_250n trim[15] trim[14] trim[13] trim[12] trim[11] trim[10] trim[9] trim[8] trim[7]
 + trim[6] trim[5] trim[4] trim[3] trim[2] trim[1] trim[0] dvss dvdd ena ibias2_1u
 *.PININFO trim[15:0]:I ena:I vbg:O ibias2_1u:B ibias1_250n:B dvdd:B dvss:B
@@ -621,8 +615,8 @@ x3 dvdd vbg vbg_unbuf dvss ibias2_1u net1 gf180mcu_ocd_ip__classab_buffer
 
 
 * expanding   symbol:  analog_pswitch_small.sym # of pins=7
-** sym_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__analog_switches/xschem/analog_pswitch_small.sym
-** sch_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__analog_switches/xschem/analog_pswitch_small.sch
+** sym_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__analog_switches/xschem/analog_pswitch_small.sym
+** sch_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__analog_switches/xschem/analog_pswitch_small.sch
 .subckt analog_pswitch_small dvdd dvss avdd in avss enable out
 *.PININFO in:B out:B enable:I dvdd:B dvss:B avdd:B avss:B
 x5 net2 net1 net4 net3 avdd avss sw_lvl_shift
@@ -639,8 +633,8 @@ x3 dvdd dvdd dvss dvss gf180mcu_as_sc_mcu7t3v3__fillcap_4
 
 
 * expanding   symbol:  analog_switch_small.sym # of pins=7
-** sym_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__analog_switches/xschem/analog_switch_small.sym
-** sch_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__analog_switches/xschem/analog_switch_small.sch
+** sym_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__analog_switches/xschem/analog_switch_small.sym
+** sch_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__analog_switches/xschem/analog_switch_small.sch
 .subckt analog_switch_small dvdd dvss avdd in avss enable out
 *.PININFO in:B out:B enable:I dvdd:B dvss:B avdd:B avss:B
 x5 net4 net2 net3 net1 avdd avss sw_lvl_shift
@@ -658,8 +652,8 @@ x9 dvdd dvdd dvss dvss net4 net2 gf180mcu_as_sc_mcu7t3v3__inv_4
 
 
 * expanding   symbol:  analog_switch_med.sym # of pins=7
-** sym_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__analog_switches/xschem/analog_switch_med.sym
-** sch_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__analog_switches/xschem/analog_switch_med.sch
+** sym_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__analog_switches/xschem/analog_switch_med.sym
+** sch_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__analog_switches/xschem/analog_switch_med.sch
 .subckt analog_switch_med dvdd dvss avdd in avss enable out
 *.PININFO in:B out:B enable:I dvdd:B dvss:B avdd:B avss:B
 x1 net2 net4 net3 avdd avss net1 gate_drive_med
@@ -678,8 +672,8 @@ XM2 out net1 in avdd pfet_05v0 L=0.50u W=12.0u nf=1 ad='int((nf+1)/2) * W/nf * 0
 
 
 * expanding   symbol:  power_stage3v3.sym # of pins=4
-** sym_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__analog_switches/xschem/power_stage3v3.sym
-** sch_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__analog_switches/xschem/power_stage3v3.sch
+** sym_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__analog_switches/xschem/power_stage3v3.sym
+** sch_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__analog_switches/xschem/power_stage3v3.sch
 .subckt power_stage3v3 enable DVDD_IN DVSS DVDD_OUT
 *.PININFO enable:I DVDD_IN:I DVSS:I DVDD_OUT:O
 XM2 DVDD_OUT P_DRIVE DVDD_IN DVDD_IN pfet_03v3 L=0.28u W=10.0u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
@@ -689,25 +683,26 @@ x1 DVDD_IN DVSS P_DRIVE enable gate_drive_3v3
 
 
 * expanding   symbol:  power_stage.sym # of pins=6
-** sym_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__analog_switches/xschem/power_stage.sym
-** sch_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__analog_switches/xschem/power_stage.sch
+** sym_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__analog_switches/xschem/power_stage.sym
+** sch_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__analog_switches/xschem/power_stage.sch
 .subckt power_stage enable IOVDD_IN IOVSS DVSS DVDD IOVDD_OUT
 *.PININFO enable:I IOVDD_IN:I DVSS:I DVDD:I IOVSS:I IOVDD_OUT:O
 x2 net2 net1 P_DRIVE IOVDD_IN IOVSS gate_drive_large
-x1 DVDD VNW VPW DVSS net1 enable gf180mcu_as_sc_mcu7t3v3__inv_4
-x3 DVDD VNW VPW DVSS net2 net1 gf180mcu_as_sc_mcu7t3v3__inv_4
-x4[1] DVDD VNW VPW DVSS gf180mcu_as_sc_mcu7t3v3__fillcap_4
-x4[0] DVDD VNW VPW DVSS gf180mcu_as_sc_mcu7t3v3__fillcap_4
-x9 DVDD VNW VPW DVSS enable gf180mcu_as_sc_mcu7t3v3__diode_2
 XM1 IOVDD_OUT P_DRIVE IOVDD_IN IOVDD_IN pfet_05v0 L=0.50u W=10.0u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
 + pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=720 par=720
-x4 DVSS DVDD gf180mcu_as_sc_mcu7t3v3__tap_2
+x4[1] DVSS DVDD gf180mcu_as_sc_mcu7t3v3__tap_2
+x4[0] DVSS DVDD gf180mcu_as_sc_mcu7t3v3__tap_2
+x5[1] DVDD DVDD DVSS DVSS gf180mcu_as_sc_mcu7t3v3__fillcap_4
+x5[0] DVDD DVDD DVSS DVSS gf180mcu_as_sc_mcu7t3v3__fillcap_4
+x6 DVDD DVDD DVSS DVSS enable gf180mcu_as_sc_mcu7t3v3__diode_2
+x7 DVDD DVDD DVSS DVSS net1 enable gf180mcu_as_sc_mcu7t3v3__inv_4
+x1 DVDD DVDD DVSS DVSS net2 net1 gf180mcu_as_sc_mcu7t3v3__inv_4
 .ends
 
 
 * expanding   symbol:  gf180mcu_ocd_ip__por.sym # of pins=6
-** sym_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__por/xschem/gf180mcu_ocd_ip__por.sym
-** sch_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__por/xschem/gf180mcu_ocd_ip__por.sch
+** sym_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__por/xschem/gf180mcu_ocd_ip__por.sym
+** sch_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__por/xschem/gf180mcu_ocd_ip__por.sch
 .subckt gf180mcu_ocd_ip__por vdd3v3 ena por_unbuf vss porb por
 *.PININFO ena:I vdd3v3:B vss:B por_unbuf:O porb:O por:O
 x1 vdd3v3 vpb vref vfb ena vss net9 por_amp
@@ -716,7 +711,7 @@ XM1 nb1 nb1 net2 vss nfet_03v3 L=0.28u W=6u nf=12 ad='int((nf+1)/2) * W/nf * 0.1
 + ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1 par=1
 XM2 net1 vpb net7 vdd3v3 pfet_03v3 L=0.28u W=6.0u nf=12 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
 + ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1 par=1
-XR1 vss vfb vss ppolyf_u_1k r_width=1e-6 r_length=2500e-6 m=1
+XR1 vss vfb vss ppolyf_u_1k r_width=1e-6 r_length=2500e-6
 XM3 vfb vfb net1 vdd3v3 pfet_03v3 L=0.28u W=6u nf=12 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
 + ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1 par=1
 XM4 p1 vpb net6 vdd3v3 pfet_03v3 L=0.28u W=0.5u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
@@ -738,7 +733,7 @@ XM11 p2 net3 net4 vdd3v3 pfet_03v3 L=0.28u W=0.5u nf=1 ad='int((nf+1)/2) * W/nf 
 XM12 vcap pb1 p2 vdd3v3 pfet_03v3 L=0.28u W=0.5u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
 + ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1 par=1
 XC1 vcap vss cap_mim_2f0_m4m5_noshield c_width=10e-6 c_length=10e-6 m=36
-D1 vss ena diode_nd2ps_03v3 area='0.45u * 0.45u ' pj='2*0.45u + 2*0.45u ' m=1
+D1 vss ena diode_nd2ps_03v3 area='0.45u * 0.45u ' pj='2*0.45u + 2*0.45u '
 Vmeas vdd3v3 net7 0
 .save i(vmeas)
 Vmeas1 vdd3v3 net6 0
@@ -754,7 +749,7 @@ x4[0] vss vdd3v3 gf180mcu_as_sc_mcu7t3v3__tap_2
 x5 vdd3v3 vdd3v3 vss vss por_unbuf por gf180mcu_as_sc_mcu7t3v3__buff_12
 x6 vdd3v3 vdd3v3 vss vss net8 por_unbuf gf180mcu_as_sc_mcu7t3v3__inv_4
 x3 vdd3v3 vdd3v3 vss vss net8 porb gf180mcu_as_sc_mcu7t3v3__buff_12
-XR2 vref vdd3v3 vss ppolyf_u_1k r_width=1e-6 r_length=2500e-6 m=1
+XR2 vref vdd3v3 vss ppolyf_u_1k r_width=1e-6 r_length=2500e-6
 Vmeas4 vref net10 0
 .save i(vmeas4)
 XM13 net9 net9 vss vss nfet_03v3 L=0.28u W=8.0u nf=8 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
@@ -788,8 +783,8 @@ XC3 vref vpb cap_mim_2f0_m4m5_noshield c_width=10e-6 c_length=10e-6 m=4
 
 
 * expanding   symbol:  gf180mcu_ocd_ip__voltgen.sym # of pins=15
-** sym_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/gf180mcu_ocd_ip__voltgen.sym
-** sch_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/gf180mcu_ocd_ip__voltgen.sch
+** sym_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/gf180mcu_ocd_ip__voltgen.sym
+** sch_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/gf180mcu_ocd_ip__voltgen.sch
 .subckt gf180mcu_ocd_ip__voltgen dvdd dvss vdd s[2] s[1] s[0] vbg vss ibias1u_1 vout_buf ibias1u_2 ena vout_unbuf ena1 ena2 high
 + vgen_ena2_h
 *.PININFO vdd:B vss:B vbg:I vout_unbuf:O ibias1u_1:B s[2:0]:I dvdd:B dvss:B ena:I vout_buf:O ibias1u_2:B ena1:I ena2:I high:I
@@ -859,17 +854,17 @@ x63 dvdd dvdd dvss dvss high gf180mcu_as_sc_mcu7t3v3__diode_2
 x64 dvdd dvdd dvss dvss ena gf180mcu_as_sc_mcu7t3v3__diode_2
 x65 dvdd dvdd dvss dvss ena1 gf180mcu_as_sc_mcu7t3v3__diode_2
 x66 dvdd dvdd dvss dvss ena2 gf180mcu_as_sc_mcu7t3v3__diode_2
-XC1 vdd net22 cap_mim_2f0_m4m5_noshield c_width=30e-6 c_length=30e-6 m=1
-XR11 vref6 vref7 vss ppolyf_u_1k r_width=1e-6 r_length=5e-6 m=1
-XR1 vref5 vref6 vss ppolyf_u_1k r_width=1e-6 r_length=5e-6 m=1
-XR2 vref4 vref5 vss ppolyf_u_1k r_width=1e-6 r_length=5e-6 m=1
-XR3 vref3 vref4 vss ppolyf_u_1k r_width=1e-6 r_length=5e-6 m=1
-XR4 vref2 vref3 vss ppolyf_u_1k r_width=1e-6 r_length=5e-6 m=1
-XR5 vref1 vref2 vss ppolyf_u_1k r_width=1e-6 r_length=5e-6 m=1
-XR6 vref0 vref1 vss ppolyf_u_1k r_width=1e-6 r_length=5e-6 m=1
-XR7 vss vref0 vss ppolyf_u_1k r_width=1e-6 r_length=5e-6 m=1
-XR8 vss vss vss ppolyf_u_1k r_width=1e-6 r_length=5e-6 m=1
-XR9 vss vss vss ppolyf_u_1k r_width=1e-6 r_length=5e-6 m=1
+XC1 vdd net22 cap_mim_2f0_m4m5_noshield c_width=30e-6 c_length=30e-6
+XR11 vref6 vref7 vss ppolyf_u_1k r_width=1e-6 r_length=5e-6
+XR1 vref5 vref6 vss ppolyf_u_1k r_width=1e-6 r_length=5e-6
+XR2 vref4 vref5 vss ppolyf_u_1k r_width=1e-6 r_length=5e-6
+XR3 vref3 vref4 vss ppolyf_u_1k r_width=1e-6 r_length=5e-6
+XR4 vref2 vref3 vss ppolyf_u_1k r_width=1e-6 r_length=5e-6
+XR5 vref1 vref2 vss ppolyf_u_1k r_width=1e-6 r_length=5e-6
+XR6 vref0 vref1 vss ppolyf_u_1k r_width=1e-6 r_length=5e-6
+XR7 vss vref0 vss ppolyf_u_1k r_width=1e-6 r_length=5e-6
+XR8 vss vss vss ppolyf_u_1k r_width=1e-6 r_length=5e-6
+XR9 vss vss vss ppolyf_u_1k r_width=1e-6 r_length=5e-6
 XM2 vref7 net22 vdd vdd pfet_05v0 L=0.50u W=2.0u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
 + ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1 par=1
 x50 vdd vout_buf vout_unbuf vout_buf vss ibias1u_2 vgen_ena1_h se_folded_cascode_p_5v
@@ -877,8 +872,8 @@ x50 vdd vout_buf vout_unbuf vout_buf vss ibias1u_2 vgen_ena1_h se_folded_cascode
 
 
 * expanding   symbol:  gf180mcu_ocd_ip__classab_buffer.sym # of pins=6
-** sym_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/gf180mcu_ocd_ip__classab_buffer.sym
-** sch_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/gf180mcu_ocd_ip__classab_buffer.sch
+** sym_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/gf180mcu_ocd_ip__classab_buffer.sym
+** sch_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/gf180mcu_ocd_ip__classab_buffer.sch
 .subckt gf180mcu_ocd_ip__classab_buffer vdd out inp vss bias ena
 *.PININFO inp:I ena:I bias:B vdd:B vss:B out:O
 x1 vdd out inp out vss bias ena se_folded_cascode_np_ab
@@ -886,8 +881,8 @@ x1 vdd out inp out vss bias ena se_folded_cascode_np_ab
 
 
 * expanding   symbol:  bias_generator_fe.sym # of pins=19
-** sym_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bias_generator_fe.sym
-** sch_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bias_generator_fe.sch
+** sym_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bias_generator_fe.sym
+** sch_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bias_generator_fe.sch
 .subckt bias_generator_fe avdd ena vbg src_test0 avss dvdd ena_src_test0 ref_sel_vbg ref_in dvss nbias pcasc pbias snk_test0
 + ena_snk_test0 ncasc ref_sel_fine ref_sel_coarse shld2
 *.PININFO ref_in:I avss:B ref_sel_vbg:I avdd:B ena_src_test0:I ena_snk_test0:I src_test0:B snk_test0:B vbg:I ena:I dvdd:B dvss:B
@@ -974,8 +969,8 @@ x4[1] avdd dummypbias pcasc avdd vfb pbias avdd bias_pstack
 x4[0] avdd dummypbias pcasc avdd vfb pbias avdd bias_pstack
 x3[1] nset avss ncasc nbias avss avss avss bias_nstack
 x3[0] nset avss ncasc nbias avss avss avss bias_nstack
-XC2 pbias vfb cap_mim_2f0_m4m5_noshield c_width=5e-6 c_length=23e-6 m=1
-XR2 avss net10 avss ppolyf_u_1k r_width=1e-6 r_length=1210e-6 m=1
+XC2 pbias vfb cap_mim_2f0_m4m5_noshield c_width=5e-6 c_length=23e-6
+XR2 avss net10 avss ppolyf_u_1k r_width=1e-6 r_length=1210e-6
 x17 dvdd dvdd dvss dvss net15 ref_sel_fine ref_sel_coarse gf180mcu_as_sc_mcu7t3v3__nand2_2
 x18 dvdd dvdd dvss dvss net17 ref_sel_coarse net18 gf180mcu_as_sc_mcu7t3v3__nand2_2
 x25 dvdd dvdd dvss dvss net11 ref_sel_vbg net15 gf180mcu_as_sc_mcu7t3v3__nand2_2
@@ -983,7 +978,7 @@ x26 dvdd dvdd dvss dvss net8 ref_sel_vbg net16 gf180mcu_as_sc_mcu7t3v3__nand2_2
 x27 dvdd dvdd dvss dvss net13 ref_sel_vbg net17 gf180mcu_as_sc_mcu7t3v3__nand2_2
 x28 dvdd dvdd dvss dvss net18 ref_sel_fine gf180mcu_as_sc_mcu7t3v3__inv_2
 x29 dvdd dvdd dvss dvss net16 net18 ref_sel_coarse gf180mcu_as_sc_mcu7t3v3__nor2_2
-XR1 net7 ref_in avss ppolyf_u_1k r_width=1e-6 r_length=848e-6 m=1
+XR1 net7 ref_in avss ppolyf_u_1k r_width=1e-6 r_length=848e-6
 x32[6] dvss dvdd gf180mcu_as_sc_mcu7t3v3__tap_2
 x32[5] dvss dvdd gf180mcu_as_sc_mcu7t3v3__tap_2
 x32[4] dvss dvdd gf180mcu_as_sc_mcu7t3v3__tap_2
@@ -995,21 +990,21 @@ x32[0] dvss dvdd gf180mcu_as_sc_mcu7t3v3__tap_2
 
 
 * expanding   symbol:  bias_generator_be0p.sym # of pins=10
-** sym_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bias_generator_be0p.sym
-** sch_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bias_generator_be0p.sch
+** sym_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bias_generator_be0p.sym
+** sch_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bias_generator_be0p.sch
 .subckt bias_generator_be0p dvdd dvss avdd pcasc pbias source_ena[4] source_ena[3] source_ena[2] source_ena[1] source_ena[0]
 + source_ibias avss shld2 shld3
 *.PININFO avss:B avdd:B dvdd:B dvss:B pcasc:I pbias:I source_ena[4:0]:I source_ibias:B shld2:B shld3:B
-x9[4] source_ena[4] net1[4] source_ena_b_5v0[4] avdd avss level_shift_5v
-x9[3] source_ena[3] net1[3] source_ena_b_5v0[3] avdd avss level_shift_5v
-x9[2] source_ena[2] net1[2] source_ena_b_5v0[2] avdd avss level_shift_5v
-x9[1] source_ena[1] net1[1] source_ena_b_5v0[1] avdd avss level_shift_5v
-x9[0] source_ena[0] net1[0] source_ena_b_5v0[0] avdd avss level_shift_5v
-x46[4] dvdd dvdd dvss dvss net1[4] source_ena[4] gf180mcu_as_sc_mcu7t3v3__inv_2
-x46[3] dvdd dvdd dvss dvss net1[3] source_ena[3] gf180mcu_as_sc_mcu7t3v3__inv_2
-x46[2] dvdd dvdd dvss dvss net1[2] source_ena[2] gf180mcu_as_sc_mcu7t3v3__inv_2
-x46[1] dvdd dvdd dvss dvss net1[1] source_ena[1] gf180mcu_as_sc_mcu7t3v3__inv_2
-x46[0] dvdd dvdd dvss dvss net1[0] source_ena[0] gf180mcu_as_sc_mcu7t3v3__inv_2
+x9[4] source_ena[4] net1_4 source_ena_b_5v0[4] avdd avss level_shift_5v
+x9[3] source_ena[3] net1_3 source_ena_b_5v0[3] avdd avss level_shift_5v
+x9[2] source_ena[2] net1_2 source_ena_b_5v0[2] avdd avss level_shift_5v
+x9[1] source_ena[1] net1_1 source_ena_b_5v0[1] avdd avss level_shift_5v
+x9[0] source_ena[0] net1_0 source_ena_b_5v0[0] avdd avss level_shift_5v
+x46[4] dvdd dvdd dvss dvss net1_4 source_ena[4] gf180mcu_as_sc_mcu7t3v3__inv_2
+x46[3] dvdd dvdd dvss dvss net1_3 source_ena[3] gf180mcu_as_sc_mcu7t3v3__inv_2
+x46[2] dvdd dvdd dvss dvss net1_2 source_ena[2] gf180mcu_as_sc_mcu7t3v3__inv_2
+x46[1] dvdd dvdd dvss dvss net1_1 source_ena[1] gf180mcu_as_sc_mcu7t3v3__inv_2
+x46[0] dvdd dvdd dvss dvss net1_0 source_ena[0] gf180mcu_as_sc_mcu7t3v3__inv_2
 x23[4] dvdd dvdd dvss dvss gf180mcu_as_sc_mcu7t3v3__fillcap_4
 x23[3] dvdd dvdd dvss dvss gf180mcu_as_sc_mcu7t3v3__fillcap_4
 x23[2] dvdd dvdd dvss dvss gf180mcu_as_sc_mcu7t3v3__fillcap_4
@@ -1060,8 +1055,8 @@ x4[0] dvss dvdd gf180mcu_as_sc_mcu7t3v3__tap_2
 
 
 * expanding   symbol:  bias_nstack.sym # of pins=7
-** sym_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bias_nstack.sym
-** sch_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bias_nstack.sch
+** sym_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bias_nstack.sym
+** sch_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bias_nstack.sch
 .subckt bias_nstack itail ena ncasc nbias avss shld2 shld3
 *.PININFO avss:B ena:I nbias:I itail:B ncasc:I shld2:B shld3:B
 XM1 itail ena net2 avss nfet_05v0 L=1.0u W=3.0u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
@@ -1074,8 +1069,8 @@ XM3 net1 nbias avss avss nfet_05v0 L=1.0u W=3.0u nf=1 ad='int((nf+1)/2) * W/nf *
 
 
 * expanding   symbol:  bias_pstack.sym # of pins=7
-** sym_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bias_pstack.sym
-** sch_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bias_pstack.sch
+** sym_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bias_pstack.sym
+** sch_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bias_pstack.sch
 .subckt bias_pstack avdd pbias pcasc enb itail shld2 shld3
 *.PININFO avdd:B itail:B enb:I pcasc:I pbias:I shld2:B shld3:B
 XM1 net1 pbias avdd avdd pfet_05v0 L=1.0u W=3.0u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
@@ -1088,8 +1083,8 @@ XM3 itail enb net2 avdd pfet_05v0 L=1.0u W=3.0u nf=1 ad='int((nf+1)/2) * W/nf * 
 
 
 * expanding   symbol:  bias_generator_ben1um.sym # of pins=10
-** sym_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bias_generator_ben1um.sym
-** sch_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bias_generator_ben1um.sch
+** sym_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bias_generator_ben1um.sym
+** sch_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bias_generator_ben1um.sch
 .subckt bias_generator_ben1um dvdd dvss avdd nbias avss sink_ena[2] sink_ena[1] sink_ena[0] sink_ibias ncasc shld2 shld3
 *.PININFO avss:B avdd:B dvdd:B dvss:B nbias:I ncasc:I sink_ibias:B sink_ena[2:0]:I shld2:B shld3:B
 x7[2] dvdd dvdd dvss dvss gf180mcu_as_sc_mcu7t3v3__fillcap_4
@@ -1103,12 +1098,12 @@ x1[1] sink_ibias sink_ena_5v0[0] ncasc nbias avss shld2 shld3 bias_nstack
 x1[0] sink_ibias sink_ena_5v0[0] ncasc nbias avss shld2 shld3 bias_nstack
 x2 sink_ibias sink_ena_5v0[1] ncasc nbias avss shld2 shld3 bias_nstack
 x3 sink_ibias sink_ena_5v0[2] ncasc nbias avss shld2 shld3 bias_nstack
-x4[2] net1[2] sink_ena[2] sink_ena_5v0[2] avdd avss level_shift_5v
-x4[1] net1[1] sink_ena[1] sink_ena_5v0[1] avdd avss level_shift_5v
-x4[0] net1[0] sink_ena[0] sink_ena_5v0[0] avdd avss level_shift_5v
-x5[2] dvdd dvdd dvss dvss net1[2] sink_ena[2] gf180mcu_as_sc_mcu7t3v3__inv_2
-x5[1] dvdd dvdd dvss dvss net1[1] sink_ena[1] gf180mcu_as_sc_mcu7t3v3__inv_2
-x5[0] dvdd dvdd dvss dvss net1[0] sink_ena[0] gf180mcu_as_sc_mcu7t3v3__inv_2
+x4[2] net1_2 sink_ena[2] sink_ena_5v0[2] avdd avss level_shift_5v
+x4[1] net1_1 sink_ena[1] sink_ena_5v0[1] avdd avss level_shift_5v
+x4[0] net1_0 sink_ena[0] sink_ena_5v0[0] avdd avss level_shift_5v
+x5[2] dvdd dvdd dvss dvss net1_2 sink_ena[2] gf180mcu_as_sc_mcu7t3v3__inv_2
+x5[1] dvdd dvdd dvss dvss net1_1 sink_ena[1] gf180mcu_as_sc_mcu7t3v3__inv_2
+x5[0] dvdd dvdd dvss dvss net1_0 sink_ena[0] gf180mcu_as_sc_mcu7t3v3__inv_2
 x2[9] dummy_ibias avss ncasc nbias avss shld2 shld3 bias_nstack
 x2[8] dummy_ibias avss ncasc nbias avss shld2 shld3 bias_nstack
 x2[7] dummy_ibias avss ncasc nbias avss shld2 shld3 bias_nstack
@@ -1126,8 +1121,8 @@ x3[0] dvss dvdd gf180mcu_as_sc_mcu7t3v3__tap_2
 
 
 * expanding   symbol:  bias_generator_ben250nm.sym # of pins=10
-** sym_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bias_generator_ben250nm.sym
-** sch_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bias_generator_ben250nm.sch
+** sym_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bias_generator_ben250nm.sym
+** sch_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bias_generator_ben250nm.sch
 .subckt bias_generator_ben250nm dvdd dvss avdd nbias avss sink_ena[1] sink_ena[0] sink_ibias ncasc shld2 shld3
 *.PININFO avss:B avdd:B dvdd:B dvss:B nbias:I ncasc:I sink_ibias:B sink_ena[1:0]:I shld2:B shld3:B
 x7[1] dvdd dvdd dvss dvss gf180mcu_as_sc_mcu7t3v3__fillcap_4
@@ -1136,10 +1131,10 @@ x6[1] dvdd dvdd dvss dvss sink_ena[1] gf180mcu_as_sc_mcu7t3v3__diode_2
 x6[0] dvdd dvdd dvss dvss sink_ena[0] gf180mcu_as_sc_mcu7t3v3__diode_2
 x2 sink_ibias sink_ena_5v0[1] ncasc nbias avss shld2 shld3 bias_nstack
 x3 sink_ibias sink_ena_5v0[0] ncasc nbias avss shld2 shld3 bias_nstack
-x4[1] net1[1] sink_ena[1] sink_ena_5v0[1] avdd avss level_shift_5v
-x4[0] net1[0] sink_ena[0] sink_ena_5v0[0] avdd avss level_shift_5v
-x5[1] dvdd dvdd dvss dvss net1[1] sink_ena[1] gf180mcu_as_sc_mcu7t3v3__inv_2
-x5[0] dvdd dvdd dvss dvss net1[0] sink_ena[0] gf180mcu_as_sc_mcu7t3v3__inv_2
+x4[1] net1_1 sink_ena[1] sink_ena_5v0[1] avdd avss level_shift_5v
+x4[0] net1_0 sink_ena[0] sink_ena_5v0[0] avdd avss level_shift_5v
+x5[1] dvdd dvdd dvss dvss net1_1 sink_ena[1] gf180mcu_as_sc_mcu7t3v3__inv_2
+x5[0] dvdd dvdd dvss dvss net1_0 sink_ena[0] gf180mcu_as_sc_mcu7t3v3__inv_2
 x1[7] dummy_bias avss ncasc nbias avss shld2 shld3 bias_nstack
 x1[6] dummy_bias avss ncasc nbias avss shld2 shld3 bias_nstack
 x1[5] dummy_bias avss ncasc nbias avss shld2 shld3 bias_nstack
@@ -1154,14 +1149,14 @@ x2[0] dvss dvdd gf180mcu_as_sc_mcu7t3v3__tap_2
 
 
 * expanding   symbol:  bandgap_unbuffered.sym # of pins=7
-** sym_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bandgap_unbuffered.sym
-** sch_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bandgap_unbuffered.sch
+** sym_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bandgap_unbuffered.sym
+** sch_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bandgap_unbuffered.sch
 .subckt bandgap_unbuffered vbg bias trim[15] trim[14] trim[13] trim[12] trim[11] trim[10] trim[9] trim[8] trim[7] trim[6] trim[5]
 + trim[4] trim[3] trim[2] trim[1] trim[0] dvss dvdd ena ena_buf
 *.PININFO vbg:O bias:B trim[15:0]:I dvss:B dvdd:B ena:I ena_buf:O
 xres vbg comp vp vn dvss net4 dvss dvss vp dvss dvss bg_res
-xtr net1 net2 net5[15] net5[14] net5[13] net5[12] net5[11] net5[10] net5[9] net5[8] net5[7] net5[6] net5[5] net5[4] net5[3]
-+ net5[2] net5[1] net5[0] dvss bg_trim
+xtr net1 net2 net5_15 net5_14 net5_13 net5_12 net5_11 net5_10 net5_9 net5_8 net5_7 net5_6 net5_5 net5_4 net5_3 net5_2 net5_1
++ net5_0 dvss bg_trim
 xamp dvdd gate vp vn dvss bias ena_buf se_folded_cascode_p
 x2 dvdd dvdd dvss dvss ena gf180mcu_as_sc_mcu7t3v3__diode_2
 x3[15] dvdd dvdd dvss dvss trim[15] gf180mcu_as_sc_mcu7t3v3__diode_2
@@ -1185,7 +1180,7 @@ x4[1] dvss dvdd gf180mcu_as_sc_mcu7t3v3__tap_2
 x4[0] dvss dvdd gf180mcu_as_sc_mcu7t3v3__tap_2
 XQ3 dvss dvss net2 pnp_05p00x05p00 m=8 par=8
 XQ1 dvss dvss net3 pnp_05p00x05p00 m=1 par=1
-XC1 vs2 dvss cap_mim_2f0_m4m5_noshield c_width=22e-6 c_length=22e-6 m=1
+XC1 vs2 dvss cap_mim_2f0_m4m5_noshield c_width=22e-6 c_length=22e-6
 XC3 gate dvss cap_mim_2f0_m4m5_noshield c_width=22e-6 c_length=22e-6 m=2
 XM8 comp gate dvdd dvdd pfet_03v3 L=0.5u W=4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
 + ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2 par=2
@@ -1206,28 +1201,28 @@ Vmeas vn net3 0
 Vmeas1 net4 net1 0
 .save i(vmeas1)
 x1 dvdd dvdd dvss dvss ena ena_buf gf180mcu_as_sc_mcu7t3v3__buff_2
-x1[15] dvdd dvdd dvss dvss trim[15] net5[15] gf180mcu_as_sc_mcu7t3v3__buff_2
-x1[14] dvdd dvdd dvss dvss trim[14] net5[14] gf180mcu_as_sc_mcu7t3v3__buff_2
-x1[13] dvdd dvdd dvss dvss trim[13] net5[13] gf180mcu_as_sc_mcu7t3v3__buff_2
-x1[12] dvdd dvdd dvss dvss trim[12] net5[12] gf180mcu_as_sc_mcu7t3v3__buff_2
-x1[11] dvdd dvdd dvss dvss trim[11] net5[11] gf180mcu_as_sc_mcu7t3v3__buff_2
-x1[10] dvdd dvdd dvss dvss trim[10] net5[10] gf180mcu_as_sc_mcu7t3v3__buff_2
-x1[9] dvdd dvdd dvss dvss trim[9] net5[9] gf180mcu_as_sc_mcu7t3v3__buff_2
-x1[8] dvdd dvdd dvss dvss trim[8] net5[8] gf180mcu_as_sc_mcu7t3v3__buff_2
-x1[7] dvdd dvdd dvss dvss trim[7] net5[7] gf180mcu_as_sc_mcu7t3v3__buff_2
-x1[6] dvdd dvdd dvss dvss trim[6] net5[6] gf180mcu_as_sc_mcu7t3v3__buff_2
-x1[5] dvdd dvdd dvss dvss trim[5] net5[5] gf180mcu_as_sc_mcu7t3v3__buff_2
-x1[4] dvdd dvdd dvss dvss trim[4] net5[4] gf180mcu_as_sc_mcu7t3v3__buff_2
-x1[3] dvdd dvdd dvss dvss trim[3] net5[3] gf180mcu_as_sc_mcu7t3v3__buff_2
-x1[2] dvdd dvdd dvss dvss trim[2] net5[2] gf180mcu_as_sc_mcu7t3v3__buff_2
-x1[1] dvdd dvdd dvss dvss trim[1] net5[1] gf180mcu_as_sc_mcu7t3v3__buff_2
-x1[0] dvdd dvdd dvss dvss trim[0] net5[0] gf180mcu_as_sc_mcu7t3v3__buff_2
+x1[15] dvdd dvdd dvss dvss trim[15] net5_15 gf180mcu_as_sc_mcu7t3v3__buff_2
+x1[14] dvdd dvdd dvss dvss trim[14] net5_14 gf180mcu_as_sc_mcu7t3v3__buff_2
+x1[13] dvdd dvdd dvss dvss trim[13] net5_13 gf180mcu_as_sc_mcu7t3v3__buff_2
+x1[12] dvdd dvdd dvss dvss trim[12] net5_12 gf180mcu_as_sc_mcu7t3v3__buff_2
+x1[11] dvdd dvdd dvss dvss trim[11] net5_11 gf180mcu_as_sc_mcu7t3v3__buff_2
+x1[10] dvdd dvdd dvss dvss trim[10] net5_10 gf180mcu_as_sc_mcu7t3v3__buff_2
+x1[9] dvdd dvdd dvss dvss trim[9] net5_9 gf180mcu_as_sc_mcu7t3v3__buff_2
+x1[8] dvdd dvdd dvss dvss trim[8] net5_8 gf180mcu_as_sc_mcu7t3v3__buff_2
+x1[7] dvdd dvdd dvss dvss trim[7] net5_7 gf180mcu_as_sc_mcu7t3v3__buff_2
+x1[6] dvdd dvdd dvss dvss trim[6] net5_6 gf180mcu_as_sc_mcu7t3v3__buff_2
+x1[5] dvdd dvdd dvss dvss trim[5] net5_5 gf180mcu_as_sc_mcu7t3v3__buff_2
+x1[4] dvdd dvdd dvss dvss trim[4] net5_4 gf180mcu_as_sc_mcu7t3v3__buff_2
+x1[3] dvdd dvdd dvss dvss trim[3] net5_3 gf180mcu_as_sc_mcu7t3v3__buff_2
+x1[2] dvdd dvdd dvss dvss trim[2] net5_2 gf180mcu_as_sc_mcu7t3v3__buff_2
+x1[1] dvdd dvdd dvss dvss trim[1] net5_1 gf180mcu_as_sc_mcu7t3v3__buff_2
+x1[0] dvdd dvdd dvss dvss trim[0] net5_0 gf180mcu_as_sc_mcu7t3v3__buff_2
 .ends
 
 
 * expanding   symbol:  sw_lvl_shift.sym # of pins=4
-** sym_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__analog_switches/xschem/sw_lvl_shift.sym
-** sch_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__analog_switches/xschem/sw_lvl_shift.sch
+** sym_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__analog_switches/xschem/sw_lvl_shift.sym
+** sch_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__analog_switches/xschem/sw_lvl_shift.sch
 .subckt sw_lvl_shift in_p in_n out outn avdd avss
 *.PININFO in_n:I in_p:I out:O outn:O
 XM9 net1 S1_N avdd avdd pfet_05v0 L=0.50u W=0.50u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
@@ -1250,8 +1245,8 @@ XM16 out outn avss avss nfet_05v0 L=0.60u W=1.0u nf=1 ad='int((nf+1)/2) * W/nf *
 
 
 * expanding   symbol:  gate_drive_med.sym # of pins=6
-** sym_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__analog_switches/xschem/gate_drive_med.sym
-** sch_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__analog_switches/xschem/gate_drive_med.sch
+** sym_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__analog_switches/xschem/gate_drive_med.sym
+** sch_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__analog_switches/xschem/gate_drive_med.sch
 .subckt gate_drive_med in_n in_p out vdd vss outn
 *.PININFO in_n:I in_p:I vdd:I vss:I out:O outn:O
 XM13 net1 S1_P vdd vdd pfet_05v0 L=0.50u W=0.50u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
@@ -1282,8 +1277,8 @@ XM4 out outn vdd vdd pfet_06v0 L=0.6u W=10.0u nf=1 ad='int((nf+1)/2) * W/nf * 0.
 
 
 * expanding   symbol:  gate_drive_3v3.sym # of pins=4
-** sym_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__analog_switches/xschem/gate_drive_3v3.sym
-** sch_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__analog_switches/xschem/gate_drive_3v3.sch
+** sym_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__analog_switches/xschem/gate_drive_3v3.sym
+** sch_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__analog_switches/xschem/gate_drive_3v3.sch
 .subckt gate_drive_3v3 dvdd dvss out in
 *.PININFO in:I dvdd:B dvss:B out:O
 XM1 net2 net1 dvdd dvdd pfet_03v3 L=0.28u W=11.04u nf=8 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
@@ -1304,8 +1299,8 @@ XM4 out net2 dvss dvss nfet_03v3 L=0.28u W=32.0u nf=32 ad='int((nf+1)/2) * W/nf 
 
 
 * expanding   symbol:  gate_drive_large.sym # of pins=5
-** sym_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__analog_switches/xschem/gate_drive_large.sym
-** sch_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__analog_switches/xschem/gate_drive_large.sch
+** sym_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__analog_switches/xschem/gate_drive_large.sym
+** sch_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__analog_switches/xschem/gate_drive_large.sch
 .subckt gate_drive_large in_n in_p out vdd vss
 *.PININFO in_n:I in_p:I vdd:I vss:I out:O
 XM13 net1 S1_N vdd vdd pfet_05v0 L=0.50u W=1.0u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
@@ -1336,8 +1331,8 @@ XM4 out S4_N vdd vdd pfet_06v0 L=0.6u W=10.0u nf=1 ad='int((nf+1)/2) * W/nf * 0.
 
 
 * expanding   symbol:  por_amp.sym # of pins=7
-** sym_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__por/xschem/por_amp.sym
-** sch_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__por/xschem/por_amp.sch
+** sym_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__por/xschem/por_amp.sym
+** sch_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__por/xschem/por_amp.sch
 .subckt por_amp vdd3v3 out inn inp ena vss nbias
 *.PININFO ena:I inp:I inn:I out:O vdd3v3:B vss:B nbias:I
 XM1 out net1 vdd3v3 vdd3v3 pfet_03v3 L=0.28u W=6u nf=6 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
@@ -1362,8 +1357,8 @@ XM9 nc vss vss vss nfet_03v3 L=0.28u W=2u nf=2 ad='int((nf+1)/2) * W/nf * 0.18u'
 
 
 * expanding   symbol:  por_3v3_schmitt_inv.sym # of pins=4
-** sym_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__por/xschem/por_3v3_schmitt_inv.sym
-** sch_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__por/xschem/por_3v3_schmitt_inv.sch
+** sym_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__por/xschem/por_3v3_schmitt_inv.sym
+** sch_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__por/xschem/por_3v3_schmitt_inv.sch
 .subckt por_3v3_schmitt_inv vdd3v3 in out vss
 *.PININFO vdd3v3:B vss:B in:I out:O
 XM1 out in n1 vss nfet_03v3 L=0.28u W=1.5u nf=2 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
@@ -1382,8 +1377,8 @@ XM6 p1 out vss vdd3v3 pfet_03v3 L=0.56u W=3u nf=1 ad='int((nf+1)/2) * W/nf * 0.1
 
 
 * expanding   symbol:  xgate.sym # of pins=6
-** sym_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/xgate.sym
-** sch_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/xgate.sch
+** sym_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/xgate.sym
+** sch_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/xgate.sch
 .subckt xgate ena_b vdd in out vss ena
 *.PININFO out:B in:B vdd:B vss:B ena_b:I ena:I
 XM3 in ena out vss nfet_05v0 L=0.60u W=2.0u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
@@ -1394,8 +1389,8 @@ XM4 in ena_b out vdd pfet_05v0 L=0.50u W=2.0u nf=1 ad='int((nf+1)/2) * W/nf * 0.
 
 
 * expanding   symbol:  hv_inv_1.sym # of pins=4
-** sym_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/hv_inv_1.sym
-** sch_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/hv_inv_1.sch
+** sym_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/hv_inv_1.sym
+** sch_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/hv_inv_1.sch
 .subckt hv_inv_1 vdd A X vss
 *.PININFO A:I vdd:B vss:B X:O
 XM3 X A vdd vdd pfet_05v0 L=0.50u W=2.00u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
@@ -1406,8 +1401,8 @@ XM4 X A vss vss nfet_05v0 L=0.60u W=1.00u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u'
 
 
 * expanding   symbol:  level_shift_5v.sym # of pins=3
-** sym_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/level_shift_5v.sym
-** sch_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/level_shift_5v.sch
+** sym_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/level_shift_5v.sym
+** sch_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/level_shift_5v.sch
 .subckt level_shift_5v in_n in_p out vdd vss
 *.PININFO in_n:I in_p:I out:O
 XM8 net1 in_p vss vss nfet_05v0 L=0.6u W=4.0u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
@@ -1430,8 +1425,8 @@ XM5 out S2_N vss vss nfet_05v0 L=0.6u W=1.0u nf=1 ad='int((nf+1)/2) * W/nf * 0.1
 
 
 * expanding   symbol:  n_amp_large.sym # of pins=7
-** sym_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/n_amp_large.sym
-** sch_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/n_amp_large.sch
+** sym_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/n_amp_large.sym
+** sch_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/n_amp_large.sch
 .subckt n_amp_large avdd out inn inp ibias avss ena
 *.PININFO inp:I inn:I out:O avdd:B avss:B ena:I ibias:B
 XM9 out outn avdd avdd pfet_05v0 L=0.50u W=10.0u nf=10 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
@@ -1456,8 +1451,8 @@ XM7 avss avss avss avss nfet_05v0 L=0.60u W=8.0u nf=8 ad='int((nf+1)/2) * W/nf *
 
 
 * expanding   symbol:  se_folded_cascode_p_5v.sym # of pins=7
-** sym_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/se_folded_cascode_p_5v.sym
-** sch_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/se_folded_cascode_p_5v.sch
+** sym_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/se_folded_cascode_p_5v.sym
+** sch_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/se_folded_cascode_p_5v.sch
 .subckt se_folded_cascode_p_5v vdd out inp inn vss bias ena
 *.PININFO inn:I inp:I out:O bias:B vdd:B vss:B ena:I
 XM16 vbn2 vbn2 vbn1 vss nfet_05v0 L=4.0u W=1.0u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
@@ -1506,8 +1501,8 @@ XM11 vss vss vss vss nfet_05v0 L=2.0u W=1.0u nf=1 ad='int((nf+1)/2) * W/nf * 0.1
 
 
 * expanding   symbol:  se_folded_cascode_np_ab.sym # of pins=7
-** sym_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/se_folded_cascode_np_ab.sym
-** sch_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/se_folded_cascode_np_ab.sch
+** sym_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/se_folded_cascode_np_ab.sym
+** sch_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/se_folded_cascode_np_ab.sch
 .subckt se_folded_cascode_np_ab vdd out inp inn vss bias ena
 *.PININFO vdd:B bias:B inp:I inn:I vss:B out:O ena:I
 XC2 out outs1 cap_mim_2f0_m4m5_noshield c_width=12.0e-6 c_length=19.0e-6 m=3
@@ -1573,8 +1568,8 @@ XM29 vdd vdd vdd vdd pfet_03v3 L=0.5u W=1.0u nf=1 ad='int((nf+1)/2) * W/nf * 0.1
 
 
 * expanding   symbol:  bias_nset.sym # of pins=7
-** sym_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bias_nset.sym
-** sch_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bias_nset.sch
+** sym_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bias_nset.sym
+** sch_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bias_nset.sch
 .subckt bias_nset itail ena ncasc nbias avss shld2 shld3
 *.PININFO avss:B ena:I itail:B nbias:O ncasc:O shld2:B shld3:B
 XM1 nbias nbias avss avss nfet_05v0 L=1.0u W=3.0u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
@@ -1587,8 +1582,8 @@ XM3 itail ena ncasc avss nfet_05v0 L=1.0u W=3.0u nf=1 ad='int((nf+1)/2) * W/nf *
 
 
 * expanding   symbol:  bias_pset.sym # of pins=6
-** sym_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bias_pset.sym
-** sch_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bias_pset.sch
+** sym_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bias_pset.sym
+** sch_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bias_pset.sch
 .subckt bias_pset avdd pbias pcasc enb itail shld3
 *.PININFO pbias:B itail:B enb:I pcasc:O avdd:B shld3:B
 XM1 pbias pbias avdd avdd pfet_05v0 L=1.0u W=3.0u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
@@ -1601,8 +1596,8 @@ XM3 itail enb pcasc avdd pfet_05v0 L=1.0u W=3.0u nf=1 ad='int((nf+1)/2) * W/nf *
 
 
 * expanding   symbol:  bias_amp_large.sym # of pins=7
-** sym_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bias_amp_large.sym
-** sch_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bias_amp_large.sch
+** sym_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bias_amp_large.sym
+** sch_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bias_amp_large.sch
 .subckt bias_amp_large avdd out inn inp nbias avss ena
 *.PININFO inp:I nbias:I inn:I out:O avdd:B avss:B ena:I
 XM8 out outn avdd avdd pfet_05v0 L=0.50u W=10.0u nf=10 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
@@ -1625,8 +1620,8 @@ XM6 avss nbias avss avss nfet_05v0 L=0.60u W=6.0u nf=6 ad='int((nf+1)/2) * W/nf 
 
 
 * expanding   symbol:  bias_pset2.sym # of pins=7
-** sym_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bias_pset2.sym
-** sch_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bias_pset2.sch
+** sym_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bias_pset2.sym
+** sch_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bias_pset2.sch
 .subckt bias_pset2 avdd pbias pcasc enb itail shld2 shld3
 *.PININFO pbias:B itail:B enb:I pcasc:O avdd:B shld2:B shld3:B
 XM1 pbias pbias avdd avdd pfet_05v0 L=1.0u W=3.0u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
@@ -1639,43 +1634,43 @@ XM3 itail enb pcasc avdd pfet_05v0 L=1.0u W=3.0u nf=1 ad='int((nf+1)/2) * W/nf *
 
 
 * expanding   symbol:  bg_res.sym # of pins=11
-** sym_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bg_res.sym
-** sch_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bg_res.sch
+** sym_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bg_res.sym
+** sch_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bg_res.sch
 .subckt bg_res b a d c vss f h k e g j
 *.PININFO a:I b:I c:O d:O vss:B f:O e:I h:O g:I k:O j:I
-XR28 f e vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6 m=1
-XR12 h g vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6 m=1
-XR1 net3 b vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6 m=1
-XR2 net4 a vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6 m=1
-XR3 net2 net3 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6 m=1
-XR4 net1 net4 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6 m=1
-XR5 net7 net2 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6 m=1
-XR6 net8 net1 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6 m=1
-XR7 net6 net7 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6 m=1
-XR8 net5 net8 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6 m=1
-XR9 net11 net6 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6 m=1
-XR10 net12 net5 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6 m=1
-XR11 net10 net11 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6 m=1
-XR13 net9 net12 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6 m=1
-XR14 net13 net10 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6 m=1
-XR15 net14 net9 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6 m=1
-XR16 net15 net13 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6 m=1
-XR17 net16 net14 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6 m=1
-XR18 net17 net15 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6 m=1
-XR19 net18 net16 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6 m=1
-XR20 net19 net17 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6 m=1
-XR21 net20 net18 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6 m=1
-XR22 net21 net19 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6 m=1
-XR23 net22 net20 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6 m=1
-XR24 d net21 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6 m=1
-XR25 c net22 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6 m=1
-XR26 k j vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6 m=1
+XR28 f e vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6
+XR12 h g vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6
+XR1 net3 b vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6
+XR2 net4 a vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6
+XR3 net2 net3 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6
+XR4 net1 net4 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6
+XR5 net7 net2 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6
+XR6 net8 net1 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6
+XR7 net6 net7 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6
+XR8 net5 net8 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6
+XR9 net11 net6 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6
+XR10 net12 net5 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6
+XR11 net10 net11 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6
+XR13 net9 net12 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6
+XR14 net13 net10 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6
+XR15 net14 net9 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6
+XR16 net15 net13 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6
+XR17 net16 net14 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6
+XR18 net17 net15 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6
+XR19 net18 net16 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6
+XR20 net19 net17 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6
+XR21 net20 net18 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6
+XR22 net21 net19 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6
+XR23 net22 net20 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6
+XR24 d net21 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6
+XR25 c net22 vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6
+XR26 k j vss ppolyf_u r_width=1.0e-6 r_length=15.00e-6
 .ends
 
 
 * expanding   symbol:  bg_trim.sym # of pins=4
-** sym_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bg_trim.sym
-** sch_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bg_trim.sch
+** sym_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bg_trim.sym
+** sch_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/bg_trim.sch
 .subckt bg_trim top bot ctrl[15] ctrl[14] ctrl[13] ctrl[12] ctrl[11] ctrl[10] ctrl[9] ctrl[8] ctrl[7] ctrl[6] ctrl[5] ctrl[4]
 + ctrl[3] ctrl[2] ctrl[1] ctrl[0] vss
 *.PININFO vss:B ctrl[15:0]:I bot:B top:B
@@ -1735,8 +1730,8 @@ XM16 net1 ctrl[0] bot vss nfet_03v3 L=0.28u W=3.1u nf=1 ad='int((nf+1)/2) * W/nf
 
 
 * expanding   symbol:  se_folded_cascode_p.sym # of pins=7
-** sym_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/se_folded_cascode_p.sym
-** sch_path: /home/tim/gits/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/se_folded_cascode_p.sch
+** sym_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/se_folded_cascode_p.sym
+** sch_path: /home/user/gf180mcu_ocd_chipalooza/dependencies/gf180mcu_ocd_ip__biasgen/xschem/se_folded_cascode_p.sch
 .subckt se_folded_cascode_p vdd out inp inn vss bias ena
 *.PININFO inn:I inp:I out:O bias:B vdd:B vss:B ena:I
 XM14 vbp1 vbp1 vdd vdd pfet_03v3 L=1u W=1u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'

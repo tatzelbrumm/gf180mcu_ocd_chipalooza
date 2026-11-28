@@ -597,11 +597,13 @@ N 880 5040 990 5040 {lab=#net60}
 N 990 4750 990 5040 {lab=#net60}
 N 880 4730 1370 4730 {lab=#net61}
 N 1370 4910 1420 4910 {lab=#net61}
-N 880 4710 1380 4710 {lab=#net62}
-N 1380 4710 1380 4720 {lab=#net62}
-N 1380 4720 1420 4720 {lab=#net62}
-N 880 4690 1360 4690 {lab=#net63}
-N 1360 4540 1360 4690 {lab=#net63}
+N 880 4710 1020 4710 {lab=#net62}
+N 1020 4710 1020 4720 {lab=#net62}
+N 1020 4720 1420 4720 {lab=#net62}
+N 880 4690 1030 4690 {lab=#net63}
+N 1030 4690 1030 4700 {lab=#net63}
+N 1030 4700 1360 4700 {lab=#net63}
+N 1360 4540 1360 4700 {lab=#net63}
 N 1360 4540 1420 4540 {lab=#net63}
 N 1720 4540 1760 4540 {lab=vdd3v3}
 N 1720 4720 1760 4720 {lab=vdd3v3}
@@ -634,8 +636,10 @@ N 1720 4650 1760 4650 {lab=voltgen_vout}
 N 1720 4830 1760 4830 {lab=idac2_source,idac1_source}
 N 1720 5020 1750 5020 {lab=analog[3:0]}
 N 480 4510 480 4590 {lab=#net64}
-N 480 4510 1300 4510 {lab=#net64}
-N 1300 4510 1300 4850 {lab=#net64}
+N 480 4510 1020 4510 {lab=#net64}
+N 1020 4510 1020 4520 {lab=#net64}
+N 1020 4520 1300 4520 {lab=#net64}
+N 1300 4520 1300 4850 {lab=#net64}
 N 880 4850 900 4850 {lab=#net65}
 N 900 4850 900 4880 {lab=#net65}
 N 560 4880 900 4880 {lab=#net65}
@@ -1615,7 +1619,6 @@ N 1040 500 1110 500 {lab=s11_an[0]}
 N 1030 2070 1110 2070 {lab=s13_an[0:1]}
 N 990 2860 1110 2860 {lab=s14_an[0:1]}
 N 1040 3660 1110 3660 {lab=s15_an[0:1]}
-N 1030 4450 1110 4450 {lab=s16_an[0:1]}
 N 1010 5240 1110 5240 {lab=s17_an[0:1]}
 N 1000 6010 1110 6010 {lab=s18_an[0:1]}
 N 2840 6000 2940 6000 {lab=s1_an[0:1]}
@@ -1983,6 +1986,19 @@ N 830 6230 890 6230 {lab=vss3v3_slot12_13}
 N 830 6270 890 6270 {lab=vss3v3_slot12_13}
 N 830 6310 890 6310 {lab=vss3v3_slot12_13}
 N 830 6350 890 6350 {lab=vss3v3_slot12_13}
+N 1050 4550 1110 4550 {lab=s16_an_0_outp}
+N 1050 4530 1110 4530 {lab=s16_an_0_outn}
+N 1050 4570 1110 4570 {lab=s16_an_0_vcm}
+N 1050 4590 1110 4590 {lab=s16_an_0_vref}
+N 1050 4510 1110 4510 {lab=s16_an_0_iref}
+N 1050 4470 1110 4470 {lab=s16_an_0_en_3v3}
+N 1050 4490 1110 4490 {lab=s16_an_0_en_3v3_b}
+N 1050 4690 1110 4690 {lab=s16_an_1_vinp}
+N 1050 4670 1110 4670 {lab=s16_an_1_vinn}
+N 1050 4710 1110 4710 {lab=s16_an_1_vref}
+N 1050 4650 1110 4650 {lab=s16_an_1_iref}
+N 1050 4610 1110 4610 {lab=s16_an_1_en_3v3}
+N 1050 4630 1110 4630 {lab=s16_an_1_en_3v3_b}
 C {iopin.sym} 1310 -2310 0 1 {name=p1 lab=vdd5v0}
 C {iopin.sym} 1310 -2270 0 1 {name=p3 lab=vdd3v3}
 C {iopin.sym} 1310 -2250 0 1 {name=p4 lab=vss3v3}
@@ -2803,7 +2819,6 @@ C {iopin.sym} 1040 1290 0 1 {name=p813 lab=s12_an[0:1]}
 C {iopin.sym} 1030 2070 0 1 {name=p818 lab=s13_an[0:1]}
 C {iopin.sym} 990 2860 0 1 {name=p821 lab=s14_an[0:1]}
 C {iopin.sym} 1040 3660 0 1 {name=p825 lab=s15_an[0:1]}
-C {iopin.sym} 1030 4450 0 1 {name=p827 lab=s16_an[0:1]}
 C {iopin.sym} 1010 5240 0 1 {name=p830 lab=s17_an[0:1]}
 C {iopin.sym} 1000 6010 0 1 {name=p833 lab=s18_an[0:1]}
 C {iopin.sym} 2840 6000 0 1 {name=p836 lab=s1_an[0:1]}
@@ -3267,6 +3282,19 @@ C {iopin.sym} 830 6230 0 1 {name=p842 lab=vss5v0_slot12_13}
 C {iopin.sym} 830 6270 0 1 {name=p844 lab=vss5v0_slot14_15}
 C {iopin.sym} 830 6310 0 1 {name=p846 lab=vss3v3_slot4_5}
 C {iopin.sym} 830 6350 0 1 {name=p847 lab=vss3v3_slot6_7}
+C {iopin.sym} 1050 4550 0 1 {name=p1101 lab=s16_an_0_outp}
+C {iopin.sym} 1050 4530 0 1 {name=p1102 lab=s16_an_0_outn}
+C {iopin.sym} 1050 4570 0 1 {name=p1103 lab=s16_an_0_vcm}
+C {iopin.sym} 1050 4590 0 1 {name=p1104 lab=s16_an_0_vref}
+C {iopin.sym} 1050 4510 0 1 {name=p1105 lab=s16_an_0_iref}
+C {iopin.sym} 1050 4470 0 1 {name=p1106 lab=s16_an_0_en_3v3}
+C {iopin.sym} 1050 4490 0 1 {name=p1107 lab=s16_an_0_en_3v3_b}
+C {iopin.sym} 1050 4690 0 1 {name=p1108 lab=s16_an_1_vinp}
+C {iopin.sym} 1050 4670 0 1 {name=p1109 lab=s16_an_1_vinn}
+C {iopin.sym} 1050 4710 0 1 {name=p1110 lab=s16_an_1_vref}
+C {iopin.sym} 1050 4650 0 1 {name=p1111 lab=s16_an_1_iref}
+C {iopin.sym} 1050 4610 0 1 {name=p1112 lab=s16_an_1_en_3v3}
+C {iopin.sym} 1050 4630 0 1 {name=p1113 lab=s16_an_1_en_3v3_b}
 C {noconn.sym} 890 6230 0 1 {name=l1}
 C {noconn.sym} 890 6270 0 1 {name=l2}
 C {noconn.sym} 890 6310 0 1 {name=l3}
