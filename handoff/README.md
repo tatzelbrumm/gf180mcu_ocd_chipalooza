@@ -1,6 +1,6 @@
 # handoff: for the harness maintainer and the slot designers
 
-- [`CHANGES_FOR_TIM.md`](CHANGES_FOR_TIM.md): every change on branch `custom_padframe` against `main` (`2f18cd4`),
+- [`CHANGES_FOR_TIM.md`](CHANGES_FOR_TIM.md): every change on branch `custom_padframe` against `main` (`9dcda7e` since the rebase of 2026-11-28; started from `2f18cd4`),
   the custom pad class, the checks run, what is open, and pre-existing harness issues found on the way.
 - [`SLOT10_FIXES.md`](SLOT10_FIXES.md): three harness problems around slot 10, with fixes, and what the slot 10
   designer should know.

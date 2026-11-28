@@ -1,7 +1,8 @@
 # Branch `custom_padframe`: what changed against `main`, for Tim Edwards
 
-Fork `tatzelbrumm/gf180mcu_ocd_chipalooza`, branch `custom_padframe`, started from `main` at `2f18cd4` (Tim's commits
-plus a merge). Purpose: let slot 16 (`config.txt:132`, project `tatzelbrumm/gf180_cm_ip__single2diff2single`) use
+Fork `tatzelbrumm/gf180mcu_ocd_chipalooza`, branch `custom_padframe`, on top of `main` at `9dcda7e` (Tim's commits up to
+`aefb1cf` plus merges). The branch was started from `main` at `2f18cd4` and rebased by the fork owner onto `9dcda7e` on
+2026-11-28; the commit hashes below are the rebased ones (the old ones are listed in section 7). Purpose: let slot 16 (`config.txt:132`, project `tatzelbrumm/gf180_cm_ip__single2diff2single`) use
 **custom pads** in its two dedicated pad positions, and fix what the harness scripts got wrong on the way. The pads
 themselves are placeholders for now (copies of PDK digital pads with new core-side pins); the slot 16 designer
 designs the real ones later under the same names.
@@ -14,18 +15,21 @@ xschem from the cloud environment, IP submodules at `c21d8c0`, `96a93f8`, `a6f16
 
 | Commit | What | Kind |
 | --- | --- | --- |
-| `c66429b` | the fork's own fixes from branch `chipalooza_artifacts_run1`, `fixes/pad_pins/`: padframe verilog pad pins `iovdd/iovss/vdd/vss` → `DVDD/DVSS/VDD/VSS`; LVS scripts without the IHP `flatten gf180mcu_SecondaryProtection`, PDK pad netlist as fallback | fix (pre-existing bug) |
-| `ebcdd77`, `e1fb916`, `276643a` | first trial: slot 16 placeholders as renamed copies of `asig_5p0`; `analog_pad_types` in `parse_config.py`; Magic search path; LVS reads the custom spice | superseded by the next rows, except the search path and LVS lines |
-| `4401f24` | `parse_config.py` stops with exit code 1 on an unknown pad type (it printed "Bad pad type", wrote broken files and exited 0); the Tcl SIGNALS branch got its missing `else` (it re-emitted the previous line) | fix (pre-existing bug) |
-| `843dc36` | `custom_pads/gf180_cm_io/`: placeholders `gf180_cm_io__asig_in` (copy of `in_c`) and `gf180_cm_io__asig_out` (copy of `bi_24t`) with the pins of the designer's IHP pads; generator and checks in `custom_pads/tools/` | new |
-| `a85894b` | `parse_config.py`: **custom pad class** (below); the stale `spaces`/`signal_name` in the PAD branch fixed | new + fix |
-| `f836915` | `magic/chipalooza_frame.mag`: slot 16's two analog straps removed (they would short the new pins) | change for slot 16 |
-| `d910034` | regenerated views | generated |
-| `87a1500` | symbols keep their pins: padframe template core-signal ports moved to the end of the port list; `gen_xschem_sym.py` sizes the slot body from the widest label pair on one row | fix (found through slot 16) |
-| `a8a5c1b` | regenerated views | generated |
-| `692e3b0` | slot 16 in the hand-maintained harness core: RTL, schematics, frame symbol, gate-level top; regenerated schematic netlists, LVS views, frame extraction, frame LVS report | change for slot 16 |
+| `33743f3` | the fork's own fixes from branch `chipalooza_artifacts_run1`, `fixes/pad_pins/`: padframe verilog pad pins `iovdd/iovss/vdd/vss` → `DVDD/DVSS/VDD/VSS`; LVS scripts without the IHP `flatten gf180mcu_SecondaryProtection`, PDK pad netlist as fallback | fix (pre-existing bug) |
+| `b7e3784`, `e81776f`, `c680e4b` | first trial: slot 16 placeholders as renamed copies of `asig_5p0`; `analog_pad_types` in `parse_config.py`; Magic search path; LVS reads the custom spice | superseded by the next rows, except the search path and LVS lines |
+| `21ca197` | `parse_config.py` stops with exit code 1 on an unknown pad type (it printed "Bad pad type", wrote broken files and exited 0); the Tcl SIGNALS branch got its missing `else` (it re-emitted the previous line) | fix (pre-existing bug) |
+| `e21a6ff` | `custom_pads/gf180_cm_io/`: placeholders `gf180_cm_io__asig_in` (copy of `in_c`) and `gf180_cm_io__asig_out` (copy of `bi_24t`) with the pins of the designer's IHP pads; generator and checks in `custom_pads/tools/` | new |
+| `ef8e0db` | `parse_config.py`: **custom pad class** (below); the stale `spaces`/`signal_name` in the PAD branch fixed | new + fix |
+| `c4d71cb` | `magic/chipalooza_frame.mag`: slot 16's two analog straps removed (they would short the new pins) | change for slot 16 |
+| `41d3c08` | regenerated views | generated |
+| `3a47c28` | symbols keep their pins: padframe template core-signal ports moved to the end of the port list; `gen_xschem_sym.py` sizes the slot body from the widest label pair on one row | fix (found through slot 16) |
+| `560f3cd` | regenerated views | generated |
+| `5fade23` | slot 16 in the hand-maintained harness core: RTL, schematics, frame symbol, gate-level top; regenerated schematic netlists, LVS views, frame extraction, frame LVS report | change for slot 16 |
+| `b9b2b47` | `handoff/`: this change list, the slot 10 report, logs and comparison tools | documentation |
+| `22fc5fd` | padframe regenerated with the logo library `gf180mcu_ocd_alpha_misc` present (see section 7) | generated |
+| `54999f8` | a comment in `custom_pads/tools/pad_abutment_check_custom.tcl` names the fork in full | comment |
 
-## 2. The custom pad class (`scripts/parse_config.py`, `a85894b`)
+## 2. The custom pad class (`scripts/parse_config.py`, `ef8e0db`)
 
 - A custom pad is a module in `custom_pads/<lib>/verilog/*.v` (`*__blackbox*` skipped) with supply pins
   `DVDD DVSS VDD VSS`, one bond pad pin `pad` (or `PAD`), and core-side pins with declared directions. Its layout
@@ -35,10 +39,10 @@ xschem from the cloud environment, IP submodules at `c21d8c0`, `96a93f8`, `a6f16
   `<signal name>_<p>` (e.g. `s16_an_0_outp`): a port of `gf180mcu_padframe`, a `label_<side>_signal` in
   `gen_padframe.tcl`, hence a slot wrapper pin. **[V]** (generated files, section 4).
 - Magic finds the cells through `addpath ../custom_pads/gf180_cm_io/mag` in `gen_padframe_template.tcl` and
-  `layout_setup.tcl` (`e1fb916`); LVS reads `custom_pads/gf180_cm_io/spice/gf180_cm_io.spice` (`e1fb916`, on top of
+  `layout_setup.tcl` (`e81776f`); LVS reads `custom_pads/gf180_cm_io/spice/gf180_cm_io.spice` (`e81776f`, on top of
   `lvs_scripts.patch`). The path is per library, hard-coded; a loop over `custom_pads/*/mag` would be cleaner **[I]**.
 
-## 3. Changes to hand-drawn harness files for slot 16 (`f836915`, `692e3b0`)
+## 3. Changes to hand-drawn harness files for slot 16 (`c4d71cb`, `5fade23`)
 
 | File | Change |
 | --- | --- |
@@ -92,3 +96,41 @@ xschem from the cloud environment, IP submodules at `c21d8c0`, `96a93f8`, `a6f16
 6. Earlier findings of the fork, not repeated here: `fixes/TIM_SUMMARY.md` on branch `chipalooza_artifacts_run2`
    (final top cell name, `gzip` without `-f`, `make setup` without `scripts/setup.sh`, slot 8 URL typo, LVS inputs,
    ground domain).
+7. `scripts/setup_custom.sh` (new on `main` with `2996725`, "not yet tested"), run on this branch **[V]**: it lists
+   every pad type of an `s<N>_an` entry as custom, including the PDK pad `gf180mcu_ocd_io__asig_5p0` (34 uses), finds
+   no GDS for it in `dependencies/` and exits 1, so `make all` stops at `make setup-custom` for any `config.txt`. The
+   GF180 port dropped the IHP line that skips pads with a library view; a skip for
+   `$PDK_ROOT/$PDK/libs.ref/gf180mcu_ocd_io/mag/<pad>.mag` would restore it **[I]**. No script adds `magic/custom_io`
+   to Magic's search path (the IHP harness has `addpath custom_io` in `layout_setup.tcl` and
+   `gen_padframe_template.tcl`) **[V]** (grep). The `[ -d .git ]` check fails in a git worktree, where `.git` is a file.
+
+## 7. Rebase of 2026-11-28 (commit hashes before and after)
+
+The fork owner rebased `custom_padframe` from `2f18cd4` onto `main` `9dcda7e` (which adds Tim's `Makefile` targets
+`setup-custom`, `all`, `all-default`, `scripts/setup_custom.sh` and two `s*_source` lines in `config.txt`). Every
+commit's patch is unchanged (`git range-diff -s 2f18cd4..be10078 9dcda7e..54999f8`: all 15 `=`) **[V]**; the generated
+views were not regenerated after the rebase, which is harmless because `parse_config.py` does not read the
+`s*_source` lines **[V]** (grep). Hashes before → after:
+
+| before | after | subject |
+| --- | --- | --- |
+| `c66429b` | `33743f3` | Apply the fork's pad pin and LVS script fixes |
+| `ebcdd77` | `b7e3784` | custom_pads/gf180_cm_io: placeholder pads for slot 16, with tools |
+| `e1fb916` | `e81776f` | Custom analog pad types: slot 16 uses gf180_cm_io__asig_in/_out |
+| `4401f24` | `21ca197` | parse_config.py: stop with exit code 1 on an unknown pad type |
+| `276643a` | `c680e4b` | Regenerate padframe, slot wrappers, symbols and slot GDS with the custom pads |
+| `843dc36` | `e21a6ff` | custom_pads/gf180_cm_io: placeholders from digital pads, with the IHP pad pins |
+| `a85894b` | `ef8e0db` | parse_config.py: custom pad class with core-side pins from custom_pads/*/verilog |
+| `f836915` | `c4d71cb` | chipalooza_frame.mag: remove the slot 16 analog pad straps |
+| `d910034` | `41d3c08` | Regenerate padframe, slot wrappers, symbols and slot GDS with the new custom pads |
+| `87a1500` | `3a47c28` | Keep existing symbol pins in place when a pad type adds core signals |
+| `a8a5c1b` | `560f3cd` | Regenerate views with the fixed padframe port order and symbol width |
+| `692e3b0` | `5fade23` | Slot 16 custom pad pins in the hand-maintained harness core |
+| `3e22733` | `b9b2b47` | handoff/: change list for Tim, slot 10 report, logs and comparison tools |
+| `bcbef3b` | `22fc5fd` | Padframe regenerated with the logo library gf180mcu_ocd_alpha_misc present |
+| `be10078` | `54999f8` | custom_pads/tools: name the harness fork in full instead of the label "fork B" |
+
+The padframe logo: the cloud PDK lacks `gf180mcu_ocd_alpha_misc`; `22fc5fd` was made with a symlink overlay whose
+`libs.ref/gf180mcu_ocd_alpha_misc/mag` is `misc/magic` of `RTimothyEdwards/gf180mcu_ocd_alpha` at `0597ebd`. Without it,
+`make padframe` prints "Cell open_source couldn't be read", exits 0, and `identify open_source` renames the
+`caravel_motto` instance instead **[V]**.
