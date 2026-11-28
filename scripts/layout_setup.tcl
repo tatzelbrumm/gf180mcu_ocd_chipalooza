@@ -39,4 +39,8 @@ addpath gf180mcu_as_sc_mcu7t3v3
 addpath gf180mcu_ocd_io
 addpath gf180mcu_ocd_ip_sram
 
+# Custom analog pads used by the padframe (see custom_pads/)
+
+addpath ../custom_pads/gf180_cm_io/mag
+
 # All local references should already be resolved.

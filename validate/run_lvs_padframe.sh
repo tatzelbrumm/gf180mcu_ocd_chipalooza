@@ -26,6 +26,9 @@ if {[file exists ../netlist/schematic/gf180mcu_ocd_io.spice]} {
     readnet spice ${PDK_ROOT}/${PDK}/libs.ref/gf180mcu_ocd_io/spice/gf180mcu_ocd_io.spice \$circuit2
 }
 
+# Custom analog pads (same pins as gf180mcu_ocd_io__asig_5p0), see custom_pads/.
+readnet spice ../custom_pads/gf180_cm_io/spice/gf180_cm_io.spice \$circuit2
+
 # Read verilog submodules
 readnet verilog ../verilog/gl/netlists_lvs.v \$circuit2
 

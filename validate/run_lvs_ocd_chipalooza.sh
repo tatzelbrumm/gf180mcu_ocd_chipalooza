@@ -23,6 +23,9 @@ if {[file exists ../netlist/schematic/gf180mcu_ocd_io.spice]} {
     readnet spice ${PDK_ROOT}/${PDK}/libs.ref/gf180mcu_ocd_io/spice/gf180mcu_ocd_io.spice \$circuit2
 }
 
+# Custom analog pads (same pins as gf180mcu_ocd_io__asig_5p0), see custom_pads/.
+readnet spice ../custom_pads/gf180_cm_io/spice/gf180_cm_io.spice \$circuit2
+
 # housekeeping_top must be read before the user project since it is a
 # component of the user project.  Source of housekeeping_top is:
 # ../librelane/runs/RUN_{latest}/51-openroad-fillinsertion/

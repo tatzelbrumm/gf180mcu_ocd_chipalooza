@@ -38,6 +38,11 @@ addpath $::env(PDK_ROOT)/gf180mcuD/libs.ref/gf180mcu_ocd_alpha_misc/mag
 addpath $::env(PDK_ROOT)/gf180mcuD/libs.ref/gf180mcu_ocd_alpha_large/mag
 addpath $::env(PDK_ROOT)/gf180mcuD/libs.ref/gf180mcu_ocd_alpha_small/mag
 
+# Custom analog pads of the asig_5p0 form factor (config.txt, s<N>_an types
+# listed in analog_pad_types of scripts/parse_config.py).  Relative to magic/.
+puts stdout "Adding path ../custom_pads/gf180_cm_io/mag"
+addpath ../custom_pads/gf180_cm_io/mag
+
 # Ensure that the padframe layout does not already exist.
 if {[file exists gf180mcu_padframe.mag]} {
     puts stderr "Padframe layout gf180mcu_padframe.mag exists!"
