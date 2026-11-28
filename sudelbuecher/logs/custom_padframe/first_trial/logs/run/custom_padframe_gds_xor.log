@@ -1,0 +1,9 @@
+XOR_SUMMARY layers_differing 0
+XOR_SUMMARY layers_differing 0
+cells 156 duplicates 0 tops ['gf180mcu_padframe']
+inst gf180_cm_io__asig_out r270 *1 0,1892 bbox (0,1816.84;350,1892.16)
+inst gf180_cm_io__asig_in r270 *1 0,2062 bbox (0,1986.84;350,2062.16)
+inst gf180mcu_ocd_io__asig_5p0 r270 *1 0,2232 bbox (0,2156.84;350,2232.16)
+inst gf180mcu_ocd_io__asig_5p0 r90 *1 3880,1987 bbox (3530,1986.84;3880,2062.16)
+inst gf180mcu_ocd_io__asig_5p0 r90 *1 3880,2157 bbox (3530,2156.84;3880,2232.16)
+asig_5p0 instances 38 custom 2

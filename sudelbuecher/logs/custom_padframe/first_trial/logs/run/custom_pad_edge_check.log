@@ -1,0 +1,19 @@
+cell gf180_cm_io__asig_in bbox (-0.16,0;75.16,350) core-edge Metal2 [(15.34, 17.88), (21.02, 23.56), (26.7, 29.24), (32.38, 34.92), (40.08, 42.62), (45.76, 48.3), (51.44, 53.98), (57.12, 59.66)]
+EDGE_SUMMARY gf180_cm_io__asig_in ok
+rc=0
+cell gf180_cm_io__asig_out bbox (-0.16,0;75.16,350) core-edge Metal2 [(15.34, 17.88), (21.02, 23.56), (26.7, 29.24), (32.38, 34.92), (40.08, 42.62), (45.76, 48.3), (51.44, 53.98), (57.12, 59.66)]
+EDGE_SUMMARY gf180_cm_io__asig_out ok
+rc=0
+--- negative tests (PDK digital pads; not analog, so the core-edge check must fail)
+cell gf180mcu_ocd_io__bi_24t bbox (-0.16,0;75.16,350) core-edge Metal2 []
+EDGE_WARN side W layer 36/0 shifted but overlapping: [(245.76, 252.76), (317.76, 324.76)] vs PDK [(246.0, 253.0), (318.0, 325.0)]
+EDGE_WARN side E layer 36/0 shifted but overlapping: [(245.76, 252.76), (317.76, 324.76)] vs PDK [(246.0, 253.0), (318.0, 325.0)]
+EDGE_BAD core edge: no Metal2 inside 15.34..59.66 ([])
+EDGE_SUMMARY gf180mcu_ocd_io__bi_24t 1 problem(s)
+rc=1
+cell gf180mcu_ocd_io__in_c bbox (-0.16,0;75.16,350) core-edge Metal2 []
+EDGE_WARN side W layer 36/0 shifted but overlapping: [(245.85, 252.85), (317.85, 324.85)] vs PDK [(246.0, 253.0), (318.0, 325.0)]
+EDGE_WARN side E layer 36/0 shifted but overlapping: [(245.85, 252.85), (317.85, 324.85)] vs PDK [(246.0, 253.0), (318.0, 325.0)]
+EDGE_BAD core edge: no Metal2 inside 15.34..59.66 ([])
+EDGE_SUMMARY gf180mcu_ocd_io__in_c 1 problem(s)
+rc=1

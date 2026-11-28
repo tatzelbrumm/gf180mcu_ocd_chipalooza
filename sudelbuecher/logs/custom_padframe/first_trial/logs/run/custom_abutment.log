@@ -1,0 +1,65 @@
+
+Magic 8.3 revision 706 - Compiled on Sat Nov 28 00:42:19 UTC 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+WARNING: RLIMIT_NOFILE is above 1024 and Tcl_Version<9 this may cause runtime issues [rlim_cur=20000]
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology gf180mcuD ...
+10 Magic internal units = 1 Lambda
+Input style import: scaleFactor=10, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    obsactive mvobsactive filldiff fillpoly m1hole obsm1 fillm1 obsv1 m2hole obsm2 fillm2 obsv2 m3hole obsm3 fillm3 m4hole obsm4 fillm4 m5hole obsm5 fillm5 glass fillblock lvstext obscomment 
+Scaled tech values by 10 / 1 to match internal grid scaling
+Loading gf180mcuD Device Generator Menu ...
+Loading "<scratch>/deliver/custom_pads/pad_abutment_check_custom.tcl" from command line.
+Cell gf180mcu_ocd_io__asig_5p0 read from path /foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+ABUT gf180mcu_ocd_io__asig_5p0: 0 0 75 350
+Cell gf180mcu_ocd_io__bi_24t read from path /foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+ABUT gf180mcu_ocd_io__bi_24t: 0 0 75 350
+Cell gf180mcu_ocd_io__bi_a read from path /foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+ABUT gf180mcu_ocd_io__bi_a: 0 0 75 350
+Cell gf180mcu_ocd_io__bi_t read from path /foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+ABUT gf180mcu_ocd_io__bi_t: 0 0 75 350
+Cell gf180mcu_ocd_io__brk2 read from path /foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+ABUT gf180mcu_ocd_io__brk2: 0 0 2 350
+Cell gf180mcu_ocd_io__brk5 read from path /foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+ABUT gf180mcu_ocd_io__brk5: 0 0 5 350
+Cell gf180mcu_ocd_io__cor read from path /foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+ABUT gf180mcu_ocd_io__cor: 0 0 355 355
+Cell gf180mcu_ocd_io__dvdd read from path /foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+ABUT gf180mcu_ocd_io__dvdd: 0 0 75 350
+Cell gf180mcu_ocd_io__dvss read from path /foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+ABUT gf180mcu_ocd_io__dvss: 0 0 75 350
+Cell gf180mcu_ocd_io__fill1 read from path /foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+ABUT gf180mcu_ocd_io__fill1: 0 0 1 350
+Cell gf180mcu_ocd_io__fill10 read from path /foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+gf180mcu_ocd_io__fill10: 10000 rects
+ABUT gf180mcu_ocd_io__fill10: 0 0 10 350
+Cell gf180mcu_ocd_io__fill5 read from path /foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+gf180mcu_ocd_io__fill5: 10000 rects
+ABUT gf180mcu_ocd_io__fill5: 0 0 5 350
+Cell gf180mcu_ocd_io__fillnc read from path /foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+ABUT gf180mcu_ocd_io__fillnc: 0 0 0.1 350
+Cell gf180mcu_ocd_io__in_c read from path /foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+ABUT gf180mcu_ocd_io__in_c: 0 0 75 350
+Cell gf180mcu_ocd_io__in_s read from path /foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+ABUT gf180mcu_ocd_io__in_s: 0 0 75 350
+Cell gf180mcu_ocd_io__vdd read from path /foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+ABUT gf180mcu_ocd_io__vdd: 0 0 75 350
+Cell gf180mcu_ocd_io__vss read from path /foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+ABUT gf180mcu_ocd_io__vss: 0 0 75 350
+Cell gf180_cm_io__asig_in read from path <scratch>/run/custom/custom_pads/gf180_cm_io/mag
+ABUT gf180_cm_io__asig_in: 0 0 75 350
+Cell gf180_cm_io__asig_out read from path <scratch>/run/custom/custom_pads/gf180_cm_io/mag
+ABUT gf180_cm_io__asig_out: 0 0 75 350
+PORTS gf180mcu_ocd_io__asig_5p0: {ASIG5V 1 signal bidirectional} {DVDD 2 power bidirectional} {DVSS 3 ground bidirectional} {VDD 4 power bidirectional} {VSS 5 ground bidirectional}
+PORTS gf180_cm_io__asig_in: {ASIG5V 1 signal bidirectional} {DVDD 2 power bidirectional} {DVSS 3 ground bidirectional} {VDD 4 power bidirectional} {VSS 5 ground bidirectional}
+CUSTOM_OK gf180_cm_io__asig_in
+PORTS gf180_cm_io__asig_out: {ASIG5V 1 signal bidirectional} {DVDD 2 power bidirectional} {DVSS 3 ground bidirectional} {VDD 4 power bidirectional} {VSS 5 ground bidirectional}
+CUSTOM_OK gf180_cm_io__asig_out
+ABUT_SUMMARY pads 19 empty 0  custom 2 custom_bad 0

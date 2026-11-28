@@ -1,0 +1,135 @@
+
+Magic 8.3 revision 706 - Compiled on Sat Nov 28 00:42:19 UTC 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+WARNING: RLIMIT_NOFILE is above 1024 and Tcl_Version<9 this may cause runtime issues [rlim_cur=20000]
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology gf180mcuD ...
+10 Magic internal units = 1 Lambda
+Input style import: scaleFactor=10, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    obsactive mvobsactive filldiff fillpoly m1hole obsm1 fillm1 obsv1 m2hole obsm2 fillm2 obsv2 m3hole obsm3 fillm3 m4hole obsm4 fillm4 m5hole obsm5 fillm5 glass fillblock lvstext obscomment 
+Scaled tech values by 10 / 1 to match internal grid scaling
+Loading gf180mcuD Device Generator Menu ...
+Loading "<scratch>/deliver/custom_pads/pad_abutment_check_custom.tcl" from command line.
+Cell gf180mcu_ocd_io__asig_5p0 read from path /foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+ABUT gf180mcu_ocd_io__asig_5p0: 0 0 75 350
+Cell gf180mcu_ocd_io__bi_24t read from path /foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+ABUT gf180mcu_ocd_io__bi_24t: 0 0 75 350
+Cell gf180mcu_ocd_io__bi_a read from path /foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+ABUT gf180mcu_ocd_io__bi_a: 0 0 75 350
+Cell gf180mcu_ocd_io__bi_t read from path /foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+ABUT gf180mcu_ocd_io__bi_t: 0 0 75 350
+Cell gf180mcu_ocd_io__brk2 read from path /foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+ABUT gf180mcu_ocd_io__brk2: 0 0 2 350
+Cell gf180mcu_ocd_io__brk5 read from path /foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+ABUT gf180mcu_ocd_io__brk5: 0 0 5 350
+Cell gf180mcu_ocd_io__cor read from path /foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+ABUT gf180mcu_ocd_io__cor: 0 0 355 355
+Cell gf180mcu_ocd_io__dvdd read from path /foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+ABUT gf180mcu_ocd_io__dvdd: 0 0 75 350
+Cell gf180mcu_ocd_io__dvss read from path /foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+ABUT gf180mcu_ocd_io__dvss: 0 0 75 350
+Cell gf180mcu_ocd_io__fill1 read from path /foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+ABUT gf180mcu_ocd_io__fill1: 0 0 1 350
+Cell gf180mcu_ocd_io__fill10 read from path /foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+gf180mcu_ocd_io__fill10: 10000 rects
+ABUT gf180mcu_ocd_io__fill10: 0 0 10 350
+Cell gf180mcu_ocd_io__fill5 read from path /foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+gf180mcu_ocd_io__fill5: 10000 rects
+ABUT gf180mcu_ocd_io__fill5: 0 0 5 350
+Cell gf180mcu_ocd_io__fillnc read from path /foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+ABUT gf180mcu_ocd_io__fillnc: 0 0 0.1 350
+Cell gf180mcu_ocd_io__in_c read from path /foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+ABUT gf180mcu_ocd_io__in_c: 0 0 75 350
+Cell gf180mcu_ocd_io__in_s read from path /foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+ABUT gf180mcu_ocd_io__in_s: 0 0 75 350
+Cell gf180mcu_ocd_io__vdd read from path /foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+ABUT gf180mcu_ocd_io__vdd: 0 0 75 350
+Cell gf180mcu_ocd_io__vss read from path /foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+ABUT gf180mcu_ocd_io__vss: 0 0 75 350
+Cell gf180_cm_io__asig_in read from path <scratch>/run_gdsroute/custom/custom_pads/gf180_cm_io/mag
+gf180_cm_io__asig_in: 10000 rects
+gf180_cm_io__asig_in: 20000 rects
+gf180_cm_io__asig_in: 30000 rects
+gf180_cm_io__asig_in: 40000 rects
+gf180_cm_io__asig_in: 50000 rects
+gf180_cm_io__asig_in: 60000 rects
+gf180_cm_io__asig_in: 70000 rects
+gf180_cm_io__asig_in: 80000 rects
+gf180_cm_io__asig_in: 90000 rects
+gf180_cm_io__asig_in: 100000 rects
+gf180_cm_io__asig_in: 110000 rects
+gf180_cm_io__asig_in: 120000 rects
+gf180_cm_io__asig_in: 130000 rects
+gf180_cm_io__asig_in: 140000 rects
+gf180_cm_io__asig_in: 150000 rects
+gf180_cm_io__asig_in: 160000 rects
+gf180_cm_io__asig_in: 170000 rects
+gf180_cm_io__asig_in: 180000 rects
+gf180_cm_io__asig_in: 190000 rects
+gf180_cm_io__asig_in: 200000 rects
+gf180_cm_io__asig_in: 210000 rects
+gf180_cm_io__asig_in: 220000 rects
+gf180_cm_io__asig_in: 230000 rects
+gf180_cm_io__asig_in: 240000 rects
+gf180_cm_io__asig_in: 250000 rects
+gf180_cm_io__asig_in: 260000 rects
+gf180_cm_io__asig_in: 270000 rects
+gf180_cm_io__asig_in: 280000 rects
+gf180_cm_io__asig_in: 290000 rects
+gf180_cm_io__asig_in: 300000 rects
+gf180_cm_io__asig_in: 310000 rects
+gf180_cm_io__asig_in: 320000 rects
+gf180_cm_io__asig_in: 330000 rects
+gf180_cm_io__asig_in: 340000 rects
+gf180_cm_io__asig_in: 350000 rects
+ABUT gf180_cm_io__asig_in: 0 0 75 350
+Cell gf180_cm_io__asig_out read from path <scratch>/run_gdsroute/custom/custom_pads/gf180_cm_io/mag
+gf180_cm_io__asig_out: 10000 rects
+gf180_cm_io__asig_out: 20000 rects
+gf180_cm_io__asig_out: 30000 rects
+gf180_cm_io__asig_out: 40000 rects
+gf180_cm_io__asig_out: 50000 rects
+gf180_cm_io__asig_out: 60000 rects
+gf180_cm_io__asig_out: 70000 rects
+gf180_cm_io__asig_out: 80000 rects
+gf180_cm_io__asig_out: 90000 rects
+gf180_cm_io__asig_out: 100000 rects
+gf180_cm_io__asig_out: 110000 rects
+gf180_cm_io__asig_out: 120000 rects
+gf180_cm_io__asig_out: 130000 rects
+gf180_cm_io__asig_out: 140000 rects
+gf180_cm_io__asig_out: 150000 rects
+gf180_cm_io__asig_out: 160000 rects
+gf180_cm_io__asig_out: 170000 rects
+gf180_cm_io__asig_out: 180000 rects
+gf180_cm_io__asig_out: 190000 rects
+gf180_cm_io__asig_out: 200000 rects
+gf180_cm_io__asig_out: 210000 rects
+gf180_cm_io__asig_out: 220000 rects
+gf180_cm_io__asig_out: 230000 rects
+gf180_cm_io__asig_out: 240000 rects
+gf180_cm_io__asig_out: 250000 rects
+gf180_cm_io__asig_out: 260000 rects
+gf180_cm_io__asig_out: 270000 rects
+gf180_cm_io__asig_out: 280000 rects
+gf180_cm_io__asig_out: 290000 rects
+gf180_cm_io__asig_out: 300000 rects
+gf180_cm_io__asig_out: 310000 rects
+gf180_cm_io__asig_out: 320000 rects
+gf180_cm_io__asig_out: 330000 rects
+gf180_cm_io__asig_out: 340000 rects
+gf180_cm_io__asig_out: 350000 rects
+ABUT gf180_cm_io__asig_out: 0 0 75 350
+PORTS gf180mcu_ocd_io__asig_5p0: {ASIG5V 1 signal bidirectional} {DVDD 2 power bidirectional} {DVSS 3 ground bidirectional} {VDD 4 power bidirectional} {VSS 5 ground bidirectional}
+PORTS gf180_cm_io__asig_in: 
+CUSTOM_BAD gf180_cm_io__asig_in ports differ from gf180mcu_ocd_io__asig_5p0
+PORTS gf180_cm_io__asig_out: 
+CUSTOM_BAD gf180_cm_io__asig_out ports differ from gf180mcu_ocd_io__asig_5p0
+ABUT_SUMMARY pads 19 empty 0  custom 2 custom_bad 2

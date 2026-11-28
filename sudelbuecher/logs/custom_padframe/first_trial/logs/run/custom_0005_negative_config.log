@@ -1,0 +1,11 @@
+./scripts/parse_config.py
+Error:  Bad pad type gf180_cm_io__asig_typo
+Done with generating project wrapper verilog netlist
+Bad pad type gf180_cm_io__asig_typo
+Bad pad type gf180_cm_io__asig_typo
+Done with generating padframe verilog netlist
+Error:  Bad pad type gf180_cm_io__asig_typo
+Done with generating layout Tcl script
+Error:  4 unknown pad type(s) in config.txt;  the generated files are not usable.
+        Valid types are the gf180mcu_ocd_io__bi_*, gf180mcu_ocd_io__in_* and analog_pad_types entries.
+make: *** [Makefile:78: config] Error 1

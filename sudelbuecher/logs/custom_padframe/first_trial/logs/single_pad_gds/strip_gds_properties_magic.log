@@ -1,0 +1,78 @@
+
+Magic 8.3 revision 706 - Compiled on Sat Nov 28 00:42:19 UTC 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+WARNING: RLIMIT_NOFILE is above 1024 and Tcl_Version<9 this may cause runtime issues [rlim_cur=20000]
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology gf180mcuD ...
+10 Magic internal units = 1 Lambda
+Input style import: scaleFactor=10, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    obsactive mvobsactive filldiff fillpoly m1hole obsm1 fillm1 obsv1 m2hole obsm2 fillm2 obsv2 m3hole obsm3 fillm3 m4hole obsm4 fillm4 m5hole obsm5 fillm5 glass fillblock lvstext obscomment 
+Scaled tech values by 10 / 1 to match internal grid scaling
+Loading gf180mcuD Device Generator Menu ...
+Using technology "gf180mcuD", version 1.0.588-128-ge7a6777
+Cell gf180_cm_io__asig_in read from current working directory
+Cell gf180mcu_ocd_io__asig_5p0 read from path /foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+ABUT_IN 0 0 15000 70000
+ABUT_STD 200000 0 215000 70000
+Cell GF_NI_ASIG_5P0_BASE read from path /foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+GF_NI_ASIG_5P0_BASE: 10000 rects
+GF_NI_ASIG_5P0_BASE: 20000 rects
+GF_NI_ASIG_5P0_BASE: 30000 rects
+GF_NI_ASIG_5P0_BASE: 40000 rects
+GF_NI_ASIG_5P0_BASE: 50000 rects
+GF_NI_ASIG_5P0_BASE: 60000 rects
+GF_NI_ASIG_5P0_BASE: 70000 rects
+GF_NI_ASIG_5P0_BASE: 80000 rects
+Cell comp018green_esd_hbm read from path /foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+comp018green_esd_hbm: 10000 rects
+Cell 5LM_METAL_RAIL_PAD_60 read from path /foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+Cell Bondpad_5LM read from path /foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+Bondpad_5LM: 10000 rects
+Bondpad_5LM: 20000 rects
+Bondpad_5LM: 30000 rects
+Bondpad_5LM: 40000 rects
+Cell 5LM_METAL_RAIL read from path /foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+5LM_METAL_RAIL: 10000 rects
+5LM_METAL_RAIL: 20000 rects
+5LM_METAL_RAIL: 30000 rects
+5LM_METAL_RAIL: 40000 rects
+5LM_METAL_RAIL: 50000 rects
+5LM_METAL_RAIL: 60000 rects
+5LM_METAL_RAIL: 70000 rects
+5LM_METAL_RAIL: 80000 rects
+5LM_METAL_RAIL: 90000 rects
+5LM_METAL_RAIL: 100000 rects
+5LM_METAL_RAIL: 110000 rects
+5LM_METAL_RAIL: 120000 rects
+5LM_METAL_RAIL: 130000 rects
+5LM_METAL_RAIL: 140000 rects
+Cell 4LM_METAL_RAIL read from path /foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+4LM_METAL_RAIL: 10000 rects
+4LM_METAL_RAIL: 20000 rects
+4LM_METAL_RAIL: 30000 rects
+4LM_METAL_RAIL: 40000 rects
+4LM_METAL_RAIL: 50000 rects
+4LM_METAL_RAIL: 60000 rects
+4LM_METAL_RAIL: 70000 rects
+4LM_METAL_RAIL: 80000 rects
+4LM_METAL_RAIL: 90000 rects
+4LM_METAL_RAIL: 100000 rects
+4LM_METAL_RAIL: 110000 rects
+Cell 3LM_METAL_RAIL read from path /foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/mag
+   Copying output for cell comp018green_esd_hbm from $PDKPATH/libs.ref/gf180mcu_ocd_io/gds/gf180mcu_ocd_io.gds
+   Copying output for cell GF_NI_ASIG_5P0_BASE from $PDKPATH/libs.ref/gf180mcu_ocd_io/gds/gf180mcu_ocd_io.gds
+   Copying output for cell Bondpad_5LM from $PDKPATH/libs.ref/gf180mcu_ocd_io/gds/gf180mcu_ocd_io.gds
+   Copying output for cell 3LM_METAL_RAIL from $PDKPATH/libs.ref/gf180mcu_ocd_io/gds/gf180mcu_ocd_io.gds
+   Copying output for cell 4LM_METAL_RAIL from $PDKPATH/libs.ref/gf180mcu_ocd_io/gds/gf180mcu_ocd_io.gds
+   Copying output for cell 5LM_METAL_RAIL from $PDKPATH/libs.ref/gf180mcu_ocd_io/gds/gf180mcu_ocd_io.gds
+   Copying output for cell 5LM_METAL_RAIL_PAD_60 from $PDKPATH/libs.ref/gf180mcu_ocd_io/gds/gf180mcu_ocd_io.gds
+   Copying output for cell gf180mcu_ocd_io__asig_5p0 from $PDKPATH/libs.ref/gf180mcu_ocd_io/gds/gf180mcu_ocd_io.gds
+   Generating output for cell gf180_cm_io__asig_in
+   Generating output for cell tst

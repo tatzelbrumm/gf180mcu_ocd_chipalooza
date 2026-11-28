@@ -1,0 +1,15 @@
+++ make clean-config
+./scripts/run_clean.sh
+Done!
+++ make config
+./scripts/parse_config.py
+Error:  Bad pad type gf180_cm_io__asig_in
+Error:  Bad pad type gf180_cm_io__asig_out
+Done with generating project wrapper verilog netlist
+Bad pad type gf180_cm_io__asig_in
+Bad pad type gf180_cm_io__asig_out
+Bad pad type gf180_cm_io__asig_in
+Bad pad type gf180_cm_io__asig_out
+Done with generating padframe verilog netlist
+Done with generating layout Tcl script
+Done with generating all files

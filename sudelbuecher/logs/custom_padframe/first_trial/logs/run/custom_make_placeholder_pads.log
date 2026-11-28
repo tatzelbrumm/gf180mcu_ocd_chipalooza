@@ -1,0 +1,2 @@
+wrote custom_pads/gf180_cm_io/gds/gf180_cm_io.gds tops ['gf180_cm_io__asig_in', 'gf180_cm_io__asig_out']
+placeholder library gf180_cm_io written to custom_pads/gf180_cm_io: gf180_cm_io__asig_in gf180_cm_io__asig_out
