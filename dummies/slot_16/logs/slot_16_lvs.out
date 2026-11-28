@@ -1,0 +1,199 @@
+
+Cell slot_16 (0) disconnected node: s16_an_0_outp
+Cell slot_16 (0) disconnected node: s16_an_0_outn
+Cell slot_16 (0) disconnected node: s16_an_0_vcm
+Cell slot_16 (0) disconnected node: s16_an_0_vref
+Cell slot_16 (0) disconnected node: s16_an_0_iref
+Cell slot_16 (0) disconnected node: s16_an_0_en_3v3
+Cell slot_16 (0) disconnected node: s16_an_0_en_3v3_b
+Cell slot_16 (0) disconnected node: s16_an_1_vinp
+Cell slot_16 (0) disconnected node: s16_an_1_vinn
+Cell slot_16 (0) disconnected node: s16_an_1_vref
+Cell slot_16 (0) disconnected node: s16_an_1_iref
+Cell slot_16 (0) disconnected node: s16_an_1_en_3v3
+Cell slot_16 (0) disconnected node: s16_an_1_en_3v3_b
+Cell slot_16 (0) disconnected node: analog_bus3
+Cell slot_16 (0) disconnected node: analog_bus2
+Cell slot_16 (0) disconnected node: analog_bus1
+Cell slot_16 (0) disconnected node: analog_bus0
+Cell slot_16 (0) disconnected node: vbias
+Cell slot_16 (0) disconnected node: ibias0
+Cell slot_16 (0) disconnected node: ibias1
+Cell slot_16 (0) disconnected node: dig_out[0]
+Cell slot_16 (0) disconnected node: dig_out[1]
+Cell slot_16 (0) disconnected node: dig_out[2]
+Cell slot_16 (0) disconnected node: dig_out[3]
+Cell slot_16 (0) disconnected node: dig_out[4]
+Cell slot_16 (0) disconnected node: dig_out[5]
+Cell slot_16 (0) disconnected node: dig_out[6]
+Cell slot_16 (0) disconnected node: dig_out[7]
+Cell slot_16 (0) disconnected node: dig_out[8]
+Cell slot_16 (0) disconnected node: dig_out[9]
+Cell slot_16 (0) disconnected node: dig_out[10]
+Cell slot_16 (0) disconnected node: dig_out[11]
+Cell slot_16 (0) disconnected node: dig_in[0]
+Cell slot_16 (0) disconnected node: dig_in[1]
+Cell slot_16 (0) disconnected node: dig_in[2]
+Cell slot_16 (0) disconnected node: dig_in[3]
+Cell slot_16 (0) disconnected node: dig_in[4]
+Cell slot_16 (0) disconnected node: dig_in[5]
+Cell slot_16 (0) disconnected node: dig_in[6]
+Cell slot_16 (0) disconnected node: dig_in[7]
+Cell slot_16 (0) disconnected node: dig_in[8]
+Cell slot_16 (0) disconnected node: dig_in[9]
+Cell slot_16 (0) disconnected node: dig_in[10]
+Cell slot_16 (0) disconnected node: dig_in[11]
+Cell slot_16 (0) disconnected node: dig_in[12]
+Cell slot_16 (0) disconnected node: dig_in[13]
+Cell slot_16 (0) disconnected node: dig_in[14]
+Cell slot_16 (0) disconnected node: dig_in[15]
+Cell slot_16 (0) disconnected node: dig_in[16]
+Cell slot_16 (0) disconnected node: dig_in[17]
+Cell slot_16 (0) disconnected node: dig_in[18]
+Cell slot_16 (0) disconnected node: dig_in[19]
+Cell slot_16 (0) disconnected node: dig_in[20]
+Cell slot_16 (0) disconnected node: dig_in[21]
+Cell slot_16 (0) disconnected node: dig_in[22]
+Cell slot_16 (0) disconnected node: dig_in[23]
+Cell slot_16 (0) disconnected node: reset
+Cell slot_16 (0) disconnected node: enable
+Cell slot_16 (0) disconnected node: clk
+Cell slot_16 (0) disconnected node: vdd_3v3
+Cell slot_16 (0) disconnected node: vss_5v0
+Cell slot_16 (0) disconnected node: vdd_5v0
+Cell slot_16 (0) disconnected node: vss_3v3
+Cell slot_16 (1) disconnected node: vdd_5v0
+Cell slot_16 (1) disconnected node: vdd_3v3
+Cell slot_16 (1) disconnected node: vss_5v0
+Cell slot_16 (1) disconnected node: vss_3v3
+Cell slot_16 (1) disconnected node: enable
+Cell slot_16 (1) disconnected node: clk
+Cell slot_16 (1) disconnected node: reset
+Cell slot_16 (1) disconnected node: dig_in[0]
+Cell slot_16 (1) disconnected node: dig_in[1]
+Cell slot_16 (1) disconnected node: dig_in[2]
+Cell slot_16 (1) disconnected node: dig_in[3]
+Cell slot_16 (1) disconnected node: dig_in[4]
+Cell slot_16 (1) disconnected node: dig_in[5]
+Cell slot_16 (1) disconnected node: dig_in[6]
+Cell slot_16 (1) disconnected node: dig_in[7]
+Cell slot_16 (1) disconnected node: dig_in[8]
+Cell slot_16 (1) disconnected node: dig_in[9]
+Cell slot_16 (1) disconnected node: dig_in[10]
+Cell slot_16 (1) disconnected node: dig_in[11]
+Cell slot_16 (1) disconnected node: dig_in[12]
+Cell slot_16 (1) disconnected node: dig_in[13]
+Cell slot_16 (1) disconnected node: dig_in[14]
+Cell slot_16 (1) disconnected node: dig_in[15]
+Cell slot_16 (1) disconnected node: dig_in[16]
+Cell slot_16 (1) disconnected node: dig_in[17]
+Cell slot_16 (1) disconnected node: dig_in[18]
+Cell slot_16 (1) disconnected node: dig_in[19]
+Cell slot_16 (1) disconnected node: dig_in[20]
+Cell slot_16 (1) disconnected node: dig_in[21]
+Cell slot_16 (1) disconnected node: dig_in[22]
+Cell slot_16 (1) disconnected node: dig_in[23]
+Cell slot_16 (1) disconnected node: dig_out[0]
+Cell slot_16 (1) disconnected node: dig_out[1]
+Cell slot_16 (1) disconnected node: dig_out[2]
+Cell slot_16 (1) disconnected node: dig_out[3]
+Cell slot_16 (1) disconnected node: dig_out[4]
+Cell slot_16 (1) disconnected node: dig_out[5]
+Cell slot_16 (1) disconnected node: dig_out[6]
+Cell slot_16 (1) disconnected node: dig_out[7]
+Cell slot_16 (1) disconnected node: dig_out[8]
+Cell slot_16 (1) disconnected node: dig_out[9]
+Cell slot_16 (1) disconnected node: dig_out[10]
+Cell slot_16 (1) disconnected node: dig_out[11]
+Cell slot_16 (1) disconnected node: s16_an_0_outp
+Cell slot_16 (1) disconnected node: s16_an_0_outn
+Cell slot_16 (1) disconnected node: s16_an_0_vcm
+Cell slot_16 (1) disconnected node: s16_an_0_vref
+Cell slot_16 (1) disconnected node: s16_an_0_iref
+Cell slot_16 (1) disconnected node: s16_an_0_en_3v3
+Cell slot_16 (1) disconnected node: s16_an_0_en_3v3_b
+Cell slot_16 (1) disconnected node: s16_an_1_vinp
+Cell slot_16 (1) disconnected node: s16_an_1_vinn
+Cell slot_16 (1) disconnected node: s16_an_1_vref
+Cell slot_16 (1) disconnected node: s16_an_1_iref
+Cell slot_16 (1) disconnected node: s16_an_1_en_3v3
+Cell slot_16 (1) disconnected node: s16_an_1_en_3v3_b
+Cell slot_16 (1) disconnected node: ibias0
+Cell slot_16 (1) disconnected node: ibias1
+Cell slot_16 (1) disconnected node: vbias
+Cell slot_16 (1) disconnected node: analog_bus0
+Cell slot_16 (1) disconnected node: analog_bus1
+Cell slot_16 (1) disconnected node: analog_bus2
+Cell slot_16 (1) disconnected node: analog_bus3
+
+Subcircuit pins:
+Circuit 1: slot_16                         |Circuit 2: slot_16                         
+-------------------------------------------|-------------------------------------------
+s16_an_0_outp                              |s16_an_0_outp                              
+s16_an_0_outn                              |s16_an_0_outn                              
+s16_an_0_vcm                               |s16_an_0_vcm                               
+s16_an_0_vref                              |s16_an_0_vref                              
+s16_an_0_iref                              |s16_an_0_iref                              
+s16_an_0_en_3v3                            |s16_an_0_en_3v3                            
+s16_an_0_en_3v3_b                          |s16_an_0_en_3v3_b                          
+s16_an_1_vinp                              |s16_an_1_vinp                              
+s16_an_1_vinn                              |s16_an_1_vinn                              
+s16_an_1_vref                              |s16_an_1_vref                              
+s16_an_1_iref                              |s16_an_1_iref                              
+s16_an_1_en_3v3                            |s16_an_1_en_3v3                            
+s16_an_1_en_3v3_b                          |s16_an_1_en_3v3_b                          
+analog_bus3                                |analog_bus3                                
+analog_bus2                                |analog_bus2                                
+analog_bus1                                |analog_bus1                                
+analog_bus0                                |analog_bus0                                
+vbias                                      |vbias                                      
+ibias0                                     |ibias0                                     
+ibias1                                     |ibias1                                     
+dig_out[0]                                 |dig_out[0]                                 
+dig_out[1]                                 |dig_out[1]                                 
+dig_out[2]                                 |dig_out[2]                                 
+dig_out[3]                                 |dig_out[3]                                 
+dig_out[4]                                 |dig_out[4]                                 
+dig_out[5]                                 |dig_out[5]                                 
+dig_out[6]                                 |dig_out[6]                                 
+dig_out[7]                                 |dig_out[7]                                 
+dig_out[8]                                 |dig_out[8]                                 
+dig_out[9]                                 |dig_out[9]                                 
+dig_out[10]                                |dig_out[10]                                
+dig_out[11]                                |dig_out[11]                                
+dig_in[0]                                  |dig_in[0]                                  
+dig_in[1]                                  |dig_in[1]                                  
+dig_in[2]                                  |dig_in[2]                                  
+dig_in[3]                                  |dig_in[3]                                  
+dig_in[4]                                  |dig_in[4]                                  
+dig_in[5]                                  |dig_in[5]                                  
+dig_in[6]                                  |dig_in[6]                                  
+dig_in[7]                                  |dig_in[7]                                  
+dig_in[8]                                  |dig_in[8]                                  
+dig_in[9]                                  |dig_in[9]                                  
+dig_in[10]                                 |dig_in[10]                                 
+dig_in[11]                                 |dig_in[11]                                 
+dig_in[12]                                 |dig_in[12]                                 
+dig_in[13]                                 |dig_in[13]                                 
+dig_in[14]                                 |dig_in[14]                                 
+dig_in[15]                                 |dig_in[15]                                 
+dig_in[16]                                 |dig_in[16]                                 
+dig_in[17]                                 |dig_in[17]                                 
+dig_in[18]                                 |dig_in[18]                                 
+dig_in[19]                                 |dig_in[19]                                 
+dig_in[20]                                 |dig_in[20]                                 
+dig_in[21]                                 |dig_in[21]                                 
+dig_in[22]                                 |dig_in[22]                                 
+dig_in[23]                                 |dig_in[23]                                 
+reset                                      |reset                                      
+enable                                     |enable                                     
+clk                                        |clk                                        
+vdd_3v3                                    |vdd_3v3                                    
+vss_5v0                                    |vss_5v0                                    
+vdd_5v0                                    |vdd_5v0                                    
+vss_3v3                                    |vss_3v3                                    
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes slot_16 and slot_16 are equivalent.
+
+Final result: Verify:  cell slot_16_ref.spice has no elements and/or nodes.  Not checked.

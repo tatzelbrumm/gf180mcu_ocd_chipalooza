@@ -1,0 +1,12 @@
+./scripts/get_project_gds.sh 16
+Reading slot wrapper placements from magic ...
+  frame offset in the top level:  26 26 microns
+
+slot_16: dependencies/slot_16/gds/slot_16.gds
+    place at 375.76 1755.65
+
+Wrote scripts/user_projects.tcl (1 project(s) placed).
+
+real	0m6.015s
+user	0m5.667s
+sys	0m0.226s
