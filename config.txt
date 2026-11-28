@@ -55,9 +55,10 @@
 #		gf180mcu_ocd_io__in_s
 #		gf180mcu_ocd_io__asig_5p0
 #
-#	or a custom analog pad of the same form factor as
-#	gf180mcu_ocd_io__asig_5p0, listed in "analog_pad_types" in
-#	scripts/parse_config.py, with its views in custom_pads/:
+#	or a custom pad from custom_pads/<lib>/ (same size as the pads
+#	above; bond pad pin "pad", core-side pins read by
+#	scripts/parse_config.py from custom_pads/<lib>/verilog/*.v, each
+#	connected to the core signal <signal name>_<pin>):
 #		gf180_cm_io__asig_in	(slot 16 input, placeholder)
 #		gf180_cm_io__asig_out	(slot 16 output, placeholder)
 #

@@ -77,9 +77,44 @@ if os.path.exists(wrapper_out_file):
 # form factor are added here.  Any other name is a "Bad pad type".
 analog_pad_types = {
     'gf180mcu_ocd_io__asig_5p0',
-    'gf180_cm_io__asig_in',	# slot 16 input pad (placeholder, provisional name)
-    'gf180_cm_io__asig_out',	# slot 16 output pad (placeholder, provisional name)
 }
+
+# Custom pads (custom_pads/<lib>/): pad cells of the same size as the
+# gf180mcu_ocd_io pads with a bond pad pin "pad" (or "PAD") and any number of
+# core-side pins.  Their pins and directions (as seen from the pad) are read
+# from the verilog modules in custom_pads/*/verilog/*.v;  the supply pins
+# DVDD DVSS VDD VSS are connected by the padframe template.  In the padframe
+# the bond pad pin connects to s<N>_an[k] and each core-side pin <p> to the
+# core signal <signal name>_<p>, labelled at the core edge of the pad.
+custom_pads_path = os.path.join(project_path, 'custom_pads')
+custom_pad_types = {}
+supply_pins = {'DVDD', 'DVSS', 'VDD', 'VSS'}
+modrex = re.compile(r'^module[ \t]+([^ \t(]+)[ \t]*\((.*?)\);(.*?)^endmodule', re.M | re.S)
+dirrex = re.compile(r'^[ \t]*(input|output|inout)[ \t]+(?:wire[ \t]+)?([^;]+);', re.M)
+if os.path.isdir(custom_pads_path):
+    for lib in sorted(os.listdir(custom_pads_path)):
+        vdir = os.path.join(custom_pads_path, lib, 'verilog')
+        if not os.path.isdir(vdir):
+            continue
+        for vfile in sorted(os.listdir(vdir)):
+            if not vfile.endswith('.v') or '__blackbox' in vfile:
+                continue
+            with open(os.path.join(vdir, vfile), 'r') as ifile:
+                vtext = ifile.read()
+            for mmatch in re.finditer(modrex, vtext):
+                cellname = mmatch.group(1)
+                ports = [x.strip() for x in mmatch.group(2).split(',')]
+                dirs = {}
+                for dmatch in re.finditer(dirrex, mmatch.group(3)):
+                    for x in dmatch.group(2).split(','):
+                        dirs[x.strip()] = dmatch.group(1)
+                padpin = [x for x in ports if x in ('pad', 'PAD')]
+                if len(padpin) != 1:
+                    print('Error:  custom pad ' + cellname + ' has no single pin "pad" or "PAD"')
+                    sys.exit(1)
+                pins = [(x, dirs.get(x, 'inout')) for x in ports
+                        if x not in supply_pins and x != padpin[0]]
+                custom_pad_types[cellname] = {'pad': padpin[0], 'pins': pins}
 
 idxrex = re.compile(r'^s([0-9]+)_an\[([0-9]+)\]:[ \t]+([^ \t]+)[ \t]+([^ \t]+)$')
 
@@ -162,6 +197,12 @@ with open(wrapper_in_file, 'r') as ifile:
                 elif pad_type in analog_pad_types:
                     # The analog pad's core pin is the same net as the pad 
                     newline = spaces + '// (analog core pin = pad pin)'
+                elif pad_type in custom_pad_types:
+                    # Directions seen from the project:  a pad output is a project input
+                    for pin, pdir in custom_pad_types[pad_type]['pins']:
+                        wdir = {'output': 'input', 'input': 'output'}.get(pdir, 'inout')
+                        wrapper_lines.append(spaces + wdir + ' ' + signal_name + '_' + pin + ',')
+                    newline = spaces + '// (custom pad ' + pad_type + ')'
                 else:
                     print('Error:  Bad pad type ' + pad_type)
                     newline = line
@@ -208,10 +249,17 @@ with open(padframe_in_file, 'r') as ifile:
                 # Pad pin name is "PAD" except for analog pads which are "ASIG5V"
                 # and use the pad name, not the signal name.
                 # The analog pad has no other signals, so there is no ending comma.
+                # (spaces and signal_name are taken from this line and this pad;
+                # they used to be left over from the previous pad.)
+                smatch = re.match(sprex, line)
+                spaces = smatch.group(1)
+                signal_name = padrec[1]
+                # Reconstruct the pad name from slot index and pin index
+                pad_name = 's' + pad_slot_idx + '_an[' + pad_pin_idx + ']'
                 if pad_type in analog_pad_types:
-                    # Reconstruct the pad name from slot index and pin index
-                    pad_name = 's' + pad_slot_idx + '_an[' + pad_pin_idx + ']'
                     newline = spaces + '.ASIG5V(' + pad_name + ')'
+                elif pad_type in custom_pad_types:
+                    newline = spaces + '.' + custom_pad_types[pad_type]['pad'] + '(' + pad_name + '),'
                 else:
                     newline = spaces + '.PAD(' + signal_name + '),'
             elif pad_subs == 'SIGNALS':
@@ -228,6 +276,12 @@ with open(padframe_in_file, 'r') as ifile:
                 elif pad_type in analog_pad_types:
                     # For the analog pad, the core signal is the pad name
                     newline = spaces + '// (core signal name = pad name)'
+                elif pad_type in custom_pad_types:
+                    pins = custom_pad_types[pad_type]['pins']
+                    for k, (pin, pdir) in enumerate(pins):
+                        newline = spaces + '.' + pin + '(' + signal_name + '_' + pin + ')' + (',' if k < len(pins) - 1 else '')
+                        if k < len(pins) - 1:
+                            padframe_lines.append(newline)
                 elif pad_type.startswith('gf180mcu_ocd_io__bi_'):
                     newline = spaces + '.IE(' + signal_name + '_ie),'
                     padframe_lines.append(newline)
@@ -280,6 +334,10 @@ with open(padframe_in_file, 'r') as ifile:
                     newline = spaces + 'output wire ' + signal_name + '_zero,'
                 elif pad_type in analog_pad_types:
                     newline = spaces + '// (analog core pin = pad pin)'
+                elif pad_type in custom_pad_types:
+                    for pin, pdir in custom_pad_types[pad_type]['pins']:
+                        padframe_lines.append(spaces + pdir + ' wire ' + signal_name + '_' + pin + ',')
+                    newline = spaces + '// (custom pad ' + pad_type + ')'
                 elif pad_type.startswith('gf180mcu_ocd_io__bi_'):
                     newline = spaces + 'output wire ' + signal_name + '_in,'
                     padframe_lines.append(newline)
@@ -403,6 +461,14 @@ with open(tcl_in_file, 'r') as ifile:
                     # in the project wrapper.
                     newline = spaces + 'label_' + side + '_analog pad_s' + pad_slot_idx + '_an_' + pad_pin_idx + '  pad s' + pad_slot_idx + r'_an\[' + pad_pin_idx + r'\]'
 
+                elif pad_type in custom_pad_types:
+                    # Each core-side pin is labelled like a digital pad signal
+                    pins = custom_pad_types[pad_type]['pins']
+                    for k, (pin, pdir) in enumerate(pins):
+                        newline = spaces + 'label_' + side + '_signal pad_s' + pad_slot_idx + '_an_' + pad_pin_idx + '  ' + pin + '  ' + signal_name + '_' + pin
+                        if k < len(pins) - 1:
+                            tcl_lines.append(newline)
+
                 elif pad_type.startswith('gf180mcu_ocd_io__bi_'):
                     newline = spaces + 'label_' + side + '_signal pad_s' + pad_slot_idx + '_an_' + pad_pin_idx + '  A    ' + signal_name + '_out'
                     tcl_lines.append(newline)
@@ -482,7 +548,7 @@ print('Done with generating layout Tcl script')
 
 if bad_pad_types > 0:
     print('Error:  ' + str(bad_pad_types) + ' unknown pad type(s) in config.txt;  the generated files are not usable.')
-    print('        Valid types are the gf180mcu_ocd_io__bi_*, gf180mcu_ocd_io__in_* and analog_pad_types entries.')
+    print('        Valid types are the gf180mcu_ocd_io__bi_*, gf180mcu_ocd_io__in_*, analog_pad_types and custom_pads/ cells.')
     sys.exit(1)
 
 print('Done with generating all files')
