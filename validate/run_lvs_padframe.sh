@@ -19,8 +19,12 @@ set circuit2 [readnet spice ${PDK_ROOT}/${PDK}/libs.ref/gf180mcu_as_sc_mcu7t3v3/
 
 # NOTE:  Replaced foundry I/O netlist with a corrected version (too many issues related to
 # the use of global "sub!")
-# readnet spice ${PDK_ROOT}/${PDK}/libs.ref/gf180mcu_ocd_io/spice/gf180mcu_ocd_io.spice \$circuit2
-readnet spice ../netlist/schematic/gf180mcu_ocd_io.spice \$circuit2
+if {[file exists ../netlist/schematic/gf180mcu_ocd_io.spice]} {
+    readnet spice ../netlist/schematic/gf180mcu_ocd_io.spice \$circuit2
+} else {
+    # Custom netlist not committed to the repository; use the PDK one.
+    readnet spice ${PDK_ROOT}/${PDK}/libs.ref/gf180mcu_ocd_io/spice/gf180mcu_ocd_io.spice \$circuit2
+}
 
 # Read verilog submodules
 readnet verilog ../verilog/gl/netlists_lvs.v \$circuit2
@@ -34,8 +38,8 @@ readnet verilog ../verilog/gl/${PROJECT}.v \$circuit2
 # The secondary protection circuit has issues with
 # mismatched pins but will try to match anyway and
 # screw up the LVS.
-flatten class "\$circuit1 gf180mcu_SecondaryProtection"
-flatten class "\$circuit2 gf180mcu_SecondaryProtection"
+# (IHP leftover removed: gf180mcu_SecondaryProtection does not exist in the GF
+# I/O library, and "flatten class" of a missing cell aborts netgen.)
 
 # Same for these I/O top level cells
 flatten class "\$circuit1 gf180mcu_ocd_io__vdd"

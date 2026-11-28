@@ -16,8 +16,12 @@ set circuit1 [readnet spice ../netlist/layout/${PROJECT}.spice]
 set circuit2 [readnet spice ${PDK_ROOT}/${PDK}/libs.ref/gf180mcu_as_sc_mcu7t3v3/spice/gf180mcu_as_sc_mcu7t3v3.spice]
 
 # Issues in foundry I/O netlist require custom version.
-readnet spice ../netlist/schematic/gf180mcu_ocd_io.spice \$circuit2
-# readnet spice ${PDK_ROOT}/${PDK}/libs.ref/gf180mcu_ocd_io/spice/gf180mcu_ocd_io.spice \$circuit2
+if {[file exists ../netlist/schematic/gf180mcu_ocd_io.spice]} {
+    readnet spice ../netlist/schematic/gf180mcu_ocd_io.spice \$circuit2
+} else {
+    # Custom netlist not committed to the repository; use the PDK one.
+    readnet spice ${PDK_ROOT}/${PDK}/libs.ref/gf180mcu_ocd_io/spice/gf180mcu_ocd_io.spice \$circuit2
+}
 
 # housekeeping_top must be read before the user project since it is a
 # component of the user project.  Source of housekeeping_top is:
@@ -61,8 +65,8 @@ permute "\$circuit1 analog_switch_med" in out
 permute "\$circuit2 analog_switch_med" in out
 
 # These cells need to be flattened or else pin differences will cause an LVS mismatch
-flatten class "\$circuit1 gf180mcu_SecondaryProtection"
-flatten class "\$circuit2 gf180mcu_SecondaryProtection"
+# (IHP leftover removed: gf180mcu_SecondaryProtection does not exist in the GF
+# I/O library, and "flatten class" of a missing cell aborts netgen.)
 flatten class "\$circuit1 gf180mcu_ocd_io__vdd"
 flatten class "\$circuit2 gf180mcu_ocd_io__vdd"
 flatten class "\$circuit1 gf180mcu_ocd_io__dvdd"
