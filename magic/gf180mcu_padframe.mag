@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1795833773
+timestamp 1795836250
 << checkpaint >>
 rect 46990 1002913 61850 1014983
 rect 61990 1004590 85020 1012010
@@ -21,6 +21,7 @@ rect 539958 1002913 559042 1016010
 rect 580358 1002913 599442 1016010
 rect 620758 1002913 639842 1016010
 rect 661158 1002913 680242 1016010
+rect 696990 1002913 726150 1013860
 rect 11087 942022 764913 1002913
 rect 11087 940990 73010 942022
 rect 95558 941990 114642 942022
@@ -954,6 +955,10 @@ use caravel_logo  caravel_logo
 timestamp 1698868090
 transform 1 0 49000 0 1 1002600
 box 0 0 10840 10373
+use caravel_motto  caravel_motto
+timestamp 1670447192
+transform 1 0 64000 0 1 1006600
+box 0 0 19010 3400
 use gf180mcu_ocd_io__fill10x  const_clk
 timestamp 1766091610
 transform 1 0 274200 0 1 0
@@ -1058,10 +1063,10 @@ use horz_power_connect  horz_power_connect_7
 timestamp 1764102312
 transform 1 0 97872 0 1 943800
 box 0 0 14456 200
-use caravel_motto  open_source
-timestamp 1670447192
-transform 1 0 64000 0 1 1006600
-box 0 0 19010 3400
+use open_source  open_source $PDKPATH/libs.ref/gf180mcu_ocd_alpha_misc/mag
+timestamp 1765572406
+transform 1 0 698340 0 1 997420
+box 660 4580 25800 14430
 use gf180mcu_ocd_io__asig_5p0  pad_analog_0 $PDKPATH/libs.ref/gf180mcu_ocd_io/mag
 timestamp 1018536189
 transform -1 0 435800 0 -1 1014000
