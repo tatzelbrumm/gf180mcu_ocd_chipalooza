@@ -1,0 +1,16 @@
+before	after	subject
+c66429b	33743f3	Apply the fork's pad pin and LVS script fixes
+ebcdd77	b7e3784	custom_pads/gf180_cm_io: placeholder pads for slot 16, with tools
+e1fb916	e81776f	Custom analog pad types: slot 16 uses gf180_cm_io__asig_in/_out
+4401f24	21ca197	parse_config.py: stop with exit code 1 on an unknown pad type
+276643a	c680e4b	Regenerate padframe, slot wrappers, symbols and slot GDS with the custom pads
+843dc36	e21a6ff	custom_pads/gf180_cm_io: placeholders from digital pads, with the IHP pad pins
+a85894b	ef8e0db	parse_config.py: custom pad class with core-side pins from custom_pads/*/verilog
+f836915	c4d71cb	chipalooza_frame.mag: remove the slot 16 analog pad straps
+d910034	41d3c08	Regenerate padframe, slot wrappers, symbols and slot GDS with the new custom pads
+87a1500	3a47c28	Keep existing symbol pins in place when a pad type adds core signals
+a8a5c1b	560f3cd	Regenerate views with the fixed padframe port order and symbol width
+692e3b0	5fade23	Slot 16 custom pad pins in the hand-maintained harness core
+3e22733	b9b2b47	handoff/: change list for Tim, slot 10 report, logs and comparison tools
+bcbef3b	22fc5fd	Padframe regenerated with the logo library gf180mcu_ocd_alpha_misc present
+be10078	54999f8	custom_pads/tools: name the harness fork in full instead of the label "fork B"

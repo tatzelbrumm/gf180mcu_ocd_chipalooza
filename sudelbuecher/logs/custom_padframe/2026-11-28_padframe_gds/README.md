@@ -16,3 +16,8 @@ files contain `caravel_motto` and `open_source` (bbox 3.3,22.9 ; 129,72.15 µm).
 "couldn't be read" and no error lines. Scratch paths in the logs and the script are replaced by `<scratch>`.
 
 Not the chip GDS: no slot projects, no fill, no seal ring (`make gds-prefill` / `gds-final` were not run).
+
+Note added later on 2026-11-28: the user rebased `custom_padframe` of `tatzelbrumm/gf180mcu_ocd_chipalooza` from
+`2f18cd4` onto `main` `9dcda7e` (every patch unchanged). `bcbef3b`, the commit this GDS was written from, is now
+`22fc5fd`; its `magic/` files are the same, so `gf180mcu_padframe_custom_padframe_bcbef3b.gds.gz` keeps its name and
+is still valid for `22fc5fd`. All old and new hashes: `../2026-11-28_custom_padframe_rebase_hash_map.tsv`.
