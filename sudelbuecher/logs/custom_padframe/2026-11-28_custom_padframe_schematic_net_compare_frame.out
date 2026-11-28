@@ -1,0 +1,17 @@
+== chipalooza_frame: 2 nets only in old, 13 only in new
+   old: ["('PORT', 's16_an[0]')"]
+   old: ["('PORT', 's16_an[1]')"]
+   new: ["('PORT', 's16_an_0_en_3v3')"]
+   new: ["('PORT', 's16_an_0_en_3v3_b')"]
+   new: ["('PORT', 's16_an_0_iref')"]
+   new: ["('PORT', 's16_an_0_outn')"]
+   new: ["('PORT', 's16_an_0_outp')"]
+   new: ["('PORT', 's16_an_0_vcm')"]
+   new: ["('PORT', 's16_an_0_vref')"]
+   new: ["('PORT', 's16_an_1_en_3v3')"]
+   new: ["('PORT', 's16_an_1_en_3v3_b')"]
+   new: ["('PORT', 's16_an_1_iref')"]
+   new: ["('PORT', 's16_an_1_vinn')"]
+   new: ["('PORT', 's16_an_1_vinp')"]
+   new: ["('PORT', 's16_an_1_vref')"]
+SUBCKTS_DIFFERING 1

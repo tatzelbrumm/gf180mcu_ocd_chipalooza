@@ -1,0 +1,4 @@
+xschem/chipalooza_frame.sym: moved [] removed ['s16_an[0:1]'] added ['s16_an_0_outp', 's16_an_0_outn', 's16_an_0_vcm', 's16_an_0_vref', 's16_an_0_iref', 's16_an_0_en_3v3', 's16_an_0_en_3v3_b', 's16_an_1_vinp', 's16_an_1_vinn', 's16_an_1_vref', 's16_an_1_iref', 's16_an_1_en_3v3', 's16_an_1_en_3v3_b']
+xschem/gf180mcu_padframe.sym: moved [] removed [] added ['s16_an_0_outp', 's16_an_0_outn', 's16_an_0_vcm', 's16_an_0_vref', 's16_an_0_iref', 's16_an_0_en_3v3', 's16_an_0_en_3v3_b', 's16_an_1_vinp', 's16_an_1_vinn', 's16_an_1_vref', 's16_an_1_iref', 's16_an_1_en_3v3', 's16_an_1_en_3v3_b']
+xschem/slot10_wrapper.sym: moved [] removed [] added ['vss3v3']
+xschem/slot16_wrapper.sym: moved [] removed ['s16_an[0:1]'] added ['s16_an_0_outp', 's16_an_0_outn', 's16_an_0_vcm', 's16_an_0_vref', 's16_an_0_iref', 's16_an_0_en_3v3', 's16_an_0_en_3v3_b', 's16_an_1_vinp', 's16_an_1_vinn', 's16_an_1_vref', 's16_an_1_iref', 's16_an_1_en_3v3', 's16_an_1_en_3v3_b']

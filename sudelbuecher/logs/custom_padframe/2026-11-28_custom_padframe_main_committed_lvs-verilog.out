@@ -1,0 +1,668 @@
+make -C validate/lvs lvs
+yosys -q -p "read_verilog -sv -I. -I<scratch>/main_wt/verilog/rtl lvs_top.v; \
+             hierarchy -top chipalooza_frame; \
+             proc; opt_clean; \
+             write_verilog -noattr -noexpr -blackboxes chipalooza_frame.struct.v.bb; \
+             write_verilog -noattr -noexpr chipalooza_frame.struct.v.top"
+cat chipalooza_frame.struct.v.bb chipalooza_frame.struct.v.top > chipalooza_frame.struct.v
+rm -f chipalooza_frame.struct.v.bb chipalooza_frame.struct.v.top
+NETGEN_COLUMNS=50 netgen -batch source netgen.tcl
+Netgen 1.5.332 compiled on Sat Nov 28 00:42:30 UTC 2026
+Warning: netgen command 'global' use fully-qualified name '::netgen::global'
+Warning: netgen command 'format' use fully-qualified name '::netgen::format'
+Note:  Implicit pin por_unbuf in instance porgen of gf180mcu_ocd_ip__por in cell chipalooza_frame
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__diode_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__fillcap_16.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__fill_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__fill_1.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__fillcap_4.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__fillcap_8.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__tap_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__inv_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__nor2b_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__nand2_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__mux2_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__nor2_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__and2_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__ao21_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__nand4bb_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__ao22_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__and3_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__nor2_4.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__or2_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__ao211_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__oa22_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__aoi21_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__oai21_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__oa211_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__oa21_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__nand4b_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__aoi21b_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__ao31_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__and4_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__nand4_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__nand2b_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__aoi211_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__aoi22_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__nor3b_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__aoi31_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__oai22_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__or3_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__or4_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__nand3_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__xnor2_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__xor2_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__nor3_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__nand3b_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__maj3_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__mux4_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__oai211_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__buff_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__dfsrtp_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__tieh_4.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__clkbuff_12.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__inv_4.
+Note:  Implicit pin Y in instance clkload1 of gf180mcu_as_sc_mcu7t3v3__clkbuff_12 in cell housekeeping_top
+Note:  Implicit pin Y in instance clkload10 of gf180mcu_as_sc_mcu7t3v3__inv_2 in cell housekeeping_top
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__inv_6.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__clkbuff_4.
+Note:  Implicit pin Y in instance clkload14 of gf180mcu_as_sc_mcu7t3v3__clkbuff_12 in cell housekeeping_top
+Note:  Implicit pin Y in instance clkload15 of gf180mcu_as_sc_mcu7t3v3__clkbuff_12 in cell housekeeping_top
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__inv_8.
+Note:  Implicit pin Y in instance clkload18 of gf180mcu_as_sc_mcu7t3v3__inv_2 in cell housekeeping_top
+Note:  Implicit pin Y in instance clkload20 of gf180mcu_as_sc_mcu7t3v3__inv_2 in cell housekeeping_top
+Note:  Implicit pin Y in instance clkload22 of gf180mcu_as_sc_mcu7t3v3__clkbuff_12 in cell housekeeping_top
+Note:  Implicit pin Y in instance clkload24 of gf180mcu_as_sc_mcu7t3v3__clkbuff_12 in cell housekeeping_top
+Note:  Implicit pin Y in instance clkload6 of gf180mcu_as_sc_mcu7t3v3__inv_2 in cell housekeeping_top
+Note:  Implicit pin Y in instance clkload7 of gf180mcu_as_sc_mcu7t3v3__inv_2 in cell housekeeping_top
+Note:  Implicit pin Y in instance clkload8 of gf180mcu_as_sc_mcu7t3v3__inv_2 in cell housekeeping_top
+Note:  Implicit pin Y in instance clkload9 of gf180mcu_as_sc_mcu7t3v3__clkbuff_12 in cell housekeeping_top
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__dlybuff_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__buff_8.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__clkbuff_8.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__buff_4.
+Note:  Implicit pin Y in instance clkload13 of gf180mcu_as_sc_mcu7t3v3__clkbuff_4 in cell housekeeping_top
+Note:  Implicit pin Y in instance clkload17 of gf180mcu_as_sc_mcu7t3v3__clkbuff_4 in cell housekeeping_top
+Note:  Implicit pin Y in instance clkload0 of gf180mcu_as_sc_mcu7t3v3__clkbuff_4 in cell user_project_control
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__dlxtn_2.
+Creating placeholder cell definition for module gf180mcu_as_sc_mcu7t3v3__dlxtp_2.
+Warning:  A case-sensitive file has been read and so the SPICE netlist must be treated case-sensitive to match.
+Call to undefined subcircuit lcol4_1024_3v1024x8m81
+Creating placeholder cell definition.
+Call to undefined subcircuit rcol4_1024_3v1024x8m81
+Creating placeholder cell definition.
+Call to undefined subcircuit xdec128_3v1024x8m81
+Creating placeholder cell definition.
+Call to undefined subcircuit control_3v1024x8_3v1024x8m81
+Creating placeholder cell definition.
+Call to undefined subcircuit col_1024a_3v1024x8m81
+Creating placeholder cell definition.
+Call to undefined subcircuit ldummy_3v1024x4_3v1024x8m81
+Creating placeholder cell definition.
+Call to undefined subcircuit dcap_103_novia_3v1024x8m81
+Creating placeholder cell definition.
+Call to undefined subcircuit rdummy_3v1024x4_3v1024x8m81
+Creating placeholder cell definition.
+Call to undefined subcircuit xdec32_3v1024x8m81
+Creating placeholder cell definition.
+Call to undefined subcircuit pmoscap_R270_3v1024x8m81
+Creating placeholder cell definition.
+Call to undefined subcircuit ddec_3v1024x8m81
+Creating placeholder cell definition.
+Call to undefined subcircuit ypredec1_3v1024x8m81
+Creating placeholder cell definition.
+Call to undefined subcircuit gen_3v1024x8_3v1024x8m81
+Creating placeholder cell definition.
+Call to undefined subcircuit prexdec_top_3v1024x8m81
+Creating placeholder cell definition.
+Call to undefined subcircuit Cell_array8x8_3v1024x8m81
+Creating placeholder cell definition.
+Call to undefined subcircuit saout_m2_3v1024x8m81
+Creating placeholder cell definition.
+Call to undefined subcircuit Cell_array32x1_3v1024x8m81
+Creating placeholder cell definition.
+Call to undefined subcircuit x018SRAM_cell1_3v1024x8m81
+Creating placeholder cell definition.
+Call to undefined subcircuit pfet_03v3
+Creating placeholder cell definition.
+Call to undefined subcircuit x018SRAM_cell1_dummy_R_3v1024x8m81
+Creating placeholder cell definition.
+Call to undefined subcircuit nfet_03v3
+Creating placeholder cell definition.
+Call to undefined subcircuit xdec_3v1024x8m81
+Creating placeholder cell definition.
+Call to undefined subcircuit ypredec1_ys_3v1024x8m81
+Creating placeholder cell definition.
+Call to undefined subcircuit alatch_3v1024x8m81
+Creating placeholder cell definition.
+Call to undefined subcircuit ypredec1_xa_3v1024x8m81
+Creating placeholder cell definition.
+Call to undefined subcircuit wen_v2_3v1024x8m81
+Creating placeholder cell definition.
+Call to undefined subcircuit xpredec0_3v1024x8m81
+Creating placeholder cell definition.
+Call to undefined subcircuit xpredec1_3v1024x8m81
+Creating placeholder cell definition.
+Call to undefined subcircuit mux821_3v1024x8m81
+Creating placeholder cell definition.
+Call to undefined subcircuit sa_3v1024x8m81
+Creating placeholder cell definition.
+Call to undefined subcircuit din_3v1024x8m81
+Creating placeholder cell definition.
+Call to undefined subcircuit outbuf_oe_3v1024x8m81
+Creating placeholder cell definition.
+Call to undefined subcircuit sacntl_2_3v1024x8m81
+Creating placeholder cell definition.
+Call to undefined subcircuit wen_wm1_3v1024x8m81
+Creating placeholder cell definition.
+Call to undefined subcircuit xpredec0_xa_3v1024x8m81
+Creating placeholder cell definition.
+Call to undefined subcircuit xpredec1_xa_3v1024x8m81
+Creating placeholder cell definition.
+Call to undefined subcircuit ypass_gate_3v1024x8m81
+Creating placeholder cell definition.
+Warning:  A case-sensitive file has been read and so the SPICE netlist must be treated case-sensitive to match.
+Warning:  A case-sensitive file has been read and so the SPICE netlist must be treated case-sensitive to match.
+Call to undefined subcircuit gf180mcu_ocd_ip__biasgen
+Creating placeholder cell definition.
+Call to undefined subcircuit gf180mcu_ocd_ip__bandgap
+Creating placeholder cell definition.
+Call to undefined subcircuit analog_pswitch_small
+Creating placeholder cell definition.
+Call to undefined subcircuit analog_switch_small
+Creating placeholder cell definition.
+Call to undefined subcircuit analog_switch_med
+Creating placeholder cell definition.
+Call to undefined subcircuit power_stage3v3
+Creating placeholder cell definition.
+Call to undefined subcircuit power_stage
+Creating placeholder cell definition.
+Call to undefined subcircuit gf180mcu_ocd_ip__por
+Creating placeholder cell definition.
+Call to undefined subcircuit gf180mcu_ocd_ip__voltgen
+Creating placeholder cell definition.
+Call to undefined subcircuit gf180mcu_ocd_ip__classab_buffer
+Creating placeholder cell definition.
+Warning:  Property r_length passed to cell rm2 which does not define a default.
+Warning:  Property r_width passed to cell rm2 which does not define a default.
+Call to undefined subcircuit bias_generator_fe
+Creating placeholder cell definition.
+Call to undefined subcircuit bias_generator_be0p
+Creating placeholder cell definition.
+Call to undefined subcircuit bias_nstack
+Creating placeholder cell definition.
+Call to undefined subcircuit bias_pstack
+Creating placeholder cell definition.
+Call to undefined subcircuit bias_generator_ben1um
+Creating placeholder cell definition.
+Call to undefined subcircuit bias_generator_ben250nm
+Creating placeholder cell definition.
+Call to undefined subcircuit bandgap_unbuffered
+Creating placeholder cell definition.
+Call to undefined subcircuit sw_lvl_shift
+Creating placeholder cell definition.
+Call to undefined subcircuit pfet_05v0
+Creating placeholder cell definition.
+Parameter list mismatch in gf180mcu_as_sc_mcu7t3v3__inv_4:6: Too many parameters in call!
+line number 568 = 'x6 dvdd dvdd dvss dvss net1 enable gf180mcu_as_sc_mcu7t3v3__inv_4'
+Parameter list mismatch in gf180mcu_as_sc_mcu7t3v3__inv_4:7: Too many parameters in call!
+line number 569 = 'x7 dvdd dvdd dvss dvss net2 net1 gf180mcu_as_sc_mcu7t3v3__inv_4'
+Call to undefined subcircuit nfet_05v0
+Creating placeholder cell definition.
+Parameter list mismatch in gf180mcu_as_sc_mcu7t3v3__inv_4:1: Too many parameters in call!
+line number 587 = 'x1 dvdd dvdd dvss dvss net2 enable gf180mcu_as_sc_mcu7t3v3__inv_4'
+Parameter list mismatch in gf180mcu_as_sc_mcu7t3v3__inv_4:9: Too many parameters in call!
+line number 590 = 'x9 dvdd dvdd dvss dvss net4 net2 gf180mcu_as_sc_mcu7t3v3__inv_4'
+Call to undefined subcircuit gate_drive_med
+Creating placeholder cell definition.
+Parameter list mismatch in gf180mcu_as_sc_mcu7t3v3__inv_4:5: Too many parameters in call!
+line number 604 = 'x5 dvdd dvdd dvss dvss net2 enable gf180mcu_as_sc_mcu7t3v3__inv_4'
+Parameter list mismatch in gf180mcu_as_sc_mcu7t3v3__inv_4:2: Too many parameters in call!
+line number 608 = 'x2 dvdd dvdd dvss dvss net4 net2 gf180mcu_as_sc_mcu7t3v3__inv_4'
+Call to undefined subcircuit gate_drive_3v3
+Creating placeholder cell definition.
+Call to undefined subcircuit gate_drive_large
+Creating placeholder cell definition.
+Parameter list mismatch in gf180mcu_as_sc_mcu7t3v3__inv_4:7: Too many parameters in call!
+line number 638 = 'x7 DVDD DVDD DVSS DVSS net1 enable gf180mcu_as_sc_mcu7t3v3__inv_4'
+Parameter list mismatch in gf180mcu_as_sc_mcu7t3v3__inv_4:1: Too many parameters in call!
+line number 639 = 'x1 DVDD DVDD DVSS DVSS net2 net1 gf180mcu_as_sc_mcu7t3v3__inv_4'
+Call to undefined subcircuit por_amp
+Creating placeholder cell definition.
+Call to undefined subcircuit por_3v3_schmitt_inv
+Creating placeholder cell definition.
+Call to undefined subcircuit ppolyf_u_1k
+Creating placeholder cell definition.
+Call to undefined subcircuit cap_mim_2f0_m4m5_noshield
+Creating placeholder cell definition.
+Ignoring line starting with token: .save
+line number 678 = '.save i(vmeas)'
+Ignoring line starting with token: .save
+line number 680 = '.save i(vmeas1)'
+Ignoring line starting with token: .save
+line number 682 = '.save i(vmeas2)'
+Ignoring line starting with token: .save
+line number 684 = '.save i(vmeas3)'
+Call to undefined subcircuit gf180mcu_as_sc_mcu7t3v3__buff_12
+Creating placeholder cell definition.
+Ignoring line starting with token: .save
+line number 694 = '.save i(vmeas4)'
+Call to undefined subcircuit xgate
+Creating placeholder cell definition.
+Call to undefined subcircuit hv_inv_1
+Creating placeholder cell definition.
+Call to undefined subcircuit level_shift_5v
+Creating placeholder cell definition.
+Call to undefined subcircuit n_amp_large
+Creating placeholder cell definition.
+Call to undefined subcircuit se_folded_cascode_p_5v
+Creating placeholder cell definition.
+Call to undefined subcircuit se_folded_cascode_np_ab
+Creating placeholder cell definition.
+Ignoring line starting with token: .save
+line number 842 = '.save i(vmeas)'
+Call to undefined subcircuit bias_nset
+Creating placeholder cell definition.
+Call to undefined subcircuit bias_pset
+Creating placeholder cell definition.
+Ignoring line starting with token: .save
+line number 878 = '.save i(vmeas1)'
+Ignoring line starting with token: .save
+line number 880 = '.save i(vmeas2)'
+Call to undefined subcircuit bias_amp_large
+Creating placeholder cell definition.
+Call to undefined subcircuit bias_pset2
+Creating placeholder cell definition.
+Call to undefined subcircuit bg_res
+Creating placeholder cell definition.
+Call to undefined subcircuit bg_trim
+Creating placeholder cell definition.
+Call to undefined subcircuit se_folded_cascode_p
+Creating placeholder cell definition.
+Call to undefined subcircuit pnp_05p00x05p00
+Creating placeholder cell definition.
+Ignoring line starting with token: .save
+line number 1140 = '.save i(vmeas)'
+Ignoring line starting with token: .save
+line number 1142 = '.save i(vmeas1)'
+Call to undefined subcircuit pfet_06v0
+Creating placeholder cell definition.
+Call to undefined subcircuit ppolyf_u
+Creating placeholder cell definition.
+File <scratch>/main_wt/netlist/schematic/chipalooza_frame.spice read with 18 warnings.
+
+Reading setup file setup.tcl
+
+Model analog_switch_med pin in == out
+Model analog_switch_med pin in == out
+Model analog_switch_small pin in == out
+Model analog_switch_small pin in == out
+Model analog_pswitch_small pin in == out
+Model analog_pswitch_small pin in == out
+Model rm2 pin PLUS == MINUS
+Model rm2 pin PLUS == MINUS
+No property m found for device rm2
+Comparison output logged to file comp.out
+Logging to file "comp.out" enabled
+Circuit gf180mcu_ocd_ip__classab_buffer contains no devices.
+Circuit gf180mcu_ocd_ip__bandgap contains no devices.
+Circuit gf180mcu_ocd_ip__biasgen contains no devices.
+Circuit housekeeping_top contains no devices.
+Circuit user_project_control contains no devices.
+Circuit gf180mcu_ocd_ip__por contains no devices.
+
+Contents of circuit 1:  Circuit: 'rm2'
+Circuit rm2 contains 0 device instances.
+Circuit contains 0 nets.
+Contents of circuit 2:  Circuit: 'rm2'
+Circuit rm2 contains 0 device instances.
+Circuit contains 0 nets, and 2 disconnected pins.
+
+Circuit rm2 contains no devices.
+
+Contents of circuit 1:  Circuit: 'slot1_wrapper'
+Circuit slot1_wrapper contains 0 device instances.
+Circuit contains 0 nets.
+Contents of circuit 2:  Circuit: 'slot1_wrapper'
+Circuit slot1_wrapper contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit slot1_wrapper contains no devices.
+
+Contents of circuit 1:  Circuit: 'slot10_wrapper'
+Circuit slot10_wrapper contains 0 device instances.
+Circuit contains 0 nets.
+Contents of circuit 2:  Circuit: 'slot10_wrapper'
+Circuit slot10_wrapper contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit slot10_wrapper contains no devices.
+
+Contents of circuit 1:  Circuit: 'slot11_wrapper'
+Circuit slot11_wrapper contains 0 device instances.
+Circuit contains 0 nets.
+Contents of circuit 2:  Circuit: 'slot11_wrapper'
+Circuit slot11_wrapper contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit slot11_wrapper contains no devices.
+
+Contents of circuit 1:  Circuit: 'slot12_wrapper'
+Circuit slot12_wrapper contains 0 device instances.
+Circuit contains 0 nets.
+Contents of circuit 2:  Circuit: 'slot12_wrapper'
+Circuit slot12_wrapper contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit slot12_wrapper contains no devices.
+
+Contents of circuit 1:  Circuit: 'slot13_wrapper'
+Circuit slot13_wrapper contains 0 device instances.
+Circuit contains 0 nets.
+Contents of circuit 2:  Circuit: 'slot13_wrapper'
+Circuit slot13_wrapper contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit slot13_wrapper contains no devices.
+
+Contents of circuit 1:  Circuit: 'slot14_wrapper'
+Circuit slot14_wrapper contains 0 device instances.
+Circuit contains 0 nets.
+Contents of circuit 2:  Circuit: 'slot14_wrapper'
+Circuit slot14_wrapper contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit slot14_wrapper contains no devices.
+
+Contents of circuit 1:  Circuit: 'slot15_wrapper'
+Circuit slot15_wrapper contains 0 device instances.
+Circuit contains 0 nets.
+Contents of circuit 2:  Circuit: 'slot15_wrapper'
+Circuit slot15_wrapper contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit slot15_wrapper contains no devices.
+
+Contents of circuit 1:  Circuit: 'slot16_wrapper'
+Circuit slot16_wrapper contains 0 device instances.
+Circuit contains 0 nets.
+Contents of circuit 2:  Circuit: 'slot16_wrapper'
+Circuit slot16_wrapper contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit slot16_wrapper contains no devices.
+
+Contents of circuit 1:  Circuit: 'slot17_wrapper'
+Circuit slot17_wrapper contains 0 device instances.
+Circuit contains 0 nets.
+Contents of circuit 2:  Circuit: 'slot17_wrapper'
+Circuit slot17_wrapper contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit slot17_wrapper contains no devices.
+
+Contents of circuit 1:  Circuit: 'slot18_wrapper'
+Circuit slot18_wrapper contains 0 device instances.
+Circuit contains 0 nets.
+Contents of circuit 2:  Circuit: 'slot18_wrapper'
+Circuit slot18_wrapper contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit slot18_wrapper contains no devices.
+
+Contents of circuit 1:  Circuit: 'slot2_wrapper'
+Circuit slot2_wrapper contains 0 device instances.
+Circuit contains 0 nets.
+Contents of circuit 2:  Circuit: 'slot2_wrapper'
+Circuit slot2_wrapper contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit slot2_wrapper contains no devices.
+
+Contents of circuit 1:  Circuit: 'slot3_wrapper'
+Circuit slot3_wrapper contains 0 device instances.
+Circuit contains 0 nets.
+Contents of circuit 2:  Circuit: 'slot3_wrapper'
+Circuit slot3_wrapper contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit slot3_wrapper contains no devices.
+
+Contents of circuit 1:  Circuit: 'slot4_wrapper'
+Circuit slot4_wrapper contains 0 device instances.
+Circuit contains 0 nets.
+Contents of circuit 2:  Circuit: 'slot4_wrapper'
+Circuit slot4_wrapper contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit slot4_wrapper contains no devices.
+
+Contents of circuit 1:  Circuit: 'slot5_wrapper'
+Circuit slot5_wrapper contains 0 device instances.
+Circuit contains 0 nets.
+Contents of circuit 2:  Circuit: 'slot5_wrapper'
+Circuit slot5_wrapper contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit slot5_wrapper contains no devices.
+
+Contents of circuit 1:  Circuit: 'slot6_wrapper'
+Circuit slot6_wrapper contains 0 device instances.
+Circuit contains 0 nets.
+Contents of circuit 2:  Circuit: 'slot6_wrapper'
+Circuit slot6_wrapper contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit slot6_wrapper contains no devices.
+
+Contents of circuit 1:  Circuit: 'slot7_wrapper'
+Circuit slot7_wrapper contains 0 device instances.
+Circuit contains 0 nets.
+Contents of circuit 2:  Circuit: 'slot7_wrapper'
+Circuit slot7_wrapper contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit slot7_wrapper contains no devices.
+
+Contents of circuit 1:  Circuit: 'slot8_wrapper'
+Circuit slot8_wrapper contains 0 device instances.
+Circuit contains 0 nets.
+Contents of circuit 2:  Circuit: 'slot8_wrapper'
+Circuit slot8_wrapper contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit slot8_wrapper contains no devices.
+
+Contents of circuit 1:  Circuit: 'slot9_wrapper'
+Circuit slot9_wrapper contains 0 device instances.
+Circuit contains 0 nets.
+Contents of circuit 2:  Circuit: 'slot9_wrapper'
+Circuit slot9_wrapper contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit slot9_wrapper contains no devices.
+Circuit power_stage3v3 contains no devices.
+Circuit power_stage contains no devices.
+Circuit analog_switch_med contains no devices.
+Circuit analog_pswitch_small contains no devices.
+Circuit analog_switch_small contains no devices.
+Circuit gf180mcu_ocd_ip_sram__sram1024x8m8wm1 contains no devices.
+
+Contents of circuit 1:  Circuit: 'user_id_programming'
+Circuit user_id_programming contains 0 device instances.
+Circuit contains 0 nets.
+Contents of circuit 2:  Circuit: 'user_id_programming'
+Circuit user_id_programming contains 0 device instances.
+Circuit contains 0 nets, and 34 disconnected pins.
+
+Circuit user_id_programming contains no devices.
+Circuit gf180mcu_ocd_ip__voltgen contains no devices.
+Pins vss3v3 and vss5v0 are shorted in cell chipalooza_frame (0)
+
+Contents of circuit 1:  Circuit: 'chipalooza_frame'
+Circuit chipalooza_frame contains 223 device instances.
+  Class: power_stage           instances:  18
+  Class: slot17_wrapper        instances:   1
+  Class: slot18_wrapper        instances:   1
+  Class: gf180mcu_ocd_ip__por  instances:   1
+  Class: slot8_wrapper         instances:   1
+  Class: analog_switch_small   instances:  20
+  Class: slot12_wrapper        instances:   1
+  Class: slot16_wrapper        instances:   1
+  Class: housekeeping_top      instances:   1
+  Class: analog_switch_med     instances:  72
+  Class: slot9_wrapper         instances:   1
+  Class: slot10_wrapper        instances:   1
+  Class: analog_pswitch_small  instances:  38
+  Class: gf180mcu_ocd_ip__voltgen instances:   1
+  Class: slot7_wrapper         instances:   1
+  Class: gf180mcu_ocd_ip__bandgap instances:   1
+  Class: power_stage3v3        instances:  18
+  Class: slot5_wrapper         instances:   1
+  Class: user_id_programming   instances:   1
+  Class: gf180mcu_ocd_ip__biasgen instances:   1
+  Class: slot6_wrapper         instances:   1
+  Class: slot14_wrapper        instances:   1
+  Class: gf180mcu_ocd_ip_sram__sram1024x8m8wm1 instances:   1
+  Class: slot15_wrapper        instances:   1
+  Class: rm2                   instances:  13
+  Class: gf180mcu_ocd_ip__classab_buffer instances:   1
+  Class: slot4_wrapper         instances:   1
+  Class: slot13_wrapper        instances:   1
+  Class: user_project_control  instances:  18
+  Class: slot3_wrapper         instances:   1
+  Class: slot11_wrapper        instances:   1
+  Class: slot1_wrapper         instances:   1
+  Class: slot2_wrapper         instances:   1
+Circuit contains 1582 nets, and 4 disconnected pins.
+Contents of circuit 2:  Circuit: 'chipalooza_frame'
+Circuit chipalooza_frame contains 224 device instances.
+  Class: power_stage           instances:  18
+  Class: slot17_wrapper        instances:   1
+  Class: slot18_wrapper        instances:   1
+  Class: gf180mcu_ocd_ip__por  instances:   1
+  Class: slot8_wrapper         instances:   1
+  Class: analog_switch_small   instances:  20
+  Class: slot12_wrapper        instances:   1
+  Class: slot16_wrapper        instances:   1
+  Class: housekeeping_top      instances:   1
+  Class: analog_switch_med     instances:  72
+  Class: slot9_wrapper         instances:   1
+  Class: slot10_wrapper        instances:   1
+  Class: analog_pswitch_small  instances:  38
+  Class: gf180mcu_ocd_ip__voltgen instances:   1
+  Class: slot7_wrapper         instances:   1
+  Class: gf180mcu_ocd_ip__bandgap instances:   1
+  Class: power_stage3v3        instances:  18
+  Class: slot5_wrapper         instances:   1
+  Class: user_id_programming   instances:   1
+  Class: gf180mcu_ocd_ip__biasgen instances:   1
+  Class: slot6_wrapper         instances:   1
+  Class: slot14_wrapper        instances:   1
+  Class: gf180mcu_ocd_ip_sram__sram1024x8m8wm1 instances:   1
+  Class: slot15_wrapper        instances:   1
+  Class: rm2                   instances:  13
+  Class: gf180mcu_ocd_ip__classab_buffer instances:   1
+  Class: slot4_wrapper         instances:   1
+  Class: slot13_wrapper        instances:   1
+  Class: user_project_control  instances:  18
+  Class: slot3_wrapper         instances:   1
+  Class: r                     instances:   1
+  Class: slot11_wrapper        instances:   1
+  Class: slot1_wrapper         instances:   1
+  Class: slot2_wrapper         instances:   1
+Circuit contains 1583 nets, and 4 disconnected pins.
+
+Flattened mismatched instances and attempting compare again.
+
+Contents of circuit 1:  Circuit: 'chipalooza_frame'
+Circuit chipalooza_frame contains 223 device instances.
+  Class: power_stage           instances:  18
+  Class: slot17_wrapper        instances:   1
+  Class: slot18_wrapper        instances:   1
+  Class: gf180mcu_ocd_ip__por  instances:   1
+  Class: slot8_wrapper         instances:   1
+  Class: analog_switch_small   instances:  20
+  Class: slot12_wrapper        instances:   1
+  Class: slot16_wrapper        instances:   1
+  Class: housekeeping_top      instances:   1
+  Class: analog_switch_med     instances:  72
+  Class: slot9_wrapper         instances:   1
+  Class: slot10_wrapper        instances:   1
+  Class: analog_pswitch_small  instances:  38
+  Class: gf180mcu_ocd_ip__voltgen instances:   1
+  Class: slot7_wrapper         instances:   1
+  Class: gf180mcu_ocd_ip__bandgap instances:   1
+  Class: power_stage3v3        instances:  18
+  Class: slot5_wrapper         instances:   1
+  Class: user_id_programming   instances:   1
+  Class: gf180mcu_ocd_ip__biasgen instances:   1
+  Class: slot6_wrapper         instances:   1
+  Class: slot14_wrapper        instances:   1
+  Class: gf180mcu_ocd_ip_sram__sram1024x8m8wm1 instances:   1
+  Class: slot15_wrapper        instances:   1
+  Class: rm2                   instances:  13
+  Class: gf180mcu_ocd_ip__classab_buffer instances:   1
+  Class: slot4_wrapper         instances:   1
+  Class: slot13_wrapper        instances:   1
+  Class: user_project_control  instances:  18
+  Class: slot3_wrapper         instances:   1
+  Class: slot11_wrapper        instances:   1
+  Class: slot1_wrapper         instances:   1
+  Class: slot2_wrapper         instances:   1
+Circuit contains 1582 nets, and 4 disconnected pins.
+Contents of circuit 2:  Circuit: 'chipalooza_frame'
+Circuit chipalooza_frame contains 223 device instances.
+  Class: power_stage           instances:  18
+  Class: slot17_wrapper        instances:   1
+  Class: slot18_wrapper        instances:   1
+  Class: gf180mcu_ocd_ip__por  instances:   1
+  Class: slot8_wrapper         instances:   1
+  Class: analog_switch_small   instances:  20
+  Class: slot12_wrapper        instances:   1
+  Class: slot16_wrapper        instances:   1
+  Class: housekeeping_top      instances:   1
+  Class: analog_switch_med     instances:  72
+  Class: slot9_wrapper         instances:   1
+  Class: slot10_wrapper        instances:   1
+  Class: analog_pswitch_small  instances:  38
+  Class: gf180mcu_ocd_ip__voltgen instances:   1
+  Class: slot7_wrapper         instances:   1
+  Class: gf180mcu_ocd_ip__bandgap instances:   1
+  Class: power_stage3v3        instances:  18
+  Class: slot5_wrapper         instances:   1
+  Class: user_id_programming   instances:   1
+  Class: gf180mcu_ocd_ip__biasgen instances:   1
+  Class: slot6_wrapper         instances:   1
+  Class: slot14_wrapper        instances:   1
+  Class: gf180mcu_ocd_ip_sram__sram1024x8m8wm1 instances:   1
+  Class: slot15_wrapper        instances:   1
+  Class: rm2                   instances:  13
+  Class: gf180mcu_ocd_ip__classab_buffer instances:   1
+  Class: slot4_wrapper         instances:   1
+  Class: slot13_wrapper        instances:   1
+  Class: user_project_control  instances:  18
+  Class: slot3_wrapper         instances:   1
+  Class: slot11_wrapper        instances:   1
+  Class: slot1_wrapper         instances:   1
+  Class: slot2_wrapper         instances:   1
+Circuit contains 1582 nets, and 4 disconnected pins.
+
+Circuit 1 contains 223 devices, Circuit 2 contains 223 devices.
+Circuit 1 contains 1582 nets,    Circuit 2 contains 1582 nets.
+
+Pins vss3v3 and vss5v0 are shorted in cell chipalooza_frame (0)
+Pins vss3v3 and vss5v0 are shorted in cell chipalooza_frame (1)
+
+The following subcircuits were treated as black boxes,
+and their contents were not compared:
+  Circuit (1): gf180mcu_ocd_ip__classab_buffer gf180mcu_ocd_ip__bandgap gf180mcu_ocd_ip__biasgen housekeeping_top user_project_control gf180mcu_ocd_ip__por power_stage3v3 power_stage analog_switch_med analog_pswitch_small analog_switch_small gf180mcu_ocd_ip_sram__sram1024x8m8wm1 gf180mcu_ocd_ip__voltgen
+
+
+Final result: 
+Circuits match uniquely.
+.
+Logging to file "comp.out" disabled
+LVS Done.
+Final result: Circuits match uniquely.
+LVS: views match
