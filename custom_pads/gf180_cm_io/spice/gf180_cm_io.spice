@@ -1,20 +1,12 @@
-.subckt gf180_cm_io__asig_in ASIG5V DVDD DVSS VDD VSS
-*.PININFO DVDD:B DVSS:B VDD:B VSS:B ASIG5V:B
-D1 DVSS DVDD diode_nd2ps_06v0 area='1u * 40u ' pj='2*1u + 2*40u ' m=4
-D2 DVSS ASIG5V diode_nd2ps_06v0 area='3u * 50u ' pj='2*3u + 2*50u ' m=4
-D3 ASIG5V DVDD diode_pd2nw_06v0 area='3u * 50u ' pj='2*3u + 2*50u ' m=4
-XC1 DVDD DVSS cap_nmos_06v0 c_width=15e-6 c_length=15e-6 m=36
-* noconn VDD
-* noconn VSS
+* gf180_cm_io: placeholder custom pads (copies of PDK digital pads, new core-side pins unconnected)
+* needs $PDK_ROOT/$PDK/libs.ref/gf180mcu_ocd_io/spice/gf180mcu_ocd_io.spice
+
+.subckt gf180_cm_io__asig_in DVDD DVSS VDD VSS pad outp outn vcm vref iref en_3v3 en_3v3_b
+X0 DVDD DVSS pad nc_PD nc_PU VDD VSS nc_Y gf180mcu_ocd_io__in_c
+* noconn outp outn vcm vref iref en_3v3 en_3v3_b
 .ends
 
-.subckt gf180_cm_io__asig_out ASIG5V DVDD DVSS VDD VSS
-*.PININFO DVDD:B DVSS:B VDD:B VSS:B ASIG5V:B
-D1 DVSS DVDD diode_nd2ps_06v0 area='1u * 40u ' pj='2*1u + 2*40u ' m=4
-D2 DVSS ASIG5V diode_nd2ps_06v0 area='3u * 50u ' pj='2*3u + 2*50u ' m=4
-D3 ASIG5V DVDD diode_pd2nw_06v0 area='3u * 50u ' pj='2*3u + 2*50u ' m=4
-XC1 DVDD DVSS cap_nmos_06v0 c_width=15e-6 c_length=15e-6 m=36
-* noconn VDD
-* noconn VSS
+.subckt gf180_cm_io__asig_out DVDD DVSS VDD VSS pad vinp vinn vref iref en_3v3 en_3v3_b
+X0 nc_A nc_CS DVDD DVSS nc_IE nc_OE pad nc_PD nc_PU nc_SL VDD VSS nc_Y gf180mcu_ocd_io__bi_24t
+* noconn vinp vinn vref iref en_3v3 en_3v3_b
 .ends
-

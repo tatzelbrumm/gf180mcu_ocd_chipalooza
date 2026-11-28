@@ -2,8 +2,8 @@
 # pad_abutment_check_custom.tcl --- extension of sudelbuecher/harness_tools/pad_abutment_check.tcl (fork B, branch sudel_buecher).
 # 1. First-call abutment box of every gf180mcu_ocd_io__* pad cell AND of every custom pad *.mag in $CUSTOM_PAD_DIRS, read
 #    the way scripts/gen_padframe_template.tcl reads it (getcell, identify, `instance list abutment`, units microns).
-# 2. For each custom pad: its abutment box must equal that of gf180mcu_ocd_io__asig_5p0, and its ports (name, class, use)
-#    must equal the analog pad's (name, index, class, use).
+# 2. For each custom pad: its abutment box must equal that of gf180mcu_ocd_io__asig_5p0 (75 x 350 um), and it must have
+#    the ports DVDD DVSS VDD VSS and a bond pad port pad (or PAD); its other ports are listed (the core-side pins).
 # usage: CUSTOM_PAD_DIRS="<dir> ..." PDK_ROOT=... PDK=gf180mcuD magic -dnull -noconsole \
 #            -rcfile $PDK_ROOT/$PDK/libs.tech/magic/$PDK.magicrc pad_abutment_check_custom.tcl
 # Prints ABUT <cell>: <box>, PORTS <cell>: <list>, CUSTOM_OK/CUSTOM_BAD <cell> <reason>, and a summary line
@@ -54,7 +54,11 @@ foreach c $custom {
     puts "PORTS $c: $p"
     set why {}
     if {$abut($c) ne $abut($ref)} {lappend why "abutment $abut($c) != $abut($ref)"}
-    if {$p ne $refports} {lappend why "ports differ from $ref"}
+    set names {}
+    foreach q $p {lappend names [lindex $q 0]}
+    foreach r {DVDD DVSS VDD VSS} {if {[lsearch -exact $names $r] < 0} {lappend why "no port $r"}}
+    if {[lsearch -exact $names pad] < 0 && [lsearch -exact $names PAD] < 0} {lappend why "no port pad"}
+    foreach q $p {if {[lindex $q 2] eq "" || [lindex $q 3] eq ""} {lappend why "port [lindex $q 0] has no class/use"}}
     if {[llength $why]} {puts "CUSTOM_BAD $c [join $why {; }]"; incr bad} else {puts "CUSTOM_OK $c"}
 }
 puts "ABUT_SUMMARY pads $n empty [llength $empty] $empty custom [llength $custom] custom_bad $bad"

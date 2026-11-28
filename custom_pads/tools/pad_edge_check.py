@@ -1,6 +1,9 @@
 # SPDX-License-Identifier: Apache-2.0
 # pad_edge_check.py --- compare the abutting-edge geometry of a custom pad cell with gf180mcu_ocd_io__asig_5p0.
-# usage: python3 -I pad_edge_check.py <custom.gds> <cell> [<pdk gds>]
+# usage: python3 -I pad_edge_check.py [--pins] <custom.gds> <cell> [<pdk gds>]
+#   --pins: a pad with labelled core-side pins (custom pad class of parse_config.py) instead of the asig-like class:
+#     rule 3 becomes: every Metal2 label (36/10) at the core edge sits on Metal2 that reaches y = 350, unlabelled Metal2
+#     at the core edge is only a warning, and no Metal3 at the core edge (label_*_signal paints Metal3 there).
 # Checks (pad-local coordinates, um; abutment box (0,0)-(75,350), y = 350 is the core-facing edge, y = 0 the chip edge):
 #  1. cell bbox within x -0.16..75.16, y 0..350 (the PDK pad's own bbox), PR boundary 0/0 = (0,0;75,350)
 #  2. on the side edges x = 0 and x = 75, every drawn layer's spans (datatype 0) equal the PDK pad's (rails: 22/0 31/0 34/0
@@ -10,8 +13,10 @@
 #     and no Metal3 (42/0) at that edge (label_left/right_analog paints m2 AND m3 across that strip).
 # It does not check nets (that needs extraction): the core-edge Metal2 must be the ASIG5V net, and that is LVS's job.
 import sys, klayout.db as db
-cgds, cell = sys.argv[1], sys.argv[2]
-pdk = sys.argv[3] if len(sys.argv) > 3 else '/foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/gds/gf180mcu_ocd_io.gds'
+args = [a for a in sys.argv[1:] if a != '--pins']
+pins_mode = '--pins' in sys.argv[1:]
+cgds, cell = args[0], args[1]
+pdk = args[2] if len(args) > 2 else '/foss/pdks/gf180mcuD/libs.ref/gf180mcu_ocd_io/gds/gf180mcu_ocd_io.gds'
 W, H, e = 75.0, 350.0, 0.001
 def load(f, c):
     ly = db.Layout(); ly.read(f); return ly, ly.cell(c)
@@ -43,8 +48,16 @@ for L in layers:
             warn.append(f'side {s} layer 36/0 shifted but overlapping: {a} vs PDK {b}'); continue
         if a != b: bad.append(f'side {s} layer {L[0]}/{L[1]}: {a[:6]}{"..." if len(a) > 6 else ""} != PDK {b[:6]}{"..." if len(b) > 6 else ""}')
 n2 = spans(lc, cc, (36, 0), 'N')
-if not any(x0 >= 15.34 - e and x1 <= 59.66 + e for x0, x1 in n2): bad.append(f'core edge: no Metal2 inside 15.34..59.66 ({n2})')
-if any(x0 < 15.34 - e or x1 > 59.66 + e for x0, x1 in n2): bad.append(f'core edge: Metal2 outside 15.34..59.66 ({n2})')
+if pins_mode:
+    li = lc.find_layer(36, 10)
+    texts = [(t.string, t.x * lc.dbu) for t in db.Texts(cc.shapes(li)).each() if t.y * lc.dbu > 345] if li is not None else []
+    for name, x in texts:
+        if not any(x0 - e <= x <= x1 + e for x0, x1 in n2): bad.append(f'core edge: pin {name} at x {x:.3f} has no Metal2 reaching y=350')
+    for x0, x1 in n2:
+        if not any(x0 - e <= x <= x1 + e for _, x in texts): warn.append(f'core edge: unlabelled Metal2 {x0}-{x1}')
+    print(f'core-edge pins: {sorted(texts, key=lambda t: t[1])}')
+elif not any(x0 >= 15.34 - e and x1 <= 59.66 + e for x0, x1 in n2): bad.append(f'core edge: no Metal2 inside 15.34..59.66 ({n2})')
+if not pins_mode and any(x0 < 15.34 - e or x1 > 59.66 + e for x0, x1 in n2): bad.append(f'core edge: Metal2 outside 15.34..59.66 ({n2})')
 n3 = spans(lc, cc, (42, 0), 'N')
 if n3: bad.append(f'core edge: Metal3 at y=350 ({n3}); the padframe paints m3 over 15.34..59.66 there')
 print(f'cell {cell} bbox {bb} core-edge Metal2 {n2}')
