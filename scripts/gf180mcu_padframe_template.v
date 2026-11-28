@@ -49,9 +49,6 @@ module gf180mcu_padframe (
     inout wire [1:0] s17_an,
     inout wire [1:0] s18_an,
 
-    // Core signals handled by parse_config.py from config.txt
-    INPUT_OUTPUT_LIST
-
     // Fixed core signal connections
     output wire [11:0] gpio_in,
     output wire [11:0] gpio_zero,
@@ -97,7 +94,13 @@ module gf180mcu_padframe (
     output wire clk_zero,
     output wire clk_one,
     input  wire clk_pullup,
-    input  wire clk_pulldown
+    input  wire clk_pulldown,
+
+    // Core signals handled by parse_config.py from config.txt.  Kept at
+    // the end of the port list, so that a pad type with core signals adds
+    // pins to the padframe symbol without moving the fixed ones.
+    // (parse_config.py removes the comma after the last port.)
+    INPUT_OUTPUT_LIST
 );
 
     // Instantiate the pads:

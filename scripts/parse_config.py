@@ -400,6 +400,17 @@ with open(padframe_in_file, 'r') as ifile:
         else:
             padframe_lines.append(line)
 
+# The core signal list is the last part of the module's port list:  remove
+# the comma after the last port before the closing ");".
+for k, pline in enumerate(padframe_lines):
+    if pline.strip() == ');':
+        j = k - 1
+        while j >= 0 and (padframe_lines[j].strip() == '' or padframe_lines[j].strip().startswith('//')):
+            j -= 1
+        if j >= 0 and padframe_lines[j].rstrip().endswith(','):
+            padframe_lines[j] = padframe_lines[j].rstrip()[:-1]
+        break
+
 with open(padframe_out_file, 'w') as ofile:
     for line in padframe_lines:
         print(line, file=ofile)

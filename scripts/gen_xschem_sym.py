@@ -351,18 +351,23 @@ def slot_geometry(all_ports, modules):
     identical and a wrapper can be swapped in the schematic without
     moving a single wire.
     """
-    wl = wr = 0
+    # The two label columns can only collide on a row that has a pin on
+    # both sides, so the body is sized from the widest left + right label
+    # pair ON THE SAME ROW (a long analog pin name on a row with no right
+    # pin, such as the custom pad pins of a slot, does not widen every
+    # wrapper and so does not move the right-side pins of all 18).
+    rows, nleft, nright = slot_rows(all_ports)
+    lw, rw = {}, {}
     for ports in all_ports:
         for n, d, r in ports:
-            w = len(pin_label(n, r))
-            if d == 'output':
-                wr = max(wr, w)
-            else:
-                wl = max(wl, w)
-    width = max(200, int(10 + wl * CHARW + GAP + wr * CHARW + 10),
-                int(max(len(m) for m in modules) * CHARW * 1.5))
+            lab = pin_label(n, r)
+            side, row = rows[slot_key(lab)]
+            col = rw if side == 'r' else lw
+            col[row] = max(col.get(row, 0), len(lab))
+    need = max([10 + lw.get(k, 0) * CHARW + (GAP if k in lw and k in rw else 0) + rw.get(k, 0) * CHARW + 10
+                for k in set(lw) | set(rw)] or [0])
+    width = max(200, int(need), int(max(len(m) for m in modules) * CHARW * 1.5))
     width = int(round(width / 10.0) * 10)
-    rows, nleft, nright = slot_rows(all_ports)
     height = (max(nleft, nright) + 1) * PITCH
     return {'width': width, 'height': height, 'rows': rows,
             'nleft': nleft, 'nright': nright}
