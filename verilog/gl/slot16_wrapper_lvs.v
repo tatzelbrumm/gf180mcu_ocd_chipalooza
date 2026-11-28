@@ -9,7 +9,19 @@
  */
 
 module slot16_wrapper (
-    inout [0:1] s16_an,
+    inout s16_an_0_outp,
+    inout s16_an_0_outn,
+    inout s16_an_0_vcm,
+    inout s16_an_0_vref,
+    inout s16_an_0_iref,
+    inout s16_an_0_en_3v3,
+    inout s16_an_0_en_3v3_b,
+    inout s16_an_1_vinp,
+    inout s16_an_1_vinn,
+    inout s16_an_1_vref,
+    inout s16_an_1_iref,
+    inout s16_an_1_en_3v3,
+    inout s16_an_1_en_3v3_b,
     inout vdd_3v3,
     inout vss_5v0,
     inout vdd_5v0,

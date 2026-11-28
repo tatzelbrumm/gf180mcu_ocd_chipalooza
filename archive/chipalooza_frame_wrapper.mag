@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1795032531
+timestamp 1795831432
 << checkpaint >>
 rect 67942 67942 708058 946058
 << obsm1 >>
@@ -286,9 +286,20 @@ rect 70000 468468 70800 477332
 rect 705200 468468 706000 477332
 rect 70000 434468 70800 443332
 rect 705200 434468 706000 443332
-rect 70000 400468 70800 409332
+rect 69952 408324 70800 408400
+rect 69952 407324 70800 407400
+rect 69952 406324 70800 406400
+rect 69952 405324 70800 405400
+rect 69952 404324 70800 404400
+rect 69952 403324 70800 403400
+rect 69952 402324 70800 402400
 rect 705200 400468 706000 409332
-rect 70000 366468 70800 375332
+rect 69952 374324 70800 374400
+rect 69952 373324 70800 373400
+rect 69952 372324 70800 372400
+rect 69952 371324 70800 371400
+rect 69952 370324 70800 370400
+rect 69952 369324 70800 369400
 rect 705200 366468 706000 375332
 rect 70000 329672 70270 344128
 rect 705730 329672 706000 344128
@@ -926,10 +937,32 @@ flabel metal3 70200 468468 70600 477332 0 FreeSans 3200 90 0 0 s15_an[0]
 port 55 nsew
 flabel metal3 70200 434468 70600 443332 0 FreeSans 3200 90 0 0 s15_an[1]
 port 56 nsew
-flabel metal3 70200 400468 70600 409332 0 FreeSans 3200 90 0 0 s16_an[0]
-port 57 nsew
-flabel metal3 70200 366468 70600 375332 0 FreeSans 3200 90 0 0 s16_an[1]
-port 58 nsew
+flabel metal3 70000 408324 70800 408400 0 FreeSans 480 0 0 0 s16_an_0_outp
+port 179 nsew
+flabel metal3 70000 407324 70800 407400 0 FreeSans 480 0 0 0 s16_an_0_outn
+port 180 nsew
+flabel metal3 70000 406324 70800 406400 0 FreeSans 480 0 0 0 s16_an_0_vcm
+port 181 nsew
+flabel metal3 70000 405324 70800 405400 0 FreeSans 480 0 0 0 s16_an_0_vref
+port 182 nsew
+flabel metal3 70000 404324 70800 404400 0 FreeSans 480 0 0 0 s16_an_0_iref
+port 183 nsew
+flabel metal3 70000 403324 70800 403400 0 FreeSans 480 0 0 0 s16_an_0_en_3v3
+port 184 nsew
+flabel metal3 70000 402324 70800 402400 0 FreeSans 480 0 0 0 s16_an_0_en_3v3_b
+port 185 nsew
+flabel metal3 70000 374324 70800 374400 0 FreeSans 480 0 0 0 s16_an_1_vinp
+port 186 nsew
+flabel metal3 70000 373324 70800 373400 0 FreeSans 480 0 0 0 s16_an_1_vinn
+port 187 nsew
+flabel metal3 70000 372324 70800 372400 0 FreeSans 480 0 0 0 s16_an_1_vref
+port 188 nsew
+flabel metal3 70000 371324 70800 371400 0 FreeSans 480 0 0 0 s16_an_1_iref
+port 189 nsew
+flabel metal3 70000 370324 70800 370400 0 FreeSans 480 0 0 0 s16_an_1_en_3v3
+port 190 nsew
+flabel metal3 70000 369324 70800 369400 0 FreeSans 480 0 0 0 s16_an_1_en_3v3_b
+port 191 nsew
 flabel metal3 70200 298468 70600 307332 0 FreeSans 3200 90 0 0 s17_an[0]
 port 59 nsew
 flabel metal3 70200 264468 70600 273332 0 FreeSans 3200 90 0 0 s17_an[1]
@@ -939,73 +972,73 @@ port 61 nsew
 flabel metal3 70200 196468 70600 205332 0 FreeSans 3200 90 0 0 s18_an[1]
 port 62 nsew
 flabel metal2 113346 70000 113422 70800 0 FreeSans 480 90 0 0 SDO_zero
-port 179 nsew
-flabel metal2 113158 70000 113234 70800 0 FreeSans 480 90 0 0 SDO_one
-port 180 nsew
-flabel metal2 153746 70000 153822 70800 0 FreeSans 480 90 0 0 SDI_zero
-port 181 nsew
-flabel metal2 153558 70000 153634 70800 0 FreeSans 480 90 0 0 SDI_one
-port 182 nsew
-flabel metal2 194146 70000 194222 70800 0 FreeSans 480 90 0 0 CSB_zero
-port 183 nsew
-flabel metal2 193958 70000 194034 70800 0 FreeSans 480 90 0 0 CSB_one
-port 184 nsew
-flabel metal2 234546 70000 234622 70800 0 FreeSans 480 90 0 0 SCK_zero
-port 185 nsew
-flabel metal2 234358 70000 234434 70800 0 FreeSans 480 90 0 0 SCK_one
-port 186 nsew
-flabel metal2 274946 70000 275022 70800 0 FreeSans 480 90 0 0 clk_zero
-port 187 nsew
-flabel metal2 274758 70000 274834 70800 0 FreeSans 480 90 0 0 clk_one
-port 188 nsew
-flabel metal2 396146 70000 396222 70800 0 FreeSans 480 90 0 0 gpio_0_zero
-port 189 nsew
-flabel metal2 395958 70000 396034 70800 0 FreeSans 480 90 0 0 gpio_0_one
-port 190 nsew
-flabel metal2 436546 70000 436622 70800 0 FreeSans 480 90 0 0 gpio_1_zero
-port 191 nsew
-flabel metal2 436358 70000 436434 70800 0 FreeSans 480 90 0 0 gpio_1_one
 port 192 nsew
-flabel metal2 476946 70000 477022 70800 0 FreeSans 480 90 0 0 gpio_2_zero
+flabel metal2 113158 70000 113234 70800 0 FreeSans 480 90 0 0 SDO_one
 port 193 nsew
-flabel metal2 476758 70000 476834 70800 0 FreeSans 480 90 0 0 gpio_2_one
+flabel metal2 153746 70000 153822 70800 0 FreeSans 480 90 0 0 SDI_zero
 port 194 nsew
-flabel metal2 517346 70000 517422 70800 0 FreeSans 480 90 0 0 gpio_3_zero
+flabel metal2 153558 70000 153634 70800 0 FreeSans 480 90 0 0 SDI_one
 port 195 nsew
-flabel metal2 517158 70000 517234 70800 0 FreeSans 480 90 0 0 gpio_3_one
+flabel metal2 194146 70000 194222 70800 0 FreeSans 480 90 0 0 CSB_zero
 port 196 nsew
-flabel metal2 557746 70000 557822 70800 0 FreeSans 480 90 0 0 gpio_4_zero
+flabel metal2 193958 70000 194034 70800 0 FreeSans 480 90 0 0 CSB_one
 port 197 nsew
-flabel metal2 557558 70000 557634 70800 0 FreeSans 480 90 0 0 gpio_4_one
+flabel metal2 234546 70000 234622 70800 0 FreeSans 480 90 0 0 SCK_zero
 port 198 nsew
-flabel metal2 598146 70000 598222 70800 0 FreeSans 480 90 0 0 gpio_5_zero
+flabel metal2 234358 70000 234434 70800 0 FreeSans 480 90 0 0 SCK_one
 port 199 nsew
-flabel metal2 597958 70000 598034 70800 0 FreeSans 480 90 0 0 gpio_5_one
+flabel metal2 274946 70000 275022 70800 0 FreeSans 480 90 0 0 clk_zero
 port 200 nsew
-flabel metal2 638546 70000 638622 70800 0 FreeSans 480 90 0 0 gpio_6_zero
+flabel metal2 274758 70000 274834 70800 0 FreeSans 480 90 0 0 clk_one
 port 201 nsew
-flabel metal2 638358 70000 638434 70800 0 FreeSans 480 90 0 0 gpio_6_one
+flabel metal2 396146 70000 396222 70800 0 FreeSans 480 90 0 0 gpio_0_zero
 port 202 nsew
-flabel metal2 678946 70000 679022 70800 0 FreeSans 480 90 0 0 gpio_7_zero
+flabel metal2 395958 70000 396034 70800 0 FreeSans 480 90 0 0 gpio_0_one
 port 203 nsew
-flabel metal2 678758 70000 678834 70800 0 FreeSans 480 90 0 0 gpio_7_one
+flabel metal2 436546 70000 436622 70800 0 FreeSans 480 90 0 0 gpio_1_zero
 port 204 nsew
-flabel metal2 638978 943200 639054 944000 0 FreeSans 480 90 0 0 gpio_8_zero
+flabel metal2 436358 70000 436434 70800 0 FreeSans 480 90 0 0 gpio_1_one
 port 205 nsew
-flabel metal2 639166 943200 639242 944000 0 FreeSans 480 90 0 0 gpio_8_one
+flabel metal2 476946 70000 477022 70800 0 FreeSans 480 90 0 0 gpio_2_zero
 port 206 nsew
-flabel metal2 598578 943200 598654 944000 0 FreeSans 480 90 0 0 gpio_9_zero
+flabel metal2 476758 70000 476834 70800 0 FreeSans 480 90 0 0 gpio_2_one
 port 207 nsew
-flabel metal2 598766 943200 598842 944000 0 FreeSans 480 90 0 0 gpio_9_one
+flabel metal2 517346 70000 517422 70800 0 FreeSans 480 90 0 0 gpio_3_zero
 port 208 nsew
-flabel metal2 558178 943200 558254 944000 0 FreeSans 480 90 0 0 gpio_10_zero
+flabel metal2 517158 70000 517234 70800 0 FreeSans 480 90 0 0 gpio_3_one
 port 209 nsew
-flabel metal2 558366 943200 558442 944000 0 FreeSans 480 90 0 0 gpio_10_one
+flabel metal2 557746 70000 557822 70800 0 FreeSans 480 90 0 0 gpio_4_zero
 port 210 nsew
-flabel metal2 517778 943200 517854 944000 0 FreeSans 480 90 0 0 gpio_11_zero
+flabel metal2 557558 70000 557634 70800 0 FreeSans 480 90 0 0 gpio_4_one
 port 211 nsew
-flabel metal2 517966 943200 518042 944000 0 FreeSans 480 90 0 0 gpio_11_one
+flabel metal2 598146 70000 598222 70800 0 FreeSans 480 90 0 0 gpio_5_zero
 port 212 nsew
+flabel metal2 597958 70000 598034 70800 0 FreeSans 480 90 0 0 gpio_5_one
+port 213 nsew
+flabel metal2 638546 70000 638622 70800 0 FreeSans 480 90 0 0 gpio_6_zero
+port 214 nsew
+flabel metal2 638358 70000 638434 70800 0 FreeSans 480 90 0 0 gpio_6_one
+port 215 nsew
+flabel metal2 678946 70000 679022 70800 0 FreeSans 480 90 0 0 gpio_7_zero
+port 216 nsew
+flabel metal2 678758 70000 678834 70800 0 FreeSans 480 90 0 0 gpio_7_one
+port 217 nsew
+flabel metal2 638978 943200 639054 944000 0 FreeSans 480 90 0 0 gpio_8_zero
+port 218 nsew
+flabel metal2 639166 943200 639242 944000 0 FreeSans 480 90 0 0 gpio_8_one
+port 219 nsew
+flabel metal2 598578 943200 598654 944000 0 FreeSans 480 90 0 0 gpio_9_zero
+port 220 nsew
+flabel metal2 598766 943200 598842 944000 0 FreeSans 480 90 0 0 gpio_9_one
+port 221 nsew
+flabel metal2 558178 943200 558254 944000 0 FreeSans 480 90 0 0 gpio_10_zero
+port 222 nsew
+flabel metal2 558366 943200 558442 944000 0 FreeSans 480 90 0 0 gpio_10_one
+port 223 nsew
+flabel metal2 517778 943200 517854 944000 0 FreeSans 480 90 0 0 gpio_11_zero
+port 224 nsew
+flabel metal2 517966 943200 518042 944000 0 FreeSans 480 90 0 0 gpio_11_one
+port 225 nsew
 flabel metal4 299872 70200 314328 70800 0 FreeSans 4800 0 0 0 vddd
 port 6 nsew
 flabel metal4 340272 70200 354728 70800 0 FreeSans 4800 0 0 0 vddd

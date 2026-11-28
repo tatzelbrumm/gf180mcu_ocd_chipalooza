@@ -80,8 +80,21 @@ module gf180mcu_padframe (
     // (analog core pin = pad pin)
     // (analog core pin = pad pin)
     // (analog core pin = pad pin)
-    // (analog core pin = pad pin)
-    // (analog core pin = pad pin)
+    output wire s16_an_0_outp,
+    output wire s16_an_0_outn,
+    input wire s16_an_0_vcm,
+    input wire s16_an_0_vref,
+    inout wire s16_an_0_iref,
+    input wire s16_an_0_en_3v3,
+    input wire s16_an_0_en_3v3_b,
+    // (custom pad gf180_cm_io__asig_in)
+    input wire s16_an_1_vinp,
+    input wire s16_an_1_vinn,
+    input wire s16_an_1_vref,
+    inout wire s16_an_1_iref,
+    input wire s16_an_1_en_3v3,
+    input wire s16_an_1_en_3v3_b,
+    // (custom pad gf180_cm_io__asig_out)
     // (analog core pin = pad pin)
     // (analog core pin = pad pin)
     // (analog core pin = pad pin)
@@ -456,7 +469,7 @@ module gf180mcu_padframe (
 	    .VDD(vdd3v3),
 	    .VSS(vss3v3),
 	`endif	/* USE_POWER_PINS */
-    .ASIG5V(s1_an[0])
+	.ASIG5V(s1_an[0])
 	// (core signal name = pad name)
     );
 
@@ -1021,26 +1034,37 @@ module gf180mcu_padframe (
 	// (core signal name = pad name)
     );
 
-    gf180mcu_ocd_io__asig_5p0 pad_s16_an_0 (
+    gf180_cm_io__asig_in pad_s16_an_0 (
 	`ifdef USE_POWER_PINS
 	    .DVDD(vdd5v0),
 	    .DVSS(vss5v0),
 	    .VDD(vdd3v3),
 	    .VSS(vss3v3),
 	`endif	/* USE_POWER_PINS */
-	.ASIG5V(s16_an[0])
-	// (core signal name = pad name)
+	.pad(s16_an[0]),
+	.outp(s16_an_0_outp),
+	.outn(s16_an_0_outn),
+	.vcm(s16_an_0_vcm),
+	.vref(s16_an_0_vref),
+	.iref(s16_an_0_iref),
+	.en_3v3(s16_an_0_en_3v3),
+	.en_3v3_b(s16_an_0_en_3v3_b)
     );
 
-    gf180mcu_ocd_io__asig_5p0 pad_s16_an_1 (
+    gf180_cm_io__asig_out pad_s16_an_1 (
 	`ifdef USE_POWER_PINS
 	    .DVDD(vdd5v0),
 	    .DVSS(vss5v0),
 	    .VDD(vdd3v3),
 	    .VSS(vss3v3),
 	`endif	/* USE_POWER_PINS */
-	.ASIG5V(s16_an[1])
-	// (core signal name = pad name)
+	.pad(s16_an[1]),
+	.vinp(s16_an_1_vinp),
+	.vinn(s16_an_1_vinn),
+	.vref(s16_an_1_vref),
+	.iref(s16_an_1_iref),
+	.en_3v3(s16_an_1_en_3v3),
+	.en_3v3_b(s16_an_1_en_3v3_b)
     );
 
     gf180mcu_ocd_io__vss pad_vss3v3_5 (

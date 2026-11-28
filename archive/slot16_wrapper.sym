@@ -7,11 +7,50 @@ template="name=x1"
 V {}
 S {}
 E {}
-P 4 5 0 0 0 -380 200 -380 200 0 0 0 {}
-T {slot16_wrapper} 100.0 -398.0 0 0 0.3 0.3 {hcenter=true}
+P 4 5 0 0 0 -640 210 -640 210 0 0 0 {}
+T {slot16_wrapper} 105.0 -658.0 0 0 0.3 0.3 {hcenter=true}
 L 4 -20 -360 0 -360 {}
 T {s16_an[0:1]} 5 -360.0 0 0 0.25 0.25 {vcenter=true}
 B 5 -22.5 -362.5 -17.5 -357.5 {name=s16_an[0:1] dir=inout}
+L 4 -20 -460 0 -460 {}
+T {s16_an_0_outp} 5 -460.0 0 0 0.25 0.25 {vcenter=true}
+B 5 -22.5 -462.5 -17.5 -457.5 {name=s16_an_0_outp dir=inout}
+L 4 -20 -440 0 -440 {}
+T {s16_an_0_outn} 5 -440.0 0 0 0.25 0.25 {vcenter=true}
+B 5 -22.5 -442.5 -17.5 -437.5 {name=s16_an_0_outn dir=inout}
+L 4 -20 -480 0 -480 {}
+T {s16_an_0_vcm} 5 -480.0 0 0 0.25 0.25 {vcenter=true}
+B 5 -22.5 -482.5 -17.5 -477.5 {name=s16_an_0_vcm dir=inout}
+L 4 -20 -500 0 -500 {}
+T {s16_an_0_vref} 5 -500.0 0 0 0.25 0.25 {vcenter=true}
+B 5 -22.5 -502.5 -17.5 -497.5 {name=s16_an_0_vref dir=inout}
+L 4 -20 -420 0 -420 {}
+T {s16_an_0_iref} 5 -420.0 0 0 0.25 0.25 {vcenter=true}
+B 5 -22.5 -422.5 -17.5 -417.5 {name=s16_an_0_iref dir=inout}
+L 4 -20 -380 0 -380 {}
+T {s16_an_0_en_3v3} 5 -380.0 0 0 0.25 0.25 {vcenter=true}
+B 5 -22.5 -382.5 -17.5 -377.5 {name=s16_an_0_en_3v3 dir=inout}
+L 4 -20 -400 0 -400 {}
+T {s16_an_0_en_3v3_b} 5 -400.0 0 0 0.25 0.25 {vcenter=true}
+B 5 -22.5 -402.5 -17.5 -397.5 {name=s16_an_0_en_3v3_b dir=inout}
+L 4 -20 -600 0 -600 {}
+T {s16_an_1_vinp} 5 -600.0 0 0 0.25 0.25 {vcenter=true}
+B 5 -22.5 -602.5 -17.5 -597.5 {name=s16_an_1_vinp dir=inout}
+L 4 -20 -580 0 -580 {}
+T {s16_an_1_vinn} 5 -580.0 0 0 0.25 0.25 {vcenter=true}
+B 5 -22.5 -582.5 -17.5 -577.5 {name=s16_an_1_vinn dir=inout}
+L 4 -20 -620 0 -620 {}
+T {s16_an_1_vref} 5 -620.0 0 0 0.25 0.25 {vcenter=true}
+B 5 -22.5 -622.5 -17.5 -617.5 {name=s16_an_1_vref dir=inout}
+L 4 -20 -560 0 -560 {}
+T {s16_an_1_iref} 5 -560.0 0 0 0.25 0.25 {vcenter=true}
+B 5 -22.5 -562.5 -17.5 -557.5 {name=s16_an_1_iref dir=inout}
+L 4 -20 -520 0 -520 {}
+T {s16_an_1_en_3v3} 5 -520.0 0 0 0.25 0.25 {vcenter=true}
+B 5 -22.5 -522.5 -17.5 -517.5 {name=s16_an_1_en_3v3 dir=inout}
+L 4 -20 -540 0 -540 {}
+T {s16_an_1_en_3v3_b} 5 -540.0 0 0 0.25 0.25 {vcenter=true}
+B 5 -22.5 -542.5 -17.5 -537.5 {name=s16_an_1_en_3v3_b dir=inout}
 L 4 -20 -240 0 -240 {}
 T {vdd_3v3} 5 -240.0 0 0 0.25 0.25 {vcenter=true}
 B 5 -22.5 -242.5 -17.5 -237.5 {name=vdd_3v3 dir=inout}
@@ -45,9 +84,9 @@ B 5 -22.5 -102.5 -17.5 -97.5 {name=ibias0 dir=inout}
 L 4 -20 -120 0 -120 {}
 T {ibias1} 5 -120.0 0 0 0.25 0.25 {vcenter=true}
 B 5 -22.5 -122.5 -17.5 -117.5 {name=ibias1 dir=inout}
-L 4 200 -20 220 -20 {}
-T {dig_out[11:0]} 195 -20.0 0 1 0.25 0.25 {vcenter=true}
-B 5 217.5 -22.5 222.5 -17.5 {name=dig_out[11:0] dir=out}
+L 4 210 -20 230 -20 {}
+T {dig_out[11:0]} 205 -20.0 0 1 0.25 0.25 {vcenter=true}
+B 5 227.5 -22.5 232.5 -17.5 {name=dig_out[11:0] dir=out}
 L 4 -20 -20 0 -20 {}
 T {dig_in[23:0]} 5 -20.0 0 0 0.25 0.25 {vcenter=true}
 B 5 -22.5 -22.5 -17.5 -17.5 {name=dig_in[23:0] dir=in}

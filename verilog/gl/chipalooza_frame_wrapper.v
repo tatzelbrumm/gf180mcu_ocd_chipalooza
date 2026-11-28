@@ -72,8 +72,21 @@ module chipalooza_frame_wrapper (
 	// (analog core pin = pad pin)
 	// (analog core pin = pad pin)
 	// (analog core pin = pad pin)
-	// (analog core pin = pad pin)
-	// (analog core pin = pad pin)
+	input s16_an_0_outp,
+	input s16_an_0_outn,
+	output s16_an_0_vcm,
+	output s16_an_0_vref,
+	inout s16_an_0_iref,
+	output s16_an_0_en_3v3,
+	output s16_an_0_en_3v3_b,
+	// (custom pad gf180_cm_io__asig_in)
+	output s16_an_1_vinp,
+	output s16_an_1_vinn,
+	output s16_an_1_vref,
+	inout s16_an_1_iref,
+	output s16_an_1_en_3v3,
+	output s16_an_1_en_3v3_b,
+	// (custom pad gf180_cm_io__asig_out)
 	// (analog core pin = pad pin)
 	// (analog core pin = pad pin)
 	// (analog core pin = pad pin)

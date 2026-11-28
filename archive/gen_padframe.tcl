@@ -38,6 +38,11 @@ addpath $::env(PDK_ROOT)/gf180mcuD/libs.ref/gf180mcu_ocd_alpha_misc/mag
 addpath $::env(PDK_ROOT)/gf180mcuD/libs.ref/gf180mcu_ocd_alpha_large/mag
 addpath $::env(PDK_ROOT)/gf180mcuD/libs.ref/gf180mcu_ocd_alpha_small/mag
 
+# Custom analog pads of the asig_5p0 form factor (config.txt, s<N>_an types
+# listed in analog_pad_types of scripts/parse_config.py).  Relative to magic/.
+puts stdout "Adding path ../custom_pads/gf180_cm_io/mag"
+addpath ../custom_pads/gf180_cm_io/mag
+
 # Ensure that the padframe layout does not already exist.
 if {[file exists gf180mcu_padframe.mag]} {
     puts stderr "Padframe layout gf180mcu_padframe.mag exists!"
@@ -542,9 +547,9 @@ place_pad_left	 pad_s17_an_0	gf180mcu_ocd_io__asig_5p0	 	 pad_73
 place_spacers_left 76
 place_pad_left	 pad_vss3v3_5	gf180mcu_ocd_io__vss	 pad_72
 place_spacers_left 75
-place_pad_left	 pad_s16_an_1	gf180mcu_ocd_io__asig_5p0		 pad_71
+place_pad_left	 pad_s16_an_1	gf180_cm_io__asig_out		 pad_71
 place_spacers_left 74
-place_pad_left	 pad_s16_an_0	gf180mcu_ocd_io__asig_5p0	 	 pad_70
+place_pad_left	 pad_s16_an_0	gf180_cm_io__asig_in	 	 pad_70
 place_spacers_left 73
 place_pad_left	 pad_s15_an_1	gf180mcu_ocd_io__asig_5p0	 	 pad_69
 place_spacers_left 72
@@ -882,8 +887,19 @@ label_left_analog pad_s14_an_0  pad s14_an\[0\]
 label_left_analog pad_s14_an_1  pad s14_an\[1\]
 label_left_analog pad_s15_an_0  pad s15_an\[0\]
 label_left_analog pad_s15_an_1  pad s15_an\[1\]
-label_left_analog pad_s16_an_0  pad s16_an\[0\]
-label_left_analog pad_s16_an_1  pad s16_an\[1\]
+label_left_signal pad_s16_an_0  outp  s16_an_0_outp
+label_left_signal pad_s16_an_0  outn  s16_an_0_outn
+label_left_signal pad_s16_an_0  vcm  s16_an_0_vcm
+label_left_signal pad_s16_an_0  vref  s16_an_0_vref
+label_left_signal pad_s16_an_0  iref  s16_an_0_iref
+label_left_signal pad_s16_an_0  en_3v3  s16_an_0_en_3v3
+label_left_signal pad_s16_an_0  en_3v3_b  s16_an_0_en_3v3_b
+label_left_signal pad_s16_an_1  vinp  s16_an_1_vinp
+label_left_signal pad_s16_an_1  vinn  s16_an_1_vinn
+label_left_signal pad_s16_an_1  vref  s16_an_1_vref
+label_left_signal pad_s16_an_1  iref  s16_an_1_iref
+label_left_signal pad_s16_an_1  en_3v3  s16_an_1_en_3v3
+label_left_signal pad_s16_an_1  en_3v3_b  s16_an_1_en_3v3_b
 label_left_analog pad_s17_an_0  pad s17_an\[0\]
 label_left_analog pad_s17_an_1  pad s17_an\[1\]
 label_left_analog pad_s18_an_0  pad s18_an\[0\]
