@@ -572,7 +572,7 @@ place_pad_left	 pad_vss3v3_4	gf180mcu_ocd_io__vss 	 pad_58
 place_spacers_left 61
 place_pad_left	 pad_s10_an_2	gf180mcu_ocd_io__asig_5p0	 	 pad_57
 place_spacers_left 60
-place_pad_top	pad_vss3v3_3	gf180mcu_ocd_io__vss	 pad_56
+place_pad_left	 pad_vss3v3_3	gf180mcu_ocd_io__vss	 pad_56
 place_spacers_left 59
 place_pad_left	 pad_s10_an_1	gf180mcu_ocd_io__asig_5p0	 	 pad_55
 place_spacers_left 58 8

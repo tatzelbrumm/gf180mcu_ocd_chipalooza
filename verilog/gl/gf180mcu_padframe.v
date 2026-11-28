@@ -1021,7 +1021,7 @@ module gf180mcu_padframe (
 	// (core signal name = pad name)
     );
 
-    gf180mcu_ocd_io__asig_5p0 pad_s16_an_0 (
+    gf180_cm_io__asig_in pad_s16_an_0 (
 	`ifdef USE_POWER_PINS
 	    .DVDD(vdd5v0),
 	    .DVSS(vss5v0),
@@ -1032,7 +1032,7 @@ module gf180mcu_padframe (
 	// (core signal name = pad name)
     );
 
-    gf180mcu_ocd_io__asig_5p0 pad_s16_an_1 (
+    gf180_cm_io__asig_out pad_s16_an_1 (
 	`ifdef USE_POWER_PINS
 	    .DVDD(vdd5v0),
 	    .DVSS(vss5v0),

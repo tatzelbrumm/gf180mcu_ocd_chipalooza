@@ -9,6 +9,7 @@
  */
 
 module slot10_wrapper (
+    inout vss3v3,
     inout [0:2] s10_an,
     inout vdd_3v3,
     inout vss_5v0,
